@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+
+
+@font-face {
+    font-family: heading;
+    src: url(/fonts/Rajdhani-Variable.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: paragraph;
+    src: url(/chakra-petch/ChakraPetch-Medium.ttf) format("truetype");
+}
+
+.heading {
+    font-family: heading;
+}
+
+p {
+    font-family: paragraph !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: heading;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+
+/* body{
+    cursor: none;
+} */
+
+
+
+.neon-border {
+    border: 2px solid rgba(110, 110, 255, 0.45);
+    box-shadow: 0 0 25px rgba(130, 130, 255, 0.35),
+        inset 0 0 35px rgba(140, 140, 255, 0.25);
+}
+
+.neon-glow {
+    box-shadow: 0 0 85px rgba(130, 130, 255, 0.35);
+}
