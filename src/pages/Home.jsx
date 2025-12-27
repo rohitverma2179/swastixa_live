@@ -59,4 +59,78 @@ export default function Home() {
   );
 }
 
+// import React, { useEffect, Suspense, lazy } from "react";
+// import { useLocation } from "react-router-dom";
+
+// // Lazy imports
+// const Hero = lazy(() => import("../components/home/Hero"));
+// const HeroSection = lazy(() => import("../components/home/HeroSecond"));
+// const HomeAbout = lazy(() => import("../components/home/HomeAbout"));
+// const EndToEndExcellence = lazy(() => import("../components/home/EndToEndExcellence"));
+// const ForthSection = lazy(() => import("../components/home/HomeWork"));
+// const LogoCarousel = lazy(() => import("../components/home/Logo"));
+// const TorchlightTextReveal = lazy(() => import("../components/home/MouseGlowText"));
+// const ContactSection = lazy(() => import("../components/common/Contact"));
+
+// const SectionLoader = () => (
+//   <div className="w-full h-[40vh] flex items-center justify-center text-white/50">
+//     Loading…
+//   </div>
+// );
+
+// export default function Home() {
+//   const location = useLocation();
+
+//   useEffect(() => {
+//     if (location.hash === "#contact") {
+//       const timer = setTimeout(() => {
+//         const el = document.getElementById("contactSection");
+//         if (el) {
+//           el.scrollIntoView({ behavior: "instant", block: "start" });
+
+//           // Remove #contact from URL
+//           window.history.replaceState(null, "", location.pathname);
+//         }
+//       }, 100);
+
+//       return () => clearTimeout(timer);
+//     }
+//   }, [location]);
+
+//   return (
+//     <main>
+//       <Suspense fallback={<SectionLoader />}>
+//         <Hero />
+//       </Suspense>
+
+//       <Suspense fallback={<SectionLoader />}>
+//         <HeroSection />
+//       </Suspense>
+
+//       <Suspense fallback={<SectionLoader />}>
+//         <HomeAbout />
+//       </Suspense>
+
+//       <Suspense fallback={<SectionLoader />}>
+//         <EndToEndExcellence />
+//       </Suspense>
+
+//       <Suspense fallback={<SectionLoader />}>
+//         <ForthSection />
+//       </Suspense>
+
+//       <Suspense fallback={<SectionLoader />}>
+//         <LogoCarousel />
+//       </Suspense>
+
+//       <Suspense fallback={<SectionLoader />}>
+//         <TorchlightTextReveal />
+//       </Suspense>
+
+//       <Suspense fallback={<SectionLoader />}>
+//         <ContactSection />
+//       </Suspense>
+//     </main>
+//   );
+// }
 

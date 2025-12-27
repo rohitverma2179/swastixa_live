@@ -118,12 +118,13 @@ const VirtualVideoList = () => {
   return (
     <div
       ref={parentRef}
-      className="h-screen w-full overflow-auto bg-black"
+      className=" w-full overflow-auto bg-black"
     >
       <div
         style={{
           height: rowVirtualizer.getTotalSize(),
           position: "relative",
+          backgroundColor: "black",
         }}
       >
         {rowVirtualizer.getVirtualItems().map((row) => {
@@ -140,7 +141,7 @@ const VirtualVideoList = () => {
                 width: "100%",
                 transform: `translateY(${row.start}px)`,
               }}
-              className="flex justify-center py-24"
+              className="flex justify-center  py-24  "
             >
               <VideoPlayer
                 src={video.src}

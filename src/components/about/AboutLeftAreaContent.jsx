@@ -36,7 +36,7 @@ const AboutLeftAreaContent = () => {
             </h2>
 
             <p className=" text-gray-300 text-[clamp(0.95rem,1.2vw,1.1rem)] 2xl:text-[clamp(1.1rem,1.5vw,1.5rem)]
-        max-w-[65ch] 2xl:max-w-[75ch] ">
+                              max-w-[65ch] 2xl:max-w-[75ch] ">
                 Swastixa Digital is a full-service digital company rooted in Indian
                 values and modern thinking. We blend strategy, design, and
                 technology to build brands that move people and markets.

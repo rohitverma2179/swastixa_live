@@ -243,8 +243,6 @@ const Particles = ({
   //   return <div ref={containerRef} className={`relative w-full h-full ${className}`} />;
   return (
     <div ref={containerRef} className={`absolute inset-0 w-full h-full -z-10 ${className}`}>
-
-
       {/* WebGL canvas will appear inside this wrapper automatically */}
       {/* ⭐ Overlay Logo Carousel on top of particles */}
       {/* <div className="absolute inset-0  items-center justify-center ">

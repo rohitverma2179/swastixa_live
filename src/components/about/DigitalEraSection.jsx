@@ -59,9 +59,9 @@ export default function DigitalEraSection() {
             In a rapidly evolving digital environment, brands require more than visibility. They need clarity, consistency, and connection. We work across digital marketing, website development, production, and social media management to help brands communicate their story with confidence and coherence. Every service we offer is designed to support a unified digital presence.
           </p>
 
-          <p>
+          {/* <p>
             Our process is built on understanding before execution. We invest time in learning a brand’s goals, audience, and challenges, ensuring every decision is intentional. From strategy to design and final delivery, our focus remains on building digital solutions that feel authentic, perform effectively, and support long-term growth. At Swastixa Digital, every project is an opportunity to create work that flows naturally and delivers lasting value.
-          </p>
+          </p> */}
         </div>
 
       </div>

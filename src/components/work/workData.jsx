@@ -3,8 +3,7 @@ import React from "react";
 import VideoCard from "./VideoCard";
 
 export const videoList = [
-  
-  { id: 17, src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/M%20R%20G.mp4" },
+  { id: 17, src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/videoplayback%20(2).mp4" },
   { id: 2, src:  "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/3.mp4" },
   { id: 35, src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/signature%20global.mp4" },
   { id: 36, src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/smart%20world%20noida.mp4" },
@@ -18,7 +17,7 @@ export const videoList = [
   { id: 8, src:  "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/FILM%201%20H%26W%20FAN%20REGULATOR%2020SEC%20English%201.mp4" },
   { id: 9, src:  "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/FILM%201%20H%26W%20POP%20OUT%20LAMP%2020SEC%20ENGLISH%201.mp4" },
   { id: 10, src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/FILM%201%20H%26W%20WAVE%20SWITCH%2020SEC%20ENGLISH%201.mp4" },
-  { id: 11, src: "" },
+  // { id: 11, src: "" },
   { id: 12, src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/FILM%201%20LUCKY%20HOUSE%20%20OPT%202.mp4" },
   { id: 13, src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/FILM%202%20MOTION%20SENSOR%2020SEC%20English%201.mp4" },
   { id: 14, src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/FILM%206%20PONGAL%20TAMIL%2020SEC%20%20%20Option%201.mp4" },

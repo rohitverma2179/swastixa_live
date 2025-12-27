@@ -561,17 +561,10 @@
 
 
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState} from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// // import digital_markating from "/About_img/degital_markating.jpg"
-// import digital_markating from "/home_assets/About_img/Swastixa Website 4design-01.jpg"
-// import production_house from "/home_assets/About_img/Swastixa Website 4design-02.jpg"
-// import socialMedia from "/home_assets/About_img/Swastixa Website 4design-03.jpg"
-// import webdevelopment from "/home_assets/About_img/Swastixa Website 4design-04.jpg"
 import Particles from "./Particles";
-// import { digital_markating } from '/About_img/degital_markating.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -660,9 +653,6 @@ const HomeAbout = () => {
     "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/MAIN%20-%20ABOUT%20-%20img/Swastixa%20Website%204design-03.jpg",
     "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/MAIN%20-%20ABOUT%20-%20img/Swastixa%20Website%204design-04.jpg",
   ];
-
-
-
   return (
     <section
       ref={sectionRef}
@@ -815,9 +805,6 @@ const HomeAbout = () => {
                 </div>
               </div>
             </button>
-
-
-
           </div>
         </div>
       </div>

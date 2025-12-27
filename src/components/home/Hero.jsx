@@ -10,6 +10,8 @@ const Hero = () => {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
 
+  
+
   // useEffect(() => {
   //   // 🌀 Initialize Lenis smooth scroll
   //   const lenis = new Lenis({

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { Oval } from 'react-loader-spinner';
+import { useLazyVideo } from "../../hooks/useLazyVideo";
+// import { useLazyVideo } from "../../hooks/useLazyVideo";
+
 
 // =============================
 // CARD DATA FOR BOTH VIEW
@@ -91,38 +94,72 @@ const videoCards = [
 // =============================
 // REUSABLE VIDEO CARD
 // =============================
+// const VideoCard = ({ src, className }) => {
+//   const [loading, setLoading] = useState(true);
+
+//   return (
+//     <div className={`${className} overflow-hidden bg-black`}>
+//       {/* Loader (Show Until Video Loads) */}
+//       {loading && (
+//         <div className="absolute inset-0 flex items-center justify-center bg-gray-900 z-30">
+//           <Oval
+//             height={40}
+//             width={40}
+//             color="#ffffff"
+//             secondaryColor="#4fa94d"
+//             strokeWidth={4}
+//             strokeWidthSecondary={4}
+//             ariaLabel="oval-loading"
+//             visible={true}
+//           />
+//         </div>
+//       )}
+
+//       {/* Video */}
+//       <video
+//         className={`w-full h-full object-cover transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
+//           }`}
+//         src={src}
+//         autoPlay
+//         loop
+//         muted
+//         playsInline
+//         onLoadedData={() => setLoading(false)}
+//       ></video>
+//     </div>
+//   );
+// };
+
+
 const VideoCard = ({ src, className }) => {
   const [loading, setLoading] = useState(true);
+  const { videoRef, isVisible } = useLazyVideo();
 
   return (
-    <div className={`${className} overflow-hidden bg-black`}>
-      {/* Loader (Show Until Video Loads) */}
+    <div ref={videoRef} className={`${className} overflow-hidden bg-black`}>
+
+      {/* Loader */}
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-900 z-30">
-          <Oval
-            height={40}
-            width={40}
-            color="#ffffff"
-            secondaryColor="#4fa94d"
-            strokeWidth={4}
-            strokeWidthSecondary={4}
-            ariaLabel="oval-loading"
-            visible={true}
-          />
+          <Oval height={40} width={40} color="#fff" />
         </div>
       )}
 
-      {/* Video */}
-      <video
-        className={`w-full h-full object-cover transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
+      {/* Load video ONLY when visible */}
+      {isVisible && (
+        <video
+          className={`w-full h-full object-cover transition-opacity duration-500 ${
+            loading ? "opacity-0" : "opacity-100"
           }`}
-        src={src}
-        autoPlay
-        loop
-        muted
-        playsInline
-        onLoadedData={() => setLoading(false)}
-      ></video>
+          src={src}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          onLoadedData={() => setLoading(false)}
+        />
+      )}
     </div>
   );
 };

@@ -1,11 +1,12 @@
 import React from 'react'
 // import AboutHero from '../components/about/AboutHero'
-// import AboutContent from '../components/about/AboutContent'
 import DigitalEraSection from '../components/about/DigitalEraSection'
 import LogoCarousel from '../components/home/Logo'
 import ScrollReveal from '../components/common/ScrollReveal'
 import CardSwap, { Card } from '../components/common/CardSwap'
 import ApproachSection from '../components/about/ApproachSection'
+import ManaginDiroctor from '../components/about/ManaginDiroctor'
+import OurTeam from '../components/about/OurTeam'
 
 const About = () => {
 
@@ -63,8 +64,8 @@ const About = () => {
                                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                                     </div>
                                     <div className="relative h-full flex flex-col justify-end p-8 select-none">
-                                        <h3 className="text-3xl font-bold text-white mb-1 tracking-tight">{card.title}</h3>
-                                        <p className="text-zinc-300 text-base leading-relaxed max-w-[90%]">{card.description}</p>
+                                        <h3 className="text-2xl font-bold text-white mb-1 tracking-tight">{card.title}</h3>
+                                        <p className="text-zinc-300 text-[0.7rem] leading-relaxed max-w-[90%]">{card.description}</p>
                                     </div>
                                 </Card>
                             ))}
@@ -76,11 +77,10 @@ const About = () => {
                     mb-24 lg:mb-32 2xl:mb-40
                     px-4
                 '>
-
                     <ScrollReveal
-                        baseOpacity={0}
+                        baseOpacity={0.1}
                         enableBlur={true}
-                        baseRotation={5}
+                        baseRotation={0}
                         blurStrength={10}
                     >
                         For us, creativity is a refined and strategic flow where deep understanding shapes ideas, thoughtful design creates balance, and digital innovation transforms vision into powerful and scalable solutions, delivered with clarity, consistency, and measurable performance across every stage of the brand journey.
@@ -91,6 +91,8 @@ const About = () => {
                 <DigitalEraSection />
                 <ApproachSection />
                 <LogoCarousel />
+                <ManaginDiroctor />
+                <OurTeam />
             </div>
         </>
     )
