@@ -72,3 +72,15 @@ h6 {
 .neon-glow {
     box-shadow: 0 0 85px rgba(130, 130, 255, 0.35);
 }
+
+
+
+.magic-bento {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.magic-bento * {
+  transform-style: preserve-3d;
+}

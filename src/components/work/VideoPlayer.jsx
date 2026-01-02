@@ -46,7 +46,10 @@ const VideoPlayer = ({ src, poster }) => {
   useVideoObserver(videoRef);
 
   return (
-    <div className="w-full xl:w-[80vw] h-[90vh] xl:[80vh] px-2 bg-black rounded-xl overflow-hidden relative">
+    <div className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]
+        max-w-[95vw] md:max-w-[90vw] xl:max-w-[80vw]
+        overflow-hidden rounded-xl bg-black
+        flex items-center justify-center">
       {!loaded && (
         <img
           src={poster}

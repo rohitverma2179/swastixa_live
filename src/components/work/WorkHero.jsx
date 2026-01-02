@@ -12,6 +12,48 @@ import { useLazyVideo } from "../../hooks/useLazyVideo";
 
 
 
+
+// =============================
+// REUSABLE VIDEO CARD
+// =============================
+// const VideoCard = ({ src, className }) => {
+//   const [loading, setLoading] = useState(true);
+
+//   return (
+//     <div className={`${className} overflow-hidden bg-black`}>
+//       {/* Loader (Show Until Video Loads) */}
+//       {loading && (
+//         <div className="absolute inset-0 flex items-center justify-center bg-gray-900 z-30">
+//           <Oval
+//             height={40}
+//             width={40}
+//             color="#ffffff"
+//             secondaryColor="#4fa94d"
+//             strokeWidth={4}
+//             strokeWidthSecondary={4}
+//             ariaLabel="oval-loading"
+//             visible={true}
+//           />
+//         </div>
+//       )}
+
+//       {/* Video */}
+//       <video
+//         className={`w-full h-full object-cover transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
+//           }`}
+//         src={src}
+//         autoPlay
+//         loop
+//         muted
+//         playsInline
+//         onLoadedData={() => setLoading(false)}
+//       ></video>
+//     </div>
+//   );
+// };
+
+
+
 const videoCards = [
   {
     id: 1,
@@ -91,46 +133,6 @@ const videoCards = [
   },
 ];
 
-// =============================
-// REUSABLE VIDEO CARD
-// =============================
-// const VideoCard = ({ src, className }) => {
-//   const [loading, setLoading] = useState(true);
-
-//   return (
-//     <div className={`${className} overflow-hidden bg-black`}>
-//       {/* Loader (Show Until Video Loads) */}
-//       {loading && (
-//         <div className="absolute inset-0 flex items-center justify-center bg-gray-900 z-30">
-//           <Oval
-//             height={40}
-//             width={40}
-//             color="#ffffff"
-//             secondaryColor="#4fa94d"
-//             strokeWidth={4}
-//             strokeWidthSecondary={4}
-//             ariaLabel="oval-loading"
-//             visible={true}
-//           />
-//         </div>
-//       )}
-
-//       {/* Video */}
-//       <video
-//         className={`w-full h-full object-cover transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
-//           }`}
-//         src={src}
-//         autoPlay
-//         loop
-//         muted
-//         playsInline
-//         onLoadedData={() => setLoading(false)}
-//       ></video>
-//     </div>
-//   );
-// };
-
-
 const VideoCard = ({ src, className }) => {
   const [loading, setLoading] = useState(true);
   const { videoRef, isVisible } = useLazyVideo();
@@ -148,9 +150,8 @@ const VideoCard = ({ src, className }) => {
       {/* Load video ONLY when visible */}
       {isVisible && (
         <video
-          className={`w-full h-full object-cover transition-opacity duration-500 ${
-            loading ? "opacity-0" : "opacity-100"
-          }`}
+          className={`w-full h-full object-cover transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
+            }`}
           src={src}
           autoPlay
           loop
@@ -171,7 +172,7 @@ const VideoCard = ({ src, className }) => {
 const WorkHero = () => {
 
   return (
-    <section className="w-full h-auto md:h-[70vh] mb-20 md:mb-44 flex items-center justify-center pt-10 md:pt-24 bg-transparent overflow-hidden">
+    <section className="w-full h-auto md:h-[80vh] mb-20 md:mb-44 flex items-center justify-center pt-10 md:pt-24 bg-transparent overflow-hidden">
 
       <div className="relative w-full max-w-6xl h-auto md:h-[400px] flex flex-col md:block items-center gap-4">
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaLinkedinIn } from "react-icons/fa";
+import sonu from '../../assets/Sonu_Sir.jpg'
 
 const OurTeam = () => {
     const teamMembers = [
@@ -8,7 +9,7 @@ const OurTeam = () => {
             id: 1,
             name: "Manish",
             role: "Cryptocurrency",
-            image: "https://imgs.search.brave.com/pIgRsf5jVevcid3yYahuoWchwJSg0Puq5v-MgXiBDcQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/MTk0NDQyL3Bob3Rv/L3N1aXQtYm95LXBy/b2ZpbGUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPWgweVVp/VkY1eGhjMzFzV3pI/cWVTbkRIVHpuVVE3/LWZuQWM0eUhKTnA4/MkU9"
+            image: sonu
         },
         {
             id: 2,
@@ -21,7 +22,7 @@ const OurTeam = () => {
             name: "David Smith",
             role: "Tech Lead",
             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000"
-        },      
+        },
         {
             id: 4,
             name: "Sarah Johnson",
@@ -33,13 +34,25 @@ const OurTeam = () => {
             name: "David Smith",
             role: "Tech Lead",
             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000"
-        },      
+        },
+        {
+            id: 6,
+            name: "Sarah Johnson",
+            role: "Creative Director",
+            image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=1000"
+        },
+        {
+            id: 8,
+            name: "nakul gupta",
+            role: "Blockchain Developer",
+            image: "https://imgs.search.brave.com/3YkYJ1b1Yk1bX5E9wWcX1J5f0KkY5Y2F1F2v1Z5nQY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/MTk0NDQyL3Bob3Rv/L25ha3VsLWdwdXQt/YmxvY2tjaGFpbi1k/ZXYuanBnP3M9/NjEyeDYxMiZ3/PTAmaz0yMCZjPWgweVVp/VkY1eGhjMzFz/V3pIcWVTbkRIVHpu/VVE3LWZuQWM0eUhK/TnA4MkU9"
+        },
         {
             id: 6,
             name: "David Smith",
             role: "Tech Lead",
             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000"
-        },      
+        },
         {
             id: 7,
             name: "Manish",
@@ -57,7 +70,7 @@ const OurTeam = () => {
             name: "David Smith",
             role: "Tech Lead",
             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000"
-        },      
+        },
         {
             id: 10,
             name: "Sarah Johnson",
@@ -69,14 +82,14 @@ const OurTeam = () => {
             name: "David Smith",
             role: "Tech Lead",
             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000"
-        },      
+        },
         {
             id: 12,
             name: "David Smith",
             role: "Tech Lead",
             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000"
-        },      
-        
+        },
+
     ];
 
     return (<>

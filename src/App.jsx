@@ -26,6 +26,10 @@ import About from "./pages/About";
 import ContactSection from "./components/common/Contact";
 import BlogInner from "./pages/BlogInner";
 import ScrollToTop from "./components/common/ScrollToTop";
+import ProductionHouse from "./components/work/workpages/ProductionHouse";
+import SocialMediaManagement from "./components/work/workpages/SocialMediaManagement";
+import WebsiteDevelopment from "./components/work/workpages/WebsiteDevelopment";
+import DigitalMarketing from "./components/work/workpages/DigitalMarketing";
 // import BlogInner from "./pages/BlogInner";
 // import CustomCursor from "./components/common/CustomCursor";
 
@@ -93,6 +97,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/work/workpages/ProductionHouse" element={<ProductionHouse />} />
+        <Route path="/work/workpages/SocialMediaManagement" element={<SocialMediaManagement />} />
+        <Route path="/work/workpages/WebsiteDevelopment" element={<WebsiteDevelopment />} />
+        <Route path="/work/workpages/DigitalMarketing" element={<DigitalMarketing />} />
         <Route path="/awards" element={<CommingSoon />} />
         <Route path="/careers" element={<Careers />} />
         {/* <Route path="/blog" element={<Blog />} /> */}

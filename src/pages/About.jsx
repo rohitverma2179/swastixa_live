@@ -7,6 +7,10 @@ import CardSwap, { Card } from '../components/common/CardSwap'
 import ApproachSection from '../components/about/ApproachSection'
 import ManaginDiroctor from '../components/about/ManaginDiroctor'
 import OurTeam from '../components/about/OurTeam'
+import ScrollRevealText from '../components/common/scrollRevealText'
+// import ScrollFillText from '../components/common/ScrollFillText'
+import BrandManifesto from '../components/common/ScrollFillText'
+import ScrollFillText from '../components/common/ScrollFillText'
 
 const About = () => {
 
@@ -38,7 +42,7 @@ const About = () => {
             // image: "https://swastixa.b-cdn.net/About%20-%204%20-%20%20(1).png"
         },
     ];
-    
+
     return (
         <>
             <div className='bg-black text-white'>
@@ -72,7 +76,7 @@ const About = () => {
                         </CardSwap>
                     </div>
                 </div>
-                <div className='text-white w-full lg:max-w-[980px] 2xl:max-w-[1400px] text-center flex items-center justify-center mx-auto
+                {/* <div className='text-white w-full lg:max-w-[980px] 2xl:max-w-[1400px] text-center flex items-center justify-center mx-auto
                     pt-24 md:pt-40 lg:pt-60 2xl:pt-80
                     mb-24 lg:mb-32 2xl:mb-40
                     px-4
@@ -85,9 +89,10 @@ const About = () => {
                     >
                         For us, creativity is a refined and strategic flow where deep understanding shapes ideas, thoughtful design creates balance, and digital innovation transforms vision into powerful and scalable solutions, delivered with clarity, consistency, and measurable performance across every stage of the brand journey.
                     </ScrollReveal>
-                </div>
-
-
+                </div> */}
+                {/* <ScrollFillText /> */}
+                <ScrollFillText />
+                <BrandManifesto />
                 <DigitalEraSection />
                 <ApproachSection />
                 <LogoCarousel />

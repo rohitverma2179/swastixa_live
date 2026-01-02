@@ -551,20 +551,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 import { useEffect, useRef, useState} from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Particles from "./Particles";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -800,7 +791,7 @@ const HomeAbout = () => {
                       textShadow: "0 1px 2px rgba(0,0,0,0.5)",
                     }}
                   >
-                    About Us
+                    <Link to="/about">About Us</Link>
                   </p>
                 </div>
               </div>

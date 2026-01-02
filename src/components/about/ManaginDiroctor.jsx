@@ -25,10 +25,10 @@ const ManaginDiroctor = () => {
         
     ];
 
-    return (<>
-
+    return (
+      <>
         <h2 className='text-5xl font-bold text-white text-center sm:text-left sm:pl-36 mt-20 tracking-tight'>Managing Director</h2>
-        <StyledWrapper>
+          <StyledWrapper>
             <div className="cards-container">
                 {teamMembers.map((member) => (
                     <div className="card" key={member.id}>

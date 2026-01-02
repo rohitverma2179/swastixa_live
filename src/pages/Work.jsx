@@ -20,12 +20,12 @@
 //           <InstagramPost
 //             permalink="https://www.instagram.com/p/DSonoNZDPxg/"
 //           />
-         
+
 //         </div> */}
 //         <WorkHero />
 //         <FourButtonsRow />
 //         {/* <WorkFilterSearch /> */}
-//         <WorkData />
+//         <WorkData /> 
 //       </div>
 //     </>
 //   );
