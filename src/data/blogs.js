@@ -8,7 +8,7 @@ export const blogs = [
       description:
         "Learn how Indian SMEs can build a complete 360° digital marketing strategy on a limited budget. Practical steps, tools, and proven tactics inside.",
       image:
-        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Digital%20Transformation.png",
+        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-1.jpg",
     },
 
     content: [
@@ -26,12 +26,9 @@ export const blogs = [
         text: "In this guide, we'll walk you through a practical, step-by-step roadmap to build your digital marketing strategy from scratch. Whether you're a local service provider, a B2B supplier, or a retail business, these steps will help you get real results without burning through your budget."
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+      
 
-      {
+      {       
         type: "heading",
         text: "Why Most SMEs Struggle With Digital Marketing (And What Changes in 2025)"
       },
@@ -48,14 +45,11 @@ export const blogs = [
         text: "If your brand isn't showing up at every stage of that journey, you're losing customers to competitors who are. The good news? You don't need to be everywhere at once. You just need to be smart about where you show up and how you connect those dots."
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+      
 
       {
         type: "heading",
-        text: "What Does a \"360° Digital Marketing Strategy\" Actually Mean?"
+        text: "What Does a 360° Digital Marketing Strategy Actually Mean?"
       },
       {
         type: "paragraph",
@@ -66,41 +60,94 @@ export const blogs = [
         type: "subHeading",
         text: "The 5 Core Pillars Every SME Needs"
       },
+
       {
-        type: "list",
+        type: "boldListpara",
         items: [
-          { text: "A High-Converting Website — Your digital storefront and primary lead capture tool." },
-          { text: "Search Engine Visibility (SEO) — So customers can find you when they search for what you offer." },
-          { text: "Social Media Presence — To build trust, engage audiences, and stay top-of-mind." },
-          { text: "Paid Advertising — For fast, targeted reach when organic efforts need a boost." },
-          { text: "Content & Messaging — Clear, helpful content that educates and converts at every stage." }
+          {
+            bold: "1.	A High-Converting Website —  ",
+            text: "Your digital storefront and primary lead capture tool."
+          },
+          {
+            bold: "2.	Search Engine Visibility (SEO)  —  ",
+            text: "So customers can find you when they search for what you offer."
+          },
+          {
+            bold: "3.	Social Media Presence  —  ",
+            text: "To build trust, engage audiences, and stay top-of-mind."
+          },
+
+           {
+            bold: "4.	Paid Advertising  —  ",
+            text: " For fast, targeted reach when organic efforts need a boost.."
+          },
+
+          {
+            bold: "5.	Content & Messaging  —   ",
+            text: "Clear, helpful content that educates and converts at every stage."
+          },
         ]
       },
+
+
+     
+
+
+      // {
+      //   type: "listbold",
+      //   items: [
+      //     { text: "A High-Converting Website — Your digital storefront and primary lead capture tool." },
+      //     { text: "Search Engine Visibility (SEO) — So customers can find you when they search for what you offer." },
+      //     { text: "Social Media Presence — To build trust, engage audiences, and stay top-of-mind." },
+      //     { text: "Paid Advertising — For fast, targeted reach when organic efforts need a boost." },
+      //     { text: "Content & Messaging — Clear, helpful content that educates and converts at every stage." }
+      //   ]
+      // },
+
       {
         type: "paragraph",
         text: "When these five pillars work together, every rupee you spend on marketing delivers better results. Your ads drive traffic to an optimized website. Your SEO brings organic leads. Your social media builds trust that closes deals."
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
-
+     
       {
         type: "heading",
         text: "Step 1 – Define Your Business Goals and Target Audience"
       },
+
       {
         type: "paragraph",
         text: "Before spending a single rupee on ads or content, answer two questions:"
       },
-      {
-        type: "list",
+
+        {
+        type: "boldListpara",
         items: [
-          { text: "What do you want to achieve? (More leads? Brand awareness? Direct sales?)" },
-          { text: "Who are you trying to reach? (Business owners? Homeowners? Corporate buyers?)" }
+          {
+            bold: "1.	What do you want to achieve? ",
+            text: "(More leads? Brand awareness? Direct sales?)"
+          },
+          {
+            bold: "2.	Who are you trying to reach?  ",
+            text: "? (Business owners? Homeowners? Corporate buyers?)"
+          },
+         
         ]
       },
+
+
+
+
+      // {
+      //   type: "list",
+      //   items: [
+      //     { text: "What do you want to achieve? (More leads? Brand awareness? Direct sales?)" },
+      //     { text: "Who are you trying to reach? (Business owners? Homeowners? Corporate buyers?)" }
+      //   ]
+      // },
+
+
+
       {
         type: "paragraph",
         text: "Too many SMEs skip this step and end up speaking to everyone, which means they connect with no one."
@@ -115,131 +162,171 @@ export const blogs = [
         text: "Take 10 minutes and write down:"
       },
 
-      {
-        type: "paragraph",
-        text: "Running a small or medium business in India today means competing with brands that have bigger budgets, larger teams, and years of digital experience. But here's the truth: you don't need a massive budget to build a strong online presence."
-      },
-      {
-        type: "paragraph",
-        text: "What you need is a 360° digital marketing strategy — a complete, connected approach that covers all the right channels without wasting money on tactics that don't work for your business type."
-      },
-      {
-        type: "paragraph",
-        text: "In this guide, we'll walk you through a practical, step-by-step roadmap to build your digital marketing strategy from scratch. Whether you're a local service provider, a B2B supplier, or a retail business, these steps will help you get real results without burning through your budget."
-      },
-
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
-
-      {
-        type: "heading",
-        text: "Why Most SMEs Struggle With Digital Marketing (And What Changes in 2025)"
-      },
-      {
-        type: "paragraph",
-        text: "Most small businesses jump into digital marketing without a plan. They try a bit of social media, maybe run a few ads, and hope something sticks. The result? Inconsistent posting, scattered efforts, and little to show for the money spent."
-      },
-      {
-        type: "paragraph",
-        text: "Here's what's changing in 2025. Customers expect businesses to be findable, credible, and responsive across multiple touchpoints. They search on Google, check your Instagram, read reviews, and compare options before making a decision."
-      },
-      {
-        type: "paragraph",
-        text: "If your brand isn't showing up at every stage of that journey, you're losing customers to competitors who are. The good news? You don't need to be everywhere at once. You just need to be smart about where you show up and how you connect those dots."
-      },
-
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
-
-      {
-        type: "heading",
-        text: "What Does a \"360° Digital Marketing Strategy\" Actually Mean?"
-      },
-      {
-        type: "paragraph",
-        text: "A 360° strategy means your business is visible and consistent across all the digital channels that matter to your customers. It's not about doing everything — it's about doing the right things in a way that supports each other."
-      },
-
-      {
-        type: "subHeading",
-        text: "The 5 Core Pillars Every SME Needs"
-      },
-      {
-        type: "list",
+       {
+        type: "boldListpara",
         items: [
-          { text: "A High-Converting Website — Your digital storefront and primary lead capture tool." },
-          { text: "Search Engine Visibility (SEO) — So customers can find you when they search for what you offer." },
-          { text: "Social Media Presence — To build trust, engage audiences, and stay top-of-mind." },
-          { text: "Paid Advertising — For fast, targeted reach when organic efforts need a boost." },
-          { text: "Content & Messaging — Clear, helpful content that educates and converts at every stage." }
+          {
+            bold: "•	Age range and location  ",
+            text: "of your ideal customer"
+          },
+          {
+            bold: "•	Main problem   ",
+            text: "they're trying to solve"
+          },
+
+           {
+            bold: "•	Where they spend time online   ",
+            text: "(Facebook groups? LinkedIn? Google searches?)"
+          },
+
+           {
+            bold: "•	What objections or doubts    ",
+            text: "they have before buying"
+          },
+         
         ]
       },
-      {
-        type: "paragraph",
-        text: "When these five pillars work together, every rupee you spend on marketing delivers better results. Your ads drive traffic to an optimized website. Your SEO brings organic leads. Your social media builds trust that closes deals."
-      },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
-
-      {
-        type: "heading",
-        text: "Step 1 – Define Your Business Goals and Target Audience"
-      },
-      {
-        type: "paragraph",
-        text: "Before spending a single rupee on ads or content, answer two questions:"
-      },
-      {
-        type: "list",
-        items: [
-          { text: "What do you want to achieve? (More leads? Brand awareness? Direct sales?)" },
-          { text: "Who are you trying to reach? (Business owners? Homeowners? Corporate buyers?)" }
-        ]
-      },
-      {
-        type: "paragraph",
-        text: "Too many SMEs skip this step and end up speaking to everyone, which means they connect with no one."
-      },
-
-      {
-        type: "subHeading",
-        text: "Quick Exercise: The One-Page Customer Avatar"
-      },
-      {
-        type: "paragraph",
-        text: "Take 10 minutes and write down:"
-      },
-
-      {
-        type: "list",
-        items: [
-          { text: "Age range and location of your ideal customer" },
-          { text: "Main problem they're trying to solve" },
-          { text: "Where they spend time online (Facebook groups? LinkedIn? Google searches?)" },
-          { text: "What objections or doubts they have before buying" }
-        ]
-      },
       {
         type: "paragraph",
         text: "This simple exercise will guide every piece of content you create and every ad you run. If you're not sure where to start, look at your best existing customers and describe them."
       },
+
+
+       {
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog1-1.jpg",
+        alt: "One-page customer avatar exercise for SME marketing planning"
+      },
+
+      
       {
         type: "image",
         src: "ADD_IMAGE_HERE",
         alt: "One-page customer avatar exercise for SME marketing planning"
       },
+      
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+
+      // {
+      //   type: "paragraph",
+      //   text: "Running a small or medium business in India today means competing with brands that have bigger budgets, larger teams, and years of digital experience. But here's the truth: you don't need a massive budget to build a strong online presence."
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "What you need is a 360° digital marketing strategy — a complete, connected approach that covers all the right channels without wasting money on tactics that don't work for your business type."
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "In this guide, we'll walk you through a practical, step-by-step roadmap to build your digital marketing strategy from scratch. Whether you're a local service provider, a B2B supplier, or a retail business, these steps will help you get real results without burning through your budget."
+      // },
+
+      // {
+      //   type: "paragraph",
+      //   text: "Shape"
+      // },
+
+      // {
+      //   type: "heading",
+      //   text: "Why Most SMEs Struggle With Digital Marketing (And What Changes in 2025)"
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "Most small businesses jump into digital marketing without a plan. They try a bit of social media, maybe run a few ads, and hope something sticks. The result? Inconsistent posting, scattered efforts, and little to show for the money spent."
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "Here's what's changing in 2025. Customers expect businesses to be findable, credible, and responsive across multiple touchpoints. They search on Google, check your Instagram, read reviews, and compare options before making a decision."
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "If your brand isn't showing up at every stage of that journey, you're losing customers to competitors who are. The good news? You don't need to be everywhere at once. You just need to be smart about where you show up and how you connect those dots."
+      // },
+
+      // {
+      //   type: "paragraph",
+      //   text: "Shape"
+      // },
+
+      // {
+      //   type: "heading",
+      //   text: "What Does a \"360° Digital Marketing Strategy\" Actually Mean?"
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "A 360° strategy means your business is visible and consistent across all the digital channels that matter to your customers. It's not about doing everything — it's about doing the right things in a way that supports each other."
+      // },
+
+      // {
+      //   type: "subHeading",
+      //   text: "The 5 Core Pillars Every SME Needs"
+      // },
+      // {
+      //   type: "list",
+      //   items: [
+      //     { text: "A High-Converting Website — Your digital storefront and primary lead capture tool." },
+      //     { text: "Search Engine Visibility (SEO) — So customers can find you when they search for what you offer." },
+      //     { text: "Social Media Presence — To build trust, engage audiences, and stay top-of-mind." },
+      //     { text: "Paid Advertising — For fast, targeted reach when organic efforts need a boost." },
+      //     { text: "Content & Messaging — Clear, helpful content that educates and converts at every stage." }
+      //   ]
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "When these five pillars work together, every rupee you spend on marketing delivers better results. Your ads drive traffic to an optimized website. Your SEO brings organic leads. Your social media builds trust that closes deals."
+      // },
+
+      // {
+      //   type: "paragraph",
+      //   text: "Shape"
+      // },
+
+      // {
+      //   type: "heading",
+      //   text: "Step 1 – Define Your Business Goals and Target Audience"
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "Before spending a single rupee on ads or content, answer two questions:"
+      // },
+      // {
+      //   type: "list",
+      //   items: [
+      //     { text: "What do you want to achieve? (More leads? Brand awareness? Direct sales?)" },
+      //     { text: "Who are you trying to reach? (Business owners? Homeowners? Corporate buyers?)" }
+      //   ]
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "Too many SMEs skip this step and end up speaking to everyone, which means they connect with no one."
+      // },
+
+      // {
+      //   type: "subHeading",
+      //   text: "Quick Exercise: The One-Page Customer Avatar"
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "Take 10 minutes and write down:"
+      // },
+
+      // {
+      //   type: "list",
+      //   items: [
+      //     { text: "Age range and location of your ideal customer" },
+      //     { text: "Main problem they're trying to solve" },
+      //     { text: "Where they spend time online (Facebook groups? LinkedIn? Google searches?)" },
+      //     { text: "What objections or doubts they have before buying" }
+      //   ]
+      // },
+      // {
+      //   type: "paragraph",
+      //   text: "This simple exercise will guide every piece of content you create and every ad you run. If you're not sure where to start, look at your best existing customers and describe them."
+      // },
+
+      
+
+     
 
       {
         type: "heading",
@@ -258,20 +345,95 @@ export const blogs = [
         type: "paragraph",
         text: "Your website doesn't need to be fancy, but it must be:"
       },
+
+
       {
-        type: "list",
+        type: "boldListpara",
         items: [
-          { text: "Mobile-friendly — Over 70% of Indian users browse on mobile." },
-          { text: "Fast-loading — Slow sites lose visitors in seconds." },
-          { text: "Clear on what you do — Visitors should understand your offer within 5 seconds." },
-          { text: "Easy to contact — Phone number, WhatsApp button, and contact form visible on every page." },
-          { text: "Optimized for local search — Include your city, services, and business name clearly." }
+          {
+            bold: "Facebook & Instagram   ",
+            text: "Best for B2C, local services, retail, hospitality."
+          },
+          {
+            bold: "LinkedIn  ",
+            text: "Essential for B2B, professional services, corporate clients."
+          },
+
+           {
+            bold: "YouTube ",
+            text: " Powerful if you can create helpful how-to or explainer content."
+          },
+
+         
+         
         ]
       },
+
+
+
+      // {
+      //   type: "list",
+      //   items: [
+      //     { text: "Mobile-friendly — Over 70% of Indian users browse on mobile." },
+      //     { text: "Fast-loading — Slow sites lose visitors in seconds." },
+      //     { text: "Clear on what you do — Visitors should understand your offer within 5 seconds." },
+      //     { text: "Easy to contact — Phone number, WhatsApp button, and contact form visible on every page." },
+      //     { text: "Optimized for local search — Include your city, services, and business name clearly." }
+      //   ]
+      // },
+
+
+
+
+
+
+            {
+        type: "boldListpara",
+        items: [
+          {
+            bold: "Mobile-friendly —  ",
+            text: "Over 70% of Indian users browse on mobile"
+          },
+          {
+            bold: "Fast-loading —",
+            text: "Slow sites lose visitors in seconds"
+          },
+
+           {
+            bold: "Clear on what you do — ",
+            text: "Visitors should understand your offer within 5 seconds"
+          },
+
+           {
+            bold: "Easy to contact —",
+            text: "Phone number, WhatsApp button, and contact form visible on every page"
+          },
+
+           {
+            bold: "Optimized for local search —",
+            text: "Include your city, services, and business name clearly"
+          },
+         
+        ]
+      },
+
+
+
+
+
       {
         type: "paragraph",
         text: "If your current website fails any of these checks, fixing it should be priority one. A poor website wastes every rupee you spend driving traffic to it. For more on what makes a high-converting website, check out our guide on {{link:what service businesses need to get right. |high-converting-website-service-businesses}}"
       },
+
+      {
+        type: "paragraph",
+        text: "Start with one platform, post consistently for 90 days, and expand only after you've built momentum. For a complete playbook on managing social media as a local business, read our {{link: what service businesses need to get righ|local-seo-service-providers-guide}}"
+      },
+
+
+
+
       {
         type: "subHeading",
         text: "Choosing the Right Social Platforms"
@@ -280,23 +442,56 @@ export const blogs = [
         type: "paragraph",
         text: "You don't need to be on every platform. Pick 1–2 where your audience actually spends time:"
       },
+
+
       {
-        type: "list",
+        type: "boldListpara",
         items: [
-          { text: "Facebook & Instagram — Best for B2C, local services, retail, hospitality." },
-          { text: "LinkedIn — Essential for B2B, professional services, corporate clients." },
-          { text: "YouTube — Powerful if you can create helpful how-to or explainer content." }
+          {
+            bold: " Facebook & Instagram ",
+            text: "Best for B2C, local services, retail, hospitality."
+          },
+          {
+            bold: "LinkedIn  ",
+            text: "Essential for B2B, professional services, corporate clients."
+          },
+
+           {
+            bold: "YouTube ",
+            text: " Powerful if you can create helpful how-to or explainer content."
+          },
+
+           {
+            bold: "What objections or doubts    ",
+            text: "they have before buying"
+          },
+         
         ]
       },
+
+
+
+
+      // {
+      //   type: "list",
+      //   items: [
+      //     { text: "Facebook & Instagram — Best for B2C, local services, retail, hospitality." },
+      //     { text: "LinkedIn — Essential for B2B, professional services, corporate clients." },
+      //     { text: "YouTube — Powerful if you can create helpful how-to or explainer content." }
+      //   ]
+      // },
+
+
+
+
+
+
+
       {
         type: "paragraph",
         text: "Start with one platform, post consistently for 90 days, and expand only after you've built momentum. For a complete playbook on managing social media as a local business, read our {{link:Social Media Management Playbook for Local Businesses. |social-media-management-playbook-local-businesses}}"
       },
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
-
+      
       {
         type: "heading",
         text: "Step 3 – Create a Content Plan That Works Without a Big Team"
@@ -314,14 +509,28 @@ export const blogs = [
         type: "subHeading",
         text: "The 70-20-10 Content Rule"
       },
-      {
-        type: "list",
+
+        {
+        type: "boldListpara",
         items: [
-          { text: "70% Educational/Helpful — Tips, how-tos, answers to common questions." },
-          { text: "20% Engagement/Brand — Behind-the-scenes, team stories, customer wins." },
-          { text: "10% Promotional — Direct offers, discounts, CTAs to buy or inquire." }
+          {
+            bold: "70% Educational/Helpful —",
+            text: "Best for B2C, local services, retail, hospitality."
+          },
+          {
+            bold: " 20% Engagement/Brand — ",
+            text: "20% Engagement/Brand — Behind-the-scenes, team stories, customer wins"
+          },
+
+           {
+            bold: "10% Promotional — ",
+            text: "10% Promotional — Direct offers, discounts, CTAs to buy or inquire"
+          },
+
+         
         ]
       },
+    
       {
         type: "paragraph",
         text: "This keeps your feed valuable without feeling like a constant sales pitch. Plan 30 days of content in one sitting using this rule, and you'll never scramble for post ideas again."
@@ -329,6 +538,12 @@ export const blogs = [
       {
         type: "paragraph",
         text: "Want to go deeper? Check out our guide on {{link:how to plan a full month of high-engagement posts in just 2 hours. |content-calendar-plan-30-days-posts}}"
+      },
+
+        {
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog1-2.jpg",
+        alt: "30-day content calendar example using 70-20-10 rule for SME social media"
       },
 
 
@@ -339,10 +554,8 @@ export const blogs = [
         alt: "30-day content calendar example using 70-20-10 rule for SME social media"
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+      
+
 
       {
         type: "heading",
@@ -361,14 +574,32 @@ export const blogs = [
         type: "paragraph",
         text: "Local SEO is the fastest way for service-based SMEs to get found by nearby customers. Start with:"
       },
-      {
-        type: "list",
+
+       {
+        type: "boldListpara",
         items: [
-          { text: "Claim and optimize your Google Business Profile — Add photos, hours, services, and ask happy customers for reviews." },
-          { text: "Use location keywords on your website — \"Interior designer in Pune\" or \"AC repair service in Bangalore.\"" },
-          { text: "Get listed in local directories — JustDial, Sulekha, industry-specific platforms." }
+          {
+            bold: "Claim and optimize your Google Business Profile —",
+            text: "Add photos, hours, services, and ask happy customers for reviews."
+          },
+          {
+            bold: "Use location keywords on your website —",
+            text: "Interior designer in Pune or AC repair service in Bangalore."
+          },
+
+           {
+            bold: "Get listed in local directories —",
+            text: "JustDial, Sulekha, industry-specific platforms."
+          },
+
+           {
+            bold: "What objections or doubts —",
+            text: "they have before buying"
+          },
+         
         ]
       },
+     
 
 
       {
@@ -402,13 +633,10 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "Many SMEs waste money on ads by making avoidable mistakes. To see what those are and how to fix them, check out our breakdown of {{link:7 Common Mistakes Businesses Make in Paid Ads Campaigns. | common-paid-ads-mistakes-solutions}}"
+        text: "Many SMEs waste money on ads by making avoidable mistakes. To see what those are and how to fix them, check out our breakdown of {{link:7 Common Mistakes Businesses Make in Paid Ads Campaigns|common-paid-ads-mistakes-solutions}}"
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+     
 
       {
         type: "heading",
@@ -423,32 +651,58 @@ export const blogs = [
         type: "subHeading",
         text: "3 Metrics Every SME Owner Should Track Weekly"
       },
-      {
-        type: "list",
+
+       {
+        type: "boldListpara",
         items: [
-          { text: "Website Traffic — How many people visited your site? (Use Google Analytics — it's free.)" },
-          { text: "Lead/Inquiry Count — How many people contacted you via form, WhatsApp, or phone?" },
-          { text: "Cost Per Lead (if running ads) — Total ad spend ÷ number of leads received." }
+          {
+            bold: "1.	Website Traffic — ",
+            text: "How many people visited your site? (Use Google Analytics — it's free.)"
+          },
+          {
+            bold: "2.	Lead/Inquiry Count — ",
+            text: "How many people contacted you via form, WhatsApp, or phone?"
+          },
+
+           {
+            bold: "3.	Cost Per Lead (if running ads) —  ",
+            text: "Total ad spend ÷ number of leads received."
+          },
+
+          
+         
         ]
       },
+     
+
+
       {
         type: "paragraph",
         text: "Set up a simple spreadsheet and log these numbers every Monday. After 4–6 weeks, you'll see patterns. Double down on what's working, cut what's not."
       },
       {
         type: "paragraph",
-        text: "If a tactic isn't delivering results after 60 days of consistent effort, pivot. Digital marketing rewards those who test, learn, and adapt. To understand how to use data without a big team, explore our guide on {{link:Data-Driven Marketing for Small Brands. | data-driven-marketing-analytics-small-brands}}"
+        text: "If a tactic isn't delivering results after 60 days of consistent effort, pivot. Digital marketing rewards those who test, learn, and adapt. To understand how to use data without a big team, explore our guide on {{link:Data-Driven Marketing for Small Brands|data-driven-marketing-analytics-small-brands}}"
       },
+
+
+
+
+{
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog1-3.jpg",
+        alt: "Website traffic growth example using budget digital marketing tactics",
+        alt: "Website traffic growth example using budget digital marketing tactics",
+      },
+
+
       {
         type: "image",
         src: "ADD_IMAGE_HERE",
         alt: "Website traffic growth example using budget digital marketing tactics"
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+      
 
       {
         type: "heading",
@@ -463,10 +717,20 @@ export const blogs = [
         text: "Here's how a 360° strategy would work:"
       },
 
-      {
-        type: "subHeading",
-        text: "Month 1–2:"
+
+        {
+        type: "boldListpara",
+        items: [
+          {
+            bold: "Month 1–2:",
+            text: ""
+          },
+        ]
       },
+
+    
+
+
       {
         type: "list",
         items: [
@@ -476,23 +740,37 @@ export const blogs = [
         ]
       },
 
-      {
-        type: "subHeading",
-        text: "Month 3–4:"
+       {
+        type: "boldListpara",
+        items: [
+          {
+            bold: "Month 2–3:",
+            text: ""
+          },
+        ]
       },
+
+      
       {
         type: "list",
         items: [
-          { text: "Start a small Google Ads campaign targeting \"home cleaning service Hyderabad\" (₹12,000/month budget)." },
-          { text: "Write 2 blog posts: \"How Often Should You Deep Clean Your Home?\" and \"Hiring a Cleaning Service: What to Look For.\"" },
+          { text: "Start a small Google Ads campaign targeting home cleaning service Hyderabad (₹12,000/month budget)." },
+          { text: "Write 2 blog posts: How Often Should You Deep Clean Your Home? and Hiring a Cleaning Service: What to Look For." },
           { text: "These posts rank for long-tail keywords and bring organic traffic." }
         ]
       },
 
-      {
-        type: "subHeading",
-        text: "Month 5–6:"
+       {
+        type: "boldListpara",
+        items: [
+          {
+            bold: "Month 5–6:",
+            text: ""
+          },
+        ]
       },
+
+      
       {
         type: "list",
         items: [
@@ -515,10 +793,7 @@ export const blogs = [
         type: "paragraph",
         text: "Building a 360° digital marketing strategy doesn't require a big agency budget or a full-time marketing team. What it requires is clarity, consistency, and a willingness to test and learn."
       },
-      {
-        type: "paragraph",
-        text: "Start with these five steps:"
-      },
+     
 
       {
         type: "list",
@@ -538,46 +813,43 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "Ready to build your 360° strategy with expert support? Swastixa Digital helps Indian SMEs create and execute complete digital marketing plans tailored to their business goals and budgets. When you're ready to take the next step, learn {{link:how to choose the right digital marketing partner | choose-right-digital-marketing-partner}} or explore {{link:Swastixa's full-stack approach |swastixa-full-stack-digital-marketing-approach}} to see how one team can handle strategy, content, ads, and production together. Let's talk about how we can accelerate your growth. [Add link to Contact page]"
+        text: "Ready to build your 360° strategy with expert support? Swastixa Digital helps Indian SMEs create and execute complete digital marketing plans tailored to their business goals and budgets. When you're ready to take the next step, learnhow to choose the right digital marketing partner choose-right-digital-marketing-partner or explore Swastixa's full-stack approachswastixa-full-stack-digital-marketing-approach}} to see how one team can handle strategy, content, ads, and production together. Let's talk about how we can accelerate your growth. [Add link to Contact page]"
       },
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+     
 
       {
         type: "paragraph",
         text: "You May Also Like:"
       },
 
+      // {
+      //   type: "boldListpara",
+      //   items: [
+      //     {
+      //       bold: "•",
+      //       text: "Social Media Management Playbook for Local Businesses in India (2025 Edition)"
+      //     },
+      //     {
+      //       bold: "•",
+      //       text: "On-Page SEO Basics Every Business Owner Should Understand Before Hiring an Agency"
+      //     },
+      //     {
+      //       bold: "•",
+      //       text: "How to Choose the Right Digital Marketing Partner: Checklist and Red Flags for Businesses"
+      //     }
+      //   ]
+      // }
+
+      
       {
-        type: "boldListpara",
+        type: "linkList",
+        variant: "unordered",
         items: [
-          {
-            bold: "•",
-            text: "Social Media Management Playbook for Local Businesses in India (2025 Edition)"
-          },
-          {
-            bold: "•",
-            text: "On-Page SEO Basics Every Business Owner Should Understand Before Hiring an Agency"
-          },
-          {
-            bold: "•",
-            text: "How to Choose the Right Digital Marketing Partner: Checklist and Red Flags for Businesses"
-          }
+          " {{link:Social Media Management Playbook for Local Businesses in India (2025 Edition))|social-media-management-playbook-local-businesses}}",
+          " {{link:On-Page SEO Basics Every Business Owner Should Understand Before Hiring an Agency|on-page-seo-basics-business-owners}}",
+          " {{link:How to Choose the Right Digital Marketing Partner: Checklist and Red Flags for Businesses|choose-right-digital-marketing-partner}}",
         ]
-      }
-
-
-
-
-
-
-
-
-
-
-
+      },
 
 
 
@@ -616,6 +888,15 @@ export const blogs = [
 
   },
 
+ 
+
+
+
+
+
+
+
+
 
 
 
@@ -627,7 +908,7 @@ export const blogs = [
       description:
         "Complete step-by-step guide for traditional businesses to transition from offline to online. Practical digital transformation strategies for Indian SMEs.",
       image:
-        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Digital%20Transformation.png",
+        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-2.jpg",
     },
 
     content: [
@@ -761,6 +1042,7 @@ export const blogs = [
           },
         ]
       },
+
       {
         type: "paragraph",
         text:
@@ -769,12 +1051,12 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog2-1.jpg",
         // text: ""
         alt: "Digital footprint audit checklist for traditional businesses going online"
       },
 
-      // ---------------------------------------------------
+      
 
       {
         type: "heading",
@@ -810,7 +1092,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "Your first website doesn't need to be fancy. A simple 3–5 page site with clear information, fast loading speed, and mobile optimization is enough. For a detailed breakdown of what makes a website convert visitors into customers, read our guide on {{link:what high-converting websites look like for service businesses|high-converting-website-design-service-businesses}}."
+        text: "Your first website doesn't need to be fancy. A simple 3–5 page site with clear information, fast loading speed, and mobile optimization is enough. For a detailed breakdown of what makes a website convert visitors into customers, read our guide on {{link:what high-converting websites look like for service businesses|high-converting-website-service-businesses}}."
       },
       {
         type: "subHeading",
@@ -855,14 +1137,16 @@ export const blogs = [
         type: "paragraph",
         text: "This takes 2–3 hours to set up and can start bringing leads within days. For more on local visibility, check out our complete {{link:Local SEO guide for service providers|local-seo-service-providers-guide }}."
       },
+
       {
         type: "heading",
-        text: "Choose Your Primary Social Media Platform (Start With One)"
+        text: "Step 3  Choose Your Primary Social Media Platform (Start With One)"
       },
       {
         type: "paragraph",
         text: "Social media feels overwhelming because there are too many platforms. The key is to start with one platform where your customers actually spend time. "
       },
+
       {
         type: "subHeading",
         text: "Platform Selection Guide "
@@ -883,10 +1167,7 @@ export const blogs = [
             bold: "LinkedIn — ",
             text: "Essential for B2B, professional services, corporate clients "
           },
-          {
-            bold: "Email Marketing:",
-            text: " Builds long-term relationships."
-          },
+         
           {
             bold: "YouTube—",
             text: "Powerful if you can create how-to videos or demonstrate your expertise"
@@ -911,7 +1192,7 @@ export const blogs = [
 
       {
         type: "heading",
-        text: "Create Simple, Helpful Content That Builds Trust"
+        text: " Step 4 Create Simple, Helpful Content That Builds Trust"
       },
       {
         type: "paragraph",
@@ -961,7 +1242,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog2-2.jpg",
         // text: "Using data and analytics, companies can improve {{link:conversion rates|/blog/conversion-rate}} effectively."
       },
 
@@ -1135,7 +1416,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "Retargeting works especially well for high-consideration purchases such as home services, B2B services, coaching, and high-ticket products. Learn how to {{link:turn lost visitors into paying customers with retargeting ads|retargeting-ads-for-small-businesses}}."
+        text: "Retargeting works especially well for high-consideration purchases such as home services, B2B services, coaching, and high-ticket products. Learn how to {{link:turn lost visitors into paying customers with retargeting ads|retargeting-ads-guide-convert-visitors}}."
       },
 
       {
@@ -1184,7 +1465,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog2-3.jpg",
         // text: "Using data and analytics, companies can improve {{link:conversion rates|/blog/conversion-rate}} effectively."
       },
 
@@ -1427,15 +1708,26 @@ export const blogs = [
     ]
   },
 
+  
+
+
+
+
+
+
+
+
+
+
   {
     id: 3,
     slug: "social-media-management-playbook-local-businesses",
     hero: {
-      metaTitle: "Social Media Management for Local Businesses | Swastixa",
+      metaTitle: "Social Media Management for Local Businesses | Swastixa.",
       description:
         "Complete 2025 social media playbook for Indian local businesses. Learn platform selection, content planning, posting schedule, and growth tactics that work.",
       image:
-        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Digital%20Transformation.png",
+        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-3.jpg",
     },
 
     content: [
@@ -1474,28 +1766,28 @@ export const blogs = [
       {
         type: "paragraph",
         text:
-          "Social media isn't just for influencers and big brands. For local businesses, it's one of the most powerful tools you have because:"
+          "Social media isn't just for influencers and big brands. For local businesses, it's one of the most powerful tools you have because"
       },
 
 
       {
         type: "paragraphbold",
-        text: "\n **It builds trust before the first transaction.** When a potential customer discovers you through a referral or Google search, the first thing they do is check your Instagram or Facebook. An active, professional profile tells them you're legitimate and current."
+        text: "\n **It builds trust before the first transaction ** When a potential customer discovers you through a referral or Google search, the first thing they do is check your Instagram or Facebook. An active, professional profile tells them you're legitimate and current."
       },
 
       {
         type: "paragraphbold",
-        text: "\n **It keeps you top-of-mind.**Most people won't buy the first time they see you. But when they see your posts regularly — helpful tips, customer success stories, behind-the-scenes content — you stay in their mind. When they're ready to buy, they think of you first."
+        text: "\n **It keeps you top-of-mind **Most people won't buy the first time they see you. But when they see your posts regularly — helpful tips, customer success stories, behind-the-scenes content — you stay in their mind. When they're ready to buy, they think of you first."
       },
 
       {
         type: "paragraphbold",
-        text: "\n **It's free advertising (if you do it right). **Unlike paid ads, organic social media costs nothing but time. A single viral post or shared customer testimonial can bring in more leads than a ₹10,000 ad campaign."
+        text: "\n **It's free advertising (if you do it right)  **Unlike paid ads, organic social media costs nothing but time. A single viral post or shared customer testimonial can bring in more leads than a ₹10,000 ad campaign."
       },
 
       {
         type: "paragraphbold",
-        text: "\n **It humanizes your brand. ** People buy from people, not logos. Social media lets customers see your team, your values, and your personality. This emotional connection converts better than any sales pitch."
+        text: "\n **It humanizes your brand  ** People buy from people, not logos. Social media lets customers see your team, your values, and your personality. This emotional connection converts better than any sales pitch."
       },
 
       {
@@ -1513,7 +1805,7 @@ export const blogs = [
 
       {
         type: "paragraphbold",
-        text: " Instead, pick \n **one primary platform ** where your customers actually spend time, and \n **secondary platform  ** for backup."
+        text: " \n **one primary platform  ** where your customers actually spend time, and secondary platform  for backup."
       },
 
       {
@@ -1614,13 +1906,27 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "Start with one platform. Post consistently for 90 days. Once you have a rhythm, expand to a second platform. For more on choosing content formats across platforms, read our guide on  {{link: which format works best for your brand story.| video-reels-carousels-best-format-brand}}."
+        text: "Start with one platform. Post consistently for 90 days. Once you have a rhythm, expand to a second platform. For more on choosing content formats across platforms, read our guide on  "
       },
 
-      {
-        image:
-          "https://swastixa.b-cdn.net/BLOG%20-%20-%20Digital%20Marketing.png",
+       {
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog3-1.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
+
+
+
+ {
+        type: "heading",
+        text: "Step 2 – Set Up Your Profile for Maximum Conversions"
+      },
+
+
+      // {
+      //   image:
+      //     "https://swastixa.b-cdn.net/BLOG%20-%20-%20Digital%20Marketing.png",
+      // },
 
       {
         type: "paragraph",
@@ -1815,12 +2121,12 @@ export const blogs = [
         type: "linkList",
         variant: "unordered",
         items: [
-          "For a step-by-step system to plan a full month of content in advance, check out our guide on  {{link: content calendar planning. | content-calendar-plan-30-days-posts}}"
+          "For a step-by-step system to plan a full month of content in advance, check out our guide on  {{link: content calendar planning|content-calendar-plan-30-days-posts}}"
         ]
       },
       {
         type: "imageRightText",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog3-2.jpg",
         text: "Using data and analytics, companies can improve {{link:conversion rates|/blog/conversion-rate}} effectively."
       },
 
@@ -1959,8 +2265,8 @@ export const blogs = [
         type: "list",
         variant: "unordered",
         items: [
-          ' Bad: "We are happy to announce our new service..."',
-          ' Good: "Most people make this expensive mistake when hiring a plumber."',
+          ' Bad : "We are happy to announce our new service..."',
+          ' Good : "Most people make this expensive mistake when hiring a plumber."',
         ]
       },
 
@@ -2164,13 +2470,13 @@ export const blogs = [
       },
 
       {
-        type: "paragraphbold",
-        text: "The businesses that grow fastest on social media aren't the ones that post the most — they're the ones that  \n **engage the most**"
+        type: "paragraph",
+        text: "The businesses that grow fastest on social media aren't the ones that post the most — they're the ones that the most"
       },
 
       {
         type: "imageRightText",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog3-3.jpg",
         text: "Using data and analytics, companies can improve {{link:conversion rates|/blog/conversion-rate}} effectively."
       },
 
@@ -2256,7 +2562,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "For more advanced lead generation tactics, explore our guide on  {{link:Online retargeting|retargeting-ads-guide-convert-visitors}} is the key to trust and visibility."
+        text: "For more advanced lead generation tactics, explore our guide {{link:on retargeting ads to turn lost visitors into customers|retargeting-ads-guide-convert-visitors}} is the key to trust and visibility."
       },
 
 
@@ -2358,7 +2664,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "For businesses ready to go deeper into analytics, check out our guide on {{link:Online driven|marketing-analytics-small-brands}}"
+        text: "For businesses ready to go deeper into analytics, check out our guide on {{link:data-driven marketing for small brands|data-driven-marketing-analytics-small-brands}}"
       },
 
       {
@@ -2622,92 +2928,6 @@ export const blogs = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     ],
 
     faq: [
@@ -2741,6 +2961,14 @@ export const blogs = [
   },
 
 
+
+
+
+
+
+
+
+
   {
     id: 4,
     slug: "on-page-seo-basics-business-owners",
@@ -2749,7 +2977,7 @@ export const blogs = [
       description:
         "Learn essential on-page SEO basics every business owner should know before hiring an agency. Understand what matters, avoid getting fooled, and ask the right questions.",
       image:
-        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20On-Page%20SEO.png",
+        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-4.jpg",
     },
 
     content: [
@@ -2876,7 +3104,7 @@ export const blogs = [
       },
 
       {
-        type: "subSubHeading",
+        type: "subHeading",
         text: "The 8 On-Page SEO Elements You Must Understand"
       },
 
@@ -3032,10 +3260,57 @@ export const blogs = [
         text: " \n **H3: ** Subsections under H2s (support the section topic)"
       },
 
+      
+// {
+//         type: "paragraphbold",
+//         text: " \n **Example structure for AC Repair Bangalore page: **"
+//       },
+
+         {
+        type: "paragraph",
+        text: "Example structure for AC Repair Bangalore page:"
+      },
+
       {
         type: "paragraphbold",
-        text: " \n **Example structure for AC Repair Bangalore page: **"
+        text: " \n **H1:  ** 'AC Repair Services in Bangalore – Same Day Service."
       },
+
+      {
+        type: "paragraphbold",
+        text: " \n **H2: ** 'Why Choose Our AC Repair Services"
+      },
+
+      {
+        type: "paragraphbold",
+        text: " \n **H3: ** : 24/7 Emergency Service"
+      },
+
+      {
+        type: "paragraphbold",
+        text: " \n **H3: ** Certified Technicians"
+      },
+
+      {
+        type: "paragraphbold",
+        text: " \n **H2: ** : Common AC Problems We Fix"
+      },
+
+      {
+        type: "paragraphbold",
+        text: " \n **H3: ** AC Not Cooling"
+      },
+
+      {
+        type: "paragraphbold",
+        text: " \n **H3: **Strange Noises"
+      },
+
+      {
+        type: "paragraphbold",
+        text: " \n **H2: **Service Areas in Bangalore"
+      },
+
 
       {
         type: "paragraphbold",
@@ -3044,7 +3319,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog4-1.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -3315,7 +3590,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog4-2.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -3392,7 +3667,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "For a complete framework on evaluating agencies, read our guide on  {{link:choosing the right digital marketing partner|choose-right-digital-marketing-partner}} is the key to trust and visibility."
+        text: "For a complete framework on evaluating agencies, read our guide on  {{link:choosing the right digital marketing partner|choose-right-digital-marketing-partner}}"
       },
 
       {
@@ -3493,149 +3768,6 @@ export const blogs = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     ],
 
     faq: [
@@ -3671,13 +3803,20 @@ export const blogs = [
 
 
 
+
+
+
+
+
+
+
   {
     id: 5,
     slug: "high-converting-website-service-businesses",
     hero: {
       metaTitle: "High-Converting Website Design for Service Businesses | Swastixa",
       description: "Learn what makes a website actually convert visitors into customers for Indian service businesses. Real examples, must-have elements, and conversion psychology.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20High-Converting.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-5.jpg",
     },
 
 
@@ -3768,7 +3907,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "What \"conversion\" means: The percentage of visitors who take your desired action—filling a form, calling, messaging on WhatsApp, booking a consultation."
+        text: "\**What What conversion means:  **\"conversion\" means: The percentage of visitors who take your desired action—filling a form, calling, messaging on WhatsApp, booking a consultation."
       },
 
       {
@@ -3848,27 +3987,36 @@ export const blogs = [
         ]
       },
 
-      {
-        type: "paragraph",
-        text: "Bad homepage headline: \"Welcome to ABC Services\""
-      },
-      {
-        type: "paragraph",
-        text: "Good headline: \"Professional Home Cleaning in Mumbai – Trusted by 500+ Families\""
-      },
-      {
-        type: "paragraph",
-        text: "Bad subheadline: \"We provide quality services\""
-      },
-      {
-        type: "paragraph",
-        text: "Good subheadline: \"Same-day booking, eco-friendly products, 100% satisfaction guarantee\""
-      },
 
       {
-        type: "paragraph",
-        text: "Place this prominently with a clear call-to-action button immediately below. No mystery, no creativity for the sake of creativity—just clarity."
+        type: "boldList",
+        items: [
+          {
+            bold: "Bad homepage headline: :  ",
+            text: "Welcome to ABC Services"
+          },
+          {
+            bold: "Good headline",
+            text: "Professional Home Cleaning in Mumbai – Trusted by 500+ Families"
+          },
+          {
+            bold: "Bad subheadline",
+            text: "We provide quality services"
+          },
+          {
+            bold: "Good subheadline",
+            text: "Same-day booking, eco-friendly products, 100% satisfaction guarantee"
+          },
+
+          {
+            bold: "",
+            text: "Place this prominently with a clear call-to-action button immediately below. No mystery, no creativity for the sake of creativity—just clarity."
+          },
+         
+        ]
       },
+
+
 
 
       {
@@ -3905,7 +4053,7 @@ export const blogs = [
       },
       {
         type: "imageRightText",
-        image: "ADD_IMAGE_HERE",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog5-1.jpg",
         alt: "Mobile website design comparison showing poor versus high-converting service business layout"
       },
 
@@ -3936,16 +4084,35 @@ export const blogs = [
         type: "paragraph",
         text: "CTA examples by business type:"
       },
-      {
-        type: "list",
-        variant: "unordered",
+
+          {
+        type: "boldList",
         items: [
-          "Home services: \"Book Free Inspection\" / \"Get Instant Quote\"",
-          "Professional services: \"Schedule Free Consultation\" / \"Discuss Your Project\"",
-          "Healthcare: \"Book Appointment\" / \"Talk to Our Team\"",
-          "B2B services: \"Request Demo\" / \"Get Custom Quote\""
+          {
+            bold: "Home services :",
+            text: "Book Free Inspection  Get Instant Quote"
+          },
+          {
+            bold: "Professional services: Good headline :",
+            text: "Professional Home Cleaning in Mumbai – Trusted by 500+ Families"
+          },
+          {
+            bold: "Healthcare: ",
+            text: "Book Appointment  Talk to Our Team"
+          },
+          {
+            bold: "B2B services: ",
+            text: "Request Demo  Get Custom Quote"
+          },
+
+         
+         
         ]
       },
+
+
+
+
       {
         type: "paragraph",
         text: "Make CTAs action-oriented and specific, not generic \"Contact Us\" buttons."
@@ -3955,21 +4122,41 @@ export const blogs = [
         type: "subSubHeading",
         text: "4. Multiple Contact Options (Not Just Forms)"
       },
+
       {
         type: "paragraph",
         text: "Different people prefer different contact methods. Offer all of them:"
       },
-      {
-        type: "list",
-        variant: "unordered",
+
+        {
+        type: "boldList",
         items: [
-          "Click-to-call phone number (works on mobile)",
-          "WhatsApp button (Indians love WhatsApp)",
-          "Simple contact form (name + phone + service needed)",
-          "Email address (for some users)",
-          "Office address with map (builds trust)"
+          {
+            bold: "Click-to-call phone number ",
+            text: "(works on mobile)"
+          },
+          {
+            bold: "WhatsApp button ",
+            text: "(Indians love WhatsApp)"
+          },
+          {
+            bold: "Simple contact form Healthcare: ",
+            text: "(name + phone + service needed)"
+          },
+          {
+            bold: "Email address ",
+            text: "(for some users)"
+          },
+           {
+            bold: "Office address with map ",
+            text: "(builds trust)"
+          },
+
+         
         ]
       },
+
+
       {
         type: "paragraph",
         text: "Place contact information in the header AND footer of every page. Make it impossible to miss."
@@ -4006,7 +4193,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "Place these strategically throughout your site, not buried on an \"About\" page nobody visits. For deeper insights on trust-building through design, check our post on {{link:how design builds trust and conversions|how-design-builds-trust-conversions}}."
+        text: "Place these strategically throughout your site, not buried on an \"About\" page nobody visits. For deeper insights on trust-building through design, check our post on {{link:how design builds trust and conversions|graphic-design-builds-trust-conversions}}."
       },
 
       {
@@ -4021,20 +4208,48 @@ export const blogs = [
         type: "paragraph",
         text: "Structure every service page like this:"
       },
-      {
-        type: "list",
-        variant: "unordered",
+
+       {
+        type: "boldList",
         items: [
-          "Section 1: The Problem – What pain point does this service solve?",
-          "Section 2: The Solution – How your service solves it specifically",
-          "Section 3: How It Works – Your process in 3-5 simple steps",
-          "Section 4: Why Choose Us – What makes you different/better",
-          "Section 5: Results/Proof – Case study, testimonial, or before/after",
-          "Section 6: Pricing/Packages – Give clear pricing or starting prices",
-          "Section 7: FAQ – Answer top 3-5 objections",
-          "Section 8: Strong CTA – Clear next step to take action"
+          {
+            bold: "Section 1: The Problem – ",
+            text: "What pain point does this service solve?"
+          },
+          {
+            bold: "Section 2: The Solution – ",
+            text: "How your service solves it specifically"
+          },
+          {
+            bold: "Section 3: How It Works – ",
+            text: "Your process in 3-5 simple steps"
+          },
+          {
+            bold: "Section 4: Why Choose Us – ",
+            text: "What makes you different/better"
+          },
+           {
+            bold: "Section 5: Results/Proof – ",
+            text: "Case study, testimonial, or before/after"
+          },
+          {
+            bold: "Section 6: Pricing/Packages – ",
+            text: "– Give clear pricing or starting prices"
+          },
+          {
+            bold: "Section 7: FAQ – ",
+            text: "Answer top 3-5 objections"
+          },
+          {
+            bold: "Section 8: Strong CTA ",
+            text: "Clear next step to take action"
+          },
+                  
         ]
       },
+
+
+
       {
         type: "paragraph",
         text: "Each section should be 100-200 words maximum. Use bullet points, headers, and whitespace for scannability."
@@ -4048,10 +4263,12 @@ export const blogs = [
         type: "paragraph",
         text: "Every second of delay reduces conversions by 7%. If your site takes 6 seconds to load, you're losing 40%+ of potential leads before they even see your content."
       },
+
       {
         type: "paragraph",
         text: "Target speed metrics:"
       },
+
       {
         type: "list",
         variant: "unordered",
@@ -4061,6 +4278,7 @@ export const blogs = [
           "First Contentful Paint under 1.5 seconds"
         ]
       },
+
       {
         type: "paragraph",
         text: "How to achieve this:"
@@ -4076,6 +4294,7 @@ export const blogs = [
           "Use a CDN for faster global delivery"
         ]
       },
+
       {
         type: "paragraph",
         text: "Test your speed at Google PageSpeed Insights. Anything below 80/100 needs work."
@@ -4085,6 +4304,7 @@ export const blogs = [
         type: "subSubHeading",
         text: "8.Clear Service Area Information"
       },
+
       {
         type: "paragraph",
         text: "For location-based services, visitors need to know immediately if you serve their area."
@@ -4102,6 +4322,7 @@ export const blogs = [
           "Service area map if covering multiple locations"
         ]
       },
+
       {
         type: "paragraph",
         text: "Example:"
@@ -4114,9 +4335,13 @@ export const blogs = [
         type: "paragraph",
         text: "This prevents wasted inquiries from people outside your service area and builds local relevance for SEO."
       },
+
+     
+
+
       {
         type: "imageRightText",
-        image: "ADD_IMAGE_HERE",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog5-2.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -4216,11 +4441,11 @@ export const blogs = [
         text: "Real Example: Before and After Conversion Optimization"
       },
       {
-        type: "paragraphbold",
+        type: "paragraph",
         text: "Client: Chennai-based home renovation service"
       },
       {
-        type: "paragraphbold",
+        type: "paragraph",
         text: "Before optimization (Conversion rate: 0.8%)"
       },
       {
@@ -4237,7 +4462,7 @@ export const blogs = [
         ]
       },
       {
-        type: "paragraphbold",
+        type: "paragraph",
         text: "After optimization (Conversion rate: 4.3%)"
       },
       {
@@ -4267,7 +4492,7 @@ export const blogs = [
         text: "Spend 15 minutes testing your site:"
       },
       {
-        type: "paragraphbold",
+        type: "paragraph",
         text: "Mobile test: Open your site on your phone. Can you:"
       },
       {
@@ -4281,7 +4506,7 @@ export const blogs = [
         ]
       },
       {
-        type: "paragraphbold",
+        type: "paragraph",
         text: "5-second test: Show your homepage to someone unfamiliar with your business for 5 seconds, then ask:"
       },
       {
@@ -4302,7 +4527,7 @@ export const blogs = [
         text: "Speed test: Visit Google PageSpeed Insights. Score below 80? Speed optimization needed."
       },
       {
-        type: "paragraphbold",
+        type: "paragraph",
         text: "Trust test: Count trust signals on your homepage:"
       },
       {
@@ -4372,8 +4597,6 @@ export const blogs = [
 
 
 
-
-
       {
         type: "paragraph",
         text: "Your website isn't a brochure. It's your 24/7 salesperson. Make sure it's actually selling."
@@ -4382,7 +4605,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "Ready to transform your website from pretty but useless to strategically high-converting? Swastixa Digital specializes in conversion-focused website design for Indian service businesses. Let's audit your site and build something that actually generates leads. {{link:Contact Us|contact}}"
+        text: "Ready to transform your website from pretty but useless to strategically high-converting? Swastixa Digital specializes in conversion-focused website design for Indian service businesses. Let's audit your site and build something that actually generates leads. Contact Us contact"
       },
 
 
@@ -4407,9 +4630,9 @@ export const blogs = [
       {
         type: "linkList",
         items: [
-          "{{link:10 Website Design Mistakes That Are Silently Killing Your Leads|website-design-mistakes-that-kill-leads}}",
-          "{{link:How Good Graphic Design Builds Trust and Conversions in the First 5 Seconds|how-design-builds-trust-conversions}}",
-          "{{link:From Offline to Online: Step-by-Step Digital Transformation Roadmap for Traditional Businesses|digital-transformation-roadmap-traditional-businesses}}"
+          "{{link:10 Website Design Mistakes That Are Silently Killing Your Leads|offline-to-online-digital-transformation-roadmap}}",
+          "{{link:How Good Graphic Design Builds Trust and Conversions in the First 5 Seconds|graphic-design-builds-trust-conversions}}",
+          "{{link:From Offline to Online: Step-by-Step Digital Transformation Roadmap for Traditional Businesses|offline-to-online-digital-transformation-roadmap}}"
         ]
       },
 
@@ -4444,6 +4667,16 @@ export const blogs = [
     ],
 
   },
+ 
+
+
+
+
+
+
+
+
+
 
 
   {
@@ -4451,8 +4684,8 @@ export const blogs = [
     slug: "seo-vs-sco-what-business-needs",
     hero: {
       metaTitle: "SEO vs SCO: What Your Business Needs in 2025 | Swastixa Digital",
-      description: ": Understand the difference between SEO and SCO (Search Content Optimization) and discover which approach delivers better results for your business in 2025.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20SEO%20vs%20SCO.png",
+      description: " Understand the difference between SEO and SCO (Search Content Optimization) and discover which approach delivers better results for your business in 2025.",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-6.jpg",
     },
     content: [
 
@@ -4559,7 +4792,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "What broke in traditional SEO:"
+        text: "**\n What broke in traditional SEO:**"
       },
       {
         type: "boldListpara",
@@ -4585,7 +4818,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "Google's message became clear: create content that genuinely helps searchers, or don't rank at all."
+        text: "Google's message became clear:**n\ create content that genuinely helps searchers, or don't rank at all.**"
       },
 
 
@@ -4610,19 +4843,103 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "SCO focuses on:"
+        text: "**\ SCO focuses on:**"
       },
+
+      {
+        type: "boldListpara",
+        items: [
+          {
+            bold: "User intent understanding – ",
+            text: "What is the searcher actually trying to accomplish?"
+          },
+          {
+            bold: "Content depth and quality – ",
+            text: "Answering the question completely, not just surface-level"
+          },
+           {
+            bold: "Topical authority – ",
+            text: "Building expertise around subjects, not just individual keywords"
+          },
+           {
+            bold: "Engagement signals – ",
+            text: "– Creating content people actually read, share, and find valuable"
+          },
+           {
+            bold: "Structured content for AI – ",
+            text: "Formatting content so Google's AI can understand and feature it"
+          },
+          
+
+        ]
+      },
+
+      //  {
+      //   type: "boldListpara",
+      //   items: [
+      //     {
+      //       bold: "User intent understanding – ",
+      //       text: "What is the searcher actually trying to accomplish?"
+      //     },
+          
+      //   ]
+      // },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // {
+      //   type: "list",
+      //   variant: "unordered",
+      //   items: [
+      //     "User intent understanding – What is the searcher actually trying to accomplish?",
+      //     "Content depth and quality – Answering the question completely, not just surface-level",
+      //     "Topical authority – Building expertise around subjects, not just individual keywords",
+      //     "Engagement signals – Creating content people actually read, share, and find valuable",
+      //     "Structured content for AI – Formatting content so Google's AI can understand and feature it"
+      //   ]
+      // },
+
+       {
+        type: "boldListpara",
+        items: [
+          {
+            bold: "The SCO process:",
+            text: ""
+          },
+          
+        ]
+      },
+
       {
         type: "list",
         variant: "unordered",
         items: [
-          "User intent understanding – What is the searcher actually trying to accomplish?",
-          "Content depth and quality – Answering the question completely, not just surface-level",
-          "Topical authority – Building expertise around subjects, not just individual keywords",
-          "Engagement signals – Creating content people actually read, share, and find valuable",
-          "Structured content for AI – Formatting content so Google's AI can understand and feature it"
+          "1.	Identify searcher problems and questions (not just keywords)",
+          "2.	Research what information actually helps solve those problems",
+          "3.	Create comprehensive content that covers the topic thoroughly",
+          "4.	Structure content for both human readers and AI understanding",
+          "5.	Measure engagement and refine based on what users actually find helpful"
         ]
       },
+
 
       {
         type: "paragraph",
@@ -4646,7 +4963,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "Traditional SEO approach:"
+        text: " Traditional SEO approach:"
       },
       {
         type: "boldListpara",
@@ -4790,7 +5107,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog6-1.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
       {
@@ -5127,7 +5444,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog6-2.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -5517,7 +5834,7 @@ export const blogs = [
       description:
         "Compare Google Ads vs Meta Ads for your business. Learn which platform delivers better ROI based on your business type, budget, and goals.",
       image:
-        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Google%20Ads%20vs%20Meta%202.png",
+        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-7.jpg",
     },
 
     content: [
@@ -5614,7 +5931,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "For foundational context on how paid ads fit into complete strategy, revisit our guide on {{link:building a 360° digital marketing strategy|/digital-marketing-strategy}}."
+        text: "For foundational context on how paid ads fit into complete strategy, revisit our guide on {{link:building a 360° digital marketing strategy|digital-marketing-strategy-smes-budget}}."
       },
 
       {
@@ -5829,12 +6146,12 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "For deeper insights on avoiding common mistakes with either platform, read our post on {{link:paid ads mistakes businesses make|/paid-ads-mistakes}}."
+        text: "For deeper insights on avoiding common mistakes with either platform, read our post on {{link:paid ads mistakes businesses make|common-paid-ads-mistakes-solutions}}."
       },
 
       {
         type: "imageRightText",
-        image: "/images/google-vs-meta-decision-matrix.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog7.jpg",
         alt: "Google Ads vs Meta Ads decision matrix by business type and customer journey stage"
       },
 
@@ -6076,7 +6393,8 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "For a comprehensive breakdown, check our post on {{link:7 common paid ads mistakes|/paid-ads-mistakes}}."
+        text: "For a comprehensive breakdown, check our post on 7 common paid ads mistakes."
+        // text: "For a comprehensive breakdown, check our post on {{link:7common paid ads mistakes|paid-ads-mistakes}}."
       },
 
       {
@@ -6298,16 +6616,26 @@ export const blogs = [
         text: "You May Also Like"
       },
 
-      {
+      // {
+      //   type: "linkList",
+      //   items: [
+      //     "7 Common Mistakes Businesses Make in Paid Ads Campaigns (and How Swastixa Fixes Them)",
+      //     "Retargeting Ads Explained: Turning Lost Visitors Into Paying Customers",
+      //     "How Indian SMEs Can Build a 360° Digital Marketing Strategy With Limited Budget"
+      //   ]
+      // }
+
+{
         type: "linkList",
+        variant: "unordered",
         items: [
-          "7 Common Mistakes Businesses Make in Paid Ads Campaigns (and How Swastixa Fixes Them)",
-          "Retargeting Ads Explained: Turning Lost Visitors Into Paying Customers",
-          "How Indian SMEs Can Build a 360° Digital Marketing Strategy With Limited Budget"
+          " {{link:7 Common Mistakes Businesses Make in Paid Ads Campaigns (and How Swastixa Fixes Them) |common-paid-ads-mistakes-solutions}}",
+
+          " {{link:•	Retargeting Ads Explained: Turning Lost Visitors Into Paying Customers|digital-marketing-strategy-smes-budget}}",
+
+          " {{link:•	How Indian SMEs Can Build a 360° Digital Marketing Strategy With Limited Budget|digital-marketing-strategy-smes-budget}}",
         ]
-      }
-
-
+      },
     ],
     faq: [
       {
@@ -6338,6 +6666,13 @@ export const blogs = [
     ],
 
   },
+  
+
+
+
+
+
+
 
   {
     id: 8,
@@ -6347,7 +6682,7 @@ export const blogs = [
       description:
         "Complete local SEO guide for service businesses. Learn how to rank in Google Maps and local search results to get found by customers in your city.",
       image:
-        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20Local%20SEO%20Guide%20.jpeg",
+        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-8.jpg",
     },
 
     content: [
@@ -6623,7 +6958,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20Local%20SEO%20Guide%20.jpeg",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog8-1.jpg",
         alt: "Optimized Google Business Profile example showing complete sections for local SEO"
       },
 
@@ -6667,6 +7002,8 @@ export const blogs = [
           "Incentivize internally (team contests for most reviews generated)"
         ]
       },
+
+    
 
       {
         type: "subHeading",
@@ -6732,7 +7069,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "If not listed, create your profile at {{link:google.com/business|https://www.google.com/business}}."
+        text: "If not listed, create your profile at google.business"
       },
 
       {
@@ -6804,7 +7141,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20Local%20SEO%20Guide%20.jpeg",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog8-2.jpg",
         alt: "Optimized Google Business Profile example showing complete sections for local SEO"
       },
 
@@ -7509,14 +7846,17 @@ export const blogs = [
       },
 
       {
-        type: "list",
+        type: "linkList",
         variant: "unordered",
         items: [
-          "{{link:On-Page SEO Basics Every Business Owner Should Understand Before Hiring an Agency|/on-page-seo-basics}}",
-          "{{link:SEO vs SCO: What Your Business Actually Needs in 2025|/seo-vs-sco-2025}}",
-          "{{link:How Indian SMEs Can Build a 360° Digital Marketing Strategy With Limited Budget|/360-digital-marketing-strategy-india}}"
+          " {{link:On-Page SEO Basics Every Business Owner Should Understand Before Hiring an Agency|on-page-seo-basics-business-owners}}",
+
+          " {{link:SEO vs SCO: What Your Business Actually Needs in 2025|seo-vs-sco-what-business-needs}}",
+
+          " {{link:How Indian SMEs Can Build a 360° Digital Marketing Strategy With Limited Budget|digital-marketing-strategy-smes-budget}}",
         ]
-      }
+      },
+      
 
 
 
@@ -7555,13 +7895,18 @@ export const blogs = [
 
 
 
+
+
+
+
+
   {
     id: 9,
     slug: "video-reels-carousels-best-format-brand",
     hero: {
       metaTitle: "Explainer Videos vs Reels vs Carousels | Swastixa Digital",
       description: "Learn which content format—explainer videos, reels, or carousels—works best for your brand story, business type, and marketing goals.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Explainer%20Videos.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-9.jpg",
     },
     content: [
       {
@@ -7844,7 +8189,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog9-1.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -8053,7 +8398,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "For building in-house production capability, check our guide on {{link: why consistent visual content wins. |in-house-production-visual-content-social-media}}"
+        text: "For building in-house production capability, check our guide on  why consistent visual content wins. in-house-production-visual-content-social-media"
       },
 
       {
@@ -8175,7 +8520,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog9-2.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -8490,10 +8835,10 @@ export const blogs = [
         text: "Ready to build a content strategy that matches your business needs and production capacity? Swastixa Digital creates content across all formats with strategic recommendations on what will actually work for your business. Let's build your content system. [Add link to Contact page]"
       },
 
-      {
-        type: "paragraph",
-        text: "________________________________________"
-      },
+      // {
+      //   type: "paragraph",
+      //   text: ""
+      // },
 
       {
         type: "paragraph",
@@ -8506,9 +8851,11 @@ export const blogs = [
         type: "linkList",
         variant: "unordered",
         items: [
-          "{{link: Content Calendar Secrets: How to Plan 30 Days of High-Engagement Posts in 2 Hours |content-calendar-plan-30-days-posts}}",
-          '{{link: Building a Brand on Instagram and Facebook Reels: Practical Tips for Service Businesses  |brand-building-instagram-facebook-reels}}',
-          "{{link:Power of In-House Production: Why Consistent Visual Content Wins on Social Media   |in-house-production-visual-content-social-media}}"
+          "{{link:•	Content Calendar Secrets: How to Plan 30 Days of High-Engagement Posts in 2 Hours|website-design-mistakes-killing-leads}}",
+
+          '{{link:•	Building a Brand on Instagram and Facebook Reels: Practical Tips for Service Businesses|graphic-design-builds-trust-conversions}}',
+
+          "{{link:•	Power of In-House Production: Why Consistent Visual Content Wins on Social Media |offline-to-online-digital-transformation-roadmap}}"
         ]
       },
 
@@ -8544,13 +8891,17 @@ export const blogs = [
     ]
   },
 
+
+
+
+
   {
     id: 10,
     slug: "data-driven-marketing-analytics-small-brands",
     hero: {
       metaTitle: "Data-Driven Marketing for Small Brands | Swastixa Digital",
       description: "Learn simple data-driven marketing tactics for small businesses. Use analytics to improve results without needing a data team or expensive tools.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Data-Driven%20Marketing.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-10.jpg",
     },
     content: [
 
@@ -8608,10 +8959,18 @@ export const blogs = [
         type: "paragraph",
         text: "Each of these mistakes costs thousands of rupees. Data prevents them."
       },
+
       {
         type: "paragraph",
-        text: "For broader strategy context, revisit our guide on building a 360° digital marketing strategy."
+        text: "For broader strategy context, revisit our guide on building a 360° digital marketing strategy| digital-marketing-strategy-smes-budget"
       },
+
+
+
+      // {
+      //   type: "paragraph",
+      //   text: "For broader strategy context, revisit our guide on building a 360° digital marketing strategy."
+      // },
 
       {
         type: "heading",
@@ -8839,11 +9198,11 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "For deeper insights on measuring what matters, check our guide on {{link:Swastixa's success blueprint metrics. | swastixa-success-blueprint-client-growth}}"
+        text: "For deeper insights on measuring what matters, check our guide on Swastixa's success blueprint metrics| swastixa-success-blueprint-client-growth"
       },
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog10-1.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -9230,7 +9589,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog10-2.JPG",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -9504,13 +9863,15 @@ export const blogs = [
 
 
 
+
+
   {
     id: 11,
     slug: "common-paid-ads-mistakes-solutions",
     hero: {
       metaTitle: "7 Paid Ads Mistakes Businesses Make | Swastixa Digital ",
       description: "Discover the 7 most common paid advertising mistakes Indian businesses make and learn how to fix them for better ROI and lower cost per lead.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%207%20Paid%20Ads%20Mistakes.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-11.jpg",
     },
     content: [
       {
@@ -9571,7 +9932,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "You run an ad for \"AC repair service in Bangalore\" and send traffic to your homepage. That page has your logo, a generic tagline, links to five different services, a blog section, and an \"About Us\" page. The visitor has to figure out what to do next."
+        text: "You run an ad for AC repair service in Bangalore and send traffic to your homepage. That page has your logo, a generic tagline, links to five different services, a blog section, and an About Us  page. The visitor has to figure out what to do next."
       },
       {
         type: "paragraph",
@@ -9591,11 +9952,11 @@ export const blogs = [
         items: [
           {
             bold: "One clear headline",
-            text: "that matches your ad (e.g., \"Fast AC Repair in Bangalore – Same Day Service\")"
+            text: "that matches your ad (e.g., Fast AC Repair in Bangalore – Same Day Service)"
           },
           {
             bold: "One specific offer",
-            text: "(e.g., \"Book Now and Get 10% Off\")"
+            text: "(e.g., Book Now and Get 10% Off )"
           },
           {
             bold: "One call-to-action",
@@ -9621,7 +9982,7 @@ export const blogs = [
       },
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog11-1.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -9631,7 +9992,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "You're spending ₹15,000 per month on ads. Someone asks, \"How many leads did you get?\" and you answer, \"I'm not sure, maybe 8 or 10?\""
+        text: "You're spending ₹15,000 per month on ads. Someone asks, How many leads did you get? and you answer, I'm not sure, maybe 8 or 10?"
       },
       {
         type: "paragraph",
@@ -9674,7 +10035,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "Once tracking is live, you'll see exactly where your money is going. You'll know that \"AC repair Mumbai\" brings leads at ₹380 each while \"AC service Mumbai\" costs ₹890 per lead. Now you can cut waste and scale what works."
+        text: "Once tracking is live, you'll see exactly where your money is going. You'll know that AC repair Mumbai brings leads at ₹380 each while AC service Mumbai costs ₹890 per lead. Now you can cut waste and scale what works."
       },
       {
         type: "paragraph",
@@ -9780,7 +10141,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "Bad Ad Copy:"
+        text: "**\ Bad Ad Copy:\**"
       },
       {
         type: "paragraph",
@@ -9789,11 +10150,12 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "Good Ad Copy:"
+        text: "**\ Good Ad Copy:\**"
+        
       },
       {
         type: "paragraph",
-        text: "\"Tired of boring home interiors that don't reflect your style? Get a stunning 3BHK makeover in 45 days—see our completed projects here. Book a free design consultation today.\""
+        text: "Tired of boring home interiors that don't reflect your style? Get a stunning 3BHK makeover in 45 days—see our completed projects here. Book a free design consultation today."
       },
 
       {
@@ -9843,11 +10205,11 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "You don't need to reinvent the campaign. Just give people something new to engage with. At Swastixa, we maintain a content production pipeline specifically to keep client ads fresh without disrupting campaign performance. Learn more about {{link: why consistent visual content production matters |in-house-production-visual-content-social-media}} in our guide on in-house production advantages."
+        text: "You don't need to reinvent the campaign. Just give people something new to engage with. At Swastixa, we maintain a content production pipeline specifically to keep client ads fresh without disrupting campaign performance. Learn more about  why consistent visual content production matters in-house-production-visual-content-social-mediain our guide on in-house production advantages."
       },
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog11-2.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
@@ -10036,13 +10398,17 @@ export const blogs = [
     ]
   },
 
+
+
+
+
   {
     id: 12,
     slug: "website-design-mistakes-killing-leads",
     hero: {
       metaTitle: "10 Website Design Mistakes Killing Your Leads | Swastixa ",
       description: "Discover 10 critical website design mistakes that cost you leads daily. Learn how to fix them and turn your website into a lead-generating machine. ",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%2010%20Website%20Design.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-12.jpg",
     },
     content: [
       { type: "heading", text: "10 Website Design Mistakes That Are Silently Killing Your Leads" },
@@ -10095,7 +10461,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "Your website takes 6 seconds to load. You think, \"That's not too bad.\""
+        text: "Your website takes 6 seconds to load. You think, That's not too bad."
       },
       {
         type: "paragraph",
@@ -10142,13 +10508,13 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
-        alt: "High-converting service page structure showing essential sections and trust elements"
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog12-1.jpg",
+        alt: "Alt text: Website loading speed impact on conversion rates for Indian businesses"
       },
-      {
-        type: "paragraph",
-        text: "Alt text: \"Website loading speed impact on conversion rates for Indian businesses\""
-      },
+      // {
+      //   type: "paragraph",
+      //   text: "Alt text: Website loading speed impact on conversion rates for Indian businesses"
+      // },
 
       {
         type: "heading",
@@ -10394,7 +10760,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog12-2.jpg",
         alt: "High-converting service page structure showing essential sections and trust elements"
       },
       {
@@ -10501,25 +10867,25 @@ export const blogs = [
         items: [
           {
             bold: "Service pages →",
-            text: "\"Get a Free Quote\" or \"Schedule a Consultation\""
+            text: "Get a Free Quote or Schedule a Consultation"
           },
           {
             bold: "Blog posts →",
-            text: "\"Want Help With This? Contact Us\" + link to relevant service"
+            text: "Want Help With This? Contact Us + link to relevant service"
           },
           {
             bold: "About page →",
-            text: "\"See Our Work\" or \"Get in Touch\""
+            text: "See Our Work or Get in Touch"
           },
           {
             bold: "Portfolio page →",
-            text: "\"Ready to Start Your Project?\""
+            text: "Ready to Start Your Project?"
           }
         ]
       },
       {
         type: "paragraph",
-        text: "Use contrasting button colors that stand out. Make CTAs action-oriented and specific, not generic \"Learn More\" buttons."
+        text: "Use contrasting button colors that stand out. Make CTAs action-oriented and specific, not generic Learn More buttons."
       },
 
       {
@@ -10555,11 +10921,11 @@ export const blogs = [
       {
         type: "boldListpara",
         items: [
-          { bold: "•", text: "Google Analytics to track visitor behavior" },
-          { bold: "•", text: "Google Search Console to monitor search performance" },
-          { bold: "•", text: "Heatmap tools (like Hotjar) to see where people click and scroll" },
-          { bold: "•", text: "Form submission tracking to know which pages generate leads" },
-          { bold: "•", text: "Call tracking if phone calls are important for your business" }
+          { bold: "• Google Analytics to", text: " track visitor behavior" },
+          { bold: "• Google Search Console", text: " to monitor search performance" },
+          { bold: "• Heatmap tools", text: " (like Hotjar) to see where people click and scroll" },
+          { bold: "• Form submission tracking to", text: " know which pages generate leads" },
+          { bold: "• Call tracking ", text: "if phone calls are important for your business" }
         ]
       },
       {
@@ -10661,10 +11027,7 @@ export const blogs = [
         text: "If your website isn't converting visitors into leads, Swastixa Digital can audit your site, identify every conversion leak, and rebuild it into a lead-generating machine. Before you spend another rupee on ads or SEO, make sure your website is ready to convert that traffic. Let's fix what's broken. [Add link to Contact page]"
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+      
       {
         type: "paragraph",
         text: "You May Also Like:"
@@ -10708,6 +11071,15 @@ export const blogs = [
       }
     ],
   },
+
+
+
+
+
+
+
+
+
   {
     id: 13,
     slug: "content-calendar-plan-30-days-posts",
@@ -10716,7 +11088,7 @@ export const blogs = [
       description:
         " Learn how to create a 30-day content calendar in just 2 hours. Proven framework for high-engagement social media posts without daily stress.",
       image:
-        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Content%20Calendar.png",
+        "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-13.jpg",
     },
 
     content: [
@@ -10819,11 +11191,11 @@ export const blogs = [
         type: "list",
         variant: "unordered",
         items: [
-          "1.	SEO & website optimization tips",
-          "2.	Social media strategy",
-          "3.	Paid advertising insights",
-          "4.	Client success stories",
-          "5.	Industry trends and updates",
+          "SEO & website optimization tips",
+          "Social media strategy",
+          "Paid advertising insights",
+          "Client success stories",
+          "Industry trends and updates",
 
 
         ]
@@ -10896,7 +11268,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog13.1.jpg",
         text: "Using data and analytics, companies can improve {{link:conversion rates|/blog/conversion-rate}} effectively."
       },
 
@@ -11112,7 +11484,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "This is where in-house production capability becomes a competitive advantage—consistent content becomes effortless. Learn more about   {{link:why consistent visual content wins|in-house-production-visual-content-social-media}}"
+        text: "This is where in-house production capability becomes a competitive advantage—consistent content becomes effortless. Learn more aboutwhy consistent visual content wins|in-house-production-visual-content-social-media"
       },
 
       {
@@ -11142,7 +11514,7 @@ export const blogs = [
 
       {
         type: "imageRightText",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog13.2.jpg",
         text: "Using data and analytics, companies can improve {{link:conversion rates|/blog/conversion-rate}} effectively."
       },
 
@@ -11166,7 +11538,7 @@ export const blogs = [
 
       {
         type: "paragraph",
-        text: "For insights on measuring what content actually drives results, check our post on {{link:data-driven marketing for small brands|data-driven-marketing-analytics-small-brandsin-house-production-visual-content-social-media}}"
+        text: "For insights on measuring what content actually drives results, check our post on data-driven marketing for small brandsdata-driven-marketing-analytics-small-brandsin-house-production-visual-content-social-media"
       },
 
       {
@@ -11301,1163 +11673,1137 @@ export const blogs = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {
-        type: "boldList",
-        items: [
-          {
-            bold: "Regular SEO:",
-            text: "Tries to rank for broad searches like \"best interior designer\" or \"plumbing services\"."
-          },
-          {
-            bold: "Local SEO:",
-            text: "Targets location-specific searches like \"interior designer Pune\" or \"plumber near me\"."
-          }
-        ]
-      },
-
-      {
-        type: "paragraph",
-        text: "For service businesses operating in specific areas, local SEO delivers better results faster because:"
-      },
-
-      {
-        type: "unorderedBoldListdecimal",
-        items: [
-          {
-            bold: "Less competition:",
-            text: "Competing against businesses in your city, not the entire country."
-          },
-          {
-            bold: "Higher intent:",
-            text: "Someone searching locally is ready to hire, not just browsing."
-          },
-          {
-            bold: "Faster results:",
-            text: "Local SEO improvements can show results in 4–8 weeks vs 4–6 months for regular SEO."
-          },
-          {
-            bold: "Lower cost:",
-            text: "Many local SEO tactics are free or low-cost."
-          }
-        ]
-      },
-
-
-      {
-        type: "subHeading",
-        text: "The prize"
-      },
-
-
-      {
-        type: "paragraph",
-        text: "For broader strategy context, revisit our guide on {{link:building a 360° digital marketing strategy|digital-marketing-strategy-smes-budget}}."
-      },
-
-      {
-        type: "heading",
-        text: "The 3 Core Ranking Factors for Local SEO"
-      },
-
-      {
-        type: "paragraph",
-        text: "Google uses three main factors to determine local rankings:"
-      },
-
-      {
-        type: "subHeading",
-        text: "1. Relevance (How Well You Match the Search)"
-      },
-
-      {
-        type: "paragraph",
-        text: "Does your business actually offer what the searcher wants? Google determines this from your business description, categories, and website content."
-      },
-
-      {
-        type: "subHeading",
-        text: "2. Distance (How Close You Are to the Searcher)"
-      },
-
-      {
-        type: "paragraph",
-        text: "When someone searches \"plumber near me,\" Google prioritizes businesses physically closer to their location."
-      },
-
-      {
-        type: "paragraph",
-        text: "You can't change your location, but you can:"
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Clearly list your service areas",
-          "Create separate pages for each area you serve",
-          "Include location names throughout your website"
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "3. Prominence (How Well-Known and Trusted You Are)"
-      },
-
-      {
-        type: "paragraph",
-        text: "Google measures prominence through:"
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Number and quality of Google reviews",
-          "Quantity and consistency of online citations (directory listings)",
-          "Website authority and backlinks",
-          "Engagement with your Google Business Profile"
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "The winning formula"
-      },
-
-
-
-      {
-        type: "heading",
-        text: "Step 1: Optimize Your Google Business Profile (The Foundation)"
-      },
-
-      {
-        type: "paragraph",
-        text: "Your Google Business Profile (formerly Google My Business) is the single most important local SEO factor. Here's how to optimize it completely:"
-      },
-
-      {
-        type: "subHeading",
-        text: "Claim and Verify Your Profile"
-      },
-
-      {
-        type: "paragraph",
-        text: "Search your business name on Google. If you see your business already listed but marked \"Own this business?\" you need to claim it. Google will send a verification postcard to your address."
-      },
-
-      {
-        type: "paragraph",
-        text: "If not listed, create your profile at at google.com/business"
-      },
-
-      {
-        type: "subHeading",
-        text: "Complete Every Section 100%"
-      },
-
-      {
-        type: "paragraph",
-        text: "Google rewards complete profiles. Fill out:"
-      },
-
-      {
-        type: "boldList",
-        items: [
-          { bold: "Business name:", text: "Use your actual business name (don't add keywords)" },
-          { bold: "Category:", text: "Choose the most specific primary category, add 2–3 secondary categories" },
-          { bold: "Address:", text: "Exact, consistent address (matches what's on your website)" },
-          { bold: "Phone number:", text: "Local number, not toll-free (same everywhere online)" },
-          { bold: "Website URL:", text: "Link to your homepage or location-specific page" },
-          { bold: "Hours:", text: "Accurate hours including special holiday hours" },
-          { bold: "Service areas:", text: "List all cities or neighborhoods you serve" },
-          { bold: "Business description:", text: "750 characters describing what you do, include location mentions naturally" }
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "Add High-Quality Photos"
-      },
-
-      {
-        type: "paragraph",
-        text: " Profiles with photos get 42% more direction requests and 35% more clicks to websites."
-      },
-
-      {
-        type: "subHeading",
-        text: " Upload at least:"
-      },
-
-
-      {
-        type: "list",
-        variant: "Upload at least:",
-        items: [
-          "3 exterior photos",
-          "5 interior photos",
-          "10 photos of your work or products",
-          "Team photos",
-          "Logo (square format, 720×720px minimum)"
-        ]
-      },
-
-      {
-        type: "paragraph",
-        text: "Update photos monthly to signal active business management."
-      },
-
-      {
-        type: "subHeading",
-        text: "Create Regular Posts"
-      },
-
-      {
-        type: "paragraph",
-        text: "Google Business Posts appear in your profile and signal active management. Post 2–3 times weekly:"
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Service updates",
-          "Special offers",
-          "Before/after photos",
-          "Helpful tips",
-          "Event announcements"
-        ]
-      },
-
-      {
-        type: "paragraph",
-        text: "Posts expire after 7 days, so consistency matters."
-      },
-
-      {
-        type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20Local%20SEO%20Guide%20.jpeg",
-        alt: "Optimized Google Business Profile example showing complete sections for local SEO"
-      },
-
-
-
-
-      {
-        type: "heading",
-        text: "Step 2: Build and Manage Reviews (The Trust Factor)"
-      },
-
-      {
-        type: "paragraph",
-        text: "Reviews are the second most important local ranking factor and the primary decision factor for customers."
-      },
-
-      {
-        type: "subHeading",
-        text: "The Review Game Plan"
-      },
-
-      {
-        type: "unorderedBoldListdecimal",
-        items: [
-          { bold: "Target:", text: "50+ reviews with 4.5+ average rating within 6 months" }
-        ]
-      },
-
-      {
-        type: "paragraph",
-        text: "How to get there:"
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Ask every satisfied customer for a review",
-          "Make it easy with direct review link",
-          "Follow up with reminder after 3–5 days",
-          "Incentivize internally (team contests for most reviews generated)"
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "How to ask"
-      },
-      {
-        type: "paragraphbold",
-        text: "\nWe'd really appreciate if you could share your experience on Google. Here's the direct link: [your review link]"
-      },
-
-      {
-        type: "subHeading",
-        text: "Never"
-      },
-      {
-        type: "paragraphbold",
-        text: "\nOffer discounts or payments for reviews (violates Google policies)"
-      },
-
-      {
-        type: "subHeading",
-        text: "Responding to Reviews (Essential)"
-      },
-
-      {
-        type: "paragraph",
-        text: "Respond to every review—positive and negative—within 48 hours."
-      },
-      {
-        type: "subHeading",
-        text: "Positive review response"
-      },
-      {
-        type: "paragraphbold",
-        text: "\nThank you for the kind words, [Name]! We're thrilled you're happy with [specific service mentioned]. Looking forward to working with you again."
-      },
-      {
-        type: "subHeading",
-        text: "Negative review response"
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\nWe're sorry to hear about your experience, [Name]. We'd like to make this right. Please call us at [number] so we can resolve this. – [Your name]"
-      },
-
-      {
-        type: "heading",
-        text: "Step 1: Optimize Your Google Business Profile (The Foundation)"
-      },
-      {
-        type: "paragraph",
-        text: "Your Google Business Profile (formerly Google My Business) is the single most important local SEO factor. Here's how to optimize it completely:"
-      },
-
-      {
-        type: "subHeading",
-        text: "Claim and Verify Your Profile"
-      },
-      {
-        type: "paragraph",
-        text: "Search your business name on Google. If you see your business already listed but marked \"Own this business?\" you need to claim it. Google will send a verification postcard to your address."
-      },
-      {
-        type: "paragraph",
-        text: "If not listed, create your profile at {{link:google.com/business|https://www.google.com/business}}."
-      },
-
-      {
-        type: "subHeading",
-        text: "Complete Every Section 100%"
-      },
-      {
-        type: "paragraph",
-        text: "Google rewards complete profiles. Fill out:"
-      },
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Business name: Use your actual business name (don't add keywords)",
-          "Category: Choose the most specific primary category, add 2–3 secondary categories",
-          "Address: Exact, consistent address (matches your website)",
-          "Phone number: Local number, not toll-free (same everywhere online)",
-          "Website URL: Homepage or location-specific page",
-          "Hours: Accurate hours including holidays",
-          "Service areas: All cities/neighborhoods you serve",
-          "Business description: 750 characters with natural location mentions"
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "Add High-Quality Photos"
-      },
-      {
-        type: "paragraph",
-        text: "Profiles with photos get 42% more direction requests and 35% more website clicks."
-      },
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "3 exterior photos",
-          "5 interior photos",
-          "10 photos of your work or products",
-          "Team photos",
-          "Logo (square, minimum 720×720px)"
-        ]
-      },
-      {
-        type: "paragraphbold",
-        text: "\n **Pro Tip** Update photos monthly to signal active business management."
-      },
-
-      {
-        type: "subHeading",
-        text: "Create Regular Posts"
-      },
-      {
-        type: "paragraph",
-        text: "Google Business Posts signal activity. Post 2–3 times weekly:"
-      },
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Service updates",
-          "Special offers",
-          "Before/after photos",
-          "Helpful tips",
-          "Event announcements"
-        ]
-      },
-
-      {
-        type: "imageRightText",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20Local%20SEO%20Guide%20.jpeg",
-        alt: "Optimized Google Business Profile example showing complete sections for local SEO"
-      },
-
-      // STEP 2
-      {
-        type: "heading",
-        text: "Step 2: Build and Manage Reviews (The Trust Factor)"
-      },
-      {
-        type: "paragraph",
-        text: "Reviews are the second most important local ranking factor and the primary decision factor for customers."
-      },
-
-      {
-        type: "subHeading",
-        text: "The Review Game Plan"
-      },
-      {
-        type: "boldList",
-        items: [
-          { bold: "Target:", text: "50+ reviews with 4.5+ rating within 6 months" },
-          { bold: "Ask:", text: "Every satisfied customer" },
-          { bold: "Follow up:", text: "After 3–5 days" }
-        ]
-      },
-
-      {
-        type: "paragraph",
-        text: "Never offer discounts or payments for reviews. This violates Google policies."
-      },
-
-      {
-        type: "subHeading",
-        text: "Responding to Reviews (Essential)"
-      },
-      {
-        type: "paragraph",
-        text: "Respond to every review—positive or negative—within 48 hours. "
-      },
-
-      {
-        type: "subHeading",
-        text: "Positive review response:"
-      },
-
-      {
-        type: "paragraph",
-        text: "Thank you for the kind words, [Name]! We're thrilled you're happy with [specific service mentioned]. Looking forward to working with you again.",
-      },
-
-
-      {
-        type: "subHeading",
-        text: "Negative review response:"
-      },
-
-      {
-        type: "paragraph",
-        text: "We're sorry to hear about your experience, [Name]. We'd like to make this right. Please call us at [number] so we can resolve this. - [Your name]",
-      },
-
-      {
-        type: "paragraph",
-        text: "Businesses that respond to reviews rank higher and convert better. It signals active management and care.",
-      },
-
-      {
-        type: "subHeading",
-        text: "Dealing With Fake Negative Reviews"
-      },
-
-      {
-        type: "paragraph",
-        text: "If you receive a fake review, flag it through Google Business Profile. If Google doesn't remove it, respond professionally pointing out the facts without being defensive.",
-      },
-
-
-      // STEP 3
-      {
-        type: "heading",
-        text: "Step 3: Build Consistent NAP Citations"
-      },
-      {
-        type: "paragraph",
-        text: "NAP stands for Name, Address, Phone number. Google cross-references your business information across the web. Consistency matters enormously."
-      },
-
-
-      {
-        type: "subHeading",
-        text: "Where to List Your Business"
-      },
-
-      {
-        type: "subHeading",
-        text: "Start with these essential directories:",
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **National directories **",
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Justdial",
-          "Sulekha",
-          "IndiaMART",
-          "MouthShut",
-          "AskLaila",
-        ]
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **Google-owned: **",
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Google Maps (via Business Profile)",
-          "YouTube (create channel with NAP in description)",
-
-        ]
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **Social platforms:**",
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Facebook business page",
-          "Instagram business profile",
-          "LinkedIn company page",
-
-        ]
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **Industry-specific directories:**",
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "UrbanClap (for home services)",
-          "Practo (healthcare)",
-          "Zomato (restaurants)",
-          "99acres (real estate)",
-
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "The Consistency Rule",
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **Your NAP must be EXACTLY the same everywhere:**",
-      },
-
-      {
-        type: "heading",
-        text: "Correct"
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **ABC Interiors**",
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **123 MG Road, Bangalore 560001**",
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **+91-98765-43210**",
-      },
-
-      {
-        type: "heading",
-        text: "Incorrect variations:"
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **+91-98765-43210**",
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **ABC Interior Designers (different name)**",
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **123, MG Rd, Blr 560001 (inconsistent format)**",
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **9876543210 (missing country code)**",
-      },
-
-      {
-        type: "paragraph",
-        text: "Even small differences confuse Google and hurt rankings.",
-      },
-
-
-
-
-      {
-        type: "subHeading",
-        text: "Step 4: Optimize Your Website for Local Search",
-      },
-
-      {
-        type: "paragraph",
-        text: "Your website needs location signals throughout. Here's how:.",
-      },
-
-      {
-        type: "subHeading",
-        text: "Location-Specific Pages",
-      },
-
-      {
-        type: "paragraph",
-        text: "If you serve multiple areas, create separate pages for each major location:",
-      },
-
-
-      {
-        type: "paragraphbold",
-        text: "\n **Each page should have:**",
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Unique content (not duplicate)",
-          "Location name in title tag, H1, URL",
-          "Service details specific to that area",
-          "Local testimonials if available",
-          "Embedded Google Map for the area",
-
-        ]
-      },
-
-
-
-      {
-        type: "paragraph",
-        text: "Include location names naturally in:",
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Homepage title and description",
-          "Service page headings",
-          "About page content",
-          "Footer (full address)",
-          "Image alt text",
-
-        ]
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **Example:**",
-      },
-
-      {
-        type: "paragraph",
-        text: "Professional interior design services in Koramangala, Bangalore. We transform  2BHK and 3BHK apartments across South Bangalore including Indiranagar, HSR Layout, and BTM.",
-      },
-
-      {
-        type: "subHeading",
-        text: "Contact Page Optimization",
-      },
-
-      {
-        type: "paragraph",
-        text: "Your contact page should include:",
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Full address",
-          "Embedded Google Map",
-          "Phone number (click-to-call)",
-          "WhatsApp link",
-          "Business hours",
-          "Service area list",
-
-        ]
-      },
-
-      {
-        type: "paragraph",
-        text: "For broader website conversion optimization, check our guide on  {{link: high-converting website design|high-converting-website-service-businesses}}."
-      },
-
-
-
-
-
-
-
-      // STEP 4
-      {
-        type: "heading",
-        text: "Correct:"
-      },
-
-      {
-        type: "subHeading",
-        text: "Location-Specific Pages"
-      },
-      {
-        type: "paragraph",
-        text: "If you serve multiple areas, create separate pages for each location."
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Unique content per location",
-          "Location name in URL, title, H1",
-          "Service details for that area",
-          "Local testimonials",
-          "Embedded Google Map"
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "Contact Page Optimization"
-      },
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Full address",
-          "Embedded Google Map",
-          "Click-to-call phone number",
-          "WhatsApp link",
-          "Business hours",
-          "Service area list"
-        ]
-      },
-
-
-
-
-
-
-      // STEP 5
-      {
-        type: "heading",
-        text: "Step 5: Create Location-Focused Content"
-      },
-      {
-        type: "paragraph",
-        text: "Content targeting local searches helps you rank for informational queries that lead to service inquiries."
-      },
-
-      {
-        type: "subHeading",
-        text: "Blog Post Ideas"
-      },
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Top 10 [Your City] Neighborhoods for [Your Service]",
-          "Cost of [Your Service] in [City]: 2025 Pricing Guide",
-          "Before & After: [Your Service] Projects in [City]",
-          "How to choose [Your Service] in [City]: Complete Guide"
-        ]
-      },
-
-      {
-        type: "paragraphbold",
-        text: "\n **These posts:**",
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Rank for near me and location searches",
-          "Build topical authority in your area",
-          "Provide content to share on social media"
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "Case Studies With Location Details"
-      },
-
-      {
-        type: "paragraph",
-        text: "Create detailed case studies mentioning."
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Client location (with permission)",
-          "Local challenges addressed",
-          "Provide content to share on social media",
-          "Results with photos",
-
-        ]
-      },
-
-
-      {
-        type: "paragraph",
-        text: "These build trust while reinforcing local relevance."
-      },
-
-      {
-        type: "image",
-        src: "/images/local-seo-checklist.png",
-        alt: "Local SEO optimization checklist for service businesses to rank in Google Maps"
-      },
-
-
-
-
-
-
-
-
-
-
-
-
-      {
-        type: "heading",
-        text: "Step 6: Build Local Backlinks"
-      },
-
-      {
-        type: "paragraph",
-        text: "Links from local websites signal geographical relevance to Google."
-      },
-
-      {
-        type: "subHeading",
-        text: "How to Get Local Links"
-      },
-
-      {
-        type: "list",
-        variant: "ordered",
-        items: [
-          "Local media: Pitch stories to city news websites and blogs",
-          "Chamber of Commerce: Join and get listed on their directory",
-          "Local business associations: Industry-specific local groups",
-          "Sponsor local events: Get link from event websites",
-          "Partner businesses: Exchange links with complementary local businesses",
-          "Local bloggers: Collaborate with city lifestyle/review bloggers"
-        ]
-      },
-
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "Pro Tip:",
-            text: "One quality local link beats ten generic directory links for local SEO purposes."
-          }
-        ]
-      },
-
-      {
-        type: "heading",
-        text: "Common Local SEO Mistakes to Avoid"
-      },
-
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "Mistake 1: Using PO Box or Virtual Office",
-            text: "Google penalizes businesses without real physical addresses. Use your actual office or home address."
-          }
-        ]
-      },
-
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "Mistake 2: Keyword Stuffing Business Name",
-            text: "Don't rename your business \"ABC Plumbing | Best Plumber Bangalore | Emergency Plumbing Services.\" Use your real business name only."
-          }
-        ]
-      },
-
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "Mistake 3: Wrong Business Category",
-            text: "Choosing a broad category like \"Service\" instead of specific \"Interior Designer\" hurts relevance. Pick the most specific category possible."
-          }
-        ]
-      },
-
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "Mistake 4: Ignoring Questions Section",
-            text: "Google Business Profiles have a Q&A section. Proactively add and answer common questions before others ask random ones."
-          }
-        ]
-      },
-
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "Mistake 5: Deleting and Recreating Profile",
-            text: "This resets all reviews and rankings. Never delete your profile. Update or correct it instead."
-          }
-        ]
-      },
-
-      {
-        type: "heading",
-        text: "Timeline: When to Expect Results"
-      },
-
-      {
-        type: "paragraph",
-        text: "Local SEO delivers results faster than regular SEO, but it's not overnight:"
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Week 1–2: Profile optimization shows increased visibility",
-          "Week 3–4: First reviews start appearing, profile engagement increases",
-          "Week 5–8: Start appearing in map pack for some searches",
-          "Week 9–12: Consistent map pack appearances, increased calls/directions",
-          "Month 4–6: Top 3 positions for primary keywords in your area"
-        ]
-      },
-
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "Key Insight:",
-            text: "Consistency is key. Businesses that maintain optimization efforts long-term dominate local search."
-          }
-        ]
-      },
-
-
-      {
-        type: "heading",
-        text: "Measuring Local SEO Success"
-      },
-
-      {
-        type: "paragraph",
-        text: "Track these metrics monthly:"
-      },
-
-      {
-        type: "subHeading",
-        text: "Google Business Profile Insights"
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Total views (search + maps)",
-          "Direction requests",
-          "Phone calls",
-          "Website clicks"
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "Search Rankings"
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Position in map pack for target keywords",
-          "Number of keywords you rank for locally"
-        ]
-      },
-
-      {
-        type: "subHeading",
-        text: "Business Results"
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "Monthly inquiries from Google",
-          "Cost per lead (₹0 for organic!)",
-          "Conversion rate from inquiry to customer"
-        ]
-      },
-
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "Why Local SEO Wins:",
-            text: "Local SEO is one of the few marketing channels with zero ongoing cost once optimized—just time investment."
-          }
-        ]
-      },
-
-      {
-        type: "heading",
-        text: "Conclusion"
-      },
-
-      {
-        type: "paragraph",
-        text: "Local SEO isn't complicated, but it requires systematic execution. Follow these six steps:"
-      },
-
-      {
-        type: "list",
-        variant: "ordered",
-        items: [
-          "Fully optimize Google Business Profile",
-          "Build 50+ authentic reviews with active responses",
-          "Create consistent NAP citations across directories",
-          "Add location signals throughout your website",
-          "Create location-focused content regularly",
-          "Build local backlinks from relevant sources"
-        ]
-      },
-
-      {
-        type: "paragraph",
-        text: "Most service businesses ignore local SEO completely, which means small efforts create big competitive advantages."
-      },
-
-      {
-        type: "paragraph",
-        text: "Start with Google Business Profile optimization this week. Add weekly review requests. Build citations monthly. Create location content quarterly. Within 3–6 months, you'll dominate local search in your area."
-      },
-
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "Ready to dominate local search?",
-            text: "Swastixa Digital implements complete local SEO strategies that get service businesses found by customers actively searching in their area. Let's get you ranking in the map pack. {{link:Contact us|/contact}}"
-          }
-        ]
-      },
-
-      {
-        type: "heading",
-        text: "You May Also Like"
-      },
-
-      {
-        type: "list",
-        variant: "unordered",
-        items: [
-          "{{link:On-Page SEO Basics Every Business Owner Should Understand Before Hiring an Agency|/on-page-seo-basics}}",
-          "{{link:SEO vs SCO: What Your Business Actually Needs in 2025|/seo-vs-sco-2025}}",
-          "{{link:How Indian SMEs Can Build a 360° Digital Marketing Strategy With Limited Budget|/360-digital-marketing-strategy-india}}"
-        ]
-      }
+    //   {
+    //     type: "boldList",
+    //     items: [
+    //       {
+    //         bold: "Regular SEO:",
+    //         text: "Tries to rank for broad searches like \"best interior designer\" or \"plumbing services\"."
+    //       },
+    //       {
+    //         bold: "Local SEO:",
+    //         text: "Targets location-specific searches like \"interior designer Pune\" or \"plumber near me\"."
+    //       }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "For service businesses operating in specific areas, local SEO delivers better results faster because:"
+    //   },
+
+    //   {
+    //     type: "unorderedBoldListdecimal",
+    //     items: [
+    //       {
+    //         bold: "Less competition:",
+    //         text: "Competing against businesses in your city, not the entire country."
+    //       },
+    //       {
+    //         bold: "Higher intent:",
+    //         text: "Someone searching locally is ready to hire, not just browsing."
+    //       },
+    //       {
+    //         bold: "Faster results:",
+    //         text: "Local SEO improvements can show results in 4–8 weeks vs 4–6 months for regular SEO."
+    //       },
+    //       {
+    //         bold: "Lower cost:",
+    //         text: "Many local SEO tactics are free or low-cost."
+    //       }
+    //     ]
+    //   },
+
+
+    //   {
+    //     type: "subHeading",
+    //     text: "The prize"
+    //   },
+
+
+    //   {
+    //     type: "paragraph",
+    //     text: "For broader strategy context, revisit our guide on {{link:building a 360° digital marketing strategy|digital-marketing-strategy-smes-budget}}."
+    //   },
+
+    //   {
+    //     type: "heading",
+    //     text: "The 3 Core Ranking Factors for Local SEO"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Google uses three main factors to determine local rankings:"
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "1. Relevance (How Well You Match the Search)"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Does your business actually offer what the searcher wants? Google determines this from your business description, categories, and website content."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "2. Distance (How Close You Are to the Searcher)"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "When someone searches \"plumber near me,\" Google prioritizes businesses physically closer to their location."
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "You can't change your location, but you can:"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Clearly list your service areas",
+    //       "Create separate pages for each area you serve",
+    //       "Include location names throughout your website"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "3. Prominence (How Well-Known and Trusted You Are)"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Google measures prominence through:"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Number and quality of Google reviews",
+    //       "Quantity and consistency of online citations (directory listings)",
+    //       "Website authority and backlinks",
+    //       "Engagement with your Google Business Profile"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "The winning formula"
+    //   },
+
+
+
+    //   {
+    //     type: "heading",
+    //     text: "Step 1: Optimize Your Google Business Profile (The Foundation)"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Your Google Business Profile (formerly Google My Business) is the single most important local SEO factor. Here's how to optimize it completely:"
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Claim and Verify Your Profile"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Search your business name on Google. If you see your business already listed but marked \"Own this business?\" you need to claim it. Google will send a verification postcard to your address."
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "If not listed, create your profile at at google.com/business"
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Complete Every Section 100%"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Google rewards complete profiles. Fill out:"
+    //   },
+
+    //   {
+    //     type: "boldList",
+    //     items: [
+    //       { bold: "Business name:", text: "Use your actual business name (don't add keywords)" },
+    //       { bold: "Category:", text: "Choose the most specific primary category, add 2–3 secondary categories" },
+    //       { bold: "Address:", text: "Exact, consistent address (matches what's on your website)" },
+    //       { bold: "Phone number:", text: "Local number, not toll-free (same everywhere online)" },
+    //       { bold: "Website URL:", text: "Link to your homepage or location-specific page" },
+    //       { bold: "Hours:", text: "Accurate hours including special holiday hours" },
+    //       { bold: "Service areas:", text: "List all cities or neighborhoods you serve" },
+    //       { bold: "Business description:", text: "750 characters describing what you do, include location mentions naturally" }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Add High-Quality Photos"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: " Profiles with photos get 42% more direction requests and 35% more clicks to websites."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: " Upload at least:"
+    //   },
+
+
+    //   {
+    //     type: "list",
+    //     variant: "Upload at least:",
+    //     items: [
+    //       "3 exterior photos",
+    //       "5 interior photos",
+    //       "10 photos of your work or products",
+    //       "Team photos",
+    //       "Logo (square format, 720×720px minimum)"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Update photos monthly to signal active business management."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Create Regular Posts"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Google Business Posts appear in your profile and signal active management. Post 2–3 times weekly:"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Service updates",
+    //       "Special offers",
+    //       "Before/after photos",
+    //       "Helpful tips",
+    //       "Event announcements"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Posts expire after 7 days, so consistency matters."
+    //   },
+
+    //   {
+    //     type: "imageRightText",
+    //     image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20Local%20SEO%20Guide%20.jpeg",
+    //     alt: "Optimized Google Business Profile example showing complete sections for local SEO"
+    //   },
+
+
+
+
+    //   {
+    //     type: "heading",
+    //     text: "Step 2: Build and Manage Reviews (The Trust Factor)"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Reviews are the second most important local ranking factor and the primary decision factor for customers."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "The Review Game Plan"
+    //   },
+
+    //   {
+    //     type: "unorderedBoldListdecimal",
+    //     items: [
+    //       { bold: "Target:", text: "50+ reviews with 4.5+ average rating within 6 months" }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "How to get there:"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Ask every satisfied customer for a review",
+    //       "Make it easy with direct review link",
+    //       "Follow up with reminder after 3–5 days",
+    //       "Incentivize internally (team contests for most reviews generated)"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "How to ask"
+    //   },
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\nWe'd really appreciate if you could share your experience on Google. Here's the direct link: [your review link]"
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Never"
+    //   },
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\nOffer discounts or payments for reviews (violates Google policies)"
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Responding to Reviews (Essential)"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Respond to every review—positive and negative—within 48 hours."
+    //   },
+    //   {
+    //     type: "subHeading",
+    //     text: "Positive review response"
+    //   },
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\nThank you for the kind words, [Name]! We're thrilled you're happy with [specific service mentioned]. Looking forward to working with you again."
+    //   },
+    //   {
+    //     type: "subHeading",
+    //     text: "Negative review response"
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\nWe're sorry to hear about your experience, [Name]. We'd like to make this right. Please call us at [number] so we can resolve this. – [Your name]"
+    //   },
+
+    //   {
+    //     type: "heading",
+    //     text: "Step 1: Optimize Your Google Business Profile (The Foundation)"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "Your Google Business Profile (formerly Google My Business) is the single most important local SEO factor. Here's how to optimize it completely:"
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Claim and Verify Your Profile"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "Search your business name on Google. If you see your business already listed but marked \"Own this business?\" you need to claim it. Google will send a verification postcard to your address."
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "If not listed, create your profile at {{link:google.com/business|https://www.google.com/business}}."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Complete Every Section 100%"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "Google rewards complete profiles. Fill out:"
+    //   },
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Business name: Use your actual business name (don't add keywords)",
+    //       "Category: Choose the most specific primary category, add 2–3 secondary categories",
+    //       "Address: Exact, consistent address (matches your website)",
+    //       "Phone number: Local number, not toll-free (same everywhere online)",
+    //       "Website URL: Homepage or location-specific page",
+    //       "Hours: Accurate hours including holidays",
+    //       "Service areas: All cities/neighborhoods you serve",
+    //       "Business description: 750 characters with natural location mentions"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Add High-Quality Photos"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "Profiles with photos get 42% more direction requests and 35% more website clicks."
+    //   },
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "3 exterior photos",
+    //       "5 interior photos",
+    //       "10 photos of your work or products",
+    //       "Team photos",
+    //       "Logo (square, minimum 720×720px)"
+    //     ]
+    //   },
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **Pro Tip** Update photos monthly to signal active business management."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Create Regular Posts"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "Google Business Posts signal activity. Post 2–3 times weekly:"
+    //   },
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Service updates",
+    //       "Special offers",
+    //       "Before/after photos",
+    //       "Helpful tips",
+    //       "Event announcements"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "imageRightText",
+    //     image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20Local%20SEO%20Guide%20.jpeg",
+    //     alt: "Optimized Google Business Profile example showing complete sections for local SEO"
+    //   },
+
+    //   // STEP 2
+    //   {
+    //     type: "heading",
+    //     text: "Step 2: Build and Manage Reviews (The Trust Factor)"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "Reviews are the second most important local ranking factor and the primary decision factor for customers."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "The Review Game Plan"
+    //   },
+    //   {
+    //     type: "boldList",
+    //     items: [
+    //       { bold: "Target:", text: "50+ reviews with 4.5+ rating within 6 months" },
+    //       { bold: "Ask:", text: "Every satisfied customer" },
+    //       { bold: "Follow up:", text: "After 3–5 days" }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Never offer discounts or payments for reviews. This violates Google policies."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Responding to Reviews (Essential)"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "Respond to every review—positive or negative—within 48 hours. "
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Positive review response:"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Thank you for the kind words, [Name]! We're thrilled you're happy with [specific service mentioned]. Looking forward to working with you again.",
+    //   },
+
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Negative review response:"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "We're sorry to hear about your experience, [Name]. We'd like to make this right. Please call us at [number] so we can resolve this. - [Your name]",
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Businesses that respond to reviews rank higher and convert better. It signals active management and care.",
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Dealing With Fake Negative Reviews"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "If you receive a fake review, flag it through Google Business Profile. If Google doesn't remove it, respond professionally pointing out the facts without being defensive.",
+    //   },
+
+
+    //   // STEP 3
+    //   {
+    //     type: "heading",
+    //     text: "Step 3: Build Consistent NAP Citations"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "NAP stands for Name, Address, Phone number. Google cross-references your business information across the web. Consistency matters enormously."
+    //   },
+
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Where to List Your Business"
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Start with these essential directories:",
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **National directories **",
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Justdial",
+    //       "Sulekha",
+    //       "IndiaMART",
+    //       "MouthShut",
+    //       "AskLaila",
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **Google-owned: **",
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Google Maps (via Business Profile)",
+    //       "YouTube (create channel with NAP in description)",
+
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **Social platforms:**",
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Facebook business page",
+    //       "Instagram business profile",
+    //       "LinkedIn company page",
+
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **Industry-specific directories:**",
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "UrbanClap (for home services)",
+    //       "Practo (healthcare)",
+    //       "Zomato (restaurants)",
+    //       "99acres (real estate)",
+
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "The Consistency Rule",
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **Your NAP must be EXACTLY the same everywhere:**",
+    //   },
+
+    //   {
+    //     type: "heading",
+    //     text: "Correct"
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **ABC Interiors**",
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **123 MG Road, Bangalore 560001**",
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **+91-98765-43210**",
+    //   },
+
+    //   {
+    //     type: "heading",
+    //     text: "Incorrect variations:"
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **+91-98765-43210**",
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **ABC Interior Designers (different name)**",
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **123, MG Rd, Blr 560001 (inconsistent format)**",
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **9876543210 (missing country code)**",
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Even small differences confuse Google and hurt rankings.",
+    //   },
+
+
+
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Step 4: Optimize Your Website for Local Search",
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Your website needs location signals throughout. Here's how:.",
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Location-Specific Pages",
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "If you serve multiple areas, create separate pages for each major location:",
+    //   },
+
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **Each page should have:**",
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Unique content (not duplicate)",
+    //       "Location name in title tag, H1, URL",
+    //       "Service details specific to that area",
+    //       "Local testimonials if available",
+    //       "Embedded Google Map for the area",
+
+    //     ]
+    //   },
+
+
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Include location names naturally in:",
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Homepage title and description",
+    //       "Service page headings",
+    //       "About page content",
+    //       "Footer (full address)",
+    //       "Image alt text",
+
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **Example:**",
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Professional interior design services in Koramangala, Bangalore. We transform  2BHK and 3BHK apartments across South Bangalore including Indiranagar, HSR Layout, and BTM.",
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Contact Page Optimization",
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Your contact page should include:",
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Full address",
+    //       "Embedded Google Map",
+    //       "Phone number (click-to-call)",
+    //       "WhatsApp link",
+    //       "Business hours",
+    //       "Service area list",
+
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "For broader website conversion optimization, check our guide on  {{link: high-converting website design|high-converting-website-service-businesses}}."
+    //   },
+
+
+
+
+
+
+
+    //   // STEP 4
+    //   {
+    //     type: "heading",
+    //     text: "Correct:"
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Location-Specific Pages"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "If you serve multiple areas, create separate pages for each location."
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Unique content per location",
+    //       "Location name in URL, title, H1",
+    //       "Service details for that area",
+    //       "Local testimonials",
+    //       "Embedded Google Map"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Contact Page Optimization"
+    //   },
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Full address",
+    //       "Embedded Google Map",
+    //       "Click-to-call phone number",
+    //       "WhatsApp link",
+    //       "Business hours",
+    //       "Service area list"
+    //     ]
+    //   },
+
+
+
+
+
+
+    //   // STEP 5
+    //   {
+    //     type: "heading",
+    //     text: "Step 5: Create Location-Focused Content"
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     text: "Content targeting local searches helps you rank for informational queries that lead to service inquiries."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Blog Post Ideas"
+    //   },
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Top 10 [Your City] Neighborhoods for [Your Service]",
+    //       "Cost of [Your Service] in [City]: 2025 Pricing Guide",
+    //       "Before & After: [Your Service] Projects in [City]",
+    //       "How to choose [Your Service] in [City]: Complete Guide"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraphbold",
+    //     text: "\n **These posts:**",
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Rank for near me and location searches",
+    //       "Build topical authority in your area",
+    //       "Provide content to share on social media"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Case Studies With Location Details"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Create detailed case studies mentioning."
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Client location (with permission)",
+    //       "Local challenges addressed",
+    //       "Provide content to share on social media",
+    //       "Results with photos",
+
+    //     ]
+    //   },
+
+
+    //   {
+    //     type: "paragraph",
+    //     text: "These build trust while reinforcing local relevance."
+    //   },
+
+    //   {
+    //     type: "image",
+    //     src: "/images/local-seo-checklist.png",
+    //     alt: "Local SEO optimization checklist for service businesses to rank in Google Maps"
+    //   },
+
+
+
+
+
+
+
+
+
+
+
+
+    //   {
+    //     type: "heading",
+    //     text: "Step 6: Build Local Backlinks"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Links from local websites signal geographical relevance to Google."
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "How to Get Local Links"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "ordered",
+    //     items: [
+    //       "Local media: Pitch stories to city news websites and blogs",
+    //       "Chamber of Commerce: Join and get listed on their directory",
+    //       "Local business associations: Industry-specific local groups",
+    //       "Sponsor local events: Get link from event websites",
+    //       "Partner businesses: Exchange links with complementary local businesses",
+    //       "Local bloggers: Collaborate with city lifestyle/review bloggers"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "boldListpara",
+    //     items: [
+    //       {
+    //         bold: "Pro Tip:",
+    //         text: "One quality local link beats ten generic directory links for local SEO purposes."
+    //       }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "heading",
+    //     text: "Common Local SEO Mistakes to Avoid"
+    //   },
+
+    //   {
+    //     type: "boldListpara",
+    //     items: [
+    //       {
+    //         bold: "Mistake 1: Using PO Box or Virtual Office",
+    //         text: "Google penalizes businesses without real physical addresses. Use your actual office or home address."
+    //       }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "boldListpara",
+    //     items: [
+    //       {
+    //         bold: "Mistake 2: Keyword Stuffing Business Name",
+    //         text: "Don't rename your business \"ABC Plumbing | Best Plumber Bangalore | Emergency Plumbing Services.\" Use your real business name only."
+    //       }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "boldListpara",
+    //     items: [
+    //       {
+    //         bold: "Mistake 3: Wrong Business Category",
+    //         text: "Choosing a broad category like \"Service\" instead of specific \"Interior Designer\" hurts relevance. Pick the most specific category possible."
+    //       }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "boldListpara",
+    //     items: [
+    //       {
+    //         bold: "Mistake 4: Ignoring Questions Section",
+    //         text: "Google Business Profiles have a Q&A section. Proactively add and answer common questions before others ask random ones."
+    //       }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "boldListpara",
+    //     items: [
+    //       {
+    //         bold: "Mistake 5: Deleting and Recreating Profile",
+    //         text: "This resets all reviews and rankings. Never delete your profile. Update or correct it instead."
+    //       }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "heading",
+    //     text: "Timeline: When to Expect Results"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Local SEO delivers results faster than regular SEO, but it's not overnight:"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Week 1–2: Profile optimization shows increased visibility",
+    //       "Week 3–4: First reviews start appearing, profile engagement increases",
+    //       "Week 5–8: Start appearing in map pack for some searches",
+    //       "Week 9–12: Consistent map pack appearances, increased calls/directions",
+    //       "Month 4–6: Top 3 positions for primary keywords in your area"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "boldListpara",
+    //     items: [
+    //       {
+    //         bold: "Key Insight:",
+    //         text: "Consistency is key. Businesses that maintain optimization efforts long-term dominate local search."
+    //       }
+    //     ]
+    //   },
+
+
+    //   {
+    //     type: "heading",
+    //     text: "Measuring Local SEO Success"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Track these metrics monthly:"
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Google Business Profile Insights"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Total views (search + maps)",
+    //       "Direction requests",
+    //       "Phone calls",
+    //       "Website clicks"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Search Rankings"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Position in map pack for target keywords",
+    //       "Number of keywords you rank for locally"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "subHeading",
+    //     text: "Business Results"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "Monthly inquiries from Google",
+    //       "Cost per lead (₹0 for organic!)",
+    //       "Conversion rate from inquiry to customer"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "boldListpara",
+    //     items: [
+    //       {
+    //         bold: "Why Local SEO Wins:",
+    //         text: "Local SEO is one of the few marketing channels with zero ongoing cost once optimized—just time investment."
+    //       }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "heading",
+    //     text: "Conclusion"
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Local SEO isn't complicated, but it requires systematic execution. Follow these six steps:"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "ordered",
+    //     items: [
+    //       "Fully optimize Google Business Profile",
+    //       "Build 50+ authentic reviews with active responses",
+    //       "Create consistent NAP citations across directories",
+    //       "Add location signals throughout your website",
+    //       "Create location-focused content regularly",
+    //       "Build local backlinks from relevant sources"
+    //     ]
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Most service businesses ignore local SEO completely, which means small efforts create big competitive advantages."
+    //   },
+
+    //   {
+    //     type: "paragraph",
+    //     text: "Start with Google Business Profile optimization this week. Add weekly review requests. Build citations monthly. Create location content quarterly. Within 3–6 months, you'll dominate local search in your area."
+    //   },
+
+    //   {
+    //     type: "boldListpara",
+    //     items: [
+    //       {
+    //         bold: "Ready to dominate local search?",
+    //         text: "Swastixa Digital implements complete local SEO strategies that get service businesses found by customers actively searching in their area. Let's get you ranking in the map pack. {{link:Contact us|/contact}}"
+    //       }
+    //     ]
+    //   },
+
+    //   {
+    //     type: "heading",
+    //     text: "You May Also Like"
+    //   },
+
+    //   {
+    //     type: "list",
+    //     variant: "unordered",
+    //     items: [
+    //       "{{link:On-Page SEO Basics Every Business Owner Should Understand Before Hiring an Agency|/on-page-seo-basics}}",
+    //       "{{link:SEO vs SCO: What Your Business Actually Needs in 2025|/seo-vs-sco-2025}}",
+    //       "{{link:How Indian SMEs Can Build a 360° Digital Marketing Strategy With Limited Budget|/360-digital-marketing-strategy-india}}"
+    //     ]
+    //   }
 
 
 
@@ -12494,16 +12840,30 @@ export const blogs = [
     ],
   },
 
+
+
+
+
+
+
+
+
+
   {
     id: 14,
     slug: "retargeting-ads-guide-convert-visitors",
     hero: {
       metaTitle: "Retargeting Ads Guide: Convert Lost Visitors | Swastixa Digital",
       description: "Learn how retargeting ads turn website visitors who didn't convert into paying customers. Complete guide with strategies, budgets, and real examples.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20Retargeting%20Ads.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-14.jpg",
     },
     content: [
       { type: "heading", text: "Retargeting Ads Explained: Turning Lost Visitors Into Paying Customers" },
+
+      {
+        type: "heading",
+        text: "Introduction"
+      },
 
       {
         type: "paragraph",
@@ -12530,6 +12890,7 @@ export const blogs = [
         type: "heading",
         text: "What Retargeting Ads Actually Are (And Why They Work So Well)"
       },
+
       {
         type: "paragraph",
         text: "Retargeting (also called remarketing) shows ads specifically to people who've already visited your website or engaged with your social media."
@@ -12651,13 +13012,10 @@ export const blogs = [
         type: "paragraph",
         text: "For more on avoiding common mistakes when running any type of ad campaign, check our guide on {{link:paid ads mistakes businesses make|common-paid-ads-mistakes-solutions}}."
       },
-      {
-        type: "paragraph",
-        text: "[Add Image: Retargeting funnel diagram showing different audience segments]"
-      },
-      {
-        type: "paragraph",
-        text: "Alt text: \"Retargeting funnel strategy showing different audience segments and messaging\""
+     {
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog14-1.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
       {
         type: "heading",
@@ -12746,11 +13104,18 @@ export const blogs = [
       {
         type: "boldListpara",
         items: [
-          { bold: "•", text: "Reminder of what they viewed: \"Still thinking about [service/product]?\"" },
-          { bold: "•", text: "Social proof: \"Join 500+ happy customers in [city]\"" },
-          { bold: "•", text: "Urgency: \"Limited spots available this month\"" },
-          { bold: "•", text: "Special offer: \"Come back and get 15% off\"" },
-          { bold: "•", text: "Testimonial/result: \"See why people choose us\" + customer quote" }
+          { bold: "Reminder of what they viewed:", text: " Still thinking about [service/product]?" },
+          { bold: "Social proof:", text: " Join 500+ happy customers in [city]" },
+          { bold: "Urgency:", text: "Limited spots available this month" },
+          { bold: "Special offer:", text: " Come back and get 15% off" },
+          { bold: "Testimonial/result:", text: "See why people choose us + customer quote" 
+
+          },
+
+             { bold: "Testimonial/result: ", text: "See why people choose us + customer quote" 
+
+          },
+          
         ]
       },
       {
@@ -12883,12 +13248,9 @@ export const blogs = [
       },
 
       {
-        type: "paragraph",
-        text: "[Add Image: Example retargeting ad sequence over 30 days]"
-      },
-      {
-        type: "paragraph",
-        text: "Alt text: \"30-day retargeting ad sequence showing progressive messaging strategy\""
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog14-2.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
       {
@@ -13109,6 +13471,7 @@ export const blogs = [
       }
     ],
   },
+  
 
  
 
@@ -13124,14 +13487,18 @@ export const blogs = [
 
   {
     id: 15,
-    slug: "in-house-production-visual-content-social-media ",
+    slug: "in-house-production-visual-content-social-media",
     hero: {
       metaTitle: "In-House Content Production for Social Media | Swastixa Digital ",
       description: " Discover why businesses with in-house content production consistently outperform competitors on social media. Learn the real advantages beyond cost savings.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20In-House.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-15.jpg",
     },
     content: [
       { type: "heading", text: "Power of In-House Production: Why Consistent Visual Content Wins on Social Media" },
+      {
+        type: "heading",
+        text: "Introduction"
+      },
       {
         type: "paragraph",
         text: "You post on Instagram twice a week. Sometimes the photos look professional. Sometimes you're scrambling with your phone 10 minutes before posting, trying to get decent lighting in your office."
@@ -13239,7 +13606,7 @@ export const blogs = [
       {
         type: "boldListpara",
         items: [
-          { bold: "•", text: "Monthly content planning (covered in our {{link:content calendar system |content-calendar-plan-30-days-posts}})" },
+          { bold: "•", text: "Monthly content planning covered in our :content calendar system content-calendar-plan-30-days-posts" },
           { bold: "•", text: "Weekly batch shooting sessions" },
           { bold: "•", text: "Daily posting using scheduled tools" }
         ]
@@ -13254,12 +13621,9 @@ export const blogs = [
       },
 
       {
-        type: "paragraph",
-        text: "[Add Image: Simple in-house content setup with smartphone, ring light, and backdrop]"
-      },
-      {
-        type: "paragraph",
-        text: "Alt text: \"Basic in-house content production setup for small business social media\""
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog15-1.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
       {
@@ -13441,7 +13805,7 @@ export const blogs = [
       {
         type: "boldListpara",
         items: [
-          { bold: "•", text: "Plan content monthly using our {{link:content calendar system |content-calendar-plan-30-days-posts}}" },
+          { bold: "•", text: "Plan content monthly using our content calendar system|content-calendar-plan-30-days-posts" },
           { bold: "•", text: "Shoot all photos/videos in one 2-hour weekly session" },
           { bold: "•", text: "Edit and schedule in one 2-hour block" }
         ]
@@ -13483,13 +13847,9 @@ export const blogs = [
       },
 
       {
-        type: "paragraph",
-        text: "The key is starting simple and proving ROI before scaling investment."
-      },
-
-      {
-        type: "paragraph",
-        text: "[Add Image: Before/after comparison of social media feed with inconsistent vs consistent in-house content]"
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog15-2.JPG",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
       {
         type: "paragraph",
@@ -13609,9 +13969,9 @@ export const blogs = [
       {
         type: "boldListpara",
         items: [
-          { bold: "•", text: "Speed to capture and share moments while they matter" },
-          { bold: "•", text: "Authenticity that can't be replicated by external creators" },
-          { bold: "•", text: "Consistency in volume and visual style that algorithms reward" }
+          { bold: "1.	Speed", text: "Speed to capture and share moments while they matter" },
+          { bold: "2.	Authenticity ", text: "Authenticity that can't be replicated by external creators" },
+          { bold: "3.	Consistency", text: "Consistency in volume and visual style that algorithms reward" }
         ]
       },
 
@@ -13645,32 +14005,34 @@ export const blogs = [
         text: "Ready to build content production capability that actually fits your business? Swastixa Digital offers in-house production training and setup services that help you create consistently great content without the agency price tag. Let's build your content engine. [Add link to Contact page]"
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+      // {
+      //   type: "paragraph",
+      //   text: "Shape"
+      // },
 
       {
         type: "paragraph",
         text: "You May Also Like:"
       },
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "•",
-            text: "Content Calendar Secrets: How to Plan 30 Days of High-Engagement Posts in 2 Hours"
-          },
-          {
-            bold: "•",
-            text: "Explainer Videos, Reels, or Carousels: Which Format Works Best for Your Brand Story?"
-          },
-          {
-            bold: "•",
-            text: "Social Media Management Playbook for Local Businesses in India (2025 Edition)"
-          }
-        ]
-      },
+
+      // {
+      //   type: "boldListpara",
+      //   items: [
+      //     {
+      //       bold: "•",
+      //       text: "Content Calendar Secrets: How to Plan 30 Days of High-Engagement Posts in 2 Hours"
+      //     },
+      //     {
+      //       bold: "•",
+      //       text: "Explainer Videos, Reels, or Carousels: Which Format Works Best for Your Brand Story?"
+      //     },
+      //     {
+      //       bold: "•",
+      //       text: "Social Media Management Playbook for Local Businesses in India (2025 Edition)"
+      //     }
+      //   ]
+      // },
+      
       {
         type: "linkList",
         variant: "unordered",
@@ -13728,10 +14090,14 @@ export const blogs = [
     hero: {
       metaTitle: "How Graphic Design Builds Trust & Conversions | Swastixa Digital ",
       description: "Discover how professional graphic design builds instant trust and drives conversions in just 5 seconds. Learn the psychology behind design that sells.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20How%20Graphic%20Design.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-16.jpg",
     },
     content: [
       { type: "heading", text: "How Good Graphic Design Builds Trust and Conversions in the First 5 Seconds" },
+      {
+        type: "heading",
+        text: "Introduction"
+      },
 
       {
         type: "paragraph",
@@ -13826,10 +14192,20 @@ export const blogs = [
         text: "Poor design makes everything compete for attention. Headlines, body text, images, and buttons all scream equally loud. The result? Your visitor's brain can't process the information, gets overwhelmed, and leaves."
       },
 
-      {
-        type: "paragraph",
-        text: "What good hierarchy looks like:"
+      // {
+      //   type: "paragraph",
+      //   text: "What good hierarchy looks like:"
+      // },
+
+       {
+        type: "boldListpara",
+        items: [
+          { bold: "What good hierarchy looks like:", text: "" },
+       
+        ]
       },
+
+
       {
         type: "boldListpara",
         items: [
@@ -13880,12 +14256,9 @@ export const blogs = [
       },
 
       {
-        type: "paragraph",
-        text: "[Add Image: Before/after comparison showing cluttered vs clean design with proper color hierarchy]"
-      },
-      {
-        type: "paragraph",
-        text: "Alt text: \"Visual hierarchy comparison showing professional vs amateur graphic design impact\""
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog16-1.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
       {
@@ -13939,10 +14312,15 @@ export const blogs = [
           { bold: "•", text: "Text over busy images with no contrast (impossible to read)" }
         ]
       },
-      {
-        type: "paragraph",
-        text: "Professional typography principles:"
+        {
+        type: "boldListpara",
+        items: [
+          { bold: "Professional typography principles:", text: "" },
+       
+        ]
       },
+
+    
       {
         type: "boldListpara",
         items: [
@@ -13966,10 +14344,17 @@ export const blogs = [
         type: "paragraph",
         text: "Your brain makes instant assumptions about business quality based on image quality. Low-resolution, poorly lit, or stock photos signal lack of investment."
       },
-      {
-        type: "paragraph",
-        text: "Images that build trust:"
+         {
+        type: "boldListpara",
+        items: [
+          { bold: "Images that build trust", text: "" },
+       
+        ]
       },
+      // {
+      //   type: "paragraph",
+      //   text: "Images that build trust:"
+      // },
       {
         type: "boldListpara",
         items: [
@@ -13980,10 +14365,19 @@ export const blogs = [
           { bold: "•", text: "Consistent style across all brand materials" }
         ]
       },
-      {
-        type: "paragraph",
-        text: "Images that destroy trust:"
+
+       {
+        type: "boldListpara",
+        items: [
+          { bold: "Images that destroy trust", text: "" },
+       
+        ]
       },
+      // {
+      //   type: "paragraph",
+      //   text: "Images that destroy trust:"
+      // },
+
       {
         type: "boldListpara",
         items: [
@@ -14064,12 +14458,9 @@ export const blogs = [
         text: "For insights on how this applies to websites specifically, read our post on {{link: website design mistakes that kill leads|website-design-mistakes-killing-leads}}."
       },
       {
-        type: "paragraph",
-        text: "[Add Image: Side-by-side comparison of same offer with amateur vs professional design]"
-      },
-      {
-        type: "paragraph",
-        text: "Alt text: \"Same business offer comparison showing impact of professional graphic design on perceived value\""
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog16-2.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
       {
@@ -14150,9 +14541,15 @@ export const blogs = [
       },
 
       {
-        type: "paragraph",
-        text: "Design overhaul focused on trust-building:"
+        type: "boldListpara",
+        items: [
+          { bold: "Design overhaul focused on trust-building", text: "" },
+       
+        ]
       },
+
+     
+
       {
         type: "boldListpara",
         items: [
@@ -14163,11 +14560,15 @@ export const blogs = [
           { bold: "•", text: "Complete mobile redesign" }
         ]
       },
-
       {
-        type: "paragraph",
-        text: "Results after 45 days:"
+        type: "boldListpara",
+        items: [
+          { bold: "Results after 45 days:", text: "" },
+       
+        ]
       },
+
+     
 
 
       {
@@ -14207,10 +14608,19 @@ export const blogs = [
         ]
       },
 
-      {
-        type: "paragraph",
-        text: "The five elements that matter most:"
+       {
+        type: "boldListpara",
+        items: [
+          { bold: "The five elements that matter most:", text: "" },
+       
+        ]
       },
+
+      // {
+      //   type: "paragraph",
+      //   text: "The five elements that matter most:"
+      // },
+
       {
         type: "boldListpara",
         items: [
@@ -14236,28 +14646,28 @@ export const blogs = [
         text: "Ready to transform your brand design from trust-killer to trust-builder? Swastixa Digital creates professional brand identities and design systems that build credibility and drive conversions. Let's design trust into your brand. [Add link to Contact page]"
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+      // {
+      //   type: "paragraph",
+      //   text: "Shape"
+      // },
 
       {
         type: "paragraph",
         text: "You May Also Like:"
       },
-      {
-        type: "boldListpara",
-        items: [
-          {
-            bold: "•",
-            text: ""
-          },
-          {
-            bold: "•",
-            text: ""
-          }
-        ]
-      },
+      // {
+      //   type: "boldListpara",
+      //   items: [
+      //     {
+      //       bold: "•",
+      //       text: ""
+      //     },
+      //     {
+      //       bold: "•",
+      //       text: ""
+      //     }
+      //   ]
+      // },
 
       {
         type: "linkList",
@@ -14315,7 +14725,7 @@ export const blogs = [
     hero: {
       metaTitle: "Build Your Brand Using Instagram & Facebook Reels | Swastixa",
       description: "Learn how service businesses can build authentic brands using Instagram and Facebook Reels. Practical strategies, content ideas, and proven formats inside.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Build%20Your%20Brand.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-17.jpg",
     },
     content: [{ type: "heading", text: "Building a Brand on Instagram and Facebook Reels: Practical Tips for Service Businesses" },
     {
@@ -14501,13 +14911,10 @@ export const blogs = [
       text: "For deeper insights on choosing content formats strategically, read our guide on {{link: which content format works best for your brand|video-reels-carousels-best-format-brand}}."
     },
     {
-      type: "paragraph",
-      text: "[Add Image: Template showing 4 reel formats with example hooks and structures]"
-    },
-    {
-      type: "paragraph",
-      text: "Alt text: \"Four Instagram Reels formats for service business brand building with examples\""
-    },
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog17-1.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
+      },
 
     {
       type: "heading",
@@ -14586,7 +14993,7 @@ export const blogs = [
     },
     {
       type: "paragraph",
-      text: "For more on creating content consistently without daily stress, check our post on {{link: planning 30 days of content in 2 hours. | content-calendar-plan-30-days-posts}}"
+      text: "For more on creating content consistently without daily stress, check our post on {{link: planning 30 days of content in 2 hours|content-calendar-plan-30-days-posts}}"
     },
     {
       type: "heading",
@@ -14676,14 +15083,11 @@ export const blogs = [
       type: "paragraph",
       text: "For building complete in-house production capability, read our guide on {{link: why consistent visual content wins|in-house-production-visual-content-social-media}}."
     },
-    {
-      type: "paragraph",
-      text: "[Add Image: Simple smartphone reel setup with ring light and tripod]"
-    },
-    {
-      type: "paragraph",
-      text: "Alt text: \"Basic Instagram Reels recording setup for service businesses under 10000 rupees\""
-    },
+   {
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog17-2.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
+      },
 
     {
       type: "heading",
@@ -14750,7 +15154,7 @@ export const blogs = [
 
     {
       type: "subHeading",
-      text: "Create a \"Link in Bio\" Landing Page"
+      text: "Create a Link in Bio Landing Page"
     },
     {
       type: "paragraph",
@@ -14841,12 +15245,12 @@ export const blogs = [
     {
       type: "boldListpara",
       items: [
-        { bold: "", text: "Choose 2-3 core reel formats from the four we covered" },
-        { bold: "", text: "Batch record 4-8 reels in one session" },
-        { bold: "", text: "Post 3-4 reels per week consistently for 90 days" },
-        { bold: "", text: "Use clear CTAs directing viewers to next step" },
-        { bold: "", text: "Respond to engagement quickly" },
-        { bold: "", text: "Track inquiries from social media monthly" }
+        { bold: "1.", text: "Choose 2-3 core reel formats from the four we covered" },
+        { bold: "2.", text: "Batch record 4-8 reels in one session" },
+        { bold: "3.", text: "Post 3-4 reels per week consistently for 90 days" },
+        { bold: "4.", text: "Use clear CTAs directing viewers to next step" },
+        { bold: "5.", text: "Respond to engagement quickly" },
+        { bold: "6.", text: "Track inquiries from social media monthly" }
       ]
     },
 
@@ -14860,10 +15264,10 @@ export const blogs = [
       text: "Ready to build your brand presence on Instagram and Facebook with a strategic content plan? Swastixa Digital helps service businesses create and execute social media strategies that actually generate leads, not just likes. Let's build your reels strategy. [Add link to Contact page]"
     },
 
-    {
-      type: "paragraph",
-      text: "Shape"
-    },
+    // {
+    //   type: "paragraph",
+    //   text: "Shape"
+    // },
 
     {
       type: "subHeading",
@@ -14938,7 +15342,7 @@ export const blogs = [
     hero: {
       metaTitle: "Choose the Right Digital Marketing Partner | Swastixa Digital",
       description: "Learn how to evaluate and choose the right digital marketing agency for your business. Complete checklist, red flags, and questions to ask before signing.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Choose%20the%20Right.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-18.jpg",
     },
     content: [
       { type: "heading", text: "How to Choose the Right Digital Marketing Partner: Checklist and Red Flags for Businesses" },
@@ -15242,12 +15646,9 @@ export const blogs = [
       },
 
       {
-        type: "paragraph",
-        text: "[Add Image: Checklist infographic showing 8 must-have qualities in digital marketing partner]"
-      },
-      {
-        type: "paragraph",
-        text: "Alt text: \"Complete checklist for choosing the right digital marketing agency partner\""
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog18-1.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
       {
@@ -15473,10 +15874,10 @@ export const blogs = [
         text: "Ready to work with a partner who checks every box? Swastixa Digital offers transparent, results-focused digital marketing for businesses that value strategy, execution, and genuine partnership. Let's have an honest conversation about whether we're the right fit. [Add link to Contact page]"
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+      // {
+      //   type: "paragraph",
+      //   text: "Shape"
+      // },
 
       {
         type: "subHeading",
@@ -15550,9 +15951,14 @@ export const blogs = [
     hero: {
       metaTitle: "Full-Stack Digital Marketing Approach | Swastixa Digital ",
       description: "Discover how Swastixa Digital's integrated full-stack approach delivers better results than working with multiple vendors. One team, complete strategy, consistent execution. ",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20%20Full-Stack%20Digital.jpg",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-19.jpg",
     },
     content: [{ type: "heading", text: "Swastixa Digital's Full-Stack Approach: When One Team Handles Strategy, Content, Ads, and Production Together" },
+
+      {
+      type: "heading",
+      text: "Introduction"
+    },
 
     {
       type: "paragraph",
@@ -15677,13 +16083,10 @@ export const blogs = [
       text: "For context on why this coordination matters, revisit our foundational guide on {{link:building a 360° digital marketing strategy.|digital-marketing-strategy-smes-budget}}"
     },
     {
-      type: "paragraph",
-      text: "[Add Image: Diagram showing integrated full-stack approach vs fragmented multi-vendor approach]"
-    },
-    {
-      type: "paragraph",
-      text: "Alt text: \"Full-stack digital marketing approach versus fragmented multi-vendor coordination comparison\""
-    },
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog19-1.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
+      },
 
     {
       type: "heading",
@@ -15964,12 +16367,18 @@ export const blogs = [
       text: "For most growing businesses that need comprehensive digital presence, full-stack delivers better ROI. For more on evaluating this decision, read our guide on {{link:choosing the right digital marketing partner|choose-right-digital-marketing-partner}}."
     },
     {
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog19-2.jpg",
+        alt: "Cost comparison full-stack digital marketing versus multiple vendor approach with time investment"
+      },
+    {
       type: "image",
       imageAlt:
         "Cost comparison full-stack digital marketing versus multiple vendor approach with time investment",
-      imageNote:
-        "Cost and time comparison chart showing full-stack vs multi-vendor approach"
-    },
+         },
+    //   imageNote:
+    //     "Cost and time comparison chart showing full-stack vs multi-vendor approach"
+    // },
 
     {
       type: "heading",
@@ -16173,10 +16582,15 @@ export const blogs = [
     hero: {
       metaTitle: " Swastixa's Client Success Blueprint | Digital Growth Process",
       description: "Discover Swastixa Digital's proven process for taking businesses from zero online presence to consistent digital growth. Complete roadmap with real results.",
-      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20BLOG/BLOG%20-%20-%20%20Swastixa's%20Client.png",
+      image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog1/blog-20.jpg",
     },
     content: [
       { type: "heading", text: "Success Blueprint: How Swastixa Digital Takes Clients From Zero Presence to Consistent Online Growth" },
+
+      {
+        type: "heading",
+        text: "Introduction"
+      },
 
       {
         type: "paragraph",
@@ -16207,27 +16621,49 @@ export const blogs = [
         type: "paragraph",
         text: "Before showing you what works, let's address why most attempts fail:"
       },
+
+
       {
-        type: "list",
+        type: "boldListpara",
         items: [
-          {
-            title: "Mistake 1: No Foundation",
-            text: "They run ads to a slow, confusing website. They post on social media with no clear brand identity. They start in the middle instead of building proper foundation."
-          },
-          {
-            title: "Mistake 2: Random Tactics",
-            text: "They try a bit of everything—some SEO, random social posts, occasional ads—without strategic connection. Nothing compounds because nothing's coordinated."
-          },
-          {
-            title: "Mistake 3: Unrealistic Expectations",
-            text: "They expect 100 leads in month one, give up when it doesn't happen, and never stick around long enough to see real results."
-          },
-          {
-            title: "Mistake 4: No Measurement",
-            text: "They can't tell what's working because they're not tracking properly. They make decisions based on feelings, not data."
-          }
+          { bold: "Mistake 1 : No Foundation", text: "They run ads to a slow, confusing website. They post on social media with no clear brand identity. They start in the middle instead of building proper foundation." },
+          { bold: "Mistake 2 : Random Tactics", text: "They try a bit of everything—some SEO, random social posts, occasional ads—without strategic connection. Nothing compounds because nothing's coordinated." },
+          { bold: "Mistake 3 : Unrealistic Expectations", text: "They expect 100 leads in month one, give up when it doesn't happen, and never stick around long enough to see real results." },
+          { bold: "Mistake 4 : No Measurement", text: "Our blueprint eliminates all four mistakes through structured phases, strategic coordination, realistic expectations, and obsessive measurement." },
+          
         ]
       },
+
+
+     
+
+
+
+
+
+      // {
+      //   type: "list",
+      //   items: [
+      //     {
+      //       title: "Mistake 1: No Foundation",
+      //       text: "They run ads to a slow, confusing website. They post on social media with no clear brand identity. They start in the middle instead of building proper foundation."
+      //     },
+      //     {
+      //       title: "Mistake 2: Random Tactics",
+      //       text: "They try a bit of everything—some SEO, random social posts, occasional ads—without strategic connection. Nothing compounds because nothing's coordinated."
+      //     },
+      //     {
+      //       title: "Mistake 3: Unrealistic Expectations",
+      //       text: "They expect 100 leads in month one, give up when it doesn't happen, and never stick around long enough to see real results."
+      //     },
+      //     {
+      //       title: "Mistake 4: No Measurement",
+      //       text: "They can't tell what's working because they're not tracking properly. They make decisions based on feelings, not data."
+      //     }
+      //   ]
+      // },
+
+
       {
         type: "paragraph",
         text: "Our blueprint eliminates all four mistakes through structured phases, strategic coordination, realistic expectations, and obsessive measurement."
@@ -16241,15 +16677,19 @@ export const blogs = [
         type: "paragraph",
         text: "Our process has four distinct phases, each building on the previous one:"
       },
+
       {
-        type: "list",
+        type: "boldListpara",
         items: [
-          { text: "Phase 1: Foundation (Month 1-2)" },
-          { text: "Phase 2: Visibility (Month 3-4)" },
-          { text: "Phase 3: Optimization (Month 5-6)" },
-          { text: "Phase 4: Scale (Month 7+)" }
+         
+          { bold: "1: Phase : Foundation (Month 1-2)", text: "" },
+          { bold: "2: Phase : Visibility (Month 3-4)", text: "" },
+          { bold: "3: Phase : Optimization (Month 5-6)", text: "" },
+          { bold: "4: Phase : Scale (Month 7+)", text: "" },
+         
         ]
       },
+
       {
         type: "paragraph",
         text: "Let's break down exactly what happens in each phase and what results to expect."
@@ -16300,7 +16740,7 @@ export const blogs = [
 
       {
         type: "subHeading",
-        text: "Week 5-8: Content System Setup"
+        text: "Week 5-8 : Content System Setup"
       },
       {
         type: "list",
@@ -16314,7 +16754,7 @@ export const blogs = [
 
       {
         type: "subHeading",
-        text: "What Results Look Like:"
+        text: "What Results Look Like :"
       },
       {
         type: "paragraph",
@@ -16330,15 +16770,12 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "This phase feels slow because you're building infrastructure. But everything that follows depends on getting this right. For context on what strong foundation includes, revisit our guide on{{link: building a 360° digital marketing strategy. | digital-marketing-strategy-smes-budget}}"
+        text: "This phase feels slow because you're building infrastructure. But everything that follows depends on getting this right. For context on what strong foundation includes, revisit our guide on{{link:building a 360° digital marketing strategy|digital-marketing-strategy-smes-budget}}"
       },
       {
-        type: "paragraph",
-        text: "[Add Image: Phase 1 checklist showing foundation elements and completion timeline]"
-      },
-      {
-        type: "paragraph",
-        text: "Alt text: \"Digital marketing foundation phase checklist showing website optimization and content system setup\""
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog20-1.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
       {
@@ -16352,7 +16789,7 @@ export const blogs = [
 
       {
         type: "subHeading",
-        text: "What We Do:"
+        text: "What We Do :"
       },
 
       {
@@ -16423,7 +16860,7 @@ export const blogs = [
 
       {
         type: "subHeading",
-        text: "Month 4 typical metrics:"
+        text: "Month 4 typical metrics :"
       },
       {
         type: "list",
@@ -16451,7 +16888,7 @@ export const blogs = [
 
       {
         type: "subHeading",
-        text: "What We Do:"
+        text: "What We Do :"
       },
 
       {
@@ -16558,12 +16995,9 @@ export const blogs = [
       },
 
       {
-        type: "paragraph",
-        text: "[Add Image: Growth curve chart showing typical metrics progression through phases 1-4]"
-      },
-      {
-        type: "paragraph",
-        text: "Alt text: \"Digital marketing growth curve showing website traffic and lead progression across 4 phases\""
+        type: "imageRightText",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/blog1/blog2inner/blog-imges/blog20-2.jpg",
+        alt: "High-converting service page structure showing essential sections and trust elements"
       },
 
       {
@@ -16577,7 +17011,7 @@ export const blogs = [
 
       {
         type: "subHeading",
-        text: "What We Do:"
+        text: "What We Do :"
       },
 
       {
@@ -16773,13 +17207,14 @@ export const blogs = [
         text: "Building digital presence from zero to consistent growth isn't complicated, but it is systematic. It requires:"
       },
 
+
       {
-        type: "list",
+        type: "boldList",
         items: [
-          { text: "Phase 1 (Month 1-2): Building proper foundation" },
-          { text: "Phase 2 (Month 3-4): Creating visibility and gathering data" },
-          { text: "Phase 3 (Month 5-6): Optimizing what works, cutting what doesn't" },
-          { text: "Phase 4 (Month 7+): Scaling proven systems for predictable growth" }
+          { bold: "Phase 1 (Month 1-2) :", text: "Building proper foundation" },
+          { bold: "Phase 2 (Month 3-4) :", text: "Creating visibility and gathering data" },
+          { bold: "Phase 3 (Month 5-6) :", text: "Optimizing what works, cutting what doesn't" },
+          { bold: "Phase 4 (Month 7+)  : ", text: "Scaling proven systems for predictable growth" },
         ]
       },
 
@@ -16801,30 +17236,30 @@ export const blogs = [
         text: "Ready to start building your digital presence the right way? Swastixa Digital implements this exact blueprint with every client. Let's have an honest conversation about your starting point, your goals, and whether our process fits your business. No pressure, just clarity. [Add link to Contact page]"
       },
 
-      {
-        type: "paragraph",
-        text: "Shape"
-      },
+      // {
+      //   type: "paragraph",
+      //   text: "Shape"
+      // },
 
       {
         type: "paragraph",
         text: "You May Also Like:"
       },
-      {
-        type: "list",
-        items: [
-          { text: "How to Choose the Right Digital Marketing Partner: Checklist and Red Flags for Businesses" },
-          { text: "" },
-          { text: "" }
-        ]
-      },
+      // {
+      //   type: "list",
+      //   items: [
+      //     { text: "How to Choose the Right Digital Marketing Partner: Checklist and Red Flags for Businesses" },
+      //     { text: "" },
+      //     { text: "" }
+      //   ]
+      // },
 
       {
         type: "linkList",
         variant: "unordered",
         items: [
 
-          " {{link:  How to Choose the Right Digital Marketing Partner: Checklist and Red Flags for Businesses|choose-right-digital-marketing-partner}}",
+          " {{link: How to Choose the Right Digital Marketing Partner: Checklist and Red Flags for Businesses|choose-right-digital-marketing-partner}}",
           " {{link: Swastixa Digital's Full-Stack Approach: When One Team Handles Strategy, Content, Ads, and Production Together|swastixa-full-stack-digital-marketing-approach}}",
           " {{link: How Indian SMEs Can Build a 360° Digital Marketing Strategy With Limited Budget |digital-marketing-strategy-smes-budget}}",
         ]
@@ -16861,13 +17296,3 @@ export const blogs = [
     ],
   }
 ];
-
-
-
-
-
-
-
-
-
-

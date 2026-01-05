@@ -7,6 +7,8 @@ import smmContent from '../../../data/smmContent.js'
 
 const SocialMediaManagement = () => {
   
+  
+
   return (
     <main className="bg-black">
       {/* <InnerPageHeader
@@ -18,10 +20,10 @@ const SocialMediaManagement = () => {
 
 
 
-      <div style={{ height: '600px', position: 'relative' }}>
+      {/* <div style={{ height: '600px', position: 'relative' }}>
         <CircularGallery bend={4} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02} scrollSpeed={5} />
 
-      </div>
+      </div> */}
       <h2 className='pt-24 md:pt-40 lg:pt-60 2xl:pt-80 text-white text-center text-4xl md:text-6xl font-bold tracking-tighter'>Social Media Management</h2>
       {/* <MagicBento> */}
         {/* <MagicBento

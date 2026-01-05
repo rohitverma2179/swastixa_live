@@ -3,184 +3,555 @@ const smmContent = [
 
     {
         id: 1,
-        title: "Brand Aesthetics",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
-        category: "Instagram"
+        // title: "Brand Aesthetics",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate1.jpg",
+        // category: "Instagram"
     },
     {
         id: 2,
-        title: "Viral Campaigns",
-        image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1000&auto=format&fit=crop",
-        category: "TikTok"
+        // title: "Viral Campaigns",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate2.jpg",
+        // category: "TikTok"
     },
     {
         id: 3,
-        title: "Community Growth",
-        image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=1000&auto=format&fit=crop",
-        category: "Engagement"
+        // title: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate3.jpg",
+        // category: "Engagement"
     },
     {
         id: 4,
-        title: "Creative Strategy",
-        image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=1000&auto=format&fit=crop",
-        category: "Strategy"
+        // title: "Creative Strategy",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate4.jpg",
+        // category: "Strategy"
     },
     {
         id: 5,
-        title: "Visual Storytelling",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
-        category: "Content"
+        // title: "Visual Storytelling",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate5.jpg",
+        // category: "Content"
     },
     {
         id: 6,
-        title: "Analytics & Growth",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate6.jpg",
+        // category: "Data"
     },
     {
         id: 7,
-        title: "Product Showcasing",
-        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop",
-        category: "Product"
+        // title: "Product Showcasing",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate7.jpg",
+        // category: "Product"
     },
     {
         id: 8,
-        title: "Lifestyle Curator",
-        image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop",
-        category: "Lifestyle"
+        // title: "Lifestyle Curator",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate8.jpg",
+        // category: "Lifestyle"
     },
     {
         id: 9,
-        title: "Analytics & Growth",
-        image: "https://images.unsplash.com/photo-1498550744921-75f79806b8a7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG9yaXpvbnRhbCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate9.jpg",
+        // category: "Data"
     },
     {
         id: 10,
-        title: "Lifestyle Curator",
-        image: "https://i2.wp.com/photornia.com/wp-content/uploads/2019/06/DSC_3106.jpg?fit=618%2C927&ssl=1",
-        category: "Lifestyle"
+        // title: "Lifestyle Curator",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Emaar1.jpg",
+        // category: "Lifestyle"
     },
     {
         id: 11,
-        title: "Analytics & Growth",
-        image: "https://img.freepik.com/free-photo/beautiful-vertical-shot-river-flowing-trees-stones_181624-2699.jpg?semt=ais_hybrid&w=740&q=80",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Kevvali4.jpg",
+        // category: "Data"
     },
     {
         id: 12,
-        title: "Lifestyle Curator",
-        image: "https://media.gettyimages.com/id/520529648/photo/elevated-view-of-burj-khalifa-at-twilight-dubai.jpg?s=612x612&w=gi&k=20&c=hgIDz3GzwAQ--iXnea9CNUxRwogQWk0822GmP76eXZk=",
-        category: "Lifestyle"
+        // title: "Lifestyle Curator",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Navratri1.jpg",
+        // category: "Lifestyle"
     },
     {
         id: 13,
-        title: "Analytics & Growth",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhn90TS45aKHNjVerONFRk46Rz_43zcNFCcQ&s",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Navratri2.jpg",
+        // category: "Data"
     },
     {
         id: 14,
-        title: "Lifestyle Curator",
-        image: "https://media.istockphoto.com/id/670026216/photo/sunset-over-the-fishing-pier-at-the-lake-in-finland.jpg?s=612x612&w=0&k=20&c=sElk_hY51iO7yxd2SRGsOBJWWAhDLQfF3_V4gNLGd20=",
-        category: "Lifestyle"
+        // title: "Lifestyle Curator",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Navratri3.jpg",
+        // category: "Lifestyle"
     },
     {
         id: 15,
-        title: "Analytics & Growth",
-        image: "https://img.freepik.com/free-photo/vertical-shot-curvy-road-forest-covered-yellowing-trees-dried-leaves-autum_181624-58749.jpg?semt=ais_hybrid&w=740&q=80",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Navratri4.jpg",
+        // category: "Data"
     },
     {
         id: 16,
-        title: "Brand Aesthetics",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
-        category: "Instagram"
+        // title: "Brand Aesthetics",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Navratri5.jpg",
+        // category: "Instagram"
     },
     {
         id: 17,
-        title: "Viral Campaigns",
-        image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1000&auto=format&fit=crop",
-        category: "TikTok"
+        // title: "Viral Campaigns",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Navratri6.jpg",
+        // category: "TikTok"
     },
     {
         id: 18,
-        title: "Community Growth",
-        image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=1000&auto=format&fit=crop",
-        category: "Engagement"
+        // title: "Community Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Navratri7.jpg",
+        // category: "Engagement"
     },
     {
         id: 19,
-        title: "Creative Strategy",
-        image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=1000&auto=format&fit=crop",
-        category: "Strategy"
+        // title: "Creative Strategy",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Navratri8.jpg",
+        // category: "Strategy"
     },
     {
         id: 20,
-        title: "Visual Storytelling",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
-        category: "Content"
+        // title: "Visual Storytelling",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Navratri9.jpg",
+        // category: "Content"
     },
     {
         id: 21,
-        title: "Analytics & Growth",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/RAJGRIHAM1.jpg",
+        // category: "Data"
     },
     {
         id: 22,
-        title: "Product Showcasing",
-        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop",
-        category: "Product"
+        // title: "Product Showcasing",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/RAJGRIHAM2.jpg",
+        // category: "Product"
     },
     {
         id: 23,
-        title: "Lifestyle Curator",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgzbXDa_bK-otB_pLOcVhUgdWy9N4SIQlP5Q&s",
-        category: "Lifestyle"
+        // title: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/RAJGRIHAM3.jpg",
+        // category: "Lifestyle"
     },
     {
         id: 24,
-        title: "Analytics & Growth",
-        image: "https://dynamic.brandcrowd.com/template/preview/design/6057cf30-ed87-4bc4-a1fb-a6485eeea315?v=4&designTemplateVersion=1&size=design-preview-tall-2x",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/RealEstateNewsPost1.jpg",
+        // category: "Data"
     },
     {
         id: 25,
-        title: "Lifestyle Curator",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSoh5mqWa-aVzJRT9Lx4P_jSznctkSzA6AQ&s",
-        category: "Lifestyle"
+        // title: "Lifestyle Curator",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Rki1.jpg",
+        // category: "Lifestyle"
     },
     {
         id: 26,
-        title: "Analytics & Growth",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcSoh5mqWa-aVzJRT9Lx4P_jSznctkSzA6AQ&s",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva1.jpg",
+        // category: "Data"
     },
     {
         id: 27,
-        title: "Lifestyle Curator",
-        image: "https://img.freepik.com/free-vector/pack-trendy-social-media-feed-banner-online-marketing_1017-57721.jpg?semt=ais_hybrid&w=740&q=80",
-        category: "Lifestyle"
+        // title: "Lifestyle Curator",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva10.jpg",
+        // category: "Lifestyle"
     },
     {
         id: 28,
-        title: "Analytics & Growth",
-        image: "https://img.freepik.com/premium-vector/modern-graphic-design-service-corporate-social-media-post-instagram-post-template_615614-970.jpg?semt=ais_hybrid&w=740&q=80",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva11.jpg",
+        // category: "Data"
     },
     {
         id: 29,
-        title: "Lifestyle Curator",
-        image: "https://img.freepik.com/free-psd/graphic-design-profession-instagram-posts-collection_23-2150065697.jpg?semt=ais_hybrid&w=740&q=80",
-        category: "Lifestyle"
+        // title: "Lifestyle Curator",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva2.jpg",
+        // category: "Lifestyle"
     },
     {
         id: 30,
-        title: "Analytics & Growth",
-        image: "https://img.freepik.com/free-psd/designer-template-design_23-2151781677.jpg?semt=ais_hybrid&w=740&q=80",
-        category: "Data"
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva3.jpg",
+        // category: "Data"
     },
+    {
+        id: 31,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva5.jpg",
+        // category: "Data"
+    },
+    {
+        id: 32,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva6.jpg",
+        // category: "Data"
+    },
+    {
+        id: 33,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva7.jpg",
+        // category: "Data"
+    },
+    {
+        id: 34,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva8.jpg",
+        // category: "Data"
+    },
+    {
+        id: 35,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva9.jpg",
+        // category: "Data"
+    },
+    {
+        id: 36,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips1.jpg",
+        // category: "Data"
+    },
+    {
+        id: 37,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips10.jpg",
+        // category: "Data"
+    },
+    {
+        id: 38,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips11.jpg",
+        // category: "Data"
+    },
+    {
+        id: 39,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips12.jpg",
+        // category: "Data"
+    },
+    {
+        id: 40,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips2.jpg",
+        // category: "Data"
+    },
+    {
+        id: 41,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips3.jpg",
+        // category: "Data"
+    },
+    {
+        id: 42,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips4.jpg",
+        // category: "Data"
+    },
+    {
+        id: 43,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips5.jpg",
+        // category: "Data"
+    },
+    {
+        id: 44,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips6.jpg",
+        // category: "Data"
+    },
+    {
+        id: 45,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips7.jpg",
+        // category: "Data"
+    },
+    {
+        id: 46,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips8.jpg",
+        // category: "Data"
+    },
+    {
+        id: 47,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/investmenttips9.jpg",
+        // category: "Data"
+    },
+    {
+        id: 48,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/kevvali1.jpg",
+        // category: "Data"
+    },
+    {
+        id: 49,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/kevvali10.jpg",
+        // category: "Data"
+    },
+    {
+        id: 50,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/kevvali2.jpg",
+        // category: "Data"
+    },
+    {
+        id: 51,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/kevvali3.jpg",
+        // category: "Data"
+    },
+    {
+        id: 52,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/kevvali5.jpg",
+        // category: "Data"
+    },
+    {
+        id: 53,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/kevvali6.jpg",
+        // category: "Data"
+    },
+    {
+        id: 54,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/kevvali7.jpg",
+        // category: "Data"
+    },
+    {
+        id: 55,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/kevvali8.jpg",
+        // category: "Data"
+    },
+    {
+        id: 56,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/kevvali9.jpg",
+        // category: "Data"
+    },
+    {
+        id: 57,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/swastixa1.jpg",
+        // category: "Data"
+    },
+    {
+        id: 58,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/swastixa2.jpg",
+        // category: "Data"
+    },
+    {
+        id: 59,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/swastixa3.jpg",
+        // category: "Data"
+    },
+    {
+        id: 60,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/swastixa4.jpg",
+        // category: "Data"
+    },
+    {
+        id: 61,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/swastixa5.jpg",
+        // category: "Data"
+    },
+    {
+        id: 62,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/swastixa6.jpg",
+        // category: "Data"
+    },
+    {
+        id: 63,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/swastixa7.jpg",
+        // category: "Data"
+    },
+    {
+        id: 64,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/swastixa8.jpg",
+        // category: "Data"
+    },
+    {
+        id: 65,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya1.jpg",
+        // category: "Data"
+    },
+    {
+        id: 66,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya10.jpg",
+        // category: "Data"
+    },
+    {
+        id: 67,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya11.jpg",
+        // category: "Data"
+    },
+    {
+        id: 68,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya12.jpg",
+        // category: "Data"
+    },
+    {
+        id: 69,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya13.jpg",
+        // category: "Data"
+    },
+    {
+        id: 70,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya14.jpg",
+        // category: "Data"
+    },
+    {
+        id: 71,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya15.jpg",
+        // category: "Data"
+    },
+    {
+        id: 72,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya16.jpg",
+        // category: "Data"
+    },
+    {
+        id: 73,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya17.jpg",
+        // category: "Data"
+    },
+    {
+        id: 74,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya18.jpg",
+        // category: "Data"
+    },
+    {
+        id: 75,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya19.jpg",
+        // category: "Data"
+    },
+    {
+        id: 76,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya2.jpg",
+        // category: "Data"
+    },
+    {
+        id: 77,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya20.jpg",
+        // category: "Data"
+    },
+    {
+        id: 78,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya21.jpg",
+        // category: "Data"
+    },
+    {
+        id: 79,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya21.jpg",
+        // category: "Data"
+    },
+    {
+        id: 80,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya22.jpg",
+        // category: "Data"
+    },
+    {
+        id: 81,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya23.jpg",
+        // category: "Data"
+    },
+    {
+        id: 82,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya24.jpg",
+        // category: "Data"
+    },
+    {
+        id: 83,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya25.jpg",
+        // category: "Data"
+    },
+    {
+        id: 84,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya26.jpg",
+        // category: "Data"
+    },
+    {
+        id: 85,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya27.jpg",
+        // category: "Data"
+    },
+    {
+        id: 86,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya3.jpg",
+        // category: "Data"
+    },
+    {
+        id: 87,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya4.jpg",
+        // category: "Data"
+    },
+    {
+        id: 88,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya5.jpg",
+        // category: "Data"
+    },
+    {
+        id: 89,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya6.jpg",
+        // category: "Data"
+    },
+    {
+        id: 90,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya7.jpg",
+        // category: "Data"
+    },
+    {
+        id: 91,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya8.jpg",
+        // category: "Data"
+    },
+    {
+        id: 92,
+        // title: "Analytics & Growth",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya9.jpg",
+        // category: "Data"
+    },
+    
 ];
 
 export default smmContent;

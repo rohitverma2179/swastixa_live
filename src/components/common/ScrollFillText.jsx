@@ -210,7 +210,7 @@ const ScrollFillText = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-black min-h-screen flex items-center"
+      className="bg-black min-h-screen flex items-center mb-10"
     >
       <div className="main-para px-6 md:px-20 max-w-7xl mx-auto pt-[60vh]">
         {phrases.map((phrase, i) => (

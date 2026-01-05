@@ -3,11 +3,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-// import swastixa from "/swastixa.png";
 import swastixawhite from "../../assets/Swastixa_white.png";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 
-// import { swastixa } from '/';
+const socialLinks = [
+  { icon: <FaFacebookF />, url: "https://www.facebook.com/share/1BavrtTDFV/" },
+  { icon: <FaInstagram />, url: "https://www.instagram.com/swastixadigital?igsh=ZHQwMmthamV3a3Vu" },
+  { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/company/swastixa/" },
+  { icon: <FaYoutube />, url: "https://youtube.com/@swastixadigital?si=Pfy9tRbjKuLInRJE" },
+];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +25,8 @@ export default function Navbar() {
   const workItems = [
     { label: "Production House", path: "/work/workpages/ProductionHouse" },
     { label: "Social Media Management", path: "/work/workpages/SocialMediaManagement" },
-    { label: "Website Development", path: "/work/workpages/WebsiteDevelopment" },
-    { label: "Digital Marketing", path: "/work/workpages/DigitalMarketing" },
+    // { label: "Website Development", path: "/work/workpages/WebsiteDevelopment" },
+    // { label: "Digital Marketing", path: "/work/workpages/DigitalMarketing" },
   ];
 
 
@@ -226,26 +231,22 @@ export default function Navbar() {
 
               {/* Social Icons */}
               <motion.div
-                className="flex justify-center space-x-6 mt-12"
+                className="flex justify-center gap-6 mt-12"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                {[
-                  { icon: "facebook-f", url: "#" },
-                  { icon: "instagram", url: "#" },
-                  { icon: "linkedin-in", url: "#" },
-                ].map((social, i) => (
+                {socialLinks.map((item, index) => (
                   <motion.a
-                    key={i}
-                    href={social.url}
+                    key={index}
+                    href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-400 text-2xl"
+                    className="text-black/70 hover:text-blue-400 text-2xl sm:text-3xl"
                     whileHover={{ scale: 1.2 }}
                     transition={{ type: "spring", stiffness: 200 }}
                   >
-                    <i className={`fab fa-${social.icon}`} />
+                    {item.icon}
                   </motion.a>
                 ))}
               </motion.div>

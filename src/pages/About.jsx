@@ -8,8 +8,7 @@ import ApproachSection from '../components/about/ApproachSection'
 import ManaginDiroctor from '../components/about/ManaginDiroctor'
 import OurTeam from '../components/about/OurTeam'
 import ScrollRevealText from '../components/common/scrollRevealText'
-// import ScrollFillText from '../components/common/ScrollFillText'
-import BrandManifesto from '../components/common/ScrollFillText'
+// import BrandManifesto from '../components/common/ScrollFillText'
 import ScrollFillText from '../components/common/ScrollFillText'
 
 const About = () => {
@@ -92,12 +91,12 @@ const About = () => {
                 </div> */}
                 {/* <ScrollFillText /> */}
                 <ScrollFillText />
-                <BrandManifesto />
+                {/* <BrandManifesto /> */}
                 <DigitalEraSection />
                 <ApproachSection />
                 <LogoCarousel />
-                <ManaginDiroctor />
-                <OurTeam />
+                {/* <ManaginDiroctor />
+                <OurTeam /> */}
             </div>
         </>
     )
@@ -107,3 +106,9 @@ const About = () => {
 
 
 export default About
+
+
+
+
+
+
