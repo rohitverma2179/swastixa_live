@@ -9,7 +9,7 @@ export default function BlogCard({ blog }) {
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             containerClassName="shadow-md hover:shadow-2xl transition-all  duration-300 bg-zinc-900"
-            className="p-4 rounded-sm  !h-auto"
+            className="p-4 rounded-sm  h-auto"
             borderRadius="0.8rem"
         // color="rgba(255, 255, 255, 0.4)"
 
@@ -26,7 +26,7 @@ export default function BlogCard({ blog }) {
                     lg:h-[22vw]        /* Laptops */
                     xl:h-[38.133vh]        /* Large monitors */
                     2xl:h-[57.2vh]       /* Ultra wide screens */
-                    max-h-[40rem]      /* hard safety cap */
+                    max-h-160      /* hard safety cap */
                     overflow-hidden
                 "
                 style={{

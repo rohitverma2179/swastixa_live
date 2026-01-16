@@ -1,133 +1,59 @@
-// // import { FixedSizeList as List } from "react-window";
-// // // import ReactWindow from "react-window";
-
-// // // const { FixedSizeList } = ReactWindow;
-// // // import VideoPlayer from "./VideoPlayer";
-// // // import { videoList } from "../data/videoList";
-// // // import  {videoList}  from "../../data/videoList";
-// // // import { List } from "react-window";
-// // import VideoPlayer from "./VideoPlayer";
-// // import { videoList } from "../../data/videoList.js";
-
-// // const Row = ({ index, style }) => {
-// //   const video = videoList[index];
-
-// //   return (
-// //     <div style={style} className="flex justify-center py-20">
-// //       <VideoPlayer
-// //         src={video.src}
-// //         poster={`/posters/${video.id}.webp`}
-// //       />
-// //     </div>
-// //   );
-// // };
-
-// // const VirtualVideoList = () => {
-// //   return (
-// //     <List
-// //       height={window.innerHeight}
-// //       itemCount={videoList.length}
-// //       itemSize={700}
-// //       width="100%"
-// //     >
-// //       {Row}
-// //     </List>
-// //   );
-// // };
-
-// // export default VirtualVideoList;
 
 
-// import { useRef } from "react";
-// import { useVirtualizer } from "@tanstack/react-virtual";
-// import { videoList } from "../../data/videoList";
-// import VideoPlayer from "./VideoPlayer";
-// // import VideoPlayer from "./VideoPlayer";
-// // import { videoList } from "../data/videoList";
+import { useRef, useState, useEffect } from "react";
 
-// const VirtualVideoList = () => {
-//   const parentRef = useRef(null);
-
-//   const rowVirtualizer = useVirtualizer({
-//     count: videoList.length,
-//     getScrollElement: () => parentRef.current,
-//     estimateSize: () => 750,
-//     overscan: 2, // Netflix style smoothness
-//   });
-
-//   console.log(rowVirtualizer.getVirtualItems());
-
-//   return (
-//     <div
-//       ref={parentRef}
-//       className="h-screen w-full overflow-auto bg-black"
-//     >
-//       <div
-//         style={{
-//           height: `${rowVirtualizer.getTotalSize()}px`,
-//           position: "relative",
-//         }}
-//       >
-//         {rowVirtualizer.getVirtualItems().map((virtualRow) => {
-//           const video = videoList[virtualRow.index];
-//           if (!video?.src) return null;
-
-//           return (
-//             <div
-//               key={video.id}
-//               style={{
-//                 position: "absolute",
-//                 top: 0,
-//                 left: 0,
-//                 width: "100%",
-//                 transform: `translateY(${virtualRow.start}px)`,
-//               }}
-//               className="flex justify-center py-24"
-//             >
-//               <VideoPlayer
-//                 src={video.src}
-//                 poster={`/posters/${video.id}.webp`}
-//               />
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default VirtualVideoList;
-
-
-
-import { useRef } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { videoList } from "../../data/videoList";
 import VideoPlayer from "./VideoPlayer";
 
 const VirtualVideoList = () => {
-  const parentRef = useRef(null);
+  const containerRef = useRef(null);
+  const [scrollMargin, setScrollMargin] = useState(0);
+
+  // Measure initial offset immediately to prevent jumping
+  useEffect(() => {
+    const measure = () => {
+      if (containerRef.current) {
+        const rect = containerRef.current.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        setScrollMargin(rect.top + scrollTop);
+      }
+    };
+
+    measure();
+    // Re-measure after a short delay to account for dynamic content like hero videos
+    const timer = setTimeout(measure, 500);
+    window.addEventListener('resize', measure);
+    return () => {
+      window.removeEventListener('resize', measure);
+      clearTimeout(timer);
+    };
+  }, []);
 
   const rowVirtualizer = useVirtualizer({
     count: videoList.length,
-    getScrollElement: () => parentRef.current,
-    estimateSize: () => window.innerHeight * 0.9,
-    overscan: 3,
+    getScrollElement: () => (typeof document !== "undefined" ? document.documentElement : null),
+    estimateSize: () => 800,
+    overscan: 10, // Increased significantly for smoother up/down scrolling
+    scrollMargin: scrollMargin,
   });
+
+  const virtualItems = rowVirtualizer.getVirtualItems();
 
   return (
     <div
-      ref={parentRef}
-      className=" w-full overflow-auto bg-black"
+      ref={containerRef}
+      className="w-full bg-black relative"
+      style={{ minHeight: "80vh" }}
     >
       <div
         style={{
-          height: rowVirtualizer.getTotalSize(),
+          height: `${rowVirtualizer.getTotalSize()}px`,
           position: "relative",
-          backgroundColor: "black",
+          width: "100%",
         }}
       >
-        {rowVirtualizer.getVirtualItems().map((row) => {
+        {virtualItems.map((row) => {
           const video = videoList[row.index];
           if (!video) return null;
 
@@ -139,9 +65,11 @@ const VirtualVideoList = () => {
                 top: 0,
                 left: 0,
                 width: "100%",
-                transform: `translateY(${row.start}px)`,
+                height: `${row.size}px`,
+                transform: `translateY(${row.start - scrollMargin}px)`,
+                willChange: "transform",
               }}
-              className="flex justify-center  py-24  "
+              className="flex justify-center items-center py-10 md:py-20 px-4"
             >
               <VideoPlayer
                 src={video.src}
@@ -154,5 +82,8 @@ const VirtualVideoList = () => {
     </div>
   );
 };
+
+
+
 
 export default VirtualVideoList;

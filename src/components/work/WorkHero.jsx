@@ -1,58 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
-import { Oval } from 'react-loader-spinner';
-import { useLazyVideo } from "../../hooks/useLazyVideo";
-// import { useLazyVideo } from "../../hooks/useLazyVideo";
-
-
-// =============================
-// CARD DATA FOR BOTH VIEW
-// =============================
-
-
-
-
-
-// =============================
-// REUSABLE VIDEO CARD
-// =============================
-// const VideoCard = ({ src, className }) => {
-//   const [loading, setLoading] = useState(true);
-
-//   return (
-//     <div className={`${className} overflow-hidden bg-black`}>
-//       {/* Loader (Show Until Video Loads) */}
-//       {loading && (
-//         <div className="absolute inset-0 flex items-center justify-center bg-gray-900 z-30">
-//           <Oval
-//             height={40}
-//             width={40}
-//             color="#ffffff"
-//             secondaryColor="#4fa94d"
-//             strokeWidth={4}
-//             strokeWidthSecondary={4}
-//             ariaLabel="oval-loading"
-//             visible={true}
-//           />
-//         </div>
-//       )}
-
-//       {/* Video */}
-//       <video
-//         className={`w-full h-full object-cover transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
-//           }`}
-//         src={src}
-//         autoPlay
-//         loop
-//         muted
-//         playsInline
-//         onLoadedData={() => setLoading(false)}
-//       ></video>
-//     </div>
-//   );
-// };
-
-
 
 const videoCards = [
   {
@@ -133,65 +80,75 @@ const videoCards = [
   },
 ];
 
-const VideoCard = ({ src, className }) => {
-  const [loading, setLoading] = useState(true);
-  const { videoRef, isVisible } = useLazyVideo();
+const VideoCard = ({ src, className, shadowColor = "rgba(0,0,0,0.5)" }) => {
+  const containerRef = useRef(null);
+  const videoRef = useRef(null);
+  const [shouldLoad, setShouldLoad] = useState(true); // Hero videos load immediately
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoRef.current?.play().catch(() => { });
+        } else {
+          videoRef.current?.pause();
+        }
+      },
+      {
+        rootMargin: "200px",
+        threshold: 0.1,
+      }
+    );
+
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div ref={videoRef} className={`${className} overflow-hidden bg-black`}>
-
-      {/* Loader */}
-      {loading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-900 z-30">
-          <Oval height={40} width={40} color="#fff" />
-        </div>
-      )}
-
-      {/* Load video ONLY when visible */}
-      {isVisible && (
+    <div
+      ref={containerRef}
+      className={`${className} overflow-hidden bg-neutral-900 border border-white/5 backdrop-blur-sm transition-opacity duration-700`}
+      style={{ boxShadow: `0 10px 30px ${shadowColor}` }}
+    >
+      {shouldLoad && (
         <video
-          className={`w-full h-full object-cover transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
-            }`}
+          ref={videoRef}
           src={src}
-          autoPlay
-          loop
           muted
+          loop
           playsInline
-          preload="metadata"
-          onLoadedData={() => setLoading(false)}
+          preload="auto"
+          onCanPlay={() => setIsReady(true)}
+          className={`w-full h-full object-cover transition-opacity duration-700 ${isReady ? "opacity-100" : "opacity-0"}`}
         />
+      )}
+      {!isReady && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+          <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin"></div>
+        </div>
       )}
     </div>
   );
 };
 
-
 // =============================
+
 // MAIN COMPONENT
 // =============================
 const WorkHero = () => {
-
   return (
     <section className="w-full h-auto md:h-[80vh] mb-20 md:mb-44 flex items-center justify-center pt-10 md:pt-24 bg-transparent overflow-hidden">
-
       <div className="relative w-full max-w-6xl h-auto md:h-[400px] flex flex-col md:block items-center gap-4">
 
         {/* ===== MOBILE VIEW (< 768px) ===== */}
         <div className="flex md:hidden flex-col px-4 items-center gap-6 w-full">
           {videoCards.map((v) => (
-            <div
+            <VideoCard
               key={v.id}
-              className={`w-full max-w-[400px] aspect-video rounded-xl overflow-hidden shadow-lg ${v.mobileBg}`}
-            >
-              <video
-                className="w-full h-full object-cover"
-                src={v.src}
-                autoPlay
-                loop
-                muted
-                playsInline
-              ></video>
-            </div>
+              src={v.src}
+              className="w-full max-w-[400px] aspect-video rounded-xl"
+            />
           ))}
         </div>
 

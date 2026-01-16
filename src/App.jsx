@@ -1,67 +1,61 @@
 
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 // Layout
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import AOS from "aos";
 
-// Pages
-import Home from "./pages/Home";
-import Work from "./pages/Work";
-import Awards from "./pages/Awards";
-import Careers from "./pages/Careers";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
+// Pages (Lazy Loaded)
+const Home = lazy(() => import("./pages/Home"));
+const Work = lazy(() => import("./pages/Work"));
+const Careers = lazy(() => import("./pages/Careers"));
+const Blog = lazy(() => import("./pages/Blog"));
+const About = lazy(() => import("./pages/About"));
+const BlogInner = lazy(() => import("./pages/BlogInner"));
+const ProductionHouse = lazy(() => import("./components/work/workpages/ProductionHouse"));
+const SocialMediaManagement = lazy(() => import("./components/work/workpages/SocialMediaManagement"));
+const WebsiteDevelopment = lazy(() => import("./components/work/workpages/WebsiteDevelopment"));
+const DigitalMarketing = lazy(() => import("./components/work/workpages/DigitalMarketing"));
+
 import "aos/dist/aos.css";
-
-
 import "./App.css";
-import CustomCursor from "./components/common/CustomCursor";
-import CommingSoon from "./components/common/CommingSoon";
-import { Audio } from "react-loader-spinner";
-import HomeAbout from "./components/home/HomeAbout";
-import About from "./pages/About";
-import ContactSection from "./components/common/Contact";
-import BlogInner from "./pages/BlogInner";
 import ScrollToTop from "./components/common/ScrollToTop";
-import ProductionHouse from "./components/work/workpages/ProductionHouse";
-import SocialMediaManagement from "./components/work/workpages/SocialMediaManagement";
-import WebsiteDevelopment from "./components/work/workpages/WebsiteDevelopment";
-import DigitalMarketing from "./components/work/workpages/DigitalMarketing";
-// import BlogInner from "./pages/BlogInner";
-// import CustomCursor from "./components/common/CustomCursor";
+import CommingSoon from "./components/common/CommingSoon";
+
+const PageLoader = () => (
+  <div className="w-full h-screen bg-black flex items-center justify-center">
+    <div className="w-10 h-10 border-4 border-white/20 border-t-white rounded-full animate-spin"></div>
+  </div>
+);
 
 export default function App() {
   const [loader, setLoader] = useState(true);
-
 
   useEffect(() => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      once: true,   // animation sirf ek baar
+      once: true,
       offset: 120,
     });
   }, []);
 
   useEffect(() => {
-    // Loader 2.5 sec ke liye show hoga
     const timer = setTimeout(() => {
       setLoader(false);
-    }, 50);
+    }, 1000); // Increased a bit to actually see the logo video if intended, or set to 0 to be instant.
 
     return () => clearTimeout(timer);
   }, []);
 
-  // 👉 If loader true → show loader only
   if (loader) {
     return (
-      <div className="fixed inset-0 w-full h-full overflow-hidden m-0 p-0">
+      <div className="fixed inset-0 w-full h-full overflow-hidden bg-black flex items-center justify-center">
         <video
-          src="https://swastixa.b-cdn.net/Landing--page----S%20logo.mp4 "
-          className="absolute inset-0 w-full h-full object-cover m-0 p-0"
+          src="https://swastixa.b-cdn.net/Landing--page----S%20logo.mp4"
+          className="absolute inset-0 w-full h-full object-cover"
           autoPlay
           muted
           loop
@@ -71,44 +65,25 @@ export default function App() {
     );
   }
 
-
-
-
-
-
-  // 👉 After loader finished → show website
   return (
     <>
       <ScrollToTop />
       <Header />
-      {/* <CustomCursor /> */}
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/awards" element={<Awards />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        </Routes> */}
-
-      {/* comming soon page  */}
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/work/workpages/ProductionHouse" element={<ProductionHouse />} />
-        <Route path="/work/workpages/SocialMediaManagement" element={<SocialMediaManagement />} />
-        <Route path="/work/workpages/WebsiteDevelopment" element={<WebsiteDevelopment />} />
-        <Route path="/work/workpages/DigitalMarketing" element={<DigitalMarketing />} />
-        <Route path="/awards" element={<CommingSoon />} />
-        <Route path="/careers" element={<Careers />} />
-        {/* <Route path="/blog" element={<Blog />} /> */}
-        {/* <Route path="/contact" element={<ContactSection />} /> */}
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<BlogInner />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <Suspense fallback={<PageLoader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/work/workpages/ProductionHouse" element={<ProductionHouse />} />
+          <Route path="/work/workpages/SocialMediaManagement" element={<SocialMediaManagement />} />
+          <Route path="/work/workpages/WebsiteDevelopment" element={<WebsiteDevelopment />} />
+          <Route path="/work/workpages/DigitalMarketing" element={<DigitalMarketing />} />
+          <Route path="/awards" element={<CommingSoon />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogInner />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </>
   );
