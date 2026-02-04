@@ -10,62 +10,6 @@ const Hero = () => {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
 
-  
-
-  // useEffect(() => {
-  //   // 🌀 Initialize Lenis smooth scroll
-  //   const lenis = new Lenis({
-  //     duration: 1.2,
-  //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // smooth curve
-  //     smoothWheel: true,
-  //     smoothTouch: false,
-  //   });
-
-  //   // Lenis + RAF (requestAnimationFrame loop)
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-  //   requestAnimationFrame(raf);
-
-  //   // 🧩 GSAP ScrollTrigger setup
-  //   const videoEl = videoRef.current;
-  //   const containerEl = containerRef.current;
-
-
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: containerEl,
-  //       start: "top top",
-  //       end: "+=200",
-  //       scrub: true,
-  //       pin: true,
-  //     },
-  //   });
-
-  //   // 🎬 Video scaling animation
-  //   tl.to(videoEl, {
-  //     scale: 1.5,
-  //     width: "100vw",
-  //     height: "100vh",
-  //     borderRadius: 0,
-  //     duration: 2,
-  //     ease: "power2.inOut",
-  //   });
-
-  //   gsap.set(videoEl, {
-  //     scale: 1,
-  //     width: "80vw",
-  //     height: "100vh",
-  //     borderRadius: "0rem",
-  //   });
-
-  //   // Cleanup
-  //   return () => {
-  //     lenis.destroy();
-  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  //   };
-  // }, []);
 
 
 

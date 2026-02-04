@@ -23,10 +23,10 @@ export default function Navbar() {
 
 
   const workItems = [
-    { label: "Production House", path: "/work/workpages/ProductionHouse" },
-    { label: "Social Media Management", path: "/work/workpages/SocialMediaManagement" },
-    // { label: "Website Development", path: "/work/workpages/WebsiteDevelopment" },
-    // { label: "Digital Marketing", path: "/work/workpages/DigitalMarketing" },
+    { label: "Production House", path: "/work/ProductionHouse" },
+    { label: "Social Media Management", path: "/work/SocialMediaManagement" },
+    // { label: "Website Development", path: "/work/WebsiteDevelopment" },
+    // { label: "Digital Marketing", path:   "/work/DigitalMarketing" },
   ];
 
 

@@ -14,10 +14,10 @@ const Careers = lazy(() => import("./pages/Careers"));
 const Blog = lazy(() => import("./pages/Blog"));
 const About = lazy(() => import("./pages/About"));
 const BlogInner = lazy(() => import("./pages/BlogInner"));
-const ProductionHouse = lazy(() => import("./components/work/workpages/ProductionHouse"));
-const SocialMediaManagement = lazy(() => import("./components/work/workpages/SocialMediaManagement"));
-const WebsiteDevelopment = lazy(() => import("./components/work/workpages/WebsiteDevelopment"));
-const DigitalMarketing = lazy(() => import("./components/work/workpages/DigitalMarketing"));
+const ProductionHouse = lazy(() => import("./components/work/ProductionHouse"));
+const SocialMediaManagement = lazy(() => import("./components/work/SocialMediaManagement"));
+const WebsiteDevelopment = lazy(() => import("./components/work/WebsiteDevelopment"));
+const DigitalMarketing = lazy(() => import("./components/work/DigitalMarketing"));
 
 import "aos/dist/aos.css";
 import "./App.css";
@@ -73,10 +73,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
-          <Route path="/work/workpages/ProductionHouse" element={<ProductionHouse />} />
-          <Route path="/work/workpages/SocialMediaManagement" element={<SocialMediaManagement />} />
-          <Route path="/work/workpages/WebsiteDevelopment" element={<WebsiteDevelopment />} />
-          <Route path="/work/workpages/DigitalMarketing" element={<DigitalMarketing />} />
+          <Route path="/work/ProductionHouse" element={<ProductionHouse />} />
+          <Route path="/work/SocialMediaManagement" element={<SocialMediaManagement />} />
+          <Route path="/work/WebsiteDevelopment" element={<WebsiteDevelopment />} />
+          <Route path="/work/DigitalMarketing" element={<DigitalMarketing />} />
           <Route path="/awards" element={<CommingSoon />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/blog" element={<Blog />} />

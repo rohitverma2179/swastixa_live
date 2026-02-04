@@ -1,5 +1,5 @@
 import React from 'react'
-import WorkHero from '../WorkHero'
+import WorkHero from './WorkHero'
 
 const DigitalMarketing = () => {
   return (

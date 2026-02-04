@@ -338,12 +338,12 @@ class App {
       { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: 'Strawberries' },
       { image: `https://picsum.photos/seed/5/800/600?grayscale`, text: 'Deep Diving' },
       { image: `https://picsum.photos/seed/16/800/600?grayscale`, text: 'Train Track' },
-      { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: 'Santorini' },
-      { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: 'Blurry Lights' },
-      { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: 'New York' },
-      { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: 'Good Boy' },
-      { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: 'Coastline' },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: 'Palm Trees' }
+      // { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: 'Santorini' },
+      // { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: 'Blurry Lights' },
+      // { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: 'New York' },
+      // { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: 'Good Boy' },
+      // { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: 'Coastline' },
+      // { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: 'Palm Trees' }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
@@ -464,10 +464,36 @@ export default function CircularGallery({
 }) {
   const containerRef = useRef(null);
   useEffect(() => {
-    const app = new App(containerRef.current, { items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase });
+    let app;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          if (!app) {
+            app = new App(containerRef.current, { items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase });
+          } else {
+            // Restart loop if it was stopped
+            app.update();
+          }
+        } else {
+          if (app) {
+            // Stop loop when not visible
+            window.cancelAnimationFrame(app.raf);
+            app.raf = null;
+          }
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
     return () => {
-      app.destroy();
+      observer.disconnect();
+      if (app) app.destroy();
     };
   }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);
+
   return <div className="w-full h-full overflow-hidden cursor-grab active:cursor-grabbing" ref={containerRef} />;
 }

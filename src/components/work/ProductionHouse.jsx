@@ -11,8 +11,8 @@
 
 
 // import InnerPageHeader from "../components/common/InnerPageHeader";
-import VirtualVideoList from "../VirtualVideoList";
-import WorkHero from "../WorkHero";
+import VirtualVideoList from "./VirtualVideoList";
+import WorkHero from "./WorkHero";
 // import VirtualVideoList from "../components/work/VirtualVideoList";
 // import WorkHero from "../components/work/WorkHero";
 

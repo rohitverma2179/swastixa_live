@@ -1,16 +1,63 @@
-# React + Vite
+# Swastixa Digital - High-Performance Creative Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Swastixa is a premium digital agency portfolio built with **React**, **Vite**, and **Tailwind CSS**. It is designed to showcase high-density media content (Production, Social Media Management, Digital Marketing, and Web Development) with a focus on liquid-smooth performance and visual excellence.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Performance Engineering
 
-## React Compiler
+### 🎥 Adaptive Video Optimization
+To handle dozens of high-definition videos without sacrificing load speed, we implemented a custom **Dual-Observer Video System**:
+- **Layer 1 (Pre-fetch)**: An `IntersectionObserver` with an **800px rootMargin** starts fetching metadata and initial buffer chunks before the user even reaches the content.
+- **Layer 2 (Viewport Management)**: A strict threshold observer controls playback. Videos only `play()` when visible and `pause()` the millisecond they leave the viewport, preserving CPU/GPU cycles and battery life.
+- **Virtualization**: Leveraging `@tanstack/react-virtual`, the DOM only ever contains a limited number of active video containers, ensuring stability even with vast content lists.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ⚡ Technical Optimizations
+- **Route Splitting**: Implements `React.lazy` and `Suspense` for modular bundle delivery.
+- **Natural Scrolling**: Custom window-based virtualization allows for browser-native smooth scrolling across mixed content sections.
+- **Zero-Preload Strategy**: Global `preload="none"` prevents initial page load bottlenecks by deferring media downloads until necessary.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Design & Animation Philosophy
+
+- **Premium Aesthetics**: Deep neutral-900 palettes with glassmorphism and high-impact "tracking-tighter" typography.
+- **Immersive Motion**: Dynamic tilt effects via `react-parallax-tilt`, GSAP for complex timelines, and Framer Motion for interactive states.
+- **Responsive Fluidity**: A mobile-first design system that ensures a premium experience from ultra-wide desktops to hand-held devices.
+
+---
+
+## 🚀 Technology Stack
+
+| Category | Tools |
+| :--- | :--- |
+| **Frontend** | React 19, Vite, React Router 7 |
+| **Animation** | Framer Motion, GSAP, AOS, Parallax Tilt |
+| **Optimization** | TanStack Virtual, Intersection Observer API |
+| **Styling** | Tailwind CSS v4, Modern CSS Glassmorphism |
+
+## 📂 Installation & Setup
+
+<!-- 1. **Clone the Repo:**
+   ```bash
+   git clone https://github.com/rohitverma2179/swastixa_live.git
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Development Mode:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Production Build:**
+   ```bash
+   npm run build -->
+   ```
+
+---
+
+Built for Impact by [Swastixa Digital](https://swastixa.com)
