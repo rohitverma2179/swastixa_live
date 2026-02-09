@@ -7,6 +7,7 @@ import Header from "./components/common/Header";
 // import Footer from "./components/common/Footer";
 
 import AOS from "aos";
+import { Toaster } from "react-hot-toast";
 
 // Pages (Lazy Loaded)
 const Home = lazy(() => import("./pages/Home"));
@@ -62,7 +63,9 @@ export default function App() {
 
 
 
-
+const disableRightClick = (e) => {
+    e.preventDefault();
+  };
 
 
   useEffect(() => {
@@ -111,8 +114,11 @@ export default function App() {
     );
   }
 
+
+
   return (
-    <>
+    <div  onContextMenu={disableRightClick}>
+      <Toaster position="top-right" />
       <ScrollToTop />
       <Header />
       <Suspense fallback={<PageLoader />}>
@@ -132,6 +138,6 @@ export default function App() {
         </Routes>
       </Suspense>
       {/* <Footer /> */}
-    </>
+    </div>
   );
 }

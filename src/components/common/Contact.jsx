@@ -1,98 +1,137 @@
-import React, { useRef } from "react";
-
+import React, { useRef, useState } from "react";
 import { sendForm } from "@emailjs/browser";
-// import contact_bg from "/home_assets/HomeBg/Bg--Swastixa--contact.png";
+import toast from "react-hot-toast";
 
 export default function ContactSection() {
 
   const formRef = useRef();
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
-
     e.preventDefault();
+
+    if (loading) return; // prevent double submit
+
+    const name = formRef.current.name.value.trim();
+    const email = formRef.current.email.value.trim();
+    const phone = formRef.current.phone.value.trim();
+    const message = formRef.current.textarea.value.trim();
+
+    if (!name || !email || !phone || !message) {
+      toast.error("All fields are required");
+      return;
+    }
+
+    // email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!emailRegex.test(email)) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
+
+    // phone
+    const cleanPhone = phone.replace(/\D/g, "");
+    const phoneRegex = /^[6-9]\d{9}$/;
+    if (!phoneRegex.test(cleanPhone)) {
+      toast.error("Please enter a valid 10-digit mobile number");
+      return;
+    }
+
+
+    setLoading(true);
+
     sendForm(
-      "service_f6q0v1f",     // service_xxx
-      "__ejs-test-mail-service__",      // template_xxx
+      "service_bieykdy",
+      "template_261som3",
       formRef.current,
-      "uaro4bNv3-b5A1rLM"      // public key
+      "xegRks9AiGypGKvhc"
     )
-      .then(
-        () => {
-          alert("Message Sent Successfully!");
-          formRef.current.reset();
-        },
-        (error) => {
-          alert("FAILED... " + error.text);
-        }
-      );
+      .then(() => {
+        toast.success("Message Sent Successfully!");
+        formRef.current.reset();
+      })
+      .catch(() => {
+        toast.error("Failed to send message. Try again!");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (
     <section id="contactSection"
       className="relative w-full min-h-screen py-20 flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(${"https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Bg--Swastixa--contact.png"})`,
+        backgroundImage: `url(https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Bg--Swastixa--contact.png)`,
       }}
     >
-      {/* Black Overlay */}
       <div className="absolute "></div>
 
       <div className="relative z-10 w-[95%] md:w-[85%] lg:w-[80%] max-w-6xl">
 
-        <h1 className="text-white  text-4xl md:text-7xl font-bold mb-4">
+        <h1 className="text-white text-4xl md:text-7xl font-bold mb-4">
           Contact Us
         </h1>
 
-        <div className=" bg-[#843c29]/25  backdrop-blur-md  rounded-2xl p-6 md:p-10 flex flex-col justify-between md:flex-row  gap-10">
+        <div className="bg-[#843c29]/25 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between md:flex-row gap-10">
 
           {/* FORM */}
           <form
             ref={formRef}
             onSubmit={sendEmail}
-            className="w-full md:w-[40%] flex   flex-col gap-5"
+            noValidate
+            className="w-full md:w-[40%] flex flex-col gap-5"
           >
             <input
               type="text"
-              name="from_name"
+              name="name"
               placeholder="Enter Your name"
-              className="w-full bg-transparent border-b border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
-              required
+
+              className="w-full bg-transparent border-b focus:bg-transparent
+  autofill:bg-transparent  border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
             />
+
             <input
               type="email"
-              name="from_email"
+              name="email"
               placeholder="Enter Your Email"
-              className="w-full bg-transparent border-b border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
-              required
+              className="w-full bg-transparent border-b focus:bg-transparent
+  autofill:bg-transparent border-white/40 text-white  py-3 focus:outline-none"
             />
 
             <input
               type="text"
-              name="mobile"
+              name="phone"
               placeholder="Enter Your Mobile no."
-              className="w-full bg-transparent border-b border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Enter Your Query"
-              name="mobile"
-              className="w-full bg-transparent border-b border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
-              required
+              className="w-full bg-transparent border-b focus:bg-transparent
+  autofill:bg-transparent  border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
             />
 
-            <button className="text-white mt-6 w-fit relative 
-                   after:content-[''] after:absolute after:left-0 after:bottom-0 
-                   after:h-0.5 after:w-full after:bg-neutral-200 
-                   after:scale-x-0 after:origin-left 
-                   after:transition-transform after:duration-300 
-                   hover:after:scale-x-100">
-              Contact Us
+            <textarea
+              placeholder="Enter Your Query"
+              name="textarea"
+              rows={2}
+              className="w-full bg-transparent border-b focus:bg-transparent
+  autofill:bg-transparent border-white/40 text-white placeholder-white/70 py-3 focus:outline-none resize-none focus:border-white transition"
+            ></textarea>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className={`text-white text-xl mt-6 w-fit relative 
+                after:content-[''] cursor-pointer after:absolute after:left-0 after:bottom-0 
+                after:h-0.5 after:w-full after:bg-neutral-200 
+                after:scale-x-0 after:origin-left 
+                after:transition-transform after:duration-300 
+                ${loading ? "opacity-50 cursor-not-allowed" : "hover:after:scale-x-100"}
+              `}
+            >
+              {loading ? "Sending..." : "submit"}
             </button>
 
           </form>
 
-          {/* CONTACT INFO */}
+          {/* CONTACT INFO (UNCHANGED) */}
           <div className="w-full md:w-[40%] text-white flex text-end flex-col gap-2">
             <div>
               <h2 className="text-lg md:text-2xl font-bold">Swastixa Services LLP</h2>
@@ -113,9 +152,9 @@ export default function ContactSection() {
               <p className="opacity-80 text-[18px]">New Delhi - 110041</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
-
   );
 }
