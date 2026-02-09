@@ -47,7 +47,7 @@ const SMMGrid = ({ smmContent }) => {
     if (!smmContent || smmContent.length === 0) return null;
 
     return (
-        <section className="w-full min-h-screen  bg-black px-4 py-20">
+        <section className="w-full min-h-screen  bg-black px-4 py-14">
             <div className="max-w-[2500px] mx-auto">
                 <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-3 xl:columns-3 2xl:columns-4 gap-4 sm:gap-6">
                     {smmContent.map((item, index) => (

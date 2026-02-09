@@ -4,7 +4,8 @@ import React, { useState, useEffect, Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 // Layout
 import Header from "./components/common/Header";
-import Footer from "./components/common/Footer";
+// import Footer from "./components/common/Footer";
+
 import AOS from "aos";
 
 // Pages (Lazy Loaded)
@@ -18,11 +19,19 @@ const ProductionHouse = lazy(() => import("./components/work/ProductionHouse"));
 const SocialMediaManagement = lazy(() => import("./components/work/SocialMediaManagement"));
 const WebsiteDevelopment = lazy(() => import("./components/work/WebsiteDevelopment"));
 const DigitalMarketing = lazy(() => import("./components/work/DigitalMarketing"));
+const Reels = lazy(() => import("./pages/Reels"));
 
 import "aos/dist/aos.css";
 import "./App.css";
 import ScrollToTop from "./components/common/ScrollToTop";
 import CommingSoon from "./components/common/CommingSoon";
+
+// Smooth Scroll
+import Lenis from "lenis";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const PageLoader = () => (
   <div className="w-full h-screen bg-black flex items-center justify-center">
@@ -45,16 +54,53 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoader(false);
-    }, 1000); // Increased a bit to actually see the logo video if intended, or set to 0 to be instant.
+    }, 10); // Increased a bit to actually see the logo video if intended, or set to 0 to be instant.
 
     return () => clearTimeout(timer);
   }, []);
+
+
+
+
+
+
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 2,
+      infinite: false,
+    });
+
+    lenis.on("scroll", ScrollTrigger.update);
+
+    const updateLenis = (time) => {
+      lenis.raf(time * 1000);
+    };
+
+    gsap.ticker.add(updateLenis);
+    gsap.ticker.lagSmoothing(0);
+
+    return () => {
+      lenis.destroy();
+      gsap.ticker.remove(updateLenis);
+    };
+  }, []);
+
+
+
+
 
   if (loader) {
     return (
       <div className="fixed inset-0 w-full h-full overflow-hidden bg-black flex items-center justify-center">
         <video
-          src="https://swastixa.b-cdn.net/Landing--page----S%20logo.mp4"
+          src="https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/BPTP%20FINAL.mp4"
           className="absolute inset-0 w-full h-full object-cover"
           autoPlay
           muted
@@ -82,9 +128,10 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogInner />} />
           <Route path="/about" element={<About />} />
+          <Route path="/work/reels" element={<Reels />} />
         </Routes>
       </Suspense>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

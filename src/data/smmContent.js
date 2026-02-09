@@ -13,11 +13,11 @@ const smmContent = [
         image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate2.jpg",
         // category: "TikTok"
     },
-    {
-        id: 3,
-        // title: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate3.jpg",
-        // category: "Engagement"
-    },
+    // {    
+    //     id: 3,
+    //     // title: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate3.jpg",
+    //     // category: "Engagement"
+    // },
     {
         id: 4,
         // title: "Creative Strategy",

@@ -1,10 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
 
+// Local Video Assets
+import video1 from "../../assets/workhero/work-page-05-01.mp4";
+import video2 from "../../assets/workhero/work-page-05-02.mp4";
+import video3 from "../../assets/workhero/work-page-05-03.mp4";
+import video4 from "../../assets/workhero/work-page-05-04.mp4";
+import video5 from "../../assets/workhero/work-page-05-05.mp4";
+
 const videoCards = [
   {
     id: 1,
-    src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/Top-5-video--animation/WORK-Page-5V%20(1).mp4",
+    src: video1,
     mobileBg: "bg-[#2f2d2d]",
     className: `
       absolute 
@@ -19,7 +26,7 @@ const videoCards = [
   },
   {
     id: 2,
-    src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/Top-5-video--animation/WORK-Page-5V%20(2).mp4",
+    src: video2,
     mobileBg: "bg-[#ededed]",
     className: `
       absolute 
@@ -34,7 +41,7 @@ const videoCards = [
   },
   {
     id: 3,
-    src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/Top-5-video--animation/WORK-Page-5V%20(3).mp4",
+    src: video3,
     mobileBg: "bg-[#bdb9b9]",
     className: `
       relative
@@ -48,7 +55,7 @@ const videoCards = [
   },
   {
     id: 4,
-    src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/Top-5-video--animation/WORK-Page-5V%20(4).mp4",
+    src: video4,
     mobileBg: "bg-[#d9d9d9]",
     className: `
       absolute
@@ -64,7 +71,7 @@ const videoCards = [
   },
   {
     id: 5,
-    src: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/Top-5-video--animation/WORK-Page-5V%20(5).mp4",
+    src: video5,
     mobileBg: "bg-[#625f5f]",
     className: ` 
       absolute

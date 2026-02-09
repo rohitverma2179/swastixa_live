@@ -83,7 +83,7 @@ export default function ContactSection() {
 
             <button className="text-white mt-6 w-fit relative 
                    after:content-[''] after:absolute after:left-0 after:bottom-0 
-                   after:h-[2px] after:w-full after:bg-neutral-200 
+                   after:h-0.5 after:w-full after:bg-neutral-200 
                    after:scale-x-0 after:origin-left 
                    after:transition-transform after:duration-300 
                    hover:after:scale-x-100">
@@ -98,19 +98,19 @@ export default function ContactSection() {
               <h2 className="text-lg md:text-2xl font-bold">Swastixa Services LLP</h2>
               {/* <p className="opacity-90 text-[18px]"><span className="font-bold text-[22px]">Head Office : </span   > Plot No. 2-A,</p> */}
               <p className="opacity-90 text-[18px]"><span className="font-bold text-[22px]">Head Office </span   ></p>
-              <p className="opacity-90 text-[18px] ">Plot No. 2-A, Kh. No. 51/1, Third Floor,</p>
-              <p className="opacity-90 text-[18px] "></p>
-              <p className="opacity-90 text-[18px] ">Jai Vihar, Najafgarh Road,</p>
-              <p className="opacity-90 text-[18px] ">Near Sant Haridas School,</p>
-              <p className="opacity-90 text-[18px] ">Delhi - 110043</p>
+              <p className="opacity-80 text-[18px] ">Plot No. 2-A,</p>
+              <p className="opacity-80 text-[18px] "></p>
+              <p className="opacity-80 text-[18px] "> Third Floor, Jai Vihar,</p>
+              {/* <p className="opacity-90 text-[18px] ">Near Sant Haridas School,</p> */}
+              <p className="opacity-80 text-[18px] "> New Delhi - 110043</p>
             </div>
             <br />
             <div>
               <h2 className="text-lg md:text-2xl font-bold">Registered Office</h2>
-              <p className="opacity-90 text-[18px]">Plot No. J04A, Kh. No. 2/19, 2/21, 22,</p>
-              <p className="opacity-90 text-[18px]"> Street 12, Shiv Ram Park,</p>
-              <p className="opacity-90 text-[18px]"></p>
-              <p className="opacity-90 text-[18px]">Nangloi, New Delhi - 110041</p>
+              <p className="opacity-80 text-[18px]">Plot No. J04A, Street 12,</p>
+              <p className="opacity-80 text-[18px]">  Shiv Ram Park,</p>
+              <p className="opacity-80 text-[18px]"></p>
+              <p className="opacity-80 text-[18px]">New Delhi - 110041</p>
             </div>
           </div>
         </div>

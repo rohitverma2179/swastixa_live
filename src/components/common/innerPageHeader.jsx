@@ -11,8 +11,3 @@ export default function InnerPageHeader({ title, description }) {
     );
 }
 
-
-// style={{
-//             background: "rgba(12, 12, 12, 0.0)", // Transparent background
-//             backdropFilter: "blur(15px)",        // Blur effect
-//             boxShadow: "rgb(110 109 109 / 25%) 1.5px 1px 2.8px inset",

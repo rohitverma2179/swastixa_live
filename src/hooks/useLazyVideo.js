@@ -1,27 +1,3 @@
-// import { useEffect, useRef, useState } from "react";
-
-// export const useLazyVideo = () => {
-//   const videoRef = useRef(null);
-//   const [isVisible, setIsVisible] = useState(false);
-
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(
-//       ([entry]) => {
-//         if (entry.isIntersecting) {
-//           setIsVisible(true);
-//           observer.disconnect();
-//         }
-//       },
-//       { threshold: 0.4 }
-//     );
-
-//     if (videoRef.current) observer.observe(videoRef.current);
-
-//     return () => observer.disconnect();
-//   }, []);
-
-//   return { videoRef, isVisible };
-// };
 
 
 import { useEffect, useRef, useState } from "react";

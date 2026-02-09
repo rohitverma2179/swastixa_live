@@ -76,20 +76,7 @@ const TorchlightTextReveal = () => {
           }
         `}
             </style>
-            {/* <div
-                ref={torchTextRef}
-                className="torch-text relative h-screen w-full text-center text-[400px] bg-yellow-300 inline-block"
-            >
-                AWARDS
-            </div> */}
-            {/* <div className="h-screen w-full flex items-center justify-center bg-black">
-                <div
-                    ref={torchTextRef}
-                    className="torch-text text-center text-[370px] inline-block"
-                >
-                    AWARDS
-                </div>
-            </div> */}
+           
             <div
                 ref={torchTextRef}
                 className="torch-text fixed inset-0 flex items-center justify-center bg-black"

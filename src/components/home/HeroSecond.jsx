@@ -20,20 +20,7 @@ export default function HeroSection() {
         </div> 
 
 
-        {/* <div className="text-left lg:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black leading-snug">
-            <TextWriteAnimation />
-          </h1>
-        </div> */}
 
-
-        {/* DIGITAL AGENCY FOR BRAND STRATEGY | ROOTED IN CULTURE
-DIGITAL AGENCY FOR SOCIAL MEDIA | ROOTED IN CULTURE
-DIGITAL AGENCY FOR CONTENT MARKETING | ROOTED IN CULTURE
-DIGITAL AGENCY FOR GRAPHIC DESIGN | ROOTED IN CULTURE
-DIGITAL AGENCY FOR WEB DEVELOPMENT | ROOTED IN CULTURE
-DIGITAL AGENCY FOR VIDEO PRODUCTION | ROOTED IN CULTURE
-DIGITAL AGENCY FOR SEO & ANALYTICS | ROOTED IN CULTURE */}
 
 
 

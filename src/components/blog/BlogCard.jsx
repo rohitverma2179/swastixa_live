@@ -44,17 +44,7 @@ export default function BlogCard({ blog }) {
 
             {/* TEXT SECTION */}
             <div className="p-[1.2rem]">
-                {/* <p className="text-[0.85rem] text-gray-400 tracking-wide">
-                    {blog.category}
-                </p> */}
-
-                {/* <h2 className="text-[1.25rem] font-semibold mt-[0.4rem] leading-snug">
-                    {blog.title}
-                </h2> */}
-
-                {/* <p className="text-[0.95rem] text-gray-300 mt-[0.6rem] 2xl:text-[1.3rem] line-clamp-2">
-                    {blog.excerpt}
-                </p> */}
+                
                 <Link to={`/blog/${blog.slug}`}>
                     <p className="
                   text-[0.95rem]
