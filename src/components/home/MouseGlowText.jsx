@@ -76,7 +76,7 @@ const TorchlightTextReveal = () => {
           }
         `}
             </style>
-           
+
             <div
                 ref={torchTextRef}
                 className="torch-text fixed inset-0 flex items-center justify-center bg-black"

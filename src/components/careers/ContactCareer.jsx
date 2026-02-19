@@ -308,8 +308,8 @@ const ContactCareer = () => {
                                                           relative text-white pb-1
                                                           group-hover:text-blue-400
                                                           transition-colors cursor-pointer
-                                                          before:absolute before:left-0 before:-top-1 before:w-full before:h-[1px] before:bg-white
-                                                          after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[1px] after:bg-white
+                                                          before:absolute before:left-0 before:-top-1 before:w-full before:h-px before:bg-white
+                                                          after:absolute after:left-0 after:-bottom-1 after:w-full after:h-px after:bg-white
                                                           group-hover:before:bg-blue-400
                                                           group-hover:after:bg-blue-400
                                                            "

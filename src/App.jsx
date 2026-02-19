@@ -25,6 +25,7 @@ const Reels = lazy(() => import("./pages/Reels"));
 import "aos/dist/aos.css";
 import "./App.css";
 import ScrollToTop from "./components/common/ScrollToTop";
+import ScrollButton from "./components/common/ScrollButton";
 import CommingSoon from "./components/common/CommingSoon";
 
 // Smooth Scroll
@@ -63,7 +64,7 @@ export default function App() {
 
 
 
-const disableRightClick = (e) => {
+  const disableRightClick = (e) => {
     e.preventDefault();
   };
 
@@ -117,9 +118,10 @@ const disableRightClick = (e) => {
 
 
   return (
-    <div  onContextMenu={disableRightClick}>
+    <div onContextMenu={disableRightClick}>
       <Toaster position="top-right" />
       <ScrollToTop />
+      <ScrollButton />
       <Header />
       <Suspense fallback={<PageLoader />}>
         <Routes>

@@ -66,9 +66,7 @@ export default function ContactSection() {
       }}
     >
       <div className="absolute "></div>
-
       <div className="relative z-10 w-[95%] md:w-[85%] lg:w-[80%] max-w-6xl">
-
         <h1 className="text-white text-4xl md:text-7xl font-bold mb-4">
           Contact Us
         </h1>
@@ -100,7 +98,7 @@ export default function ContactSection() {
             />
 
             <input
-              type="text"
+              type="number"
               name="phone"
               placeholder="Enter Your Mobile no."
               className="w-full bg-transparent border-b focus:bg-transparent

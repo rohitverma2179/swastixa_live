@@ -13,11 +13,11 @@ export default function HeroSection() {
         <div className="text-left  lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black leading-snug">
             DIGITAL AGENCY FOR <br />
-            <span className="text-blue-500"> <TextWriteAnimation /> </span> 
+            <span className="text-blue-500"> <TextWriteAnimation /> </span>
             <br />
             ROOTED IN CULTURE
           </h1>
-        </div> 
+        </div>
 
 
 
