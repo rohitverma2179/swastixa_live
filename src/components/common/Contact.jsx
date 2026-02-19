@@ -22,17 +22,16 @@ export default function ContactSection() {
       return;
     }
 
-    // email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    // email validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (!emailRegex.test(email)) {
       toast.error("Please enter a valid email address");
       return;
     }
 
-    // phone
-    const cleanPhone = phone.replace(/\D/g, "");
-    const phoneRegex = /^[6-9]\d{9}$/;
-    if (!phoneRegex.test(cleanPhone)) {
+    // phone validation - exactly 10 digits
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
       toast.error("Please enter a valid 10-digit mobile number");
       return;
     }
@@ -98,9 +97,12 @@ export default function ContactSection() {
             />
 
             <input
-              type="number"
+              type="text"
               name="phone"
               placeholder="Enter Your Mobile no."
+              onInput={(e) => {
+                e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 10);
+              }}
               className="w-full bg-transparent border-b focus:bg-transparent
   autofill:bg-transparent  border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
             />
