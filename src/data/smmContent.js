@@ -13,11 +13,12 @@ const smmContent = [
         image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate2.jpg",
         // category: "TikTok"
     },
-    // {    
-    //     id: 3,
-    //     // title: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate3.jpg",
-    //     // category: "Engagement"
-    // },
+    {
+        id: 3,
+        // title: "Creative Branding",
+        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/Bestmate3.jpg",
+        // category: "Branding"
+    },
     {
         id: 4,
         // title: "Creative Strategy",
@@ -461,12 +462,12 @@ const smmContent = [
         image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya20.jpg",
         // category: "Data"
     },
-    {
-        id: 78,
-        // title: "Analytics & Growth",
-        image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya21.jpg",
-        // category: "Data"
-    },
+    // {
+    //     id: 78,
+    //     // title: "Analytics & Growth",
+    //     image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya21.jpg",
+    //     // category: "Data"
+    // },
     {
         id: 79,
         // title: "Analytics & Growth",
@@ -551,7 +552,7 @@ const smmContent = [
         image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya9.jpg",
         // category: "Data"
     },
-    
+
 ];
 
 export default smmContent;

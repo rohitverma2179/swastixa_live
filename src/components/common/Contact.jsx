@@ -85,7 +85,7 @@ export default function ContactSection() {
               placeholder="Enter Your name"
 
               className="w-full bg-transparent border-b focus:bg-transparent
-  autofill:bg-transparent  border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
+                  autofill:bg-transparent  border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
             />
 
             <input
@@ -93,7 +93,7 @@ export default function ContactSection() {
               name="email"
               placeholder="Enter Your Email"
               className="w-full bg-transparent border-b focus:bg-transparent
-  autofill:bg-transparent border-white/40 text-white  py-3 focus:outline-none"
+                 autofill:bg-transparent border-white/40 text-white  py-3 focus:outline-none"
             />
 
             <input
@@ -104,7 +104,7 @@ export default function ContactSection() {
                 e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 10);
               }}
               className="w-full bg-transparent border-b focus:bg-transparent
-  autofill:bg-transparent  border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
+                autofill:bg-transparent  border-white/40 text-white placeholder-white/70 py-3 focus:outline-none"
             />
 
             <textarea
@@ -112,7 +112,7 @@ export default function ContactSection() {
               name="textarea"
               rows={2}
               className="w-full bg-transparent border-b focus:bg-transparent
-  autofill:bg-transparent border-white/40 text-white placeholder-white/70 py-3 focus:outline-none resize-none focus:border-white transition"
+            autofill:bg-transparent border-white/40 text-white placeholder-white/70 py-3 focus:outline-none resize-none focus:border-white transition"
             ></textarea>
 
             <button

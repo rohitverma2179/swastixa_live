@@ -6,7 +6,7 @@ const ICONS = [
     // link: "https://signatureglobal.in" 
   },
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(10).png",
+    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/logo-10.png",
     alt: "Mahagun",
     // link: "https://mahagunindia.com"
   },
