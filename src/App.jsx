@@ -127,8 +127,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
-          <Route path="/work/ProductionHouse" element={<ProductionHouse />} />
-          <Route path="/work/SocialMediaManagement" element={<SocialMediaManagement />} />
+          <Route path="/work/Production" element={<ProductionHouse />} />
+          <Route path="/work/SocialMedia" element={<SocialMediaManagement />} />
           <Route path="/work/WebsiteDevelopment" element={<WebsiteDevelopment />} />
           <Route path="/work/DigitalMarketing" element={<DigitalMarketing />} />
           <Route path="/awards" element={<CommingSoon />} />
