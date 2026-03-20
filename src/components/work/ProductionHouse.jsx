@@ -5,6 +5,12 @@ import WorkHero from "./WorkHero";
 // import VirtualVideoList from "../components/work/VirtualVideoList";
 // import WorkHero from "../components/work/WorkHero";
 
+const constructionVideos = [
+  { id: 27, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/smart-world-sky-arc.mp4" },
+  { id: 28, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/smart-world-trump-tower.mp4" },
+  { id: 19, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/aarize.mp4" },
+];
+
 const ProductionHouse = () => {
   const [activeTab, setActiveTab] = useState("filmes");
 
@@ -24,26 +30,26 @@ const ProductionHouse = () => {
       </div>
       
       {/* Tab Navigation */}
-      <div className="flex justify-start xl:ml-36 items-center gap-6 mt-10 mb-0 px-4">
-        <button
-          onClick={() => setActiveTab("construction")}
-          className={`px-10 py-3 rounded-full text-lg uppercase tracking-wider font-semibold transition-all duration-300 ${
-            activeTab === "construction"
-              ? "bg-white text-black shadow-[0_0_20px_rgba(255,255,255,0.6)] scale-105"
-              : "bg-transparent border-2 border-gray-700 text-gray-400 hover:text-white hover:border-gray-400"
-          }`}
-        >
-          Construction
-        </button>
+      <div className="flex justify-start xl:ml-36 items-center gap-6 mt-0 mb-0 px-4">
         <button
           onClick={() => setActiveTab("filmes")}
-          className={`px-10 py-3 rounded-full text-lg uppercase tracking-wider font-semibold transition-all duration-300 ${
+          className={`px-10 py-3 rounded-full text-sm uppercase tracking-wider font-semibold transition-all duration-300 ${
             activeTab === "filmes"
               ? "bg-white text-black shadow-[0_0_20px_rgba(255,255,255,0.6)] scale-105"
               : "bg-transparent border-2 border-gray-700 text-gray-400 hover:text-white hover:border-gray-400"
           }`}
         >
           Filmes
+        </button>
+        <button
+          onClick={() => setActiveTab("construction")}
+          className={`px-10 py-3 rounded-full text-sm uppercase tracking-wider font-semibold transition-all duration-300 ${
+            activeTab === "construction"
+              ? "bg-white text-black shadow-[0_0_20px_rgba(255,255,255,0.6)] scale-105"
+              : "bg-transparent border-2 border-gray-700 text-gray-400 hover:text-white hover:border-gray-400"
+          }`}
+        >
+          Construction
         </button>
       </div>
 
@@ -52,11 +58,7 @@ const ProductionHouse = () => {
         {activeTab === "filmes" ? (
           <VirtualVideoList />
         ) : (
-          <div className="flex items-center justify-center h-full min-h-[40vh] border border-white/10 rounded-2xl mx-4 md:mx-10 bg-white/5 backdrop-blur-sm">
-            <p className="text-gray-400 text-2xl uppercase tracking-[0.3em] font-light animate-pulse">
-              Coming Soon
-            </p>
-          </div>
+          <VirtualVideoList videos={constructionVideos} />
         )}
       </div>
     </main>

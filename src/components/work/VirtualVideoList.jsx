@@ -1,12 +1,10 @@
-
-
 import { useRef, useState, useEffect } from "react";
 
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { videoList } from "../../data/videoList";
+import { videoList as defaultVideoList } from "../../data/videoList";
 import VideoPlayer from "./VideoPlayer";
 
-const VirtualVideoList = () => {
+const VirtualVideoList = ({ videos = defaultVideoList }) => {
   const containerRef = useRef(null);
   const [scrollMargin, setScrollMargin] = useState(0);
 
@@ -31,7 +29,7 @@ const VirtualVideoList = () => {
   }, []);
 
   const rowVirtualizer = useVirtualizer({
-    count: videoList.length,
+    count: videos.length,
     getScrollElement: () => (typeof document !== "undefined" ? document.documentElement : null),
     estimateSize: () => 800,
     overscan: 10, // Increased significantly for smoother up/down scrolling
@@ -54,7 +52,7 @@ const VirtualVideoList = () => {
         }}
       >
         {virtualItems.map((row) => {
-          const video = videoList[row.index];
+          const video = videos[row.index];
           if (!video) return null;
 
           return (
@@ -82,8 +80,5 @@ const VirtualVideoList = () => {
     </div>
   );
 };
-
-
-
 
 export default VirtualVideoList;
