@@ -24,7 +24,7 @@ const ProductionHouse = () => {
       </div>
       
       {/* Tab Navigation */}
-      <div className="flex justify-start xl:ml-36 items-center gap-6 mt-16 mb-12 px-4">
+      <div className="flex justify-start xl:ml-36 items-center gap-6 mt-10 mb-0 px-4">
         <button
           onClick={() => setActiveTab("construction")}
           className={`px-10 py-3 rounded-full text-lg uppercase tracking-wider font-semibold transition-all duration-300 ${
