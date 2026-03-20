@@ -9,6 +9,9 @@ import Header from "./components/common/Header";
 import AOS from "aos";
 import { Toaster } from "react-hot-toast";
 
+
+
+
 // Pages (Lazy Loaded)
 const Home = lazy(() => import("./pages/Home"));
 const Work = lazy(() => import("./pages/Work"));
