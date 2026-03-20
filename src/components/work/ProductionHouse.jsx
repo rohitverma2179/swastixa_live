@@ -22,6 +22,7 @@ const ProductionHouse = () => {
         </h1>
         <p className="text-center text-gray-400 mt-4 max-w-2xl mx-auto text-lg md:text-xl">
           Crafting cinematic experiences and high-impact visual stories for global brands.
+          {/* Crafting cinematic experiences and high-impact visual stories for brands. */}
         </p>
       </div>
 
