@@ -11,6 +11,7 @@ const Work = () => {
         /> */}
       {/* <WorkFilterSearch /> */}
       <WorkHero />
+      
       <VirtualVideoList />
     </main>
   );

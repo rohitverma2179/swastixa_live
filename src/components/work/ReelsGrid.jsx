@@ -28,7 +28,7 @@ const ReelItem = memo(({ item, index }) => {
             <video
                 ref={videoRef}
                 src={item.video}
-                muted
+                
                 loop
                 playsInline
                 onLoadedData={() => setIsLoaded(true)}

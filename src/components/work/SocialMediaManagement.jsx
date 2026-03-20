@@ -30,7 +30,7 @@ const SocialMediaManagement = () => {
       {/* Main Content */}
       <div className="relative z-10">
         <h1 className='pt-24 md:pt-40 lg:pt-60 2xl:pt-30 text-white text-center text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter'>
-          Social Media <span class="text-blue-500">Management</span>
+          Social Media 
         </h1>
         <div className='text-white text-center mt-12'>
           <button
