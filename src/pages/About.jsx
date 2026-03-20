@@ -18,26 +18,26 @@ const About = () => {
             id: 1,
             title: "Social Media Management",
             description: "Strategic content and consistent management that turns followers into loyal audiences.",
-            image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20ABOUT/About%20-%204%20-%20%20(2).jpeg"
+            image: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixabout/about-more-website-design-swastixa.jpeg"
         },
         {
             id: 2,
             title: "Production House",
             description: "High-impact videos, ads, and visual stories crafted to connect and inspire.",
-            image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20ABOUT/About%20-%204%20-%20%20(3).jpeg"
+            image: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixabout/about-website-films-swastixa.jpeg"
         },
         {
             id: 3,
             title: "Website Development",
             description: "Clean, responsive, and scalable websites built for speed, experience, and conversion.",
             // image: "https://swastixa.b-cdn.net/About%20-%204%20-%20%20(2).png"
-            image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20ABOUT/About%20-%204%20-%20%20(1).jpeg"
+            image: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixabout/about-design-meeting-swastixa.jpeg"
         },
         {
             id: 4,
             title: "Digital Marketing",
             description: "Performance-driven campaigns designed to increase reach, engagement, and measurable growth.",
-            image: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20ABOUT/About%20%20-%204%20-%20%20(4).jpeg"
+            image: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixabout/about-website-design-swastixa.jpeg"
             // image: "https://swastixa.b-cdn.net/About%20-%204%20-%20%20(1).png"
         },
     ];
