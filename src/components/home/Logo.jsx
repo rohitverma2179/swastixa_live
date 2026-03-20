@@ -1,119 +1,119 @@
 import React, { useState, useEffect, useMemo } from "react";
 const ICONS = [
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(1).png",
+   url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/signature-global-logo.png",
     alt: "Signature Global",
     // link: "https://signatureglobal.in" 
   },
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/logo-10.png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/aarize-logo.png",
     alt: "Mahagun",
     // link: "https://mahagunindia.com"
   },
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(11).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/bestmate-logo.png",
     alt: "Paramount",
     // link: "https://paramountgroup.co.in"
   },
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(12).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/birla-logo.png",
     alt: "Flipkart",
     // link: "https://flipkart.com"
   },
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(13).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/core-logo.png",
     alt: "NFDC",
     // link: "https://nfdcindia.com"
   },
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(14).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/dlf-logo.png",
     alt: "UDS",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(15).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/bexex-logo.png",
     alt: "Ministry of Information and Broadcasting",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(9).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/egrowthindia-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(16).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/emaar-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(17).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/ganga-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(18).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/gmr-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(19).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/iris-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(8).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/kevvali-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(2).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/mrg-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(7).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/panasonic-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(20).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/paramount-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(21).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/rajgriham-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(22).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/rki-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(23).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/sare-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(24).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/smart-world-logo.png",
     alt: "Munchon",
   },
 
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(3).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/sparrow-logo.png",
     alt: "Munchon",
   },
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(4).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/tirasya-logo.png",
     alt: "Munchon",
   },
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(5).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/wave-city-logo.png",
     alt: "Munchon",
   },
   {
-    url: "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/swastixa/Swastixa%20-%20LOGO%20/Logo-%20(6).png",
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/asva-logo.png",
     alt: "Munchon",
   },
 

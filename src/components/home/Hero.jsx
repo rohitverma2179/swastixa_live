@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import video from "../../assets/home-page-Hero-video-1.mp4"
+// import video from "../../assets/home-page-Hero-video-1.mp4"
 
 
 
@@ -82,12 +82,13 @@ const Hero = () => {
           <video
             ref={videoRef}
             className="w-full min-h-[60vh] object-cover"
-            src={video}
+            src={"https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-hero-video/swastixa-top.mp4"}
             autoPlay
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
+            poster="/fallback.jpg"
           />
         </div>
       </div>

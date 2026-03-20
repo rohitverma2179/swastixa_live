@@ -6,7 +6,7 @@ import Particles from "./Particles";
 gsap.registerPlugin(ScrollTrigger);
 
 const ForthSection = () => {
-  const videoData = ["https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/Main%20-%20Work%20-%20mp4/work-2%20(1).mp4", "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/Main%20-%20Work%20-%20mp4/work-2%20(2).mp4", "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/Main%20-%20Work%20-%20mp4/work-2%20(3).mp4", "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/Main%20-%20Work%20-%20mp4/work-2%20(4).mp4"];
+  const videoData = ["https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-four-videos-contact-image/swastixa-panasonic.mp4", "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-four-videos-contact-image/swastixa-fybros-good.mp4", "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-four-videos-contact-image/swastixa-digital.mp4", "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-four-videos-contact-image/swastixa-fybros.mp4"];
 
   useEffect(() => {
     if (window.innerWidth <= 426) return;

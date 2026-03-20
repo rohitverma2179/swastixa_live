@@ -89,10 +89,10 @@ const HomeAbout = () => {
   };
 
   const imagesList = [
-    "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/MAIN%20-%20ABOUT%20-%20img/Swastixa%20Website%204design-01.jpg",
-    "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/MAIN%20-%20ABOUT%20-%20img/Swastixa%20Website%204design-02.jpg",
-    "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/MAIN%20-%20ABOUT%20-%20img/Swastixa%20Website%204design-03.jpg",
-    "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/MAIN%20-%20ABOUT%20-%20img/Swastixa%20Website%204design-04.jpg",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-about-page-images/two-website-design-swastixa.jpg",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-about-page-images/three-website-design-swastixa.jpg",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-about-page-images/one-website-design-swastixa.jpg",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-about-page-images/four-website-design-swastixa.jpg",
   ];
   return (
     <section
