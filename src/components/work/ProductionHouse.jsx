@@ -34,9 +34,9 @@ const ProductionHouse = () => {
       <div className="flex justify-start xl:ml-36 items-center gap-6 mt-0 mb-0 px-4">
         <button
           onClick={() => setActiveTab("filmes")}
-          className={`px-10 py-3 rounded-full text-sm uppercase tracking-wider font-semibold transition-all duration-300 ${
+          className={`px-10 py-3 rounded-sm text-sm  tracking-wider font-semibold transition-all duration-300 ${
             activeTab === "filmes"
-              ? "bg-white text-black shadow-[0_0_20px_rgba(255,255,255,0.6)] scale-105"
+              ? "bg-white text-black  scale-105"
               : "bg-transparent border-2 border-gray-700 text-gray-400 hover:text-white hover:border-gray-400"
           }`}
         >
@@ -44,9 +44,9 @@ const ProductionHouse = () => {
         </button>
         <button
           onClick={() => setActiveTab("construction")}
-          className={`px-10 py-3 rounded-full text-sm uppercase tracking-wider font-semibold transition-all duration-300 ${
+          className={`px-10 py-3 rounded-sm text-sm  tracking-wider font-semibold transition-all duration-300 ${
             activeTab === "construction"
-              ? "bg-white text-black shadow-[0_0_20px_rgba(255,255,255,0.6)] scale-105"
+              ? "bg-white text-black  scale-105"
               : "bg-transparent border-2 border-gray-700 text-gray-400 hover:text-white hover:border-gray-400"
           }`}
         >

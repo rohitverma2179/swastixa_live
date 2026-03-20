@@ -67,7 +67,7 @@ const VirtualVideoList = ({ videos = defaultVideoList }) => {
                 transform: `translateY(${row.start - scrollMargin}px)`,
                 willChange: "transform",
               }}
-              className="flex justify-center items-center py-10 md:py-20 px-4"
+              className="flex justify-center items-center py-0 md:py-20 px-4"
             >
               <VideoPlayer
                 src={video.src}
