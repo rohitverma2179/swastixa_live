@@ -6,9 +6,9 @@ import WorkHero from "./WorkHero";
 // import WorkHero from "../components/work/WorkHero";
 
 const constructionVideos = [
+  { id: 19, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/aarize.mp4" },
   { id: 27, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/smart-world-sky-arc.mp4" },
   { id: 28, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/smart-world-trump-tower.mp4" },
-  { id: 19, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/aarize.mp4" },
 ];
 
 const ProductionHouse = () => {
@@ -37,7 +37,7 @@ const ProductionHouse = () => {
           className={`px-10 py-3 rounded-sm text-sm  tracking-wider font-semibold transition-all duration-300 ${
             activeTab === "filmes"
               ? "bg-white text-black  scale-105"
-              : "bg-transparent border-2 border-gray-700 text-gray-400 hover:text-white hover:border-gray-400"
+              : "bg-transparent border-2 border-white/20 text-gray-400 hover:text-white hover:border-white"
           }`}
         >
           Filmes
@@ -47,10 +47,10 @@ const ProductionHouse = () => {
           className={`px-10 py-3 rounded-sm text-sm  tracking-wider font-semibold transition-all duration-300 ${
             activeTab === "construction"
               ? "bg-white text-black  scale-105"
-              : "bg-transparent border-2 border-gray-700 text-gray-400 hover:text-white hover:border-gray-400"
+              : "bg-transparent border-2 border-white/20 text-gray-400 hover:text-white hover:border-white"
           }`}
         >
-          Construction
+          Constructions
         </button>
       </div>
 

@@ -55,7 +55,7 @@ const ScrollFillText = () => {
             key={i}
             ref={(el) => (linesRef.current[i] = el)}
             className="leading-[1.1] font-bold tracking-tighter
-                       text-[10vw] md:text-[8vw] lg:text-[4vw] "
+                       text-[10vw] md:text-[8vw] lg:text-[4vw]"
             style={{
               // backgroundImage:
               //   "linear-gradient(to right, white 50%, #27272a 50%)",
