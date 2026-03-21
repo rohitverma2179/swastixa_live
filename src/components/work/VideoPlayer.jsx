@@ -40,18 +40,26 @@ const VideoPlayer = ({ src, poster }) => {
     const video = videoRef.current;
     if (!video) return;
 
-    if (isVisible && isReady) {
-      video.play().catch(() => { });
+    // Crucial iOS/Mac fix: explicitly setting DOM element attributes 
+    // bypasses Safari's strict React autoplay-blocking bugs
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+
+    if (isVisible) {
+      video.play().catch((err) => { 
+        console.warn("iOS/Safari autoplay blocked:", err); 
+      });
     } else {
       video.pause();
     }
-  }, [isVisible, isReady]);
+  }, [isVisible, shouldLoad]);
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]
-        max-w-[95vw] md:max-w-[90vw] xl:max-w-[80vw]
+      className="relative w-full h-[33vh] sm:h-[60vh] md:h-[70vh] lg:h-[95vh]
+        max-w-[95vw] md:max-w-[98vw] xl:max-w-[80vw]
         overflow-hidden rounded-2xl bg-neutral-900
         flex items-center justify-center shadow-3xl border border-white/5"
     >
@@ -79,7 +87,7 @@ const VideoPlayer = ({ src, poster }) => {
           controls
           playsInline
           preload="metadata"
-          onCanPlay={() => setIsReady(true)}
+          onLoadedData={() => setIsReady(true)}
           className={`w-full h-full object-cover transition-all duration-1000 ${isReady ? "opacity-100 scale-100" : "opacity-0 scale-105"
             }`}
         />
