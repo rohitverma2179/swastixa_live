@@ -149,11 +149,11 @@ export const reelsData = [
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/wash-guys.mp4",
         title: "wash-guys"
     },
-     {
-        id: 31,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/washguys-tarun-sir.mp4",
-        title: "washguys-tarun-sir"
-    },
+    //  {
+    //     id: 31,
+    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/washguys-tarun-sir.mp4",
+    //     title: "washguys-tarun-sir"
+    // },
 
 
 ];
