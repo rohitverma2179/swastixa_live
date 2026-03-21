@@ -53,7 +53,7 @@ const Hero = () => {
       scale: 1.2,
       y: "-20%",
       width: "100vw",
-      height: "100vh",
+      height: "100vh", 
       borderRadius: 0,
       duration: 2,
       ease: "power2.inOut",
