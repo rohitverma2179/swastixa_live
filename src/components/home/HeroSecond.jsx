@@ -28,7 +28,7 @@ export default function HeroSection() {
         <div className="flex justify-center items-center">
           <video
             // src={featcher_video}
-            src="https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-hero-video/swastixa-second.mp4"
+            src="https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20HOME/Hero-2nd-video.mp4"
             // alt="Digital Experience"
             className="w-[100%] max-w-md object-contain"
             autoPlay

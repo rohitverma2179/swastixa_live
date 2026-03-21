@@ -19,7 +19,7 @@ export const videoList = [
   { id: 9, src:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/panasonic-diwali.mp4" },
   { id: 10, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/panasonic-cricket.mp4" },
   // { id: 11, src: "" },
-  { id: 14, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/indian-art.mp4" },
+  { id: 14, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/indian-art.mp4" }, 
   { id: 15, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/hydairport.mp4" },
   { id: 16, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/ganga-nandaka-engr-st.mp4" },
   { id: 18, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/film-lucky-house-opt.mp4" },
