@@ -47,8 +47,8 @@ const ReelItem = memo(({ item, index }) => {
             )}
 
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
-                <h3 className="text-white text-lg font-bold tracking-tight">{item.title}</h3>
-                <p className="text-white/60 text-sm">Watch Reel</p>
+                {/* <h3 className="text-white text-lg font-bold tracking-tight">{item.title}</h3> */}
+                {/* <p className="text-white/60 text-sm">Watch Reel</p> */}
             </div>
 
             {/* Play Icon Overlay for non-hovered state */}

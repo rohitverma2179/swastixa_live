@@ -8,7 +8,7 @@ import video3 from "../../assets/workhero/work-page-05-03.mp4";
 import video4 from "../../assets/workhero/work-page-05-04.mp4";
 import video5 from "../../assets/workhero/work-page-05-05.mp4";
 
-const videoCards = [
+const videoCards = [  
   {
     id: 1,
     src: video1,
@@ -99,7 +99,8 @@ const VideoCard = ({ src, className, shadowColor = "rgba(0,0,0,0.5)" }) => {
         if (entry.isIntersecting) {
           videoRef.current?.play().catch(() => { });
         } else {
-          videoRef.current?.pause();
+          // videoRef.current?.pause();
+           videoRef.current?.play();
         }
       },
       {
@@ -110,7 +111,7 @@ const VideoCard = ({ src, className, shadowColor = "rgba(0,0,0,0.5)" }) => {
 
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
-  }, []);
+    }, []);
 
   return (
     <div
@@ -119,22 +120,37 @@ const VideoCard = ({ src, className, shadowColor = "rgba(0,0,0,0.5)" }) => {
       style={{ boxShadow: `0 10px 30px ${shadowColor}` }}
     >
       {shouldLoad && (
-        <video
-          ref={videoRef}
-          src={src}
-          muted
-          loop
-          playsInline
-          preload="auto"
-          onCanPlay={() => setIsReady(true)}
-          className={`w-full h-full object-cover transition-opacity duration-700 ${isReady ? "opacity-100" : "opacity-0"}`}
-        />
+        // <video
+        //   ref={videoRef}
+        //   src={src}
+        //   muted
+        //   loop
+        //   playsInline
+        //   preload="auto"
+        //   onCanPlay={() => setIsReady(true)}
+        //   className={`w-full h-full object-cover transition-opacity duration-700 ${isReady ? "opacity-100" : "opacity-0"}`}
+        // />
+       <video
+  ref={videoRef}
+  src={src}
+  muted
+  loop
+  playsInline
+  preload="metadata"
+  poster="/thumb.jpg"
+  className="w-full h-full object-cover"
+/>
       )}
-      {!isReady && (
+      {/* {!isReady && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/20">
           <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin"></div>
         </div>
-      )}
+      )} */}
+      {/* {!isReady && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+          <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin"></div>
+        </div>
+      )} */}
     </div>
   );
 };

@@ -9,6 +9,11 @@ const constructionVideos = [
   { id: 19, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/aarize.mp4" },
   { id: 27, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/smart-world-sky-arc.mp4" },
   { id: 28, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/smart-world-trump-tower.mp4" },
+  { id: 29, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/trump-tower.mp4" },
+  { id: 30, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/sky-arc.mp4" },
+  { id: 31, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/trump-tower-construction.mp4" },
+  { id: 32, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/sky-arc-construction.mp4" },
+  { id: 33, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/sky-arc-construction-update.mp4" },
 ];
 
 const ProductionHouse = () => {
@@ -21,7 +26,7 @@ const ProductionHouse = () => {
           Production
         </h1>
         <p className="text-center text-gray-400 mt-4 max-w-2xl mx-auto text-lg md:text-xl">
-          Crafting cinematic experiences and high-impact visual stories for global brands.
+          Crafting cinematic experiences and high impact visual stories for global brands.
           {/* Crafting cinematic experiences and high-impact visual stories for brands. */}
         </p>
       </div>
@@ -40,7 +45,7 @@ const ProductionHouse = () => {
               : "bg-transparent border-2 border-white/20 text-gray-400 hover:text-white hover:border-white"
           }`}
         >
-          Filmes
+          Films
         </button>
         <button
           onClick={() => setActiveTab("construction")}

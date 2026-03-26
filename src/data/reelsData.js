@@ -124,11 +124,11 @@ export const reelsData = [
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevveli-stomp.mp4",
         title: "kevveli-stomp"
     },
-    {
-        id: 26,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/tiger-attack.mp4",
-        title: "tiger-attack"
-    },
+    // {
+    //     id: 26,
+    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/tiger-attack.mp4",
+    //     title: "tiger-attack"
+    // },
     {
         id: 27,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/trump-tower-verticale.mp4",

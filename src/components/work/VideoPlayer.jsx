@@ -58,8 +58,8 @@ const VideoPlayer = ({ src, poster }) => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[33vh] sm:h-[60vh] md:h-[70vh] lg:h-[95vh]
-        max-w-[95vw] md:max-w-[98vw] xl:max-w-[80vw]
+      className="relative w-full mx-auto aspect-video
+        max-w-[95vw] sm:max-w-[85vw] md:max-w-[75vw] lg:max-w-[65vw] xl:max-w-[1000px] 2xl:max-w-[1200px]
         overflow-hidden rounded-2xl bg-neutral-900
         flex items-center justify-center shadow-3xl border border-white/5"
     >
@@ -95,6 +95,5 @@ const VideoPlayer = ({ src, poster }) => {
     </div>
   );
 };
-
 
 export default VideoPlayer;

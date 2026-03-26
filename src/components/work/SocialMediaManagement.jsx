@@ -15,7 +15,7 @@ const SocialMediaManagement = () => {
   return (
     <main className="bg-black min-h-screen">
       {/* Hero Section with Circular Gallery */}
-      {/* <section style={{ height: '600px', position: 'relative' }}>
+      <section style={{ height: '600px', position: 'relative' }}>
         <Suspense fallback={<div className="w-full h-full bg-neutral-900 animate-pulse" />}>
           <CircularGallery
             bend={4}
@@ -25,7 +25,7 @@ const SocialMediaManagement = () => {
             scrollSpeed={5}
           />
         </Suspense>
-      </section> */}
+      </section>
 
       {/* Main Content */}
       <div className="relative z-10">

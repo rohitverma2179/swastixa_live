@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import video from "../../assets/home-page-Hero-video-1.mp4"
+import video from "../../assets/home-page-Hero-video-1.mp4"
 
 
 
@@ -53,7 +53,7 @@ const Hero = () => {
       scale: 1.2,
       y: "-20%",
       width: "100vw",
-      height: "100vh",
+      height: "100vh", 
       borderRadius: 0,
       duration: 2,
       ease: "power2.inOut",
@@ -82,7 +82,8 @@ const Hero = () => {
           <video
             ref={videoRef}
             className="w-full min-h-[60vh] object-cover"
-            src={"https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-hero-video/swastixa-top.mp4"}
+            // src={"https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-hero-video/swastixa-top.mp4"}
+            src={video}
             autoPlay
             muted
             loop
