@@ -6,10 +6,9 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/common/Header";
 // import Footer from "./components/common/Footer";
 
+
 import AOS from "aos";
 import { Toaster } from "react-hot-toast";
-
-
 
 
 // Pages (Lazy Loaded)

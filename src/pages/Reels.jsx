@@ -26,6 +26,16 @@ const Reels = () => {
                     >
                         Reels
                     </button>
+                    {/* <button
+                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer bg-white text-black border-white"
+                    >
+                        Branding
+                    </button>
+                    <button
+                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer bg-white text-black border-white"
+                    >
+                        Print
+                    </button> */}
                 </div>
 
                 <Suspense fallback={

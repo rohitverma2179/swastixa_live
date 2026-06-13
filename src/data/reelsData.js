@@ -1,4 +1,62 @@
 export const reelsData = [
+    
+    {
+        id: 41,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/hindiscript.mp4",
+        title: "brand-franchise-one"
+    },
+    {
+        id: 40,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kloy-mitt.mp4",
+        title: "brand-franchise-one"
+    },
+    {
+        id: 39,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/meetravibestmate.mp4",
+        title: "brand-franchise-one"
+    },
+    {
+        id: 38,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/washguesscarpet.mp4",
+        title: "brand-franchise-one"
+    },
+    {
+        id: 37,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/rossmassager.mp4",
+        title: "brand-franchise-one"
+    },
+    // ____
+    {
+        id: 36,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/gayatri-two%20.mp4",
+        title: "brand-franchise-one"
+    },
+    {
+        id: 35,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/gayatri-minimal.mp4",
+        title: "brand-franchise-one"
+    },
+    {
+        id: 34,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/ishaadriilaunch.mp4",
+        title: "brand-franchise-one"
+    },
+    {
+        id: 33,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/ishaadriilaunchh.mp4",
+        title: "brand-franchise-one"
+    },
+    {
+        id: 32,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/eazzy.mp4",
+        title: "brand-franchise-one"
+    },
+    {
+        id: 31,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/sipstomp.mp4",
+        title: "brand-franchise-one"
+    },
+    // ________________________________
     {
         id: 1,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/band-franchise-one.mp4",
@@ -21,9 +79,9 @@ export const reelsData = [
     },
     {
         id: 5,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevvali-velentine.mp4",
-        title: "kevvali-velentine"
-    },
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/washguessshoes.mp4",
+        title: "washguessshoes"
+    }, 
     {
         id: 6,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/sky-arc-vertival-version.mp4",
@@ -90,11 +148,6 @@ export const reelsData = [
         title: "gayatri-one"
     },
     {
-        id: 19,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/gayatri.mp4",
-        title: "gayatri"
-    },
-    {
         id: 20,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevvali-with-penguin.mp4",
         title: "kevvali-with-penguin"
@@ -111,9 +164,9 @@ export const reelsData = [
     },
     {
         id: 23,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevveli-choclate.mp4",
-        title: "kevveli-choclate"
-    },
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/washguessexivition.mp4",
+        title: "washguessexivition"
+    }, ////
     {
         id: 24,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevveli-fat.mp4",
@@ -124,11 +177,11 @@ export const reelsData = [
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevveli-stomp.mp4",
         title: "kevveli-stomp"
     },
-    // {
-    //     id: 26,
-    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/tiger-attack.mp4",
-    //     title: "tiger-attack"
-    // },
+    {
+        id: 26,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevveliholi.mp4",
+        title: "kevveliholi"
+    },
     {
         id: 27,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/trump-tower-verticale.mp4",
@@ -136,24 +189,24 @@ export const reelsData = [
     },
      {
         id: 28,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/wash-guess-exivition.mp4",
-        title: "wash-guess-exivition"
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevvelichoclate.mp4",
+        title: "kevvelichoclate"
     },
      {
         id: 29,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/wash-guess-shoes.mp4",
-        title: "wash-guess-shoes"
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevvalivelentine.mp4",
+        title: "kevvalivelentine"
     },
      {
         id: 30,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/wash-guys.mp4",
         title: "wash-guys"
     },
-    //  {
-    //     id: 31,
-    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/washguys-tarun-sir.mp4",
-    //     title: "washguys-tarun-sir"
-    // },
+     {
+        id: 31,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/gayatri.mp4",
+        title: "gayatri"
+    },
 
 
 ];

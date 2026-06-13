@@ -44,6 +44,18 @@ const SocialMediaManagement = () => {
           >
             Reels
           </button>
+          {/* <button
+            onClick={() => navigate('/work/reels')}
+            className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
+          >
+            Branding
+          </button>
+          <button
+            onClick={() => navigate('/work/reels')}
+            className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
+          >
+            Print
+          </button> */}
         </div>
 
         <Suspense fallback={

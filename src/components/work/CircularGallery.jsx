@@ -1,5 +1,6 @@
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
 import { useEffect, useRef } from 'react';
+import img_one from "../../assets/blog1.jpeg"
 
 function debounce(func, wait) {
   let timeout;
@@ -196,7 +197,12 @@ class Media {
     });
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    img.src = this.image;
+    // Proxies external R2 links through an image CDN to bypass strict WebGL CORS requirements
+    if (this.image && this.image.startsWith('http')) {
+      img.src = `https://wsrv.nl/?url=${encodeURIComponent(this.image)}&cors=1`;
+    } else {
+      img.src = this.image;
+    }
     img.onload = () => {
       texture.image = img;
       this.program.uniforms.uImageSizes.value = [img.naturalWidth, img.naturalHeight];
@@ -332,18 +338,17 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://picsum.photos/seed/1/800/600?grayscale`, text: 'Bridge' },
-      { image: `https://picsum.photos/seed/2/800/600?grayscale`, text: 'Desk Setup' },
-      { image: `https://picsum.photos/seed/3/800/600?grayscale`, text: 'Waterfall' },
-      { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: 'Strawberries' },
-      { image: `https://picsum.photos/seed/5/800/600?grayscale`, text: 'Deep Diving' },
-      { image: `https://picsum.photos/seed/16/800/600?grayscale`, text: 'Train Track' },
-      // { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: 'Santorini' },
-      // { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: 'Blurry Lights' },
-      // { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: 'New York' },
-      // { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: 'Good Boy' },
-      // { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: 'Coastline' },
-      // { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: 'Palm Trees' }
+      { image: `https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/top-main-imgs-social-media/mthreem-theline-edm.jpeg`, text: 'M3M' },
+      { image: `https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/tirasya1.jpg`, text: 'Tirasya' },
+      { image: `https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/kloy.jpeg`, text: 'Kloy' },
+      { image: `https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/asva6.jpg`, text: 'Asva' },
+      { image: `https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/top-main-imgs-social-media/bestmate-mutual-fund-edm.jpg`, text: 'Bestmate' },
+      { image: `https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/top-main-imgs-social-media/Emaar-serenty-hills-edm.jpg`, text: 'Emaar' },
+      // { image: `https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/RealEstateNewsPost1.jpg`, text: 'Team RKI' },
+      { image: `https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/top-main-imgs-social-media/rki-thinklong-edm.jpg`, text: 'Team RKI' },
+      // { image: `https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/social/RealEstateNewsPost1.jpg`, text: 'Team RKI' },
+      { image: `https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/top-main-imgs-social-media/kevvali-edm.jpg`, text: 'Kevvali' },
+      { image: `https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/top-main-imgs-social-media/mrg-did-you-know.jpeg`, text: 'MRG' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

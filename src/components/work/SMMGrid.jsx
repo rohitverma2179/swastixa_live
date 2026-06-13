@@ -48,7 +48,7 @@ const GridItem = memo(({ item, globalIndex }) => {
             </div>
 
             {(item.title || item.category) && (
-                <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent 
+                <div className="absolute inset-0   
                 opacity-0 group-hover:opacity-100 transition-all duration-500
                 flex flex-col justify-end p-6">
                     {item.category && (
@@ -56,11 +56,11 @@ const GridItem = memo(({ item, globalIndex }) => {
                             {item.category}
                         </span>
                     )}
-                    {item.title && (
+                    {/* {item.title && (
                         <h3 className="text-white text-xl font-bold leading-tight">
                             {item.title}
                         </h3>
-                    )}
+                    )} */}
                 </div>
             )}
         </motion.div>
@@ -113,12 +113,30 @@ const SMMGrid = ({ smmContent }) => {
         return () => observer.disconnect();
     }, [loadMore]);
 
-    // Distribute items into fixed lanes to prevent shifting
+    // Distribute items into lanes based on height estimation to keep column heights balanced and prevent shifting
     const lanes = useMemo(() => {
         const items = smmContent.slice(0, visibleCount);
         const result = Array.from({ length: columns }, () => []);
+        const heights = Array(columns).fill(0);
+
         items.forEach((item, index) => {
-            result[index % columns].push({ item, globalIndex: index });
+            // Estimate height factor: edm/avenue/suite are tall (1.77), statics are square/landscape (1.0)
+            const url = item.image.toLowerCase();
+            const isTall = url.includes('edm') || url.includes('line-avenue') || url.includes('line-suite');
+            const heightFactor = isTall ? 1.77 : 1.0;
+
+            // Find the shortest column
+            let minColIdx = 0;
+            let minHeight = heights[0];
+            for (let c = 1; c < columns; c++) {
+                if (heights[c] < minHeight) {
+                    minHeight = heights[c];
+                    minColIdx = c;
+                }
+            }
+
+            result[minColIdx].push({ item, globalIndex: index });
+            heights[minColIdx] += heightFactor;
         });
         return result;
     }, [visibleCount, smmContent, columns]);
@@ -137,7 +155,11 @@ const SMMGrid = ({ smmContent }) => {
                 ))}
             </div>
 
-            <div ref={loaderRef} className="w-full h-40 flex flex-col items-center justify-center mt-12 bg-black">
+            <div 
+                ref={loaderRef} 
+                className={`w-full flex flex-col items-center justify-center bg-black transition-all duration-300
+                    ${visibleCount < smmContent.length ? 'h-40 mt-12' : 'h-0 mt-0 overflow-hidden'}`}
+            >
                 {visibleCount < smmContent.length && (
                     <div className="flex flex-col items-center gap-4">
                         <motion.div

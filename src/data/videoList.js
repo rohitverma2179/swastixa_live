@@ -1,24 +1,25 @@
 export const videoList = [
-  //  { id: 17, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/logo-testing-video.mp4" },
+  
+  { id: 11, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/ishaadrii-swastixa.mp4" },
   { id: 12, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/mrg.mp4" },
   { id: 13, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/mrg-crown.mp4" },
   { id: 26, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/smart-world-noida.mp4" },
   { id: 25, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/signature-global.mp4" },
   { id: 17, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/panasonic-sec-bomb.mp4" },
-  { id: 2, src:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/bachpan.mp4" },
+  { id: 2, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/bachpan.mp4" },
   { id: 35, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/english-fan-tvc-sec.mp4" },
   { id: 36, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/english-film-hw-fan-regulator.mp4" },
-  { id: 3, src:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/english-film-hw-fan-switch.mp4" },
-  { id: 4, src:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/english-film-motion-sensor.mp4" },
-  { id: 8, src:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/panasonic-office.mp4" },
+  { id: 3, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/english-film-hw-fan-switch.mp4" },
+  { id: 4, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/english-film-motion-sensor.mp4" },
+  { id: 8, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/panasonic-office.mp4" },
   { id: 33, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/film-hw-fan-popout-lamp-english.mp4" },
   { id: 34, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/film-pongal-tamil.mp4" },
-  { id: 5, src:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/oorja.mp4" },
-  { id: 6, src:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/parampara.mp4" },
+  { id: 5, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/oorja.mp4" },
+  { id: 6, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/parampara.mp4" },
   // { id: 11, src: "" },
-  { id: 7, src:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/panasonic-stress-test.mp4" },
+  { id: 7, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/panasonic-stress-test.mp4" },
   { id: 14, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/indian-art.mp4" },
-  { id: 9, src:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/panasonic-diwali.mp4" },
+  { id: 9, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/panasonic-diwali.mp4" },
   { id: 15, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/hydairport.mp4" },
   { id: 16, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/ganga-nandaka-engr-st.mp4" },
   { id: 18, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/film-lucky-house-opt.mp4" },
@@ -40,3 +41,7 @@ export const videoList = [
   { id: 38, src: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/production-house-video/swastixa-all-videos/utsava.mp4" },
   // { id: 1, src:  "https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/%23HYDAirport%20Tyohaar%20Yahin%20Shuru%20Hote%20Hain.mp4" },
 ].filter(v => v?.src);
+
+
+
+

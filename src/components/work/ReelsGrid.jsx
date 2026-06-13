@@ -63,12 +63,28 @@ const ReelItem = memo(({ item, index }) => {
     );
 });
 
+const shuffleArray = (array) => {
+    if (!array) return [];
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+};
+
 const ReelsGrid = ({ reels }) => {
+    const [shuffledReels, setShuffledReels] = useState(() => shuffleArray(reels));
+
+    useEffect(() => {
+        setShuffledReels(shuffleArray(reels));
+    }, [reels]);
+
     return (
         <section className="w-full bg-black px-4 py-10 md:py-20">
             <div className="max-w-[1800px] mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-                    {reels.map((item, index) => (
+                    {shuffledReels.map((item, index) => (
                         <ReelItem key={item.id} item={item} index={index} />
                     ))}
                 </div>
