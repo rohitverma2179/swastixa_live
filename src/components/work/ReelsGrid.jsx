@@ -85,11 +85,11 @@ const ReelItem = memo(({ item, index }) => {
                     loop
                     muted
                     playsInline
-                    preload="metadata"
+                    preload="auto"
                     onLoadedMetadata={() => setIsLoaded(true)}
                     className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
                 >
-                    <source src={item.video} type="video/mp4" />
+                    <source src={`${item.video}#t=0.001`} type="video/mp4" />
                 </video>
             )}
 
