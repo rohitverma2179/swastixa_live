@@ -17,7 +17,13 @@ const rawUrls = [
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-jawelcrest-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-jewelcreest-edm.jpg",
     
-
+// new add post
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/eassy-spa.jpeg",
+"https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/eassy-washing-machine.jpeg",
+"https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/eazzy-justchill.jpeg",
+"https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/kevvali-pasta.jpeg",
+"https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/kevvali-mogito.jpeg",
+"https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/bestmate-need-swastixa.jpeg",
 
     //mrg
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mrg-antichild-edm.jpg",
@@ -32,29 +38,29 @@ const rawUrls = [
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mrg-spa-Salon.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mrg-summar-carnival-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mrg-summer-edm.jpg",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-residence-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mrg-table-tennis.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mrg-yoga-edm.jpg",
 
     // m3m 
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-clubhouse-edm.jpg",
-    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-line-avenue.jpeg",
+    // "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-line-avenue.jpeg",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-thecity-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-line-suite.jpeg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-luxury-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-noida-edm.jpg",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-everyday-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-precision-edm.jpg",
-    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-residence-edm.jpg",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-effortless-static.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-sip-edm.jpg",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-holiday-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-skyline-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-suite-edm.jpg",
-    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-thecity-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/mthreem-theline-edm.jpg",
     // Tirasya Posts
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-beautynature-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-calmclass-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-comingsoon-edm-one.jpg",
-    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-effortless-static.jpg",
-    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-everyday-edm.jpg",
-    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-holiday-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-lapofnature-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-lifestyle-edm.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/tirasya-luxury-static.jpg",
@@ -79,7 +85,7 @@ const rawUrls = [
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/ishaadrii-indulgence-static.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/ishaadrii-livepure-static.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/ishaadrii-whispers-static.jpg",
-    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/ishhaadrii-coming-soon.jpeg",
+    // "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/ishhaadrii-coming-soon.jpeg",
 
     // Kevvali Posts
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/kevvali-coldcoffee-static.jpg",
@@ -135,7 +141,7 @@ const rawUrls = [
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/asva-lifestyle-static.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/asva-pure-static.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/asva-purewater-static.jpg",
-    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/asva-soon-static.jpg",
+    // "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/asva-soon-static.jpg",
     "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-posts-swastixa/asva-yourwater-static.jpg",
 
 ];

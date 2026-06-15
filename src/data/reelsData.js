@@ -1,7 +1,7 @@
 export const reelsData = [
     
     {
-        id: 41,
+        id: 411,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/hindiscript.mp4",
         title: "brand-franchise-one"
     },
@@ -52,7 +52,7 @@ export const reelsData = [
         title: "brand-franchise-one"
     },
     {
-        id: 31,
+        id: 42,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/sipstomp.mp4",
         title: "brand-franchise-one"
     },

@@ -5,7 +5,32 @@ const ReelItem = memo(({ item, index }) => {
     const videoRef = useRef(null);
     const [isHovered, setIsHovered] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
+    const [isInViewport, setIsInViewport] = useState(false);
     const [shouldLoad, setShouldLoad] = useState(false);
+
+    useEffect(() => {
+        let timer;
+        if (isInViewport) {
+            timer = setTimeout(() => {
+                setShouldLoad(true);
+            }, 250); // Stagger loading to prevent network congestion
+        } else {
+            setShouldLoad(false);
+            setIsLoaded(false); // Reset load state when out of view
+        }
+        return () => {
+            if (timer) clearTimeout(timer);
+        };
+    }, [isInViewport]);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (video) {
+            video.muted = true;
+            video.defaultMuted = true;
+            video.playsInline = true;
+        }
+    }, [shouldLoad]);
 
     useEffect(() => {
         if (isHovered && videoRef.current) {
@@ -20,9 +45,10 @@ const ReelItem = memo(({ item, index }) => {
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "200px" }}
-            onViewportEnter={() => setShouldLoad(true)}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: false, margin: "100px" }}
+            onViewportEnter={() => setIsInViewport(true)}
+            onViewportLeave={() => setIsInViewport(false)}
+            transition={{ duration: 0.5, delay: (index % 5) * 0.05 }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className="relative aspect-9/16 rounded-2xl overflow-hidden bg-neutral-900 group cursor-pointer border border-white/10"
@@ -33,9 +59,10 @@ const ReelItem = memo(({ item, index }) => {
                     src={item.video}
                     poster={item.poster || undefined}
                     loop
+                    muted
                     playsInline
                     preload="metadata"
-                    onLoadedData={() => setIsLoaded(true)}
+                    onLoadedMetadata={() => setIsLoaded(true)}
                     className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
                 />
             )}
