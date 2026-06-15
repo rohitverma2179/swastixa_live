@@ -34,10 +34,27 @@ const VideoCard = ({ src }) => {
 
   // ▶️ Play ONLY when ready + visible
   useEffect(() => {
-    if (isVisible && isReady) {
-      videoRef.current?.play().catch(() => {});
+    const video = videoRef.current;
+    if (isVisible && isReady && video) {
+      video.muted = false; // Attempt to play unmuted
+      video.play().catch((err) => {
+        console.log("Unmuted play blocked, trying muted:", err);
+        video.muted = true;
+        video.play().catch((e) => console.log("Muted play failed:", e));
+      });
     }
   }, [isVisible, isReady]);
+
+  const setVideoRef = (el) => {
+    videoRef.current = el;
+    if (el) {
+      el.muted = true;
+      el.defaultMuted = true;
+      el.playsInline = true;
+      el.setAttribute('muted', '');
+      el.setAttribute('playsinline', '');
+    }
+  };
 
   return (
     <div
@@ -53,8 +70,7 @@ const VideoCard = ({ src }) => {
         <div className="text-white/60 text-sm">Loading preview…</div>
       ) : (
         <video
-          ref={videoRef}
-          src={src}
+          ref={setVideoRef}
           muted
           loop
           playsInline
@@ -62,7 +78,9 @@ const VideoCard = ({ src }) => {
           preload="auto"
           className="w-full h-full object-cover"
           onCanPlayThrough={() => setIsReady(true)}
-        />
+        >
+          <source src={src} type="video/mp4" />
+        </video>
       )}
     </div>
   );

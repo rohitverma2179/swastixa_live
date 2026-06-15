@@ -120,7 +120,8 @@ export default function App() {
 
 
   return (
-    <div onContextMenu={disableRightClick}>
+    // <div onContextMenu={disableRightClick}>
+    <div >
       <Toaster position="top-right" />
       <ScrollToTop />
       <ScrollButton />

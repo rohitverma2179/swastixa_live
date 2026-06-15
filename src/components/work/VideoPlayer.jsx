@@ -35,20 +35,28 @@ const VideoPlayer = ({ src, poster }) => {
     return () => playObserver.disconnect();
   }, []);
 
+  const setVideoRef = (el) => {
+    videoRef.current = el;
+    if (el) {
+      el.muted = true;
+      el.defaultMuted = true;
+      el.playsInline = true;
+      el.setAttribute('muted', '');
+      el.setAttribute('playsinline', '');
+    }
+  };
+
   // 3. Play/Pause Logic
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    // Crucial iOS/Mac fix: explicitly setting DOM element attributes 
-    // bypasses Safari's strict React autoplay-blocking bugs
-    video.muted = true;
-    video.defaultMuted = true;
-    video.playsInline = true;
-
     if (isVisible) {
+      video.muted = false; // Attempt to play unmuted
       video.play().catch((err) => { 
-        console.warn("iOS/Safari autoplay blocked:", err); 
+        console.warn("Unmuted autoplay blocked, trying muted:", err); 
+        video.muted = true;
+        video.play().catch((e) => console.warn("Muted play failed:", e));
       });
     } else {
       video.pause();
@@ -80,8 +88,7 @@ const VideoPlayer = ({ src, poster }) => {
 
       {shouldLoad && (
         <video
-          ref={videoRef}
-          src={src}
+          ref={setVideoRef}
           muted
           loop
           controls
@@ -90,7 +97,9 @@ const VideoPlayer = ({ src, poster }) => {
           onLoadedData={() => setIsReady(true)}
           className={`w-full h-full object-cover transition-all duration-1000 ${isReady ? "opacity-100 scale-100" : "opacity-0 scale-105"
             }`}
-        />
+        >
+          <source src={src} type="video/mp4" />
+        </video>
       )}
     </div>
   );

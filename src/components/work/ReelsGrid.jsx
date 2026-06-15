@@ -4,9 +4,22 @@ import { motion } from 'framer-motion';
 const ReelItem = memo(({ item, index }) => {
     const videoRef = useRef(null);
     const [isHovered, setIsHovered] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
     const [isInViewport, setIsInViewport] = useState(false);
     const [shouldLoad, setShouldLoad] = useState(false);
+
+    // Ref callback to ensure proper muted/playsinline attributes for Safari instantly
+    const setVideoRef = (el) => {
+        videoRef.current = el;
+        if (el) {
+            el.muted = true;
+            el.defaultMuted = true;
+            el.playsInline = true;
+            el.setAttribute('muted', '');
+            el.setAttribute('playsinline', '');
+        }
+    };
 
     useEffect(() => {
         let timer;
@@ -15,8 +28,9 @@ const ReelItem = memo(({ item, index }) => {
                 setShouldLoad(true);
             }, 250); // Stagger loading to prevent network congestion
         } else {
-            setShouldLoad(false);
-            setIsLoaded(false); // Reset load state when out of view
+            // Pause if scrolled out of view, but keep shouldLoad true to avoid duplicate range requests
+            setIsPlaying(false);
+            setIsHovered(false);
         }
         return () => {
             if (timer) clearTimeout(timer);
@@ -25,21 +39,28 @@ const ReelItem = memo(({ item, index }) => {
 
     useEffect(() => {
         const video = videoRef.current;
-        if (video) {
-            video.muted = true;
-            video.defaultMuted = true;
-            video.playsInline = true;
-        }
-    }, [shouldLoad]);
+        if (!video) return;
 
-    useEffect(() => {
-        if (isHovered && videoRef.current) {
-            videoRef.current.play().catch(err => console.log("Video play failed:", err));
-        } else if (videoRef.current) {
-            videoRef.current.pause();
-            videoRef.current.currentTime = 0;
+        if (isHovered || isPlaying) {
+            // Attempt unmuted play
+            video.muted = false;
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(err => {
+                    console.log("Unmuted play blocked, trying muted:", err);
+                    // Fallback to muted playback
+                    video.muted = true;
+                    video.play().catch(e => {
+                        console.log("Muted play failed too:", e);
+                        setIsPlaying(false);
+                    });
+                });
+            }
+        } else {
+            video.pause();
+            video.currentTime = 0;
         }
-    }, [isHovered]);
+    }, [isHovered, isPlaying]);
 
     return (
         <motion.div
@@ -50,13 +71,16 @@ const ReelItem = memo(({ item, index }) => {
             onViewportLeave={() => setIsInViewport(false)}
             transition={{ duration: 0.5, delay: (index % 5) * 0.05 }}
             onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseLeave={() => {
+                setIsHovered(false);
+                setIsPlaying(false);
+            }}
+            onClick={() => setIsPlaying(prev => !prev)}
             className="relative aspect-9/16 rounded-2xl overflow-hidden bg-neutral-900 group cursor-pointer border border-white/10"
         >
             {shouldLoad && (
                 <video
-                    ref={videoRef}
-                    src={item.video}
+                    ref={setVideoRef}
                     poster={item.poster || undefined}
                     loop
                     muted
@@ -64,7 +88,9 @@ const ReelItem = memo(({ item, index }) => {
                     preload="metadata"
                     onLoadedMetadata={() => setIsLoaded(true)}
                     className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-                />
+                >
+                    <source src={item.video} type="video/mp4" />
+                </video>
             )}
 
             {!isLoaded && (
@@ -78,8 +104,8 @@ const ReelItem = memo(({ item, index }) => {
                 {/* <p className="text-white/60 text-sm">Watch Reel</p> */}
             </div>
 
-            {/* Play Icon Overlay for non-hovered state */}
-            {!isHovered && isLoaded && (
+            {/* Play Icon Overlay for non-hovered and non-playing state */}
+            {!isHovered && !isPlaying && isLoaded && (
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center">
                         <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-white border-b-8 border-b-transparent ml-1" />
