@@ -33,7 +33,7 @@ export default function Navbar() {
 
   // const [menuIcon , setMenuIcon] = useState()
 
-  const menuItems = ["WORK", "ABOUT", "BLOG", "CAREERS", "CONTACT"];
+  const menuItems = ["WORK", "ABOUT", "SERVICES", "CAREERS", "BLOG", "CONTACT"];
 
   // === Sidebar Animation Variants === //
   const sidebarVariants = {

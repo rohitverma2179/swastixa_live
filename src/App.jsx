@@ -23,6 +23,9 @@ const SocialMediaManagement = lazy(() => import("./components/work/SocialMediaMa
 const WebsiteDevelopment = lazy(() => import("./components/work/WebsiteDevelopment"));
 const DigitalMarketing = lazy(() => import("./components/work/DigitalMarketing"));
 const Reels = lazy(() => import("./pages/Reels"));
+const Branding = lazy(() => import("./pages/Branding"));
+const Print = lazy(() => import("./pages/Print"));
+const Services = lazy(() => import("./pages/Services"));
 
 import "aos/dist/aos.css";
 import "./App.css";
@@ -98,10 +101,6 @@ export default function App() {
     };
   }, []);
 
-
-
-
-
   if (loader) {
     return (
       <div className="fixed inset-0 w-full h-full overflow-hidden bg-black flex items-center justify-center">
@@ -140,6 +139,9 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogInner />} />
           <Route path="/about" element={<About />} />
           <Route path="/work/reels" element={<Reels />} />
+          <Route path="/work/Branding" element={<Branding />} />
+          <Route path="/work/Print" element={<Print />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </Suspense>
       {/* <Footer /> */}

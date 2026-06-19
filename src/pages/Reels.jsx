@@ -26,13 +26,16 @@ const Reels = () => {
                     >
                         Reels
                     </button>
-                    {/* <button
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer bg-white text-black border-white"
+                  
+                    <button
+                        onClick={() => navigate('/work/Branding')}
+                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
                     >
                         Branding
                     </button>
-                    <button
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer bg-white text-black border-white"
+                    {/* <button
+                        onClick={() => navigate('/work/Print')}
+                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
                     >
                         Print
                     </button> */}
@@ -51,3 +54,30 @@ const Reels = () => {
 };
 
 export default Reels;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+digital-marketing-agency
+ContentMarketingAgency
+
+
+
+
+
+.jsx
