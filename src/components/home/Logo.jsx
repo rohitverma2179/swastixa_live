@@ -1,6 +1,18 @@
 import React, { useState, useEffect, useMemo } from "react";
 const ICONS = [
   {
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/panasonic-logo.png",
+    alt: "Munchon",
+  },
+  {
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/dlf-logo.png",
+    alt: "UDS",
+  },
+  {
+    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/smart-world-logo.png",
+    alt: "Munchon",
+  },
+  {
    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/signature-global-logo.png",
     alt: "Signature Global",
     // link: "https://signatureglobal.in" 
@@ -25,10 +37,7 @@ const ICONS = [
     alt: "NFDC",
     // link: "https://nfdcindia.com"
   },
-  {
-    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/dlf-logo.png",
-    alt: "UDS",
-  },
+  
 
   {
     url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/bexex-logo.png",
@@ -70,10 +79,7 @@ const ICONS = [
     alt: "Munchon",
   },
 
-  {
-    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/panasonic-logo.png",
-    alt: "Munchon",
-  },
+  
 
   {
     url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/paramount-logo.png",
@@ -95,10 +101,7 @@ const ICONS = [
     alt: "Munchon",
   },
 
-  {
-    url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/smart-world-logo.png",
-    alt: "Munchon",
-  },
+  
 
   {
     url: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-clients-logos/sparrow-logo.png",

@@ -26,6 +26,12 @@ const Reels = lazy(() => import("./pages/Reels"));
 const Branding = lazy(() => import("./pages/Branding"));
 const Print = lazy(() => import("./pages/Print"));
 const Services = lazy(() => import("./pages/Services"));
+const WebsiteDevelopmentPage = lazy(() => import("./pages/WebsiteDevelopment"));
+const SeoAgency = lazy(() => import("./pages/SeoAgency"));
+const ContentMarketingAgency = lazy(() => import("./pages/ContentMarketingAgency"));
+const SocialMediaMarketingAgency = lazy(() => import("./pages/SocialMediaMarketingAgency"));
+const PerformanceMarketingAgency = lazy(() => import("./pages/PerformanceMarketingAgency"));
+const VideoProductionHouse = lazy(() => import("./pages/VideoProductionHouse"));
 
 import "aos/dist/aos.css";
 import "./App.css";
@@ -142,6 +148,12 @@ export default function App() {
           <Route path="/work/Branding" element={<Branding />} />
           <Route path="/work/Print" element={<Print />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/website-development" element={<WebsiteDevelopmentPage />} />
+          <Route path="/services/seo-agency" element={<SeoAgency />} />
+          <Route path="/services/content-marketing" element={<ContentMarketingAgency />} />
+          <Route path="/services/social-media-marketing" element={<SocialMediaMarketingAgency />} />
+          <Route path="/services/performance-marketing" element={<PerformanceMarketingAgency />} />
+          <Route path="/services/video-production-house" element={<VideoProductionHouse />} />
         </Routes>
       </Suspense>
       {/* <Footer /> */}

@@ -1,50 +1,52 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import PixelCard from './PixelCard';
 
 const serviceList = [
   {
     number: '01',
     title: 'SEO Agency',
-    description: 'Turn search traffic into business growth with proven SEO strategies.'
+    description: 'Turn search traffic into business growth with proven SEO strategies.',
+    path: '/services/seo-agency'
   },
   {
     number: '02',
     title: 'Content Marketing',
-    description: 'Turn ideas into impactful content that connects with your audience and drives results.'
+    description: 'Turn ideas into impactful content that connects with your audience and drives results.',
+    path: '/services/content-marketing'
   },
   {
     number: '03',
     title: 'Social Media Marketing',
-    description: 'Manage your brand on social platforms with strategic content that boosts engagement and growth.'
+    description: 'Manage your brand on social platforms with strategic content that boosts engagement and growth.',
+    path: '/services/social-media-marketing'
   },
   {
     number: '04',
     title: 'Performance Marketing',
-    description: 'Achieve faster growth with performance focused marketing strategies built for measurable outcomes.'
+    description: 'Achieve faster growth with performance focused marketing strategies built for measurable outcomes.',
+    path: '/services/performance-marketing'
   },
   {
     number: '05',
     title: 'Website Development',
-    description: 'Create modern, responsive websites that deliver seamless performance and strong user experience.'
+    description: 'Create modern, responsive websites that deliver seamless performance and strong user experience.',
+    path: '/services/website-development'
   },
   {
     number: '06',
     title: 'Video Production House',
-    description: 'Produce compelling videos that bring your brand message to life and connect with your audience.'
+    description: 'Produce compelling videos that bring your brand message to life and connect with your audience.',
+    path: '/services/video-production-house'
   }
 ];
 
 const ServiceCards = () => {
+  const navigate = useNavigate();
   return (
-    <section className="bg-black text-white py-12 px-6 sm:px-12 lg:px-24 xl:px-32 flex flex-col items-start text-left w-full select-none">
+    <section data-aos="fade-up" data-aos-duration="1500" className="bg-black text-white pb-6 pt-2  px-6 sm:px-12 lg:px-24 xl:px-32 flex flex-col items-start text-left w-full select-none">
       {/* Upper Title Section */}
-      <div className="max-w-4xl mb-12">
-        <h1 className="text-3xl sm:text-4xl md:text-[46px] font-extrabold tracking-tight mb-4 text-white leading-none">
-          What we do
-        </h1>
-        <p className="text-[#a1a1aa] text-base sm:text-lg font-light leading-relaxed max-w-3xl">
-          We help brands grow through strategy, <br /> content, advertising, search visibility, <br /> social media and performance marketing.
-        </p>
-      </div>
+
 
       {/* Sub Title Section */}
       <div className="mb-8">
@@ -59,12 +61,11 @@ const ServiceCards = () => {
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
         {serviceList.map((service, index) => (
-          <div
+          <PixelCard
             key={index}
-            className="flex flex-col justify-between p-6 rounded-[12px] bg-[#121214] border border-[#232326] hover:border-[#38383c] hover:bg-[#151518] hover:-translate-y-1 transition-all duration-300 min-h-[190px] group cursor-pointer"
-            style={{
-              boxShadow: '0 4px 25px rgba(0, 0, 0, 0.35)'
-            }}
+            variant="blue"
+            className="flex flex-col justify-between p-6 rounded-[12px] bg-[#121214] border border-[#232326] hover:border-[#38383c] hover:bg-[#151518] hover:-translate-y-1 transition-all duration-300 min-h-[190px] group cursor-pointer shadow-[0_4px_25px_rgba(0,0,0,0.35)]"
+            onClick={() => service.path && navigate(service.path)}
           >
             {/* Number */}
             <div className="text-[#71717a] group-hover:text-[#a1a1aa] font-medium text-base mb-3 transition-colors duration-300">
@@ -80,7 +81,7 @@ const ServiceCards = () => {
             <h3 className="text-white group-hover:text-blue-400 font-semibold text-lg sm:text-[20px] tracking-tight transition-colors duration-300 mt-auto">
               {service.title}
             </h3>
-          </div>
+          </PixelCard>
         ))}
       </div>
     </section>
