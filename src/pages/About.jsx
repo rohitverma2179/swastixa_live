@@ -10,6 +10,7 @@ import ManaginDiroctor from '../components/about/ManaginDiroctor'
 import ScrollRevealText from '../components/common/scrollRevealText'
 // import BrandManifesto from '../components/common/ScrollFillText'
 import ScrollFillText from '../components/common/ScrollFillText'
+import CTASection from '../components/common/CTASection'
 
 const About = () => {
 
@@ -95,6 +96,7 @@ const About = () => {
                 <DigitalEraSection />
                 <ApproachSection />
                 <LogoCarousel />
+                <CTASection />
                 {/* <ManaginDiroctor />
                 <OurTeam /> */}
             </div>

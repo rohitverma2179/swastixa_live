@@ -161,7 +161,7 @@ export default function ContactSection() {
 
               <div className="flex justify-end gap-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/1BavrtTDFV/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300"
@@ -170,7 +170,7 @@ export default function ContactSection() {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.instagram.com/swastixadigital?igsh=ZHQwMmthamV3a3Vu"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300"
@@ -179,7 +179,7 @@ export default function ContactSection() {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/swastixa/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300"
@@ -188,7 +188,7 @@ export default function ContactSection() {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://youtube.com/@swastixadigital?si=Pfy9tRbjKuLInRJE"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300"

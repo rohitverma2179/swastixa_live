@@ -3,6 +3,7 @@ import React from "react";
 import ContactCareer from "../components/careers/ContactCareer";
 import InnerPageHeader from "../components/common/innerPageHeader";
 import Particles from "../components/home/Particles";
+import CTASection from "../components/common/CTASection";
 // import CareersHero from "../components/careers/careersHero";
 
 export default function Careers() {
@@ -22,6 +23,7 @@ export default function Careers() {
       />
       <InnerPageHeader title="Careers" description="At Swastixa, our Careers page showcases opportunities for creative and strategic talent, including Senior Graphic Designer, Copywriter, Client Servicing Executive, Art Director, Motion Graphics Designer, and Social Media Manager, with more roles to be added as we grow." />
       <ContactCareer />
+      <CTASection />
     </div>
   );
 }

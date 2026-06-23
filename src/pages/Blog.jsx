@@ -4,6 +4,7 @@ import BlogGrid from "../components/blog/BlogGrid";
 import { blogs } from "../data/blogs";
 import InnerPageHeader from "../components/common/innerPageHeader";
 import Particles from "../components/home/Particles";
+import CTASection from "../components/common/CTASection";
 
 export default function BlogPage() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ export default function BlogPage() {
         />
         <InnerPageHeader title="Blog" description="At Swastixa, our blog features informative articles, insights, and updates focused on culture-driven ideas, business growth, digital trends, and thoughtful perspectives. Each post is crafted to share knowledge, inspire clarity, and support meaningful progress through valuable content." />
         <BlogGrid blogs={blogList} loading={loading} />
+        <CTASection />
       </div>
     </>
   );
