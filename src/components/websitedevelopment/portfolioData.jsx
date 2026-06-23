@@ -169,7 +169,7 @@ const PortfolioCarousel = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .marquee-track {
           animation: scroll 40s linear infinite;
         }
