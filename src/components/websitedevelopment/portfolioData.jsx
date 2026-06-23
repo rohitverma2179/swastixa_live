@@ -4,79 +4,86 @@ const portfolioData = [
   {
     id: 1,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/bexexglobal.png",
-    tags: ["Branding", "UI/UX", "Web Design"],
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/asva-hero-design.png",
+    tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
   {
     id: 2,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/asva.png",
-    tags: ["Branding", "UI/UX"],
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/bestmate-hero-design.png",
+
+    tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
   {
     id: 3,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/eazzy.png",
-    tags: ["Web Design", "Dashboard"],
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/bexexglobal.png",
+    tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
   {
     id: 4,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/elaboratecapital.png",
-    tags: ["Development", "UI/UX"],
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/yashvi-hero-design.png",
+    tags: ["Branding", "UI/UX", "Web Design"],
   },
   {
     id: 5,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/elan.png",
-    tags: ["Branding", "Creative"],
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/birla-hero-design.png",
+    tags: ["Branding", "UI/UX", "Web Design"],
   },
   {
     id: 6,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/elantwo.png",
-    tags: ["Web Design", "Marketing"],
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/eazzy-hero-design.png",
+    tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
   {
     id: 7,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/graceasthatic.png",
-    tags: ["Dashboard", "Development"],
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/elaboratecapital.png",
+    tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
   {
     id: 8,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/projectfive.png",
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/elan-design-hero.png",
     tags: ["Branding", "UI/UX", "Web Design"],
   },
   {
     id: 9,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/projectfour.png",
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/gandhi-hero-design.png",
     tags: ["Branding", "UI/UX", "Web Design"],
   },
   {
-    id: 9,
+    id: 14,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/projectone.png",
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/project-one.png",
     tags: ["Branding", "UI/UX", "Web Design"],
   },
   {
     id: 10,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/projectsix.png",
-    tags: ["Branding", "UI/UX", "Web Design"],
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/graceaesthetic-design-hero.png",
+    tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
   {
     id: 11,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/projectthree.png",
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/elan-hero-design.png",
     tags: ["Branding", "UI/UX", "Web Design"],
   },
   {
     id: 12,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/projecttwo.png",
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/project-two.png",
+    tags: ["Branding", "UI/UX", "Web Design"],
+  },
+  {
+    id: 13,
+    image:
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/project-three.png",
     tags: ["Branding", "UI/UX", "Web Design"],
   },
   // {
@@ -133,10 +140,10 @@ const PortfolioCarousel = () => {
               />
 
               {/* Bottom Gradient */}
-              <div className="absolute inset-x-6 bottom-6 h-24 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-[8px] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-[8px] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Tags */}
-              <div className="absolute bottom-10 left-10 flex flex-wrap gap-2 z-10 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+              <div className="absolute bottom-4 left-4 flex flex-wrap gap-2 z-10 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                 {item.tags.map((tag) => (
                   <span
                     key={tag}
