@@ -8,6 +8,7 @@ import WhyChooseUs from '../components/websitedevelopment/WhyChooseUs'
 import HowWeWork from '../components/websitedevelopment/HowWeWork'
 import CaseStudies from '../components/websitedevelopment/caseStudies'
 import FAQSection from '../components/websitedevelopment/FAQSection'
+import CTASection from '../components/common/CTASection'
 
 const VideoProductionHouse = () => {
     return (
@@ -19,6 +20,7 @@ const VideoProductionHouse = () => {
             <LogoCarousel />
             <ServiceCards />
             <FAQSection />
+            <CTASection />
         </div>
 
 

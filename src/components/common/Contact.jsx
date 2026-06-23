@@ -1,6 +1,12 @@
 import React, { useRef, useState } from "react";
 import { sendForm } from "@emailjs/browser";
 import toast from "react-hot-toast";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
 
 export default function ContactSection() {
 
@@ -150,6 +156,46 @@ export default function ContactSection() {
               <p className="opacity-80 text-[18px]">  Shiv Ram Park,</p>
               <p className="opacity-80 text-[18px]"></p>
               <p className="opacity-80 text-[18px]">New Delhi - 110041</p>
+            </div>
+            <div className="mt-4">
+
+              <div className="flex justify-end gap-3">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  <FaFacebookF size={18} />
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  <FaInstagram size={18} />
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  <FaLinkedinIn size={18} />
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  <FaYoutube size={18} />
+                </a>
+              </div>
             </div>
           </div>
 

@@ -1,48 +1,66 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import PixelCard from './PixelCard';
 
 const serviceList = [
   {
     number: '01',
-    title: 'SEO Agency',
-    description: 'Turn search traffic into business growth with proven SEO strategies.',
-    path: '/services/seo-agency'
-  },
-  {
-    number: '02',
-    title: 'Content Marketing',
-    description: 'Turn ideas into impactful content that connects with your audience and drives results.',
-    path: '/services/content-marketing'
-  },
-  {
-    number: '03',
     title: 'Social Media Marketing',
     description: 'Manage your brand on social platforms with strategic content that boosts engagement and growth.',
     path: '/services/social-media-marketing'
   },
   {
-    number: '04',
-    title: 'Performance Marketing',
-    description: 'Achieve faster growth with performance focused marketing strategies built for measurable outcomes.',
-    path: '/services/performance-marketing'
-  },
-  {
-    number: '05',
+    number: '02',
     title: 'Website Development',
     description: 'Create modern, responsive websites that deliver seamless performance and strong user experience.',
     path: '/services/website-development'
   },
   {
+    number: '03',
+    title: 'Performance Marketing',
+    description: 'Achieve faster growth with performance focused marketing strategies built for measurable outcomes.',
+    path: '/services/performance-marketing'
+  },
+  {
+    number: '04',
+    title: 'Influencer Marketing',
+    description: 'Leverage the power of trusted influencers to amplify your brand message, increase visibility, and drive meaningful customer engagement.',
+    path: '/services/influencer-marketing'
+  },
+  {
+    number: '05',
+    title: 'Content Marketing',
+    description: 'Turn ideas into impactful content that connects with your audience and drives results.',
+    path: '/services/content-marketing'
+  },
+  {
     number: '06',
+    title: 'SEO Agency',
+    description: 'Turn search traffic into business growth with proven SEO strategies.',
+    path: '/services/seo-agency'
+  },
+
+  {
+    number: '07',
     title: 'Video Production House',
     description: 'Produce compelling videos that bring your brand message to life and connect with your audience.',
     path: '/services/video-production-house'
-  }
+  },
+
+  {
+    number: '08',
+    title: 'Packaging & Design',
+    description: 'Creative packaging and design solutions that enhance product appeal, strengthen brand identity, and leave a lasting impression on customers.',
+    path: '/services/packaging-design'
+  },
+
 ];
 
 const ServiceCards = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const filteredServices = serviceList.filter(service => service.path !== location.pathname);
+
   return (
     <section data-aos="fade-up" data-aos-duration="1500" className="bg-black text-white pb-6 pt-2  px-6 sm:px-12 lg:px-24 xl:px-32 flex flex-col items-start text-left w-full select-none">
       {/* Upper Title Section */}
@@ -51,7 +69,7 @@ const ServiceCards = () => {
       {/* Sub Title Section */}
       <div className="mb-8">
         <span className="text-[#71717a] text-[11px] font-semibold uppercase tracking-[0.2em] block mb-1.5">
-          Our Services
+           {location.pathname === "/services" || location.pathname === "/" ? "Our Services" : "Our Other Services"}
         </span>
         <h2 className="text-2xl sm:text-[32px] font-extrabold tracking-tight text-white leading-tight">
           Everything Your Brand Needs
@@ -60,7 +78,7 @@ const ServiceCards = () => {
 
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
-        {serviceList.map((service, index) => (
+        {filteredServices.map((service, index) => (
           <PixelCard
             key={index}
             variant="blue"
@@ -72,15 +90,15 @@ const ServiceCards = () => {
               {service.number}
             </div>
 
+            <h3 className="text-white pb-1.5 group-hover:text-blue-400 font-semibold text-lg sm:text-[20px] tracking-tight transition-colors duration-300 mt-auto">
+              {service.title}
+            </h3>
             {/* Description */}
             <p className="text-[#a1a1aa] group-hover:text-zinc-300 text-sm sm:text-[15px] leading-relaxed mb-5 font-light transition-colors duration-300">
               {service.description}
             </p>
 
             {/* Title */}
-            <h3 className="text-white group-hover:text-blue-400 font-semibold text-lg sm:text-[20px] tracking-tight transition-colors duration-300 mt-auto">
-              {service.title}
-            </h3>
           </PixelCard>
         ))}
       </div>

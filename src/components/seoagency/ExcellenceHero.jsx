@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ExcellenceHero = () => {
+  const navigate = useNavigate();
   return (
     <section className="bg-black min-h-screen flex items-center overflow-hidden">
       <div className="max-w-[1400px] mx-auto w-full px-6 md:px-12 lg:px-20">
@@ -52,8 +54,11 @@ const ExcellenceHero = () => {
                 hover:bg-[#2A2A2E]
                 hover:scale-[1.02]
               "
+              onClick={() => {
+                navigate("/#contact");
+              }}
             >
-              Start Your Project
+              Start Our Project
             </button>
 
             {/* TRUSTED BY */}

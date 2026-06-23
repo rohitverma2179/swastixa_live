@@ -1,27 +1,11 @@
 import React from "react";
-import DotField from "./DotField";
+import { useNavigate } from "react-router-dom";
 
 const ExcellenceHero = () => {
+  const navigate = useNavigate();
   return (
-    <section className="relative bg-black min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none z-0">
-        <DotField
-          dotRadius={1.5}
-          dotSpacing={20}
-          bulgeStrength={67}
-          glowRadius={80}
-          sparkle={false}
-          waveAmplitude={0}
-          cursorRadius={500}
-          cursorForce={0.5}
-          bulgeOnly
-          gradientFrom="#000000"
-          gradientTo="#AAAAAA"
-          // gradientFrom="#243E84"
-          glowColor="#0d0a0d"
-        />
-      </div>
-      <div className="relative z-10 max-w-[1400px] mx-auto w-full px-6 md:px-12 lg:px-20">
+    <section className="bg-black min-h-screen flex items-center overflow-hidden">
+      <div className="max-w-[1400px] mx-auto w-full px-6 md:px-12 lg:px-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT CONTENT */}
@@ -70,8 +54,11 @@ const ExcellenceHero = () => {
                 hover:bg-[#2A2A2E]
                 hover:scale-[1.02]
               "
+              onClick={() => {
+                navigate("/#contact");
+              }}
             >
-              Start Your Project
+              Start Our Project
             </button>
 
             {/* TRUSTED BY */}
@@ -114,7 +101,7 @@ const ExcellenceHero = () => {
             <div className="relative w-full max-w-[560px]">
 
               {/* IMAGE CARD */}
-              {/* <div
+              <div
                 className="
                   overflow-hidden
                   rounded-[28px]
@@ -134,57 +121,10 @@ const ExcellenceHero = () => {
                     hover:scale-105
                   "
                 />
-              </div> */}
+              </div>
 
               {/* CODE CARD */}
-              <div
-                className="
-                  absolute
-                  left-1/2
-                  -translate-x-1/2
-                  bottom-[-80px]
-                  w-[92%]
-                  bg-[#07101E]
-                  rounded-[24px]
-                  p-5
-                  shadow-[0_30px_60px_rgba(0,0,0,0.5)]
-                  border border-white/5
-                "
-              >
-                <div
-                  className="
-                    bg-[#E7E7E7]
-                    rounded-[18px]
-                    p-5
-                    min-h-[170px]
-                  "
-                >
-                  {/* Browser Dots */}
-                  <div className="flex gap-2 mb-5">
-                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                    <div className="w-3 h-3 rounded-full bg-gray-300"></div>
-                  </div>
 
-                  <pre
-                    className="
-                      text-[#7C7C7C]
-                      text-[14px]
-                      leading-6
-                      font-mono
-                      overflow-hidden
-                    "
-                  >
-                    {`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Swastixa Digital</title>
-</head>
-<body>
-</body>`}
-                  </pre>
-                </div>
-              </div>
             </div>
           </div>
 

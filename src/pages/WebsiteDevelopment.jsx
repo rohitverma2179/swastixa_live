@@ -5,8 +5,9 @@ import ServiceCards from '../components/services/servicecards'
 import PortfolioCarousel from '../components/websitedevelopment/portfolioData'
 import WhyChooseUs from '../components/websitedevelopment/WhyChooseUs'
 import HowWeWork from '../components/websitedevelopment/HowWeWork'
-import CaseStudies from '../components/websitedevelopment/caseStudies'
+// import CaseStudies from '../components/websitedevelopment/caseStudies'
 import FAQSection from '../components/websitedevelopment/FAQSection'
+import CTASection from '../components/common/CTASection'
 
 const WebsiteDevelopment = () => {
     return (
@@ -15,10 +16,11 @@ const WebsiteDevelopment = () => {
             <PortfolioCarousel />
             <WhyChooseUs />
             <HowWeWork />
-            <CaseStudies />
+            {/* <CaseStudies /> */}
             <LogoCarousel />
             <ServiceCards />
             <FAQSection />
+            <CTASection />
         </div>
 
 

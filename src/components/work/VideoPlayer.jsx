@@ -1,4 +1,6 @@
 import { useRef, useState, useEffect } from "react";
+import { Share2 } from "lucide-react";
+import toast from "react-hot-toast";
 
 const VideoPlayer = ({ src, poster }) => {
   if (!src) return null;
@@ -63,14 +65,39 @@ const VideoPlayer = ({ src, poster }) => {
     }
   }, [isVisible, shouldLoad]);
 
+  const handleShare = async (e) => {
+    e.stopPropagation();
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: "Check out this video",
+          url: src,
+        });
+      } else {
+        await navigator.clipboard.writeText(src);
+        toast.success("Video link copied to clipboard!");
+      }
+    } catch (error) {
+      console.log("Error sharing", error);
+    }
+  };
+
   return (
     <div
       ref={containerRef}
       className="relative w-full mx-auto aspect-video
         max-w-[95vw] sm:max-w-[85vw] md:max-w-[75vw] lg:max-w-[65vw] xl:max-w-[1000px] 2xl:max-w-[1200px]
         overflow-hidden rounded-2xl bg-neutral-900
-        flex items-center justify-center shadow-3xl border border-white/5"
+        flex items-center justify-center shadow-3xl border border-white/5 group"
     >
+      <button 
+        onClick={handleShare}
+        className="absolute top-4 right-4 z-20 bg-black/60 hover:bg-black/90 text-white p-2.5 rounded-full backdrop-blur-sm transition-all duration-300 opacity-0 group-hover:opacity-100 flex items-center justify-center"
+        title="Share Video"
+      >
+        <Share2 size={18} />
+      </button>
+
       {/* Poster Backtrack */}
       {(!isReady || !shouldLoad) && (
         <div className="absolute inset-0 z-10 transition-opacity duration-700 pointer-events-none">

@@ -1,16 +1,14 @@
 import React from 'react'
-import ExcellenceHero from '../components/seoagency/ExcellenceHero'
+import ExcellenceHero from '../components/InfluencerMarketingAgency/ExcellenceHero'
 import LogoCarousel from '../components/home/Logo'
 import ServiceCards from '../components/services/servicecards'
-import WhyChooseUs from '../components/seoagency/WhyChooseUs'
-import HowWeWork from '../components/seoagency/HowWeWork'
-import CaseStudies from '../components/seoagency/caseStudies'
-import FAQSection from '../components/seoagency/FAQSection'
+import WhyChooseUs from '../components/InfluencerMarketingAgency/WhyChooseUs'
+import HowWeWork from '../components/InfluencerMarketingAgency/HowWeWork'
+import CaseStudies from '../components/InfluencerMarketingAgency/caseStudies'
+import FAQSection from '../components/InfluencerMarketingAgency/FAQSection'
 import CTASection from '../components/common/CTASection'
-// import CTASection from '../components/common/CTASection'
 
-const SeoAgency = () => {
-    
+const InfluencerMarketingAgency = () => {
     return (
         <div className="bg-black min-h-screen">
             <ExcellenceHero />
@@ -22,7 +20,9 @@ const SeoAgency = () => {
             <FAQSection />
             <CTASection />
         </div>
+
+
     )
 }
 
-export default SeoAgency
+export default InfluencerMarketingAgency

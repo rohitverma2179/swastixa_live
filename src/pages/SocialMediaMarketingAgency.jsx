@@ -7,6 +7,7 @@ import WhyChooseUs from '../components/socialmediamarketing/WhyChooseUs'
 import HowWeWork from '../components/socialmediamarketing/HowWeWork'
 import CaseStudies from '../components/socialmediamarketing/caseStudies'
 import FAQSection from '../components/socialmediamarketing/FAQSection'
+import CTASection from '../components/common/CTASection'
 
 const SocialMediaMarketingAgency = () => {
     return (
@@ -18,6 +19,7 @@ const SocialMediaMarketingAgency = () => {
             <LogoCarousel />
             <ServiceCards />
             <FAQSection />
+            <CTASection />
         </div>
     )
 }

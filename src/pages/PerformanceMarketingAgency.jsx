@@ -6,6 +6,7 @@ import WhyChooseUs from '../components/performancemarketing/WhyChooseUs'
 import HowWeWork from '../components/performancemarketing/HowWeWork'
 import CaseStudies from '../components/performancemarketing/caseStudies'
 import FAQSection from '../components/performancemarketing/FAQSection'
+import CTASection from '../components/common/CTASection'
 
 const PerformanceMarketingAgency = () => {
     return (
@@ -17,6 +18,7 @@ const PerformanceMarketingAgency = () => {
             <LogoCarousel />
             <ServiceCards />
             <FAQSection />
+            <CTASection />
         </div>
 
 

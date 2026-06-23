@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useParams, useNavigate } from "react-router-dom";
 // import InnerPageHeader from "../components/common/InnerPageHeader";
 import VirtualVideoList from "./VirtualVideoList";
 import WorkHero from "./WorkHero";
@@ -26,7 +27,11 @@ const constructionVideos = [
 ];
 
 const ProductionHouse = () => {
-  const [activeTab, setActiveTab] = useState("filmes");
+  const { tab } = useParams();
+  const navigate = useNavigate();
+  
+  // default to "filmes" if tab is undefined or invalid
+  const activeTab = tab === "construction" ? "construction" : "filmes";
 
   return (
     <main className="bg-black min-h-screen text-white">
@@ -47,7 +52,7 @@ const ProductionHouse = () => {
       {/* Tab Navigation */}
       <div className="flex justify-start xl:ml-36 items-center gap-6 mt-0 mb-0 px-4">
         <button
-          onClick={() => setActiveTab("filmes")}
+          onClick={() => navigate("/work/Production/films")}
           className={`px-10 py-3 rounded-sm text-sm  tracking-wider font-semibold transition-all duration-300 ${activeTab === "filmes"
               ? "bg-white text-black  scale-105"
               : "bg-transparent border-2 border-white/20 text-gray-400 hover:text-white hover:border-white"
@@ -56,7 +61,7 @@ const ProductionHouse = () => {
           Films
         </button>
         <button
-          onClick={() => setActiveTab("construction")}
+          onClick={() => navigate("/work/Production/construction")}
           className={`px-10 py-3 rounded-sm text-sm  tracking-wider font-semibold transition-all duration-300 ${activeTab === "construction"
               ? "bg-white text-black  scale-105"
               : "bg-transparent border-2 border-white/20 text-gray-400 hover:text-white hover:border-white"

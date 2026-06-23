@@ -3,6 +3,8 @@ import LightRays from "../components/services/LightRays";
 import ServiceCards from "../components/services/servicecards";
 import OurApproach from "../components/services/OurApproach";
 import WhyCompany from "../components/services/Whycompany";
+import FAQSection from "../components/services/FAQSection";
+import CTASection from "../components/common/CTASection";
 
 const Services = () => {
     return (
@@ -69,6 +71,9 @@ const Services = () => {
             <OurApproach />
             <WhyCompany />
             <LogoCarousel />
+            <FAQSection />
+            <CTASection />
+
         </div>
     );
 };
