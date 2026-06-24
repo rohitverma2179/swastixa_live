@@ -61,6 +61,7 @@ const About = () => {
                                 <Card key={card.id} customClass="overflow-hidden group">
                                     <div className="absolute inset-0 w-full h-full">
                                         <img
+                                        
                                             src={card.image}
                                             alt={card.title}
                                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -103,6 +104,7 @@ const About = () => {
         </>
     )
 }
+
 
 
 
