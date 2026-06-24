@@ -86,6 +86,12 @@ const portfolioData = [
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/project-three.png",
     tags: ["Branding", "UI/UX", "Web Design"],
   },
+   {
+  id: 15,
+    image:
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/three-dlf-work.jpeg",
+    tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
+  },
   // {
   //   id: 13,
   //   image:
@@ -135,7 +141,7 @@ const PortfolioCarousel = () => {
                   rounded-[8px]
                   transition-transform
                   duration-700
-                  group-hover:scale-105
+                  group-hover:scale-102
                 "
               />
 
