@@ -30,7 +30,7 @@ const ExcellenceHero = () => {
             <p
               className="
                 mt-6
-                text-[#8B8B8B]
+                text-[rgba(139,139,139,0.9)]
                 text-[15px]
                 leading-[1.9]
                 max-w-[500px]
