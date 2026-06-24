@@ -171,7 +171,7 @@ const PortfolioCarousel = () => {
 
       <style>{`
         .marquee-track {
-          animation: scroll 40s linear infinite;
+          animation: scroll 60s linear infinite;
         }
 
         .marquee-track:hover {
