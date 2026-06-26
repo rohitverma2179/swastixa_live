@@ -16,6 +16,7 @@ const ApproachSection = () => {
             font-semibold
             text-[clamp(2rem,3.5vw,3.5rem)]
             leading-tight
+            ml-4 lg:ml-7 xl:ml-12
           ">
             Our Approach to Digital Creation
           </h2>
@@ -23,7 +24,7 @@ const ApproachSection = () => {
 
           <p className="
             max-w-[60ch]
-            text-gray-300 text-[15px] 2xl:text-xl leading-relaxed space-y-6 2xl:space-y-10
+            text-gray-300 text-[15px] 2xl:text-xl leading-relaxed space-y-6 2xl:space-y-10  ml-4 lg:ml-7 xl:ml-12
           ">
             Our way of working is rooted in clarity, collaboration, and
             consistency. Each project begins with listening and research,

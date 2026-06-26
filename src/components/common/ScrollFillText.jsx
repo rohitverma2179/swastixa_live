@@ -27,11 +27,9 @@ const ScrollFillText = () => {
           start: "-20% top",
           end: "+=80%",
           scrub: true,
-          // pin: true,
-          // markers: true,
         }
       });
-
+ 
       linesRef.current.forEach((line) => {
         tl.to(line, {
           backgroundPositionX: "0%",
@@ -47,19 +45,37 @@ const ScrollFillText = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-black min-h-screen flex items-center mb-10"
+      className="bg-black min-h-screen flex items-center mb-10 overflow-hidden"
     >
-      <div className="main-para px-6 md:px-20 max-w-7xl mx-auto pt-[60vh]">
+      <div
+        className="
+          main-para
+          px-4
+          sm:px-6
+          md:px-12
+          lg:px-20
+          max-w-7xl
+          mx-auto
+          pt-[60vh]
+          lg:-translate-x-[35px]
+        "
+      >
         {phrases.map((phrase, i) => (
           <div
             key={i}
             ref={(el) => (linesRef.current[i] = el)}
-            className="leading-[1.1] font-bold tracking-tighter
-                       text-[10vw] md:text-[8vw] lg:text-[4vw]"
+            className="
+              leading-[1.05]
+              font-bold
+              tracking-tighter
+              text-[9vw]
+              sm:text-[8.5vw]
+              md:text-[7vw]
+              lg:text-[4vw]
+            "
             style={{
-              // backgroundImage:
-              //   "linear-gradient(to right, white 50%, #27272a 50%)",
-              backgroundImage: "linear-gradient(to right, white 50%, rgba(39, 39, 42, 0) 50%)",
+              backgroundImage:
+                "linear-gradient(to right, white 50%, rgba(39, 39, 42, 0) 50%)",
               backgroundSize: "200% 100%",
               backgroundPositionX: "100%",
               color: "transparent",
