@@ -1,12 +1,7 @@
 import React from "react";
 
 const portfolioData = [
-  {
-    id: 1,
-    image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/asva-hero-design.png",
-    tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
-  },
+  
   {
     id: 2,
     image:
@@ -14,17 +9,23 @@ const portfolioData = [
 
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
-  {
-    id: 3,
+   {
+  id: 15,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/bexexglobal.png",
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/three-dlf-work.jpeg",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
   {
     id: 4,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/yashvi-hero-design.png",
+    "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/yashvi-hero-design.png",
     tags: ["Branding", "UI/UX", "Web Design"],
+  },
+  {
+    id: 3,
+    image:
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/bexexglobal.png",
+    tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
   {
     id: 5,
@@ -86,12 +87,13 @@ const portfolioData = [
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/project-three.png",
     tags: ["Branding", "UI/UX", "Web Design"],
   },
-   {
-  id: 15,
+  {
+    id: 1,
     image:
-      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/three-dlf-work.jpeg",
+      "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/asva-hero-design.png",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
   },
+  
   // {
   //   id: 13,
   //   image:
