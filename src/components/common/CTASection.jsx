@@ -5,8 +5,14 @@ const CTASection = () => {
     const navigate = useNavigate();
 
     return (
-        <section className="bg-black p-[10px] sm:p-[20px] md:p-[30px] lg:p-[40px] xl:p-[50px] 2xl:px-[130px]">
-            <div className="bg-[#232323] rounded-[18px] min-h-[300px]  flex items-center justify-between px-[42px] relative">
+        <section className="bg-black p-[10px] sm:p-[20px] md:p-[30px] lg:p-[40px] xl:p-[50px] 2xl:px-[130px]" >
+            <div className="bg-[#232323] rounded-[18px] min-h-[300px]  flex items-center justify-between px-[42px] relative"
+                  style={{
+                     backgroundImage: "url('https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-ad-section-bg-images/swastixa-ad-bg-image.jpeg')",
+                     backgroundSize: "cover",
+                     backgroundPosition: "center",
+                     backgroundRepeat: "no-repeat",
+                 }}>
 
                 {/* Left Content */}
                 <div>

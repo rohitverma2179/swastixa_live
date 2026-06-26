@@ -210,7 +210,7 @@ export default function LogoCarousel() {
                   sm:h-32 sm:w-32 
                   md:h-40 md:w-40 
                   lg:h-48 lg:w-52 
-                  object-contain 
+                  object-contain  
                   grayscale 
                   group-hover:grayscale-0 
                   transition
