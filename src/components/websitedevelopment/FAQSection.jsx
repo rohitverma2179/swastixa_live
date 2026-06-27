@@ -6,28 +6,28 @@ const faqs = [
     {
         question: "What is your typical project timeline?",
         answer:
-            "Our standard engagements last between 8 to 14 weeks. This includes the full discovery, design, development, and QA phases. Complex enterprise platforms may require a longer roadmap.",
+            "Our standard engagement ranges between 8 to 14 weeks. This includes discovery, design, development, content, testing, and launch depending on the project scope.",
     },
     {
         question: "Do you offer post-launch support?",
         answer:
-            "Yes. We provide ongoing maintenance, performance monitoring, security updates, and feature enhancements after launch.",
+            "Yes. We offer post-launch support for updates, maintenance, performance checks, tracking, and optimisation.",
     },
     {
         question: "Can you work with our existing brand guidelines?",
         answer:
-            "Absolutely. We can seamlessly integrate your existing brand system while improving user experience and digital consistency.",
+            "Yes. We can work within your existing brand guidelines while improving the digital experience, content flow, and overall brand communication.",
     },
-    {
-        question: "Do you handle SEO optimization?",
-        answer:
-            "Yes. Technical SEO, Core Web Vitals optimization, structured data, and content recommendations are included where required.",
-    },
-    {
-        question: "What technologies do you use?",
-        answer:
-            "We primarily work with React, Next.js, Node.js, Tailwind CSS, TypeScript, PostgreSQL, and cloud infrastructure platforms.",
-    },
+    // {
+    //     question: "Do you handle SEO optimization?",
+    //     answer:
+    //         "Yes. Technical SEO, Core Web Vitals optimization, structured data, and content recommendations are included where required.",
+    // },
+    // {
+    //     question: "What technologies do you use?",
+    //     answer:
+    //         "We primarily work with React, Next.js, Node.js, Tailwind CSS, TypeScript, PostgreSQL, and cloud infrastructure platforms.",
+    // },
 ];
 
 export default function FAQSection() {

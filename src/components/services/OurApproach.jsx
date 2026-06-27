@@ -4,22 +4,22 @@ const approachSteps = [
   {
     number: '01',
     title: 'Research',
-    description: 'Understand the market, audience and opportunities through detailed analysis.'
+    description: 'We understand the brand, audience, market, and opportunities through detailed analysis.'
   },
   {
     number: '02',
     title: 'Strategy',
-    description: 'Build a focused roadmap aligned with business goals and growth objectives.'
+    description: 'We build a focused roadmap aligned with business goals, communication needs, and growth objectives.'
   },
   {
     number: '03',
     title: 'Execution',
-    description: 'Launch and manage campaigns, content and digital initiatives with precision.'
+    description: 'We launch and manage campaigns, content, websites, and execute digital marketing with precision.'
   },
   {
     number: '04',
     title: 'Optimization',
-    description: 'Continuously improve performance using data, testing and insights.'
+    description: 'We continuously improve performance using data, testing, and actionable insights.'
   }
 ];
 

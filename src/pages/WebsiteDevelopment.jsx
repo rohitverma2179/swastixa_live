@@ -16,7 +16,6 @@ const WebsiteDevelopment = () => {
             <PortfolioCarousel />
             <WhyChooseUs />
             <HowWeWork />
-            {/* <CaseStudies /> */}
             <LogoCarousel />
             <ServiceCards />
             <FAQSection />

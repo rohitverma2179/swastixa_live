@@ -15,25 +15,25 @@ const features = [
     icon: Palette,
     title: "Artisanal Design",
     description:
-      "Bespoke visual identities that reflect your brand's unique technical DNA and market position.",
+      "Bespoke visual direction and refined design systems that reflect your brand’s unique identity.",
   },
   {
     icon: Search,
     title: "SEO Dominance",
     description:
-      "Clean semantic code and structural optimization ensuring you occupy the top tier of search results.",
+      "Clean semantic code and search-friendly structures that improve visibility and strengthen your organic presence.",
   },
   {
     icon: Zap,
     title: "Blazing Speed",
     description:
-      "Near-instant load times using modern frameworks that prioritize Core Web Vitals and user retention.",
+      "Fast-loading, responsive websites built to deliver a smooth experience across every device.",
   },
   {
     icon: TrendingUp,
     title: "Growth Focused",
     description:
-      "Modular architectures designed to scale seamlessly as your user base and business requirements expand.",
+      "Modular architecture designed to scale as your business grows and your digital needs evolve.",
   },
 ];
 
@@ -48,8 +48,7 @@ export default function WhyChooseUs() {
           </span>
 
           <p className="max-w-[650px] mx-auto mt-4 text-[#8F8F8F] text-[16px] leading-relaxed">
-            Our methodology is rooted in speed, security, and scalability.
-            We don't just build websites; we build digital assets.
+           Our methodology is rooted in speed, security, and scalability. We don't just build websites; we build digital assets.
           </p>
         </div>
 

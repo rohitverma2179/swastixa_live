@@ -129,10 +129,10 @@ const WhyCompany = () => {
           Why Swastixa
         </span>
         <h2 className="text-3xl sm:text-[40px] font-extrabold tracking-tight text-white mb-4 leading-tight">
-          Built for Growth. Designed for Performance.
+         Built for Growth. Designed for Performance.
         </h2>
         <p className="text-[#a1a1aa] text-base sm:text-lg font-light leading-relaxed max-w-2xl">
-          Combining creativity, technology and performance marketing to deliver measurable outcomes.
+          Combining creativity, technology, and digital marketing expertise to deliver measurable outcomes for modern brands.
         </p>
       </div>
 
@@ -148,7 +148,7 @@ const WhyCompany = () => {
         {whyCardsData.map((card, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-[80vw] sm:w-[450px] flex flex-col p-6 rounded-[14px] bg-[#121214] border border-[#232326] hover:border-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] transition-all duration-500 group cursor-pointer snap-start"
+            className="flex-shrink-0 w-[80vw] sm:w-[450px] flex flex-col p-6 rounded-[14px] bg-[#121214] border border-[#232326]  hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] transition-all duration-500 group cursor-pointer snap-start"
             style={{
               boxShadow: '0 4px 30px rgba(0, 0, 0, 0.4)'
             }}

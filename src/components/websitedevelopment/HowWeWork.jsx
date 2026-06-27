@@ -5,25 +5,25 @@ const processSteps = [
     number: "01",
     title: "Discovery",
     description:
-      "In-depth technical audit and stakeholder workshops to define the project's strategic objectives and constraints.",
+      "We begin with a deep understanding of your brand, audience, business goals, and digital requirements.",
   },
   {
     number: "02",
     title: "UI/UX",
     description:
-      "Iterative design sprints focusing on intuitive interaction patterns and pixel-perfect high-fidelity prototyping.",
+      "We craft intuitive user journeys and interface designs that make every interaction simple and effective.",
   },
   {
     number: "03",
     title: "Development",
     description:
-      "Robust engineering using React, Next.js, and headless architectures to build a secure, future-proof platform.",
+      "We build responsive, secure, and scalable platforms with clean code and reliable functionality.",
   },
   {
     number: "04",
     title: "Launch",
     description:
-      "Continuous integration, rigorous QA, and performance tuning before the final global deployment and monitoring.",
+      "We test, refine, and deploy your website with the right tracking, optimisation, and support in place.",
   },
 ];
 

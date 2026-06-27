@@ -6,19 +6,19 @@ const serviceList = [
   {
     number: '01',
     title: 'Social Media Marketing',
-    description: 'Manage your brand on social platforms with strategic content that boosts engagement and growth.',
+    description: 'As a social media marketing agency, we manage your brand presence across platforms with strategic content that builds engagement, recall, and growth.',
     path: '/services/social-media-marketing'
   },
   {
     number: '02',
     title: 'Website Development',
-    description: 'Create modern, responsive websites that deliver seamless performance and strong user experience.',
+    description: 'Create modern, responsive websites with a website designing company in India that delivers seamless performance and strong user experiences.',
     path: '/services/website-development'
   },
   {
     number: '03',
     title: 'Performance Marketing',
-    description: 'Achieve faster growth with performance focused marketing strategies built for measurable outcomes.',
+    description: 'Achieve faster growth with conversion-focused marketing campaigns built for measurable business outcomes.',
     path: '/services/performance-marketing'
   },
   {
@@ -30,20 +30,20 @@ const serviceList = [
   {
     number: '05',
     title: 'Content Marketing',
-    description: 'Turn ideas into impactful content that connects with your audience and drives results.',
+    description: 'Turn ideas into impactful content that connects with your audience and drives meaningful engagement.',
     path: '/services/content-marketing'
   },
   {
     number: '06',
     title: 'SEO Agency',
-    description: 'Turn search traffic into business growth with proven SEO strategies.',
+    description: 'Turn search traffic into business growth with proven SEO strategies that improve visibility and bring the right audience to your brand.',
     path: '/services/seo-agency'
   },
 
   {
     number: '07',
     title: 'Video Production House',
-    description: 'Produce compelling videos that bring your brand message to life and connect with your audience.',
+    description: 'As a video production house, we produce compelling videos that bring your brand message to life and connect with your audience.',
     path: '/services/video-production-house'
   },
 

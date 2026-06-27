@@ -23,7 +23,7 @@ const ExcellenceHero = () => {
                 leading-[1.15]
               "
             >
-              Engineered For Excellence
+              Engineered for Excellence
             </h1>
 
             <p
@@ -35,9 +35,7 @@ const ExcellenceHero = () => {
                 max-w-[500px]
               "
             >
-              DEV_CORE is a technical partner for ambitious brands. We fuse
-              architectural precision with creative vision to deliver digital
-              products that outperform the competition.
+             We design and develop websites that combine structure, speed, creativity, and performance. As a website designing company in India, we build digital products that help brands stand out and grow.
             </p>
 
             <button

@@ -185,11 +185,11 @@ const Print = () => {
           >
             Branding
           </button>
-          {/* <button
+          <button
             className="text-xl m-2 md:m-4 border px-8 py-2 rounded-sm transition-colors cursor-pointer bg-white text-black border-white"
           >
             Print
-          </button> */}
+          </button>
         </div>
 
         {/* Portfolio Staggered Bento Grid */}

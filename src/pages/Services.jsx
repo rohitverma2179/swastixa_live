@@ -28,10 +28,10 @@ const Services = () => {
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 pointer-events-none">
                     <div className="pointer-events-auto flex flex-col items-center max-w-3xl mt-24">
                         <h1 className="text-4xl sm:text-5xl md:text-[56px] font-extrabold text-white tracking-tight mb-4 leading-tight">
-                            Digital Marketing Agency
+                            Swastixa Marketing Agency
                         </h1>
                         <p className="text-gray-400 text-base sm:text-lg font-light mb-8 max-w-2xl leading-relaxed">
-                            Performance-driven digital marketing <br /> built for growth, visibility and conversion
+                           A performance-driven digital marketing agency Gurgaon <br /> businesses can trust for growth, visibility, and conversion
                         </p>
                         <button
                             onClick={() => {
@@ -60,7 +60,7 @@ const Services = () => {
                         What we do
                     </h1>
                     <p className="text-[#a1a1aa] text-base sm:text-lg font-light leading-relaxed max-w-3xl">
-                        We help brands grow through strategy, <br /> content, advertising, search visibility, <br /> social media and performance marketing.
+                        We help brands grow through strategy, content, <br /> advertising, social media, website development, <br /> and performance marketing.
                     </p>
                 </div>
             </div>
