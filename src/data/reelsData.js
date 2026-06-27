@@ -1,5 +1,10 @@
 export const reelsData = [
 
+      {
+        id: 412,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/skechers.mp4",
+        title: "brand-franchise-one"
+    },
     {
         id: 411,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/hindiscript.mp4",
