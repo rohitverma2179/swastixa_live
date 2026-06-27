@@ -121,7 +121,7 @@ const ReelItem = memo(({ item, index, isActive, onActive }) => {
                     ref={setVideoRef}
                     poster={item.poster || undefined}
                     loop
-                    muted
+                    // muted
                     playsInline
                     preload="auto"
                     onLoadedMetadata={() => setIsLoaded(true)}
