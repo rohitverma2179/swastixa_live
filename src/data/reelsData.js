@@ -1,5 +1,19 @@
 export const reelsData = [
-
+{
+        id: 416,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/joffjune.mp4",
+        title: "joff-june"
+    },
+    {
+        id: 417,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/rossjune.mp4",
+        title: "ross-june"
+    },
+    {
+        id: 418,
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kloyjune.mp4",
+        title: "kloy-june"
+    },
       {
         id: 412,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/skechers.mp4",
@@ -7,7 +21,7 @@ export const reelsData = [
     },
     {
         id: 411,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/hindiscript.mp4",
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-hindi-script.mp4",
         title: "brand-franchise-one"
     },
     {
@@ -17,7 +31,7 @@ export const reelsData = [
     },
     {
         id: 39,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/meetravibestmate.mp4",
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-meet-ravi.mp4",
         title: "brand-franchise-one"
     },
     {
@@ -33,7 +47,7 @@ export const reelsData = [
     // ____
     {
         id: 36,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/gayatri-two%20.mp4",
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/gayatri-out-effect.mp4",
         title: "brand-franchise-one"
     },
     {
@@ -44,12 +58,12 @@ export const reelsData = [
     {
         id: 34,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/ishaadriilaunch.mp4",
-        title: "brand-franchise-one"
+        title: "ishaadrii"
     },
     {
         id: 33,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/ishaadriilaunchh.mp4",
-        title: "brand-franchise-one"
+        title: "ishaadrii-launchh"
     },
     {
         id: 32,
@@ -74,7 +88,7 @@ export const reelsData = [
     },
     {
         id: 3,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate.mp4",
+        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/meet-ravi-bestmate.mp4",
         title: "bestmate"
     },
     {
@@ -92,11 +106,11 @@ export const reelsData = [
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/sky-arc-vertival-version.mp4",
         title: "sky-arc-vertival-version"
     },
-    {
-        id: 7,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/swasdesh.mp4",
-        title: "swasdesh"
-    },
+    // {
+    //     id: 7,
+    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/swasdesh.mp4",
+    //     title: "swadeshi"
+    // },
     {
         id: 8,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bandb-frachise-advise.mp4",
@@ -117,16 +131,16 @@ export const reelsData = [
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-meet-neha.mp4",
         title: "bestmate-meet-neha"
     },
-    {
-        id: 12,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-podcast-reel.mp4",
-        title: "bestmate-podcast-reel"
-    },
-    {
-        id: 13,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-podcast.mp4",
-        title: "bestmate-podcast"
-    },
+    // {
+    //     id: 12,
+    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-podcast-reel.mp4",
+    //     title: "bestmate-podcast-reel"
+    // },
+    // {
+    //     id: 13,
+    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-podcast.mp4",
+    //     title: "bestmate-podcast"
+    // },
     {
         id: 14,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-presurgery.mp4",
