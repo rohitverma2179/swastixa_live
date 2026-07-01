@@ -101,11 +101,11 @@ export const reelsData = [
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/washguessshoes.mp4",
         title: "washguessshoes"
     },
-    {
-        id: 6,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/sky-arc-vertival-version.mp4",
-        title: "sky-arc-vertival-version"
-    },
+    // {
+    //     id: 6,
+    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/sky-arc-vertival-version.mp4",
+    //     title: "sky-arc-vertival-version"
+    // },
     // {
     //     id: 7,
     //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/swasdesh.mp4",
@@ -146,11 +146,11 @@ export const reelsData = [
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-presurgery.mp4",
         title: "bestmate-presurgery"
     },
-    {
-        id: 15,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-senta.mp4",
-        title: "bestmate-senta"
-    },
+    // {
+    //     id: 15,
+    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-senta.mp4",
+    //     title: "bestmate-senta"
+    // },
     {
         id: 16,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/bestmate-timer-attack.mp4",
@@ -201,11 +201,11 @@ export const reelsData = [
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevveliholi.mp4",
         title: "kevveliholi"
     },
-    {
-        id: 27,
-        video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/trump-tower-verticale.mp4",
-        title: "trump-tower-verticale"
-    },
+    // {
+    //     id: 27,
+    //     video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/trump-tower-verticale.mp4",
+    //     title: "trump-tower-verticale"
+    // },
     {
         id: 28,
         video: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-reel/kevvelichoclate.mp4",

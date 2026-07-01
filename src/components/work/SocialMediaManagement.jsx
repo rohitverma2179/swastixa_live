@@ -50,12 +50,12 @@ const SocialMediaManagement = () => {
           >
             Branding
           </button>
-          <button
+          {/* <button
             onClick={() => navigate('/work/Print')}
             className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
           >
             Print
-          </button>
+          </button> */}
         </div>
 
         <Suspense fallback={

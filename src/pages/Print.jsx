@@ -2,7 +2,7 @@ import React, { lazy, Suspense, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // Import local PDF assets
-import filePdf from '../assets/File.pdf';
+import filePdf from '../assets/asva1.jpg';
 import eGrowthPdf from '../assets/eGrowth_Brand Guidlines.pdf';
 
 // Lazy loaded components
@@ -11,134 +11,335 @@ const PDFViewerModal = lazy(() => import('../components/work/PDFViewerModal.jsx'
 
 // Mock static data for other items in the staggered grid
 const printProjects = [
-  {
-    id: 1,
-    title: "Swastixa Creative Portfolio",
-    type: "pdf",
-    pdfUrl: filePdf,
-    colSpan: "md:col-span-5",
-    aspectRatio: "aspect-[16/11]"
-  },
-  {
-    id: 2,
-    title: "eGrowth Brand Guidelines",
-    type: "pdf",
-    pdfUrl: eGrowthPdf,
-    colSpan: "md:col-span-7",
-    aspectRatio: "aspect-[16/9]"
-  },
-  {
-    id: 3,
-    title: "Premium Corporate Stationery Kit",
-    category: "STATIONERY",
-    type: "static",
-    colSpan: "md:col-span-7",
-    aspectRatio: "aspect-[16/9]",
-    gradient: "from-blue-950/50 via-slate-900/30 to-black",
-    glowColor: "group-hover:border-blue-500/50",
-    textColor: "text-blue-400",
-    svg: (
-      <svg className="w-16 h-16 opacity-25 group-hover:opacity-45 transition-opacity duration-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
-    )
-  },
-  {
-    id: 4,
-    title: "Eco-Friendly Cosmetic Packaging",
-    category: "PACKAGING",
-    type: "static",
-    colSpan: "md:col-span-5",
-    aspectRatio: "aspect-[16/11]",
-    gradient: "from-emerald-950/50 via-neutral-900/30 to-black",
-    glowColor: "group-hover:border-emerald-500/50",
-    textColor: "text-emerald-400",
-    svg: (
-      <svg className="w-16 h-16 opacity-25 group-hover:opacity-45 transition-opacity duration-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-      </svg>
-    )
-  },
-  {
-    id: 5,
-    title: "Vibrant Brand Identity Book",
-    category: "BRANDING",
-    type: "static",
-    colSpan: "md:col-span-4",
-    aspectRatio: "aspect-[16/11]",
-    gradient: "from-purple-950/50 via-neutral-900/30 to-black",
-    glowColor: "group-hover:border-purple-500/50",
-    textColor: "text-purple-400",
-    svg: (
-      <svg className="w-14 h-14 opacity-25 group-hover:opacity-45 transition-opacity duration-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-      </svg>
-    )
-  },
+  // {
+  //   id: 1,
+  //   title: "A5 Leaflet",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/a-five-leaflet.pdf",
+  //   // pdfUrl: eGrowthPdf,
+  //   colSpan: "md:col-span-4",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  // {
+  //   id: 2,
+  //   title: "Brand Visiting Cards",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/all-visiting-card.pdf",
+  //   colSpan: "md:col-span-8",
+  //   aspectRatio: "aspect-[3/2]"
+  // },
+  // {
+  //   id: 3,
+  //   title: "App Identity Design",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/app.pdf",
+  //   colSpan: "md:col-span-6",
+  //   aspectRatio: "aspect-[1/1]"
+  // },
+  // {
+  //   id: 4,
+  //   title: "Bestmate Booklet",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/bestmate-booklet.pdf",
+  //   colSpan: "md:col-span-6",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  // {
+  //   id: 5,
+  //   title: "Bestmate Folder File",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/bestmate-folder-file.pdf",
+  //   colSpan: "md:col-span-7",
+  //   aspectRatio: "aspect-[4/3]"
+  // },
   {
     id: 6,
-    title: "Art & Culture Festival Poster",
-    category: "POSTER DESIGN",
-    type: "static",
+    // title: "Blood Donation Camp Standee",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/blood-donation-camp-standee-five.jpg",
     colSpan: "md:col-span-5",
-    aspectRatio: "aspect-[16/11]",
-    gradient: "from-amber-950/50 via-neutral-900/30 to-black",
-    glowColor: "group-hover:border-amber-500/50",
-    textColor: "text-amber-400",
-    svg: (
-      <svg className="w-16 h-16 opacity-25 group-hover:opacity-45 transition-opacity duration-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-      </svg>
-    )
+    aspectRatio: "aspect-[1/2]"
   },
-  {
-    id: 7,
-    title: "Luxury Real Estate Brochure",
-    category: "EDITORIAL",
-    type: "static",
-    colSpan: "md:col-span-3",
-    aspectRatio: "aspect-[4/3]",
-    gradient: "from-rose-950/50 via-neutral-900/30 to-black",
-    glowColor: "group-hover:border-rose-500/50",
-    textColor: "text-rose-400",
-    svg: (
-      <svg className="w-12 h-12 opacity-25 group-hover:opacity-45 transition-opacity duration-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-    )
-  },
+  // {
+  //   id: 7,
+  //   title: "Brochure Inside Design",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/brochure-inside-design-fivteen-two.pdf",
+  //   colSpan: "md:col-span-5",
+  //   aspectRatio: "aspect-[4/3]"
+  // },
   {
     id: 8,
-    title: "Annual Business Report",
-    category: "REPORTS",
-    type: "static",
-    colSpan: "md:col-span-3",
-    aspectRatio: "aspect-[4/3]",
-    gradient: "from-cyan-950/50 via-neutral-900/30 to-black",
-    glowColor: "group-hover:border-cyan-500/50",
-    textColor: "text-cyan-400",
-    svg: (
-      <svg className="w-12 h-12 opacity-25 group-hover:opacity-45 transition-opacity duration-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z" />
-      </svg>
-    )
+    // title: "Artistic Brooch Concept",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/brooch-two.jpg",
+    colSpan: "md:col-span-7",
+    aspectRatio: "aspect-[1/1]"
+  },
+  // {
+  //   id: 9,
+  //   title: "Corporate Envelope",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/envolep.pdf",
+  //   colSpan: "md:col-span-4",
+  //   aspectRatio: "aspect-[3/2]"
+  // },
+  // {
+  //   id: 10,
+  //   title: "Office Glass Branding",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/glass-branding.pdf",
+  //   colSpan: "md:col-span-8",
+  //   aspectRatio: "aspect-[16/9]"
+  // },
+  // {
+  //   id: 11,
+  //   title: "Invest Advise Portfolio",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/invest-advise-portfolio-three.pdf",
+  //   colSpan: "md:col-span-6",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  {
+    id: 12,
+    // title: "Invitation Cards",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/invited-six.jpg",
+    colSpan: "md:col-span-6",
+    aspectRatio: "aspect-[4/3]"
+  },
+  // {
+  //   id: 13,
+  //   title: "Ishaadrii Application Form",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/ishaadrii-application-form.pdf",
+  //   colSpan: "md:col-span-5",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  // {
+  //   id: 14,
+  //   title: "Ishaadrii Branding",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/ishaadrii.pdf",
+  //   colSpan: "md:col-span-7",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  // {
+  //   id: 15,
+  //   title: "Marketing Leaflet",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/leaflet.pdf",
+  //   colSpan: "md:col-span-4",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  // {
+  //   id: 16,
+  //   title: "Letterhead Design",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/letterhead-grace-aestheti.pdf",
+  //   colSpan: "md:col-span-8",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  {
+    id: 17,
+    // title: "Marriage Invite - Style 1",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/mrg-one.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[3/4]"
   },
   {
-    id: 9,
-    title: "Premium Velvet Business Cards",
-    category: "STATIONERY",
-    type: "static",
-    colSpan: "md:col-span-9",
-    aspectRatio: "aspect-[3/1]",
-    gradient: "from-red-950/50 via-neutral-900/30 to-black",
-    glowColor: "group-hover:border-red-500/50",
-    textColor: "text-red-400",
-    svg: (
-      <svg className="w-20 h-20 opacity-25 group-hover:opacity-45 transition-opacity duration-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-      </svg>
-    )
-  }
+    id: 18,
+    // title: "Marriage Invite - Style 2",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/mrg-two.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[3/4]"
+  },
+  {
+    id: 19,
+    // title: "Marriage Invite - Style 3",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/mrg-three.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[3/4]"
+  },
+  // {
+  //   id: 20,
+  //   title: "Delivery Pickup Slip",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/pickup-slip.pdf",
+  //   colSpan: "md:col-span-6",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  // {
+  //   id: 21,
+  //   title: "Pillar Branding Design",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/pillar-branding.pdf",
+  //   colSpan: "md:col-span-6",
+  //   aspectRatio: "aspect-[1/2]"
+  // },
+  {
+    id: 22,
+    // title: "Poll Kiosk Banner 1",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/poll-kiosk-one.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[1/2]"
+  },
+  {
+    id: 23,
+    // title: "Poll Kiosk Banner 2",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/poll-kiosk-two.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[1/2]"
+  },
+  {
+    id: 24,
+    // title: "Poll Kiosk Banner 3",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/poll-kiosk-three.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[1/2]"
+  },
+  {
+    id: 25,
+    // title: "Poll Kiosk Banner 5",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/poll-kiosk-five.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[1/2]"
+  },
+  {
+    id: 26,
+    // title: "Poll Kiosk Banner 6",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/poll-kiosk-six.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[1/2]"
+  },
+  {
+    id: 27,
+    // title: "Poll Kiosk Banner 7",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/poll-kiosk-seven.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[1/2]"
+  },
+  {
+    id: 28,
+    // title: "Portable Canopy 1",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/portable-canopy-one.jpg",
+    colSpan: "md:col-span-6",
+    aspectRatio: "aspect-[1/1]"
+  },
+  {
+    id: 29,
+    // title: "Portable Canopy 2",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/portable-canopy-two.jpg",
+    colSpan: "md:col-span-6",
+    aspectRatio: "aspect-[1/1]"
+  },
+  {
+    id: 30,
+    // title: "Portable Canopy 3",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/portable-canopy-three.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[1/1]"
+  },
+  {
+    id: 31,
+    // title: "Portable Canopy 4",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/portable-canopy-four.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[1/1]"
+  },
+  {
+    id: 32,
+    // title: "Portable Canopy 5",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/portable-canopy-five.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[1/1]"
+  },
+  // {
+  //   id: 33,
+  //   title: "A4 Size Price List",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/price-list-a-four-size.pdf",
+  //   colSpan: "md:col-span-8",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  {
+    id: 34,
+    // title: "Clear Plastic Carrying Bag",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/sixtytwo-clear-plastic-carrying-bag-mockup-one.jpg",
+    colSpan: "md:col-span-4",
+    aspectRatio: "aspect-[3/4]"
+  },
+  {
+    id: 35,
+    // title: "Exhibition Standee 1",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/standee-one.jpg",
+    colSpan: "md:col-span-6",
+    aspectRatio: "aspect-[1/2]"
+  },
+  {
+    id: 36,
+    // title: "Exhibition Standee 4",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/standee-four.jpg",
+    colSpan: "md:col-span-6",
+    aspectRatio: "aspect-[1/2]"
+  },
+  // {
+  //   id: 37,
+  //   title: "Brand Thank You Note",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/thank-you-note.pdf",
+  //   colSpan: "md:col-span-5",
+  //   aspectRatio: "aspect-[4/3]"
+  // },
+  {
+    id: 38,
+    // title: "Business Card Mockup",
+    type: "jpg",
+    pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/v-two-front.jpg",
+    colSpan: "md:col-span-7",
+    aspectRatio: "aspect-[3/2]"
+  },
+  // {
+  //   id: 39,
+    // title: "Office Wall Branding",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/wall-branding.pdf",
+  //   colSpan: "md:col-span-12",
+  //   aspectRatio: "aspect-[21/9]"
+  // },
+  // {
+  //   id: 40,
+    // title: "WashGuys Identity",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/wash-g.pdf",
+  //   colSpan: "md:col-span-6",
+  //   aspectRatio: "aspect-[3/4]"
+  // },
+  // {
+  //   id: 41,
+  //   title: "WashGuys Corporate Profile",
+  //   type: "pdf",
+  //   pdfUrl: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-print-pdf-image/washguys.pdf",
+  //   colSpan: "md:col-span-6",
+  //   aspectRatio: "aspect-[3/4]"
+  // }
 ];
 
 const Print = () => {
@@ -203,7 +404,7 @@ const Print = () => {
               {printProjects.map((project, index) => {
                 const animDelay = index * 100;
                 
-                if (project.type === 'pdf') {
+                if (project.pdfUrl) {
                   return (
                     <div
                       key={project.id}
@@ -250,10 +451,10 @@ const Print = () => {
                     </div>
 
                     {/* Bottom Title bar (Visible by default) */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-md p-4 border-t border-white/5 flex items-center justify-between z-10">
+                    {/* <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-md p-4 border-t border-white/5 flex items-center justify-between z-10">
                       <span className="text-white/80 font-medium truncate text-sm">{project.title}</span>
                       <span className="text-xs text-white/40 group-hover:text-white transition-colors">Project</span>
-                    </div>
+                    </div> */}
                   </div>
                 );
               })}

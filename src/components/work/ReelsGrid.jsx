@@ -125,7 +125,7 @@ const ReelItem = memo(({ item, index, isActive, onActive }) => {
                     playsInline
                     preload="auto"
                     onLoadedMetadata={() => setIsLoaded(true)}
-                    className={`w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-105 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    className={`w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-102 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
                 >
                     <source src={`${item.video}#t=0.001`} type="video/mp4" />
                 </video>
@@ -137,7 +137,7 @@ const ReelItem = memo(({ item, index, isActive, onActive }) => {
                 </div>
             )}
 
-            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
+            <div className="absolute inset-0 bg-linear-to-t  via-transparent to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
             </div>
 
             {/* Play Icon Overlay for Desktop */}
@@ -244,7 +244,7 @@ const ReelsGrid = ({ reels }) => {
     return (
         <section ref={containerRef} className="w-full bg-black px-4 py-10 md:py-20">
             <div className="max-w-[1800px] mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6">
                     {shuffledReels.map((item, index) => (
                         <ReelItem 
                             key={item.id} 
@@ -261,3 +261,5 @@ const ReelsGrid = ({ reels }) => {
 };
 
 export default memo(ReelsGrid);
+
+

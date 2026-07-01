@@ -1,23 +1,41 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+// PDF Files (for modal view)
 import bestmatePdf from '../assets/bestmate-brand-guidlines.pdf';
 import gracePdf from '../assets/grace-aesthetic-brand-guidlines.pdf';
 
-const PDFCard = lazy(() => import('../components/work/PDFCard.jsx'));
+// Static Thumbnail Images (for card cover)
+import bestmateThumb from '../assets/bestmate-guideline-thumb.png';
+import graceThumb from '../assets/grace-guideline-thumb.png';
+
+const StaticPDFCard = lazy(() => import('../components/work/StaticPDFCard.jsx'));
+const PDFViewerModal = lazy(() => import('../components/work/PDFViewerModal.jsx'));
 
 const Branding = () => {
     const navigate = useNavigate();
+    const [selectedPdf, setSelectedPdf] = useState(null);
+    const [modalOpen, setModalOpen] = useState(false);
+    const [modalTitle, setModalTitle] = useState("");
+
+    const handleOpenPdf = (pdfUrl, title) => {
+        setSelectedPdf(pdfUrl);
+        setModalTitle(title);
+        setModalOpen(true);
+    };
 
     const brandingDocs = [
         {
             id: 1,
             title: "Bestmate",
-            pdf: bestmatePdf
+            pdf: bestmatePdf,
+            thumbnail: bestmateThumb
         },
         {
             id: 2,
             title: "Grace Aesthetic",
-            pdf: gracePdf
+            pdf: gracePdf,
+            thumbnail: graceThumb
         }
     ];
 
@@ -46,12 +64,12 @@ const Branding = () => {
                     >
                         Branding
                     </button>
-                    <button
+                    {/* <button
                         onClick={() => navigate('/work/Print')}
                         className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
                     >
                         Print
-                    </button>
+                    </button> */}
                 </div>
 
                 <div className="max-w-[1400px] mx-auto pb-20">
@@ -62,12 +80,28 @@ const Branding = () => {
                     }>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                             {brandingDocs.map((doc) => (
-                                <PDFCard key={doc.id} pdfUrl={doc.pdf} title={doc.title} />
+                                <StaticPDFCard 
+                                    key={doc.id} 
+                                    pdfUrl={doc.pdf}
+                                    imageUrl={doc.thumbnail}
+                                    title={doc.title} 
+                                    onClick={() => handleOpenPdf(doc.pdf, doc.title)}
+                                />
                             ))}
                         </div>
                     </Suspense>
                 </div>
             </div>
+
+            {/* PDF Viewer Lightbox Modal */}
+            <Suspense fallback={null}>
+                <PDFViewerModal 
+                    pdfUrl={selectedPdf} 
+                    isOpen={modalOpen} 
+                    onClose={() => setModalOpen(false)} 
+                    title={modalTitle} 
+                />
+            </Suspense>
         </main>
     );
 };
