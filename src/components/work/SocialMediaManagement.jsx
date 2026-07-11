@@ -8,6 +8,7 @@ const ReelsGrid = lazy(() => import('./ReelsGrid.jsx'));
 const CircularGallery = lazy(() => import('./CircularGallery.jsx'));
 
 import { reelsData } from '../../data/reelsData.js'
+import Smmbutton from './Smmbutton.jsx';
 
 const SocialMediaManagement = () => {
   const navigate = useNavigate();
@@ -32,31 +33,9 @@ const SocialMediaManagement = () => {
         <h1 className='pt-24 md:pt-40 lg:pt-60 2xl:pt-30 text-white text-center text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter'>
           Social Media 
         </h1>
-        <div className='text-white text-center mt-12'>
-          <button
-            className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer bg-white text-black border-white"
-          >
-            Posts
-          </button>
-          <button
-            onClick={() => navigate('/work/reels')}
-            className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
-          >
-            Reels
-          </button>
-          <button
-            onClick={() => navigate('/work/Branding')}
-            className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
-          >
-            Branding
-          </button>
-          {/* <button
-            onClick={() => navigate('/work/Print')}
-            className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
-          >
-            Print
-          </button> */}
-        </div>
+        <div className='text-white text-center mt-12 mb-16'>
+                    <Smmbutton />
+                </div>
 
         <Suspense fallback={
           <div className="w-full min-h-[50vh] flex items-center justify-center">

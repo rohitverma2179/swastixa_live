@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { reelsData } from '../data/reelsData.js';
+import Smmbutton from '../components/work/Smmbutton.jsx';
 
 const ReelsGrid = lazy(() => import('../components/work/ReelsGrid.jsx'));
 
@@ -14,31 +15,8 @@ const Reels = () => {
                     Social Media Reels 
                 </h1>
 
-                <div className='text-white text-center mt-12 mb-12'>
-                    <button
-                        onClick={() => navigate('/work/SocialMedia')}
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
-                    >
-                        Posts
-                    </button>
-                    <button
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer bg-white text-black border-white"
-                    >
-                        Reels
-                    </button>
-                  
-                    <button
-                        onClick={() => navigate('/work/Branding')}
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
-                    >
-                        Branding
-                    </button>
-                    {/* <button
-                        onClick={() => navigate('/work/Print')}
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
-                    >
-                        Print
-                    </button> */}
+              <div className='text-white text-center mt-12 mb-16'>
+                    <Smmbutton />
                 </div>
 
                 <Suspense fallback={

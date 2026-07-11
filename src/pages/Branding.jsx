@@ -1,41 +1,54 @@
-import React, { Suspense, lazy, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { Suspense, lazy } from 'react';
+import Smmbutton from '../components/work/Smmbutton.jsx';
 
-// PDF Files (for modal view)
-import bestmatePdf from '../assets/bestmate-brand-guidlines.pdf';
-import gracePdf from '../assets/grace-aesthetic-brand-guidlines.pdf';
+// // PDF Files (for modal view)
+// import bestmatePdf from '../assets/bestmate-brand-guidlines.pdf';
+// import gracePdf from '../assets/grace-aesthetic-brand-guidlines.pdf';
 
-// Static Thumbnail Images (for card cover)
-import bestmateThumb from '../assets/bestmate-guideline-thumb.png';
-import graceThumb from '../assets/grace-guideline-thumb.png';
+// // Static Thumbnail Images (for card cover)
+// import bestmateThumb from '../assets/bestmate-guideline-thumb.png';
+// import graceThumb from '../assets/grace-guideline-thumb.png';
 
 const StaticPDFCard = lazy(() => import('../components/work/StaticPDFCard.jsx'));
-const PDFViewerModal = lazy(() => import('../components/work/PDFViewerModal.jsx'));
 
 const Branding = () => {
-    const navigate = useNavigate();
-    const [selectedPdf, setSelectedPdf] = useState(null);
-    const [modalOpen, setModalOpen] = useState(false);
-    const [modalTitle, setModalTitle] = useState("");
-
-    const handleOpenPdf = (pdfUrl, title) => {
-        setSelectedPdf(pdfUrl);
-        setModalTitle(title);
-        setModalOpen(true);
-    };
 
     const brandingDocs = [
         {
             id: 1,
             title: "Bestmate",
-            pdf: bestmatePdf,
-            thumbnail: bestmateThumb
+            pdf: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/bestmate-brand-guidlines.pdf",
+            thumbnail: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/a-thumbnail/thumbnail-bestmate.webp"
         },
         {
             id: 2,
             title: "Grace Aesthetic",
-            pdf: gracePdf,
-            thumbnail: graceThumb
+            pdf: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/grace-aesthetic-brand-guidlines.pdf",
+            thumbnail:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/a-thumbnail/thumbnail-graceaesthetic.webp"
+        },
+        {
+            id: 3,
+            title: "ishaadrii",
+            pdf: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/ishaadrii-four.pdf",
+            thumbnail:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/a-thumbnail/thumbnail-ishaadrii.webp"
+        },
+        {
+            id: 4,
+            title: "oxfordrealtor",
+            pdf: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/two-org-logo.pdf",
+            thumbnail:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/a-thumbnail/thumbnail-oxfordrealtor.webp"
+        },
+        {
+            id: 5,
+            title: "kebab",
+            pdf: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/kebab-e-awadh.pdf",
+            thumbnail:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/a-thumbnail/thumbnail-kebab.webp"
+        },
+        {
+            id: 6,
+            title: "tirasya",
+            pdf: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/tirasya.pdf",
+            thumbnail:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/a-thumbnail/thumbnail-tirasya.webp"
         }
     ];
 
@@ -47,29 +60,7 @@ const Branding = () => {
                 </h1>
 
                 <div className='text-white text-center mt-12 mb-16'>
-                    <button
-                        onClick={() => navigate('/work/SocialMedia')}
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
-                    >
-                        Posts
-                    </button>
-                    <button
-                        onClick={() => navigate('/work/reels')}
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
-                    >
-                        Reels
-                    </button>
-                    <button
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer bg-white text-black border-white"
-                    >
-                        Branding
-                    </button>
-                    {/* <button
-                        onClick={() => navigate('/work/Print')}
-                        className="text-xl m-6 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
-                    >
-                        Print
-                    </button> */}
+                    <Smmbutton />
                 </div>
 
                 <div className="max-w-[1400px] mx-auto pb-20">
@@ -80,28 +71,18 @@ const Branding = () => {
                     }>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                             {brandingDocs.map((doc) => (
-                                <StaticPDFCard 
-                                    key={doc.id} 
+                                <StaticPDFCard
+                                    key={doc.id}
                                     pdfUrl={doc.pdf}
                                     imageUrl={doc.thumbnail}
-                                    title={doc.title} 
-                                    onClick={() => handleOpenPdf(doc.pdf, doc.title)}
+                                    title={doc.title}
+                                    onClick={() => window.open(doc.pdf, '_blank')}
                                 />
                             ))}
                         </div>
                     </Suspense>
                 </div>
             </div>
-
-            {/* PDF Viewer Lightbox Modal */}
-            <Suspense fallback={null}>
-                <PDFViewerModal 
-                    pdfUrl={selectedPdf} 
-                    isOpen={modalOpen} 
-                    onClose={() => setModalOpen(false)} 
-                    title={modalTitle} 
-                />
-            </Suspense>
         </main>
     );
 };

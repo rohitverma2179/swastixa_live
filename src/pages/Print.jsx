@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 // Import local PDF assets
 import filePdf from '../assets/asva1.jpg';
 import eGrowthPdf from '../assets/eGrowth_Brand Guidlines.pdf';
+import Smmbutton from '../components/work/Smmbutton.jsx';
 
 // Lazy loaded components
 const PDFCard = lazy(() => import('../components/work/PDFCard.jsx'));
@@ -367,7 +368,7 @@ const Print = () => {
         </h1>
 
         {/* Unified Navigation Tabs */}
-        <div className='text-white text-center mt-12 mb-16 flex flex-wrap justify-center gap-2' data-aos="fade-up">
+        {/* <div className='text-white text-center mt-12 mb-16 flex flex-wrap justify-center gap-2' data-aos="fade-up">
           <button
             onClick={() => navigate('/work/SocialMedia')}
             className="text-xl m-2 md:m-4 border px-8 py-2 rounded-sm transition-colors cursor-pointer border-white/30 text-white/70 hover:border-white hover:text-white"
@@ -391,8 +392,10 @@ const Print = () => {
           >
             Print
           </button>
-        </div>
-
+        </div> */}
+<div className='text-white text-center mt-12 mb-16'>
+                    <Smmbutton />
+                </div>
         {/* Portfolio Staggered Bento Grid */}
         <div className="max-w-[1100px] mx-auto pb-28">
           <Suspense fallback={
