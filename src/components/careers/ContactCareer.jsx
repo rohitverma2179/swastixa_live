@@ -373,7 +373,7 @@ const ContactCareer = () => {
 
                             <div className="flex flex-col gap-4">
                                 {jobsData.map((job) => (
-                                    <div key={job.id} className="group border-b border-gray-300 pb-4 hover:border-gray-600 transition-colors">
+                                    <div key={job.id} className="group border-b border-gray-300 pb-4 hover:border-gray-400 transition-colors">
                                         <h3 className="text-2xl font-bold mb-4">{job.title}</h3>
                                         <div className="flex flex-wrap items-center justify-between gap-4 text-sm md:text-base text-gray-400">
                                             <div className="flex gap-8">
@@ -505,7 +505,7 @@ const ContactCareer = () => {
                                     type="text"
                                     name="name"
                                     placeholder="Enter Your Name"
-                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
+                                    className="bg-transparent border-b  border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-400"
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
@@ -513,7 +513,7 @@ const ContactCareer = () => {
                                     type="email"
                                     name="email"
                                     placeholder="Enter Your Email"
-                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
+                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-400"
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
@@ -524,7 +524,7 @@ const ContactCareer = () => {
                                     onInput={(e) => {
                                         e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 10);
                                     }}
-                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
+                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-400"
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
@@ -533,10 +533,10 @@ const ContactCareer = () => {
                                     value={userMessage}
                                     onChange={(e) => setUserMessage(e.target.value)}
                                     rows="3"
-                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600 resize-none"
+                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-400 resize-none"
                                 ></textarea>
                             </div>
-                        </div>
+                        
 
                         {/* Resume Upload Card */}
                         {/* <div className="bg-[#1a1a1a] rounded-4xl p-8 border border-gray-300">
@@ -553,14 +553,14 @@ const ContactCareer = () => {
                                 onChange={handleFileChange}
                                 className="hidden"
                             />
-
+                            
                             <div 
-                                onClick={handleUploadClick}
-                                className="bg-gray-200/5 hover:bg-gray-200/10 transition-colors rounded-xl h-32 flex flex-col items-center justify-center border-2 border-dashed border-gray-700 cursor-pointer"
+                            onClick={handleUploadClick}
+                            className="bg-gray-200/5 hover:bg-gray-200/10 transition-colors rounded-xl h-32 flex flex-col items-center justify-center border-2 border-dashed border-gray-700 cursor-pointer"
                             >
-                                {selectedFile ? (
-                                    <div className="flex flex-col items-center gap-1">
-                                        <span className="text-blue-400 font-medium truncate max-w-[250px]">
+                            {selectedFile ? (
+                                <div className="flex flex-col items-center gap-1">
+                                <span className="text-blue-400 font-medium truncate max-w-[250px]">
                                             {selectedFile.name}
                                         </span>
                                         <span className="text-xs text-gray-500">
@@ -580,6 +580,7 @@ const ContactCareer = () => {
                         >
                             {loading ? "Sending..." : "Submit"}
                         </button>
+                        </div>
                     </form>
                 )}
 
