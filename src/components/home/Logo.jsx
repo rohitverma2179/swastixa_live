@@ -182,7 +182,7 @@ export default function LogoCarousel() {
         <div className={gridClasses}>
           {currentIcons.map((icon, idx) => (
             <a
-              key={`${icon.url}_${idx}`}
+              key={`${icon.url}_${idx}_${page}`}
               href={icon.link}
               target="_blank"
               rel="noopener noreferrer"

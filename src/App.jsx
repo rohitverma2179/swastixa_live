@@ -49,119 +49,119 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const PageLoader = () => (
-  <div className="w-full h-screen bg-black flex items-center justify-center">
-    <div className="w-10 h-10 border-4 border-white/20 border-t-white rounded-full animate-spin"></div>
-  </div>
+    <div className="w-full h-screen bg-black flex items-center justify-center">
+        <div className="w-10 h-10 border-4 border-white/20 border-t-white rounded-full animate-spin"></div>
+    </div>
 );
 
 export default function App() {
-  const [loader, setLoader] = useState(false);
+    const [loader, setLoader] = useState(true);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      offset: 120,
-    });
-  }, []);
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            once: true,
+            offset: 120,
+        });
+    }, []);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoader(false);
-    }, 10); // Increased a bit to actually see the logo video if intended, or set to 0 to be instant.
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoader(false);
+        }, 10); // Increased a bit to actually see the logo video if intended, or set to 0 to be instant.
 
-    return () => clearTimeout(timer);
-  }, []);
-
-
+        return () => clearTimeout(timer);
+    }, []);
 
 
-  const disableRightClick = (e) => {
-    e.preventDefault();
-  };
 
 
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: "vertical",
-      gestureOrientation: "vertical",
-      smoothWheel: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 2,
-      infinite: false,
-    });
-
-    lenis.on("scroll", ScrollTrigger.update);
-
-    const updateLenis = (time) => {
-      lenis.raf(time * 1000);
+    const disableRightClick = (e) => {
+        e.preventDefault();
     };
 
-    gsap.ticker.add(updateLenis);
-    gsap.ticker.lagSmoothing(0);
 
-    return () => {
-      lenis.destroy();
-      gsap.ticker.remove(updateLenis);
-    };
-  }, []);
+    useEffect(() => {
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            orientation: "vertical",
+            gestureOrientation: "vertical",
+            smoothWheel: true,
+            wheelMultiplier: 1,
+            touchMultiplier: 2,
+            infinite: false,
+        });
 
-  if (loader) {
+        lenis.on("scroll", ScrollTrigger.update);
+
+        const updateLenis = (time) => {
+            lenis.raf(time * 1000);
+        };
+
+        gsap.ticker.add(updateLenis);
+        gsap.ticker.lagSmoothing(0);
+
+        return () => {
+            lenis.destroy();
+            gsap.ticker.remove(updateLenis);
+        };
+    }, []);
+
+    if (loader) {
+        return (
+            <div className="fixed inset-0 w-full h-full overflow-hidden bg-black flex items-center justify-center">
+                <video
+                    src="https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/BPTP%20FINAL.mp4"
+                    className="absolute inset-0 w-full h-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                ></video>
+            </div>
+        );
+    }
+
+
+
     return (
-      <div className="fixed inset-0 w-full h-full overflow-hidden bg-black flex items-center justify-center">
-        <video
-          src="https://pub-9cfa6415ad044bcc8f009cfb63bc9ff9.r2.dev/Swastixa%20-%20WORK/All%20-%20Video's%20-%20of%20%20--%20Website/BPTP%20FINAL.mp4"
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-        ></video>
-      </div>
+        // <div onContextMenu={disableRightClick}>
+        <div >
+            <Toaster position="top-right" />
+            <ScrollToTop />
+            <ScrollButton />
+            <Header />
+            <Suspense fallback={<PageLoader />}>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/work" element={<Work />} />
+                    <Route path="/work/Production" element={<ProductionHouse />} />
+                    <Route path="/work/Production/:tab" element={<ProductionHouse />} />
+                    <Route path="/work/SocialMedia" element={<SocialMediaManagement />} />
+                    <Route path="/work/WebsiteDevelopment" element={<WebsiteDevelopment />} />
+                    <Route path="/work/DigitalMarketing" element={<DigitalMarketing />} />
+                    <Route path="/awards" element={<CommingSoon />} />
+                    <Route path="/careers" element={<Careers />} />
+                    <Route path="/blog" element={<Blog />} />
+                    <Route path="/blog/:slug" element={<BlogInner />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/work/reels" element={<Reels />} />
+                    <Route path="/work/Branding" element={<Branding />} />
+                    <Route path="/work/Print" element={<Print />} />
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/services/website-development" element={<WebsiteDevelopmentPage />} />
+                    <Route path="/services/seo-agency" element={<SeoAgency />} />
+                    <Route path="/services/content-marketing" element={<ContentMarketingAgency />} />
+                    <Route path="/services/social-media-marketing" element={<SocialMediaMarketingAgency />} />
+                    <Route path="/services/performance-marketing" element={<PerformanceMarketingAgency />} />
+                    <Route path="/services/video-production-house" element={<VideoProductionHouse />} />
+                    <Route path="/services/influencer-marketing" element={<InfluencerMarketingAgency />} />
+                    <Route path="/services/packaging-design" element={<PackagingDesign />} />
+                </Routes>
+            </Suspense>
+            {/* <Footer /> */}
+        </div>
     );
-  }
-
-
-
-  return (
-    // <div onContextMenu={disableRightClick}>
-    <div >
-      <Toaster position="top-right" />
-      <ScrollToTop />
-      <ScrollButton />
-      <Header />
-      <Suspense fallback={<PageLoader />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/work/Production" element={<ProductionHouse />} />
-          <Route path="/work/Production/:tab" element={<ProductionHouse />} />
-          <Route path="/work/SocialMedia" element={<SocialMediaManagement />} />
-          <Route path="/work/WebsiteDevelopment" element={<WebsiteDevelopment />} />
-          <Route path="/work/DigitalMarketing" element={<DigitalMarketing />} />
-          <Route path="/awards" element={<CommingSoon />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogInner />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/work/reels" element={<Reels />} />
-          <Route path="/work/Branding" element={<Branding />} />
-          <Route path="/work/Print" element={<Print />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/website-development" element={<WebsiteDevelopmentPage />} />
-          <Route path="/services/seo-agency" element={<SeoAgency />} />
-          <Route path="/services/content-marketing" element={<ContentMarketingAgency />} />
-          <Route path="/services/social-media-marketing" element={<SocialMediaMarketingAgency />} />
-          <Route path="/services/performance-marketing" element={<PerformanceMarketingAgency />} />
-          <Route path="/services/video-production-house" element={<VideoProductionHouse />} />
-          <Route path="/services/influencer-marketing" element={<InfluencerMarketingAgency />} />
-          <Route path="/services/packaging-design" element={<PackagingDesign />} />
-        </Routes>
-      </Suspense>
-      {/* <Footer /> */}
-    </div>
-  );
 }
