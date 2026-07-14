@@ -57,7 +57,7 @@ const WhyCompany = () => {
       // Desktop animation: horizontal scroll pinning
       mm.add('(min-width: 1024px)', () => {
         const cardsEl = cardsWrapperRef.current;
-        const totalScrollWidth = cardsEl.scrollWidth - cardsEl.offsetWidth + 120; // safe padding offset
+        const totalScrollWidth = cardsEl.scrollWidth - cardsEl.offsetWidth + 0; // safe padding offset
 
         // Pin the container and translate the cards horizontally
         gsap.to(cardsEl, {
