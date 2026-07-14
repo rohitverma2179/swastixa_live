@@ -1,5 +1,6 @@
-
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { sendForm } from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const jobsData = [
     {
@@ -251,13 +252,107 @@ const jobsData = [
 
 const ContactCareer = () => {
     const [selectedJob, setSelectedJob] = useState(null);
+    const formRef = useRef();
+    const fileInputRef = useRef(null);
+    const [loading, setLoading] = useState(false);
+    const [userMessage, setUserMessage] = useState("");
+    const [selectedFile, setSelectedFile] = useState(null);
 
     const handleApplyClick = (job) => {
         setSelectedJob(job);
+        // Reset state on switching job details
+        setUserMessage("");
+        setSelectedFile(null);
     };
 
     const handleBackToList = () => {
         setSelectedJob(null);
+        setUserMessage("");
+        setSelectedFile(null);
+    };
+
+    const handleFileChange = (e) => {
+        if (e.target.files && e.target.files[0]) {
+            const file = e.target.files[0];
+            const allowedExtensions = ["pdf", "doc", "docx", "txt"];
+            const fileExtension = file.name.split(".").pop().toLowerCase();
+            if (!allowedExtensions.includes(fileExtension)) {
+                toast.error("Only PDF, DOC, DOCX, and TXT files are allowed");
+                e.target.value = null;
+                setSelectedFile(null);
+                return;
+            }
+            if (file.size > 2 * 1024 * 1024) {
+                toast.error("File size must be less than 2MB");
+                e.target.value = null;
+                setSelectedFile(null);
+                return;
+            }
+            setSelectedFile(file);
+        }
+    };
+
+    const handleUploadClick = () => {
+        if (fileInputRef.current) {
+            fileInputRef.current.click();
+        }
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        if (loading) return;
+
+        const name = formRef.current.name.value.trim();
+        const email = formRef.current.email.value.trim();
+        const phone = formRef.current.phone.value.trim();
+
+        if (!name || !email || !phone || !userMessage) {
+            toast.error("All fields are required");
+            return;
+        }
+
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!emailRegex.test(email)) {
+            toast.error("Please enter a valid email address");
+            return;
+        }
+
+        const phoneRegex = /^[0-9]{10}$/;
+        if (!phoneRegex.test(phone)) {
+            toast.error("Please enter a valid 10-digit mobile number");
+            return;
+        }
+
+        // if (!selectedFile) {
+        //     toast.error("Please upload your resume");
+        //     return;
+        // }
+
+        setLoading(true);
+
+        sendForm(
+            "service_bieykdy",
+            "template_261som3",
+            formRef.current,
+            "xegRks9AiGypGKvhc"
+        )
+            .then(() => {
+                toast.success("Application Submitted Successfully!");
+                if (formRef.current) {
+                    formRef.current.reset();
+                }
+                setUserMessage("");
+                setSelectedFile(null);
+                setSelectedJob(null);
+            })
+            .catch((err) => {
+                console.error(err);
+                toast.error("Failed to submit application. Try again!");
+            })
+            .finally(() => {
+                setLoading(false);
+            });
     };
 
     return (
@@ -387,61 +482,105 @@ const ContactCareer = () => {
 
                 {/* Right Side: Application Form (Hidden initially, shown when job selected) */}
                 {selectedJob && (
-                    <div className="lg:w-1/2 animate-slide-in-right">
-                        <div className="flex flex-col gap-6">
+                    <form
+                        ref={formRef}
+                        onSubmit={sendEmail}
+                        noValidate
+                        className="lg:w-1/2 animate-slide-in-right flex flex-col gap-6"
+                    >
+                        {/* Form Card */}
+                        <div className="bg-[#1a1a1a] rounded-4xl p-8 md:p-12 border border-gray-300 flex flex-col gap-6">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-8">Become a Swastixa</h2>
+                            
+                            {/* Hidden textarea to send both job title and message */}
+                            <textarea
+                                name="textarea"
+                                value={`Job Applied For: ${selectedJob.title}\n\nMessage: ${userMessage}`}
+                                readOnly
+                                className="hidden"
+                            />
 
-                            {/* Form Card */}
-                            <div className="bg-[#1a1a1a] rounded-4xl p-8 md:p-12 border border-gray-300">
-                                <h2 className="text-3xl md:text-4xl font-bold mb-8">Become a Swastixa</h2>
-                                <form className="flex flex-col gap-6">
-                                    <div className="flex flex-col gap-2">
-                                        <input
-                                            type="text"
-                                            placeholder="Enter Your Name"
-                                            className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
-                                        />
-                                    </div>
-                                    <div className="flex flex-col gap-2">
-                                        <input
-                                            type="email"
-                                            placeholder="Enter Your Email"
-                                            className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
-                                        />
-                                    </div>
-                                    <div className="flex flex-col gap-2">
-                                        <input
-                                            type="tel"
-                                            placeholder="Enter Your Mobile no."
-                                            className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
-                                        />
-                                    </div>
-                                    <div className="flex flex-col gap-2">
-                                        <textarea
-                                            placeholder="Enter Your Message"
-                                            rows="3"
-                                            className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600 resize-none"
-                                        ></textarea>
-                                    </div>
-
-                                    <button className="mt-8 self-center border-b border-white pb-1 text-lg font-medium hover:text-gray-300 transition-colors">
-                                        Submit
-                                    </button>
-                                </form>
+                            <div className="flex flex-col gap-2">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Enter Your Name"
+                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
+                                />
                             </div>
-
-                            {/* Resume Upload Card */}
-                            <div className="bg-[#1a1a1a] rounded-4xl p-8 border border-gray-300">
-                                <div className="flex justify-between items-center mb-4">
-                                    <span className="font-semibold">Upload Resume*</span>
-                                    <span className="text-xs text-gray-500">Allowed file types: pdf, doc, docx, txt</span>
-                                </div>
-                                <div className="bg-gray-200/5 hover:bg-gray-200/10 transition-colors rounded-xl h-32 flex items-center justify-center border-2 border-dashed border-gray-700 cursor-pointer">
-                                    <span className="text-gray-500">Choose File</span>
-                                </div>
+                            <div className="flex flex-col gap-2">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Enter Your Email"
+                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
+                                />
                             </div>
-
+                            <div className="flex flex-col gap-2">
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Enter Your Mobile no."
+                                    onInput={(e) => {
+                                        e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 10);
+                                    }}
+                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
+                                />
+                            </div>
+                            <div className="flex flex-col gap-2">
+                                <textarea
+                                    placeholder="Enter Your Message"
+                                    value={userMessage}
+                                    onChange={(e) => setUserMessage(e.target.value)}
+                                    rows="3"
+                                    className="bg-transparent border-b border-gray-700 py-4 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600 resize-none"
+                                ></textarea>
+                            </div>
                         </div>
-                    </div>
+
+                        {/* Resume Upload Card */}
+                        {/* <div className="bg-[#1a1a1a] rounded-4xl p-8 border border-gray-300">
+                            <div className="flex justify-between items-center mb-4">
+                                <span className="font-semibold">Upload Resume*</span>
+                                <span className="text-xs text-gray-500">Allowed file types: pdf, doc, docx, txt</span>
+                            </div>
+
+                            <input
+                                type="file"
+                                ref={fileInputRef}
+                                name="resume"
+                                accept=".pdf,.doc,.docx,.txt"
+                                onChange={handleFileChange}
+                                className="hidden"
+                            />
+
+                            <div 
+                                onClick={handleUploadClick}
+                                className="bg-gray-200/5 hover:bg-gray-200/10 transition-colors rounded-xl h-32 flex flex-col items-center justify-center border-2 border-dashed border-gray-700 cursor-pointer"
+                            >
+                                {selectedFile ? (
+                                    <div className="flex flex-col items-center gap-1">
+                                        <span className="text-blue-400 font-medium truncate max-w-[250px]">
+                                            {selectedFile.name}
+                                        </span>
+                                        <span className="text-xs text-gray-500">
+                                            Click to change file
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span className="text-gray-500">Choose File</span>
+                                )}
+                            </div>
+                        </div> */}
+
+                        <button
+                            type="submit"
+                            disabled={loading}
+                            className={`mt-4 self-center border-b border-white pb-1 text-lg font-medium hover:text-gray-300 transition-colors cursor-pointer ${loading ? "opacity-50 cursor-not-allowed" : ""}`}
+                        >
+                            {loading ? "Sending..." : "Submit"}
+                        </button>
+                    </form>
                 )}
 
             </div>

@@ -44,6 +44,7 @@ const portfolioData = [
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
     link: "https://eazzy.bexex.in/"
   },
+ 
   {
     id: 7,
     image:
