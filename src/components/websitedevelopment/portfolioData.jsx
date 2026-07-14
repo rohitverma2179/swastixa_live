@@ -289,7 +289,7 @@ const portfolioData = [
     image:
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/graceaesthetic-design-hero.png",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
-    link: "https://eazzy.bexex.in/",
+    link: "https://graceaesthetic.in/"
   },
   {
     id: 11,
