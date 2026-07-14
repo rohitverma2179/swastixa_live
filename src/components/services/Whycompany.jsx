@@ -9,37 +9,37 @@ const whyCardsData = [
   {
     number: '01',
     title: 'Creative + Performance',
-    image: 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=800&auto=format&fit=crop',
+    image: 'https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-main-page/swastixa-service-creative-performance.webp',
     alt: 'Creative and Performance'
   },
   {
     number: '02',
     title: 'Data Driven Decisions',
-    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&auto=format&fit=crop',
+    image: 'https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-main-page/swastixa-service-data-driven-decisions.webp',
     alt: 'Data Driven Decisions'
   },
   {
     number: '03',
     title: 'In-House Production',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop',
+    image: 'https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-main-page/swastixa-service-in-house-production.webp',
     alt: 'In-House Production'
   },
   {
     number: '04',
     title: 'Social Media Platforms',
-    image: 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=800&auto=format&fit=crop',
+    image: 'https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-main-page/swastixa-service-social-media-platforms.webp',
     alt: 'Social Media Platforms'
   },
   {
     number: '05',
     title: ' Transparent Reporting',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop',
+    image: 'https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-main-page/swastixa-service-transparent-reporting.webp',
     alt: ' Transparent Reporting'
   },
   {
     number: '06',
     title: 'Scalable Brand Growth',
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop',
+    image: 'https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-main-page/swastixa-service-scalable-brand-growth.webp',
     alt: 'Scalable Brand Growth'
   }
 ];
