@@ -55,7 +55,7 @@ const PageLoader = () => (
 );
 
 export default function App() {
-  const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(false);
 
   useEffect(() => {
     AOS.init({

@@ -148,7 +148,7 @@ const WhyCompany = () => {
         {whyCardsData.map((card, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-[80vw] sm:w-[450px] flex flex-col p-6 rounded-[14px] bg-[#121214] border border-[#232326]  hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] transition-all duration-500 group cursor-pointer snap-start"
+            className="flex-shrink-0 w-[80vw] sm:w-[450px] flex flex-col p-6 rounded-[14px] bg-[#121214] border border-[#232326]  hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] transition-all duration-500 group  snap-start"
             style={{
               boxShadow: '0 4px 30px rgba(0, 0, 0, 0.4)'
             }}
@@ -163,10 +163,10 @@ const WhyCompany = () => {
               <img
                 src={card.image}
                 alt={card.alt}
-                className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-out group-hover:scale-105"
+                className="w-full h-full object-cover  opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-out group-hover:scale-105"
               />
               {/* Subtle inner overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+              <div className="absolute inset-0  to-transparent pointer-events-none" />
             </div>
 
             {/* Title */}

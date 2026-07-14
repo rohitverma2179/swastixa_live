@@ -31,11 +31,11 @@ const SocialMediaManagement = () => {
       {/* Main Content */}
       <div className="relative z-10">
         <h1 className='pt-24 md:pt-40 lg:pt-60 2xl:pt-30 text-white text-center text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter'>
-          Social Media 
+          Social Media
         </h1>
         <div className='text-white text-center mt-12 mb-16'>
-                    <Smmbutton />
-                </div>
+          <Smmbutton />
+        </div>
 
         <Suspense fallback={
           <div className="w-full min-h-[50vh] flex items-center justify-center">

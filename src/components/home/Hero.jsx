@@ -6,13 +6,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const containerRef = useRef(null);
+  const videoRef = useRef(null);
 
   useEffect(() => {
     const containerEl = containerRef.current;
-    if (!containerEl) return;
-
-    const videoEl = containerEl.querySelector("video");
-    if (!videoEl) return;
+    const videoEl = videoRef.current;
+    if (!containerEl || !videoEl) return;
 
     // Force autoplay compatibility for Safari & iOS
     videoEl.setAttribute("muted", "");
@@ -31,6 +30,7 @@ const Hero = () => {
     playVideo();
     videoEl.addEventListener("loadedmetadata", playVideo);
     videoEl.addEventListener("loadeddata", playVideo);
+    videoEl.addEventListener("canplay", playVideo);
 
     // Responsive GSAP using matchMedia (perfect for resizing & device rotation)
     const mm = gsap.matchMedia();
@@ -84,6 +84,7 @@ const Hero = () => {
       mm.revert(); // Reverts all GSAP matchMedia settings & kills all associated ScrollTriggers
       videoEl.removeEventListener("loadedmetadata", playVideo);
       videoEl.removeEventListener("loadeddata", playVideo);
+      videoEl.removeEventListener("canplay", playVideo);
     };
   }, []);
 
@@ -100,27 +101,23 @@ const Hero = () => {
         </h1>
 
         {/* Video Section */}
-        <div 
-          className="mt-8 w-full flex justify-center relative z-10"
-          dangerouslySetInnerHTML={{
-            __html: `
-              <video
-                autoplay
-                muted
-                loop
-                playsinline
-                preload="metadata"
-                class="w-full min-h-[60vh] object-cover"
-                style="border: none; outline: none;"
-              >
-                <source
-                  src="https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-hero-video/swastixa-top.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            `
-          }}
-        />
+        <div className="mt-8 w-full flex justify-center relative z-10 bg-neutral-100 min-h-[60vh] overflow-hidden rounded-sm">
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="w-full min-h-[60vh] object-cover block"
+            style={{ border: "none", outline: "none" }}
+          >
+            <source
+              src="https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixadigital/swastixa-hero-video/swastixa-top.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
       </div>
     </>
   );

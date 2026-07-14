@@ -87,76 +87,105 @@ const videoCards = [
   },
 ];
 
-const VideoCard = ({ src, className, shadowColor = "rgba(0,0,0,0.5)" }) => {
+const VideoCard = ({ src, className, id, mobileBg, shadowColor = "rgba(0,0,0,0.5)" }) => {
   const containerRef = useRef(null);
   const videoRef = useRef(null);
-  const [shouldLoad, setShouldLoad] = useState(true); // Hero videos load immediately
-  const [isReady, setIsReady] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(false);
+  const [nearViewport, setNearViewport] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
+  // Pre-load when near viewport
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const loadObserver = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          videoRef.current?.play().catch(() => { });
-        } else {
-          // videoRef.current?.pause();
-          videoRef.current?.play();
+          setNearViewport(true);
+          loadObserver.disconnect();
         }
       },
       {
         rootMargin: "200px",
+        threshold: 0.01,
+      }
+    );
+
+    if (containerRef.current) loadObserver.observe(containerRef.current);
+    return () => loadObserver.disconnect();
+  }, []);
+
+  // Stagger load trigger
+  useEffect(() => {
+    if (!nearViewport) return;
+    // Stagger loading to prevent concurrent connection clogging in Safari
+    const delay = (id - 1) * 250;
+    const timer = setTimeout(() => {
+      setShouldLoad(true);
+    }, delay);
+    return () => clearTimeout(timer);
+  }, [nearViewport, id]);
+
+  // Observe visibility for play/pause
+  useEffect(() => {
+    const playObserver = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
         threshold: 0.1,
       }
     );
 
-    if (containerRef.current) observer.observe(containerRef.current);
-    return () => observer.disconnect();
+    if (containerRef.current) playObserver.observe(containerRef.current);
+    return () => playObserver.disconnect();
   }, []);
+
+  const setVideoRef = (el) => {
+    videoRef.current = el;
+    if (el) {
+      el.setAttribute("muted", "");
+      el.setAttribute("playsinline", "");
+      el.muted = true;
+      el.defaultMuted = true;
+      el.playsInline = true;
+    }
+  };
+
+  // Play / Pause Logic
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || !shouldLoad) return;
+
+    if (isVisible) {
+      video.play().catch((err) => {
+        console.warn("Autoplay blocked for WorkHero video:", err);
+      });
+    } else {
+      video.pause();
+    }
+  }, [isVisible, shouldLoad]);
 
   return (
     <div
       ref={containerRef}
-      className={`${className} overflow-hidden bg-neutral-900 border border-white/5 backdrop-blur-sm transition-opacity duration-700`}
+      className={`${className} overflow-hidden ${mobileBg || "bg-neutral-900"} border border-white/5 backdrop-blur-sm transition-all duration-700`}
       style={{ boxShadow: `0 10px 30px ${shadowColor}` }}
     >
       {shouldLoad && (
-        // <video
-        //   ref={videoRef}
-        //   src={src}
-        //   muted
-        //   loop
-        //   playsInline
-        //   preload="auto"
-        //   onCanPlay={() => setIsReady(true)}
-        //   className={`w-full h-full object-cover transition-opacity duration-700 ${isReady ? "opacity-100" : "opacity-0"}`}
-        // />
         <video
-          ref={videoRef}
+          ref={setVideoRef}
           src={src}
           muted
           loop
           playsInline
           preload="metadata"
-          poster="/thumb.jpg"
           className="w-full h-full object-cover"
         />
       )}
-      {/* {!isReady && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-          <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin"></div>
-        </div>
-      )} */}
-      {/* {!isReady && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-          <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin"></div>
-        </div>
-      )} */}
     </div>
   );
 };
 
 // =============================
-
 // MAIN COMPONENT
 // =============================
 const WorkHero = () => {
@@ -171,6 +200,8 @@ const WorkHero = () => {
               key={v.id}
               src={v.src}
               className="w-full max-w-[400px] aspect-video rounded-xl"
+              id={v.id}
+              mobileBg={v.mobileBg}
             />
           ))}
         </div>
@@ -184,7 +215,13 @@ const WorkHero = () => {
             glareMaxOpacity={0.1}
           >
             {videoCards.map((v) => (
-              <VideoCard key={v.id} src={v.src} className={v.className} />
+              <VideoCard
+                key={v.id}
+                src={v.src}
+                className={v.className}
+                id={v.id}
+                mobileBg={v.mobileBg}
+              />
             ))}
           </Tilt>
         </div>
