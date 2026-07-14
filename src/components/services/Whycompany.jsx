@@ -30,18 +30,18 @@ const whyCardsData = [
     image: 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=800&auto=format&fit=crop',
     alt: 'Social Media Platforms'
   },
-  // {
-  //   number: '05',
-  //   title: 'Modern Tech Stack',
-  //   image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop',
-  //   alt: 'Modern Tech Stack'
-  // },
-  // {
-  //   number: '06',
-  //   title: 'Scalable Brand Growth',
-  //   image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop',
-  //   alt: 'Scalable Brand Growth'
-  // }
+  {
+    number: '05',
+    title: ' Transparent Reporting',
+    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop',
+    alt: ' Transparent Reporting'
+  },
+  {
+    number: '06',
+    title: 'Scalable Brand Growth',
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop',
+    alt: 'Scalable Brand Growth'
+  }
 ];
 
 const WhyCompany = () => {
