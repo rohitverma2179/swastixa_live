@@ -9,14 +9,14 @@ const portfolioData = [
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/bestmate-hero-design.png",
 
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
-    link: "https://eazzy.bexex.in/"
+    link: "https://bestmate.bexex.in/"
   },
    {
   id: 15,
     image:
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/three-dlf-work.jpeg",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
-    link: "https://eazzy.bexex.in/"
+    link: "https://bexex.in/360/"
   },
   {
     id: 4,
@@ -29,6 +29,7 @@ const portfolioData = [
     image:
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/bexexglobal.png",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
+    link: "https://bexexglobal.com/"
   },
   {
     id: 5,
@@ -41,12 +42,14 @@ const portfolioData = [
     image:
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/eazzy-hero-design.png",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
+    link: "https://eazzy.bexex.in/"
   },
   {
     id: 7,
     image:
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/elaboratecapital.png",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
+    link: "https://elaboratecapital.bexex.in/"
   },
   {
     id: 8,
@@ -71,6 +74,7 @@ const portfolioData = [
     image:
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/graceaesthetic-design-hero.png",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
+    link: "https://eazzy.bexex.in/"
   },
   {
     id: 11,
@@ -95,6 +99,7 @@ const portfolioData = [
     image:
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/asva-hero-design.png",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
+    link: "https://asva.bexex.in/"
   },
   
   // {

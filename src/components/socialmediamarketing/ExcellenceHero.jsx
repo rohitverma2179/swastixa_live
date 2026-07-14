@@ -91,9 +91,9 @@ const ExcellenceHero = () => {
               >
                 
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+                  src="https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-all-eight-pages-images/swastixa-service-social-media-marketing.webp"
                   alt="Team Meeting"
-                  className="
+                  className="   
                     w-full
                     h-[420px]
                     md:h-[480px]
