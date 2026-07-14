@@ -4,29 +4,34 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const faqs = [
     {
-        question: "What is your typical project timeline?",
+        question: "1. What services does Swastixa offer?",
         answer:
-            "Our standard engagements last between 8 to 14 weeks. This includes the full discovery, design, development, and QA phases. Complex enterprise platforms may require a longer roadmap.",
+            "Swastixa is a full-service digital marketing agency offering Content Marketing, Social Media Marketing, Performance Marketing, Website Development, Video Production, Influencer Marketing, and Packaging & Design solutions.",
     },
     {
-        question: "Do you offer post-launch support?",
+        question: "2. Do you work with businesses of all sizes?",
         answer:
-            "Yes. We provide ongoing maintenance, performance monitoring, security updates, and feature enhancements after launch.",
+            "Yes. We partner with startups, SMEs, established enterprises, and growing brands across diverse industries, tailoring our strategies to match each business's goals and stage of growth.",
     },
     {
-        question: "Can you work with our existing brand guidelines?",
+        question: "3. How do you develop a marketing strategy?",
         answer:
-            "Absolutely. We can seamlessly integrate your existing brand system while improving user experience and digital consistency.",
+            "Every project begins with understanding your business, target audience, competitors, and objectives. Based on these insights, we create a customised strategy designed to deliver measurable results.",
     },
     {
-        question: "Do you handle SEO optimization?",
+        question: "4. Can I choose only one service?",
         answer:
-            "Yes. Technical SEO, Core Web Vitals optimization, structured data, and content recommendations are included where required.",
+            "Absolutely. Whether you need a new website, social media management, content creation, or performance marketing, you can opt for individual services or an integrated digital marketing solution.",
     },
     {
-        question: "What technologies do you use?",
+        question: "5. Do you create customised marketing plans?",
         answer:
-            "We primarily work with React, Next.js, Node.js, Tailwind CSS, TypeScript, PostgreSQL, and cloud infrastructure platforms.",
+            "Yes. We don't believe in one-size-fits-all solutions. Every strategy is developed around your industry, audience, business objectives, and growth priorities.",
+    },
+    {
+        question: "6. Which social media platforms do you manage?",
+        answer:
+            "We create and manage content for Instagram, Facebook, LinkedIn, YouTube, and other platforms based on where your audience is most active.",
     },
 ];
 

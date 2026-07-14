@@ -3,27 +3,27 @@ import React from "react";
 const processSteps = [
   {
     number: "01",
-    title: "Discovery",
+    title: "Product Discovery",
     description:
-      "In-depth technical audit and stakeholder workshops to define the project's strategic objectives and constraints.",
+      "We study your product, audience, category, and competition to define the creative direction.",
   },
   {
     number: "02",
-    title: "UI/UX",
+    title: "Design Development",
     description:
-      "Iterative design sprints focusing on intuitive interaction patterns and pixel-perfect high-fidelity prototyping.",
+      "Colours, typography, layouts, and brand elements are crafted into compelling packaging concepts.",
   },
   {
     number: "03",
-    title: "Development",
+    title: "Artwork Creation",
     description:
-      "Robust engineering using React, Next.js, and headless architectures to build a secure, future-proof platform.",
+      "Designs are refined with product information, branding, and production-ready specifications.",
   },
   {
     number: "04",
-    title: "Launch",
+    title: "Final Delivery",
     description:
-      "Continuous integration, rigorous QA, and performance tuning before the final global deployment and monitoring.",
+      "Print-ready files are delivered with attention to quality, consistency, and market readiness.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function HowWeWork() {
           </span>
 
           <h2 className="mt-4 text-[28px] md:text-[34px] font-light text-[#BDBDBD]">
-            A Precise Path to Success
+            Designing Packaging That Performs
           </h2>
         </div>
 

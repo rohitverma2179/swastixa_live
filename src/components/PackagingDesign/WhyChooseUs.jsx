@@ -13,27 +13,27 @@ import {
 const features = [
   {
     icon: Palette,
-    title: "Artisanal Design",
+    title: "Strategic Design",
     description:
-      "Bespoke visual identities that reflect your brand's unique technical DNA and market position.",
+      "Every packaging concept combines aesthetics, clarity, and brand storytelling to create lasting consumer impressions.",
   },
   {
     icon: Search,
-    title: "SEO Dominance",
+    title: "Shelf-Ready Appeal",
     description:
-      "Clean semantic code and structural optimization ensuring you occupy the top tier of search results.",
+      "Our designs help products stand out across retail shelves, e-commerce platforms, and every customer touchpoint.",
   },
   {
     icon: Zap,
-    title: "Blazing Speed",
+    title: "Thoughtful Visuals",
     description:
-      "Near-instant load times using modern frameworks that prioritize Core Web Vitals and user retention.",
+      "Typography, colours, layouts, and information hierarchy are carefully crafted for better recognition and usability.",
   },
   {
     icon: TrendingUp,
-    title: "Growth Focused",
+    title: "Print-Ready Quality",
     description:
-      "Modular architectures designed to scale seamlessly as your user base and business requirements expand.",
+      "From concept to final artwork, we deliver production-ready designs that look professional and market-ready.",
   },
 ];
 
@@ -48,8 +48,7 @@ export default function WhyChooseUs() {
           </span>
 
           <p className="max-w-[650px] mx-auto mt-4 text-[#8F8F8F] text-[16px] leading-relaxed">
-            Our methodology is rooted in speed, security, and scalability.
-            We don't just build websites; we build digital assets.
+            We design packaging that captures attention, communicates product value, and strengthens your brand identity.
           </p>
         </div>
 

@@ -10,21 +10,23 @@ const ExcellenceHero = () => {
 
           {/* LEFT CONTENT */}
           <div className="max-w-[520px]">
+            <h2 className="text-[#8B8B8B]">SEO Agency</h2>
 
             <h1
               className="
                 text-white
                 uppercase
-                font-light
+                font-medium
                 tracking-[4px]
-                text-[34px]
-                md:text-[42px]
-                lg:text-[52px]
+                text-[20px]
+                md:text-[24px]
+                lg:text-[32px]
                 leading-[1.15]
               "
             >
-              Engineered For Excellence
+              Turn Search Traffic into Business Growth
             </h1>
+            
 
             <p
               className="
@@ -32,12 +34,23 @@ const ExcellenceHero = () => {
                 text-[#8B8B8B]
                 text-[15px]
                 leading-[1.9]
-                max-w-[500px]
+                max-w-[600px]
               "
             >
-              DEV_CORE is a technical partner for ambitious brands. We fuse
-              architectural precision with creative vision to deliver digital
-              products that outperform the competition.
+              Your audience is already searching for products, services, and solutions like yours. The right SEO strategy helps your brand appear where it matters most and brings qualified traffic to your website. At Swastixa, we create SEO strategies that improve search visibility, strengthen your digital presence, and help your business grow organically.
+            </p>
+            <p
+              className="
+                mt-3
+                text-[#8B8B8B]
+                text-[15px]
+                leading-[1.9]
+                max-w-[600px]
+              "
+            >
+              As an SEO agency, we focus on building long-term organic growth through a mix of keyword planning, technical improvements, content optimisation, and performance tracking. 
+
+
             </p>
 
             <button
@@ -62,37 +75,7 @@ const ExcellenceHero = () => {
             </button>
 
             {/* TRUSTED BY */}
-            <div className="flex gap-5 mt-14 items-start">
-              <div className="w-[2px] h-[54px] bg-white opacity-80"></div>
-
-              <div>
-                <p
-                  className="
-                    text-white
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  Trusted By Innovators At
-                </p>
-
-                <p
-                  className="
-                    text-[#D5D5D5]
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  TechGiant / Nexus / Global_Retail
-                </p>
-              </div>
-            </div>
+           
           </div>
 
           {/* RIGHT VISUAL */}

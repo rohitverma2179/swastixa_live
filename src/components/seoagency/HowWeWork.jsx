@@ -3,27 +3,27 @@ import React from "react";
 const processSteps = [
   {
     number: "01",
-    title: "Discovery",
+    title: "Discover",
     description:
-      "In-depth technical audit and stakeholder workshops to define the project's strategic objectives and constraints.",
+      "We begin by understanding your business, audience, competitors, and growth objectives to build a strategy that aligns with your goals.",
   },
   {
     number: "02",
-    title: "UI/UX",
+    title: "Audit",
     description:
-      "Iterative design sprints focusing on intuitive interaction patterns and pixel-perfect high-fidelity prototyping.",
+      "Our team performs a comprehensive SEO audit to identify technical issues, content gaps, keyword opportunities, and areas for improvement.",
   },
   {
     number: "03",
-    title: "Development",
+    title: "Strategize",
     description:
-      "Robust engineering using React, Next.js, and headless architectures to build a secure, future-proof platform.",
+      "Using insights from our research, we create a customized SEO roadmap covering on-page, off-page, technical SEO, and content optimization.",
   },
   {
     number: "04",
-    title: "Launch",
+    title: "Optimize",
     description:
-      "Continuous integration, rigorous QA, and performance tuning before the final global deployment and monitoring.",
+      "From website structure and metadata to content and backlinks, we implement every optimization needed to improve your search visibility.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function HowWeWork() {
           </span>
 
           <h2 className="mt-4 text-[28px] md:text-[34px] font-light text-[#BDBDBD]">
-            A Precise Path to Success
+            A Strategic Path to Higher Rankings
           </h2>
         </div>
 

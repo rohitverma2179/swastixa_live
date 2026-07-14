@@ -1,6 +1,5 @@
 import React from "react";
-import {  useNavigate } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 const ExcellenceHero = () => {
   const navigate = useNavigate();
@@ -11,36 +10,46 @@ const ExcellenceHero = () => {
 
           {/* LEFT CONTENT */}
           <div className="max-w-[520px]">
+            <h2 className="text-[#8B8B8B]">Content Marketing</h2>
 
             <h1
               className="
                 text-white
                 uppercase
-                font-light
+                font-medium
                 tracking-[4px]
-                text-[34px]
-                md:text-[42px]
-                lg:text-[52px]
+                text-[20px]
+                md:text-[24px]
+                lg:text-[32px]
                 leading-[1.15]
               "
             >
-              Engineered For Excellence
+             Create Content That Connects, Engages, and Converts
             </h1>
+            
 
             <p
               className="
                 mt-6
-                text-[rgba(139,139,139,0.9)]
+                text-[#8B8B8B]
                 text-[15px]
                 leading-[1.9]
-                max-w-[500px]
+                max-w-[600px]
               "
             >
-              DEV_CORE is a technical partner for ambitious brands. We fuse
-              architectural precision with creative vision to deliver digital
-              products that outperform the competition.
+              Great content does more than fill space. It builds trust, starts conversations, educates your audience, and gives your brand a clear voice. At Swastixa, we create content marketing strategies that help your brand communicate with clarity, consistency, and purpose.
             </p>
-
+            <p
+              className="
+                mt-3
+                text-[#8B8B8B]
+                text-[15px]
+                leading-[1.9]
+                max-w-[600px]
+              "
+            >
+              As a content marketing agency, we help brands turn ideas into impactful communication across digital platforms. From blogs and website content to social media copy, campaign messaging, emailers, and brand storytelling, every piece of content is created to support awareness, engagement, and business growth.
+            </p>
 
             <button
               className="
@@ -57,45 +66,14 @@ const ExcellenceHero = () => {
                 hover:scale-[1.02]
               "
               onClick={() => {
-              Navigate("/#contact");
-            }}
+                navigate("/#contact");
+              }}
             >
-              
-              Start Your Project
+              Start Our Project
             </button>
 
             {/* TRUSTED BY */}
-            <div className="flex gap-5 mt-14 items-start">
-              <div className="w-[2px] h-[54px] bg-white opacity-80"></div>
-
-              <div>
-                <p
-                  className="
-                    text-white
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  Trusted By Innovators At
-                </p>
-
-                <p
-                  className="
-                    text-[#D5D5D5]
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  TechGiant / Nexus / Global_Retail
-                </p>
-              </div>
-            </div>
+           
           </div>
 
           {/* RIGHT VISUAL */}

@@ -13,27 +13,27 @@ import {
 const features = [
   {
     icon: Palette,
-    title: "Artisanal Design",
+    title: "Audience-First Strategy",
     description:
-      "Bespoke visual identities that reflect your brand's unique technical DNA and market position.",
+      "We build content around your audience's interests and behaviour, ensuring every message feels relevant, engaging, and aligned with your brand voice.",
   },
   {
     icon: Search,
-    title: "SEO Dominance",
+    title: "Multi-Platform Content",
     description:
-      "Clean semantic code and structural optimization ensuring you occupy the top tier of search results.",
+      "From websites and blogs to emailers, campaigns, and social media, we create content that performs seamlessly across every digital touchpoint.",
   },
   {
     icon: Zap,
-    title: "Blazing Speed",
+    title: "Creative With Purpose",
     description:
-      "Near-instant load times using modern frameworks that prioritize Core Web Vitals and user retention.",
+      "Our content balances creativity, clarity, SEO, and business objectives to deliver communication that informs, engages, and converts.",
   },
   {
     icon: TrendingUp,
-    title: "Growth Focused",
+    title: "Long-Term Brand Growth",
     description:
-      "Modular architectures designed to scale seamlessly as your user base and business requirements expand.",
+      "We create meaningful messaging that strengthens trust, improves recall, and supports sustainable digital growth over time.",
   },
 ];
 
@@ -48,8 +48,7 @@ export default function WhyChooseUs() {
           </span>
 
           <p className="max-w-[650px] mx-auto mt-4 text-[#8F8F8F] text-[16px] leading-relaxed">
-            Our methodology is rooted in speed, security, and scalability.
-            We don't just build websites; we build digital assets.
+            Every piece of content we create is driven by strategy, consistency, and audience relevance to help your brand communicate with impact.
           </p>
         </div>
 

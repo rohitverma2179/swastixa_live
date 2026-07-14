@@ -49,6 +49,12 @@ const Branding = () => {
             title: "tirasya",
             pdf: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/tirasya.pdf",
             thumbnail:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/a-thumbnail/thumbnail-tirasya.webp"
+        },
+        {
+            id: 7,
+            title: "designbygayatri",
+            pdf: "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/design-by-gayatri-brand-guidlines.pdf",
+            thumbnail:  "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixawork/social-media-image-reels/all-branding-pdf/a-thumbnail/thumbnail-designbygayatri.webp"
         }
     ];
 
@@ -63,13 +69,15 @@ const Branding = () => {
                     <Smmbutton />
                 </div>
 
-                <div className="max-w-[1400px] mx-auto pb-20">
+                <div className="max-w-[1800px] mx-auto pb-20">
+                {/* <div className="max-w-[2500px] mx-auto flex flex-row gap-4 sm:gap-6"> */}
                     <Suspense fallback={
                         <div className="w-full h-[30vh] flex items-center justify-center">
                             <div className="w-12 h-12 border-4 border-white/20 border-t-white rounded-full animate-spin"></div>
                         </div>
                     }>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        {/* max-w-[2500px] mx-auto flex flex-row gap-4 sm:gap-6 */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                             {brandingDocs.map((doc) => (
                                 <StaticPDFCard
                                     key={doc.id}

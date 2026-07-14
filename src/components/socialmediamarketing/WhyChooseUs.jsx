@@ -13,27 +13,27 @@ import {
 const features = [
   {
     icon: Palette,
-    title: "Artisanal Design",
+    title: "Platform-Specific Strategy",
     description:
-      "Bespoke visual identities that reflect your brand's unique technical DNA and market position.",
+      "Every platform demands a different voice. We tailor content for Instagram, Facebook, LinkedIn, YouTube, and beyond.",
   },
   {
     icon: Search,
-    title: "SEO Dominance",
+    title: "Creative Storytelling",
     description:
-      "Clean semantic code and structural optimization ensuring you occupy the top tier of search results.",
+      "We develop engaging content that builds stronger audience relationships while improving brand recall and interaction.",
   },
   {
     icon: Zap,
-    title: "Blazing Speed",
+    title: "Consistent Execution",
     description:
-      "Near-instant load times using modern frameworks that prioritize Core Web Vitals and user retention.",
+      "From content calendars to campaign ideas and creative direction, we ensure your social presence remains active and consistent.",
   },
   {
     icon: TrendingUp,
-    title: "Growth Focused",
+    title: "Performance Optimisation",
     description:
-      "Modular architectures designed to scale seamlessly as your user base and business requirements expand.",
+      "Continuous monitoring, reporting, and optimisation help improve campaign effectiveness and deliver measurable social media growth.",
   },
 ];
 
@@ -48,8 +48,7 @@ export default function WhyChooseUs() {
           </span>
 
           <p className="max-w-[650px] mx-auto mt-4 text-[#8F8F8F] text-[16px] leading-relaxed">
-            Our methodology is rooted in speed, security, and scalability.
-            We don't just build websites; we build digital assets.
+            We create platform-specific social media strategies that strengthen your brand presence, increase engagement, and drive measurable business growth.
           </p>
         </div>
 

@@ -1,12 +1,12 @@
 import React from 'react'
-import ExcellenceHero from '../components/websitedevelopment/ExcellenceHero'
+import ExcellenceHero from '../components/contentmarketing/ExcellenceHero'
 import LogoCarousel from '../components/home/Logo'
 import ServiceCards from '../components/services/servicecards'
-import PortfolioCarousel from '../components/websitedevelopment/portfolioData'
-import WhyChooseUs from '../components/websitedevelopment/WhyChooseUs'
-import HowWeWork from '../components/websitedevelopment/HowWeWork'
-import CaseStudies from '../components/websitedevelopment/caseStudies'
-import FAQSection from '../components/websitedevelopment/FAQSection'
+// import PortfolioCarousel from '../components/contentmarketing/portfolioData'
+import WhyChooseUs from '../components/contentmarketing/WhyChooseUs'
+import HowWeWork from '../components/contentmarketing/HowWeWork'
+// import CaseStudies from '../components/contentmarketing/caseStudies'
+import FAQSection from '../components/services/FAQSection'
 import CTASection from '../components/common/CTASection'
 
 const ContentMarketingAgency = () => {
@@ -15,13 +15,13 @@ const ContentMarketingAgency = () => {
             <ExcellenceHero />
             <WhyChooseUs />
             <HowWeWork />
-            <CaseStudies />
+            {/* <CaseStudies /> */}
             <LogoCarousel />
             <ServiceCards />
             <FAQSection />
             <CTASection />
         </div>  
     )
-}
+}   
 
 export default ContentMarketingAgency

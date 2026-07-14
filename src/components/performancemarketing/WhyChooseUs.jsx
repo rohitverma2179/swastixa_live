@@ -13,27 +13,27 @@ import {
 const features = [
   {
     icon: Palette,
-    title: "Artisanal Design",
+    title: "Goal-Driven Campaigns",
     description:
-      "Bespoke visual identities that reflect your brand's unique technical DNA and market position.",
+      "Whether it's leads, traffic, sales, or awareness, every campaign begins with clearly defined business goals.",
   },
   {
     icon: Search,
-    title: "SEO Dominance",
+    title: "Data-Led Optimisation",
     description:
-      "Clean semantic code and structural optimization ensuring you occupy the top tier of search results.",
+      "Audience insights, performance data, and continuous testing help maximise returns while making every advertising budget work harder.",
   },
   {
     icon: Zap,
-    title: "Blazing Speed",
+    title: "High-Converting Creatives",
     description:
-      "Near-instant load times using modern frameworks that prioritize Core Web Vitals and user retention.",
+      "Compelling ad copy and strategic creative direction encourage stronger engagement, clicks, and conversions.",
   },
   {
     icon: TrendingUp,
-    title: "Growth Focused",
+    title: "Transparent Reporting",
     description:
-      "Modular architectures designed to scale seamlessly as your user base and business requirements expand.",
+      "Clear performance reports and actionable insights ensure every campaign evolves and improves over time.",
   },
 ];
 
@@ -48,8 +48,7 @@ export default function WhyChooseUs() {
           </span>
 
           <p className="max-w-[650px] mx-auto mt-4 text-[#8F8F8F] text-[16px] leading-relaxed">
-            Our methodology is rooted in speed, security, and scalability.
-            We don't just build websites; we build digital assets.
+           Our campaigns are built around measurable outcomes, ensuring every advertising investment contributes to your business objectives.
           </p>
         </div>
 

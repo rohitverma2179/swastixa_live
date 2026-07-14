@@ -3,27 +3,27 @@ import React from "react";
 const processSteps = [
   {
     number: "01",
-    title: "Discovery",
+    title: "Creative Brief",
     description:
-      "In-depth technical audit and stakeholder workshops to define the project's strategic objectives and constraints.",
+      "We define the video's purpose, audience, messaging, and creative direction before production begins.",
   },
   {
     number: "02",
-    title: "UI/UX",
+    title: "Pre-Production",
     description:
-      "Iterative design sprints focusing on intuitive interaction patterns and pixel-perfect high-fidelity prototyping.",
+      "Scripts, storyboards, locations, schedules, and production planning are finalised for a smooth shoot.",
   },
   {
     number: "03",
-    title: "Development",
+    title: "Production",
     description:
-      "Robust engineering using React, Next.js, and headless architectures to build a secure, future-proof platform.",
+      "Our team captures high-quality visuals while ensuring every scene reflects your brand story effectively.",
   },
   {
     number: "04",
-    title: "Launch",
+    title: "Post Production",
     description:
-      "Continuous integration, rigorous QA, and performance tuning before the final global deployment and monitoring.",
+      "Editing, sound design, motion graphics, and colour grading bring the final video to life.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function HowWeWork() {
           </span>
 
           <h2 className="mt-4 text-[28px] md:text-[34px] font-light text-[#BDBDBD]">
-            A Precise Path to Success
+           From Concept to Final Cut
           </h2>
         </div>
 
