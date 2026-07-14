@@ -56,6 +56,7 @@ class Title {
   }
   createMesh() {
     const { texture, width, height } = createTextTexture(this.gl, this.text, this.font, this.textColor);
+    this.texture = texture;
     const geometry = new Plane(this.gl);
     const program = new Program(this.gl, {
       vertex: `
@@ -72,14 +73,20 @@ class Title {
       fragment: `
         precision highp float;
         uniform sampler2D tMap;
+        uniform float uOpacity;
+        uniform float uBrightness;
         varying vec2 vUv;
         void main() {
           vec4 color = texture2D(tMap, vUv);
           if (color.a < 0.1) discard;
-          gl_FragColor = color;
+          gl_FragColor = vec4(color.rgb * uBrightness, color.a * uOpacity);
         }
       `,
-      uniforms: { tMap: { value: texture } },
+      uniforms: {
+        tMap: { value: texture },
+        uOpacity: { value: 1 },
+        uBrightness: { value: 1 }
+      },
       transparent: true
     });
     this.mesh = new Mesh(this.gl, { geometry, program });
@@ -89,6 +96,16 @@ class Title {
     this.mesh.scale.set(textWidth, textHeight, 1);
     this.mesh.position.y = -this.plane.scale.y * 0.5 - textHeight * 0.5 - 0.05;
     this.mesh.setParent(this.plane);
+  }
+  setAppearance(opacity, brightness) {
+    this.mesh.program.uniforms.uOpacity.value = opacity;
+    this.mesh.program.uniforms.uBrightness.value = brightness;
+  }
+  destroy() {
+    this.mesh?.setParent(null);
+    this.mesh?.geometry?.remove?.();
+    this.mesh?.program?.remove?.();
+    if (this.texture?.texture) this.gl.deleteTexture(this.texture.texture);
   }
 }
 
@@ -107,7 +124,8 @@ class Media {
     bend,
     textColor,
     borderRadius = 0,
-    font
+    font,
+    isCoverFlow = false
   }) {
     this.extra = 0;
     this.geometry = geometry;
@@ -124,6 +142,7 @@ class Media {
     this.textColor = textColor;
     this.borderRadius = borderRadius;
     this.font = font;
+    this.isCoverFlow = isCoverFlow;
     this.createShader();
     this.createMesh();
     this.createTitle();
@@ -133,6 +152,7 @@ class Media {
     const texture = new Texture(this.gl, {
       generateMipmaps: true
     });
+    this.texture = texture;
     this.program = new Program(this.gl, {
       depthTest: false,
       depthWrite: false,
@@ -158,6 +178,8 @@ class Media {
         uniform vec2 uPlaneSizes;
         uniform sampler2D tMap;
         uniform float uBorderRadius;
+        uniform float uOpacity;
+        uniform float uBrightness;
         varying vec2 vUv;
         
         float roundedBoxSDF(vec2 p, vec2 b, float r) {
@@ -182,7 +204,7 @@ class Media {
           float edgeSmooth = 0.002;
           float alpha = 1.0 - smoothstep(-edgeSmooth, edgeSmooth, d);
           
-          gl_FragColor = vec4(color.rgb, alpha);
+          gl_FragColor = vec4(color.rgb * uBrightness, alpha * uOpacity);
         }
       `,
       uniforms: {
@@ -191,11 +213,14 @@ class Media {
         uImageSizes: { value: [0, 0] },
         uSpeed: { value: 0 },
         uTime: { value: 100 * Math.random() },
-        uBorderRadius: { value: this.borderRadius }
+        uBorderRadius: { value: this.borderRadius },
+        uOpacity: { value: 1 },
+        uBrightness: { value: 1 }
       },
       transparent: true
     });
     const img = new Image();
+    this.imageElement = img;
     img.crossOrigin = 'anonymous';
     // Proxies external R2 links through an image CDN to bypass strict WebGL CORS requirements
     if (this.image && this.image.startsWith('http')) {
@@ -266,6 +291,41 @@ class Media {
       this.isBefore = this.isAfter = false;
     }
   }
+  updateCoverFlow(scroll, direction) {
+    this.plane.position.x = this.x - scroll.current - this.extra;
+    const offset = this.plane.position.x / this.width;
+    const distance = Math.min(Math.abs(offset), 2.5);
+    const scale = Math.max(0.8, 1.15 - distance * 0.2);
+    const opacity = Math.max(0.62, 1 - distance * 0.16);
+    const arcPosition = Math.max(-1, Math.min(1, this.plane.position.x / (this.viewport.width * 0.5)));
+    const arcDrop = Math.min(this.viewport.height * 0.06, this.baseScaleY * 0.12);
+
+    this.plane.position.y = (Math.sqrt(Math.max(0, 1 - arcPosition * arcPosition)) - 1) * arcDrop;
+    this.plane.position.z = (1 - distance / 2.5) * 0.25;
+    this.plane.rotation.y = 0;
+    this.plane.rotation.z = 0;
+    this.plane.scale.x = this.baseScaleX * scale;
+    this.plane.scale.y = this.baseScaleY * scale;
+    this.program.uniforms.uPlaneSizes.value = [this.plane.scale.x, this.plane.scale.y];
+    this.program.uniforms.uOpacity.value = opacity;
+    this.program.uniforms.uBrightness.value = 0.78 + (1 - Math.min(distance, 1)) * 0.22;
+    this.title.setAppearance(opacity, 0.78 + (1 - Math.min(distance, 1)) * 0.22);
+    this.program.uniforms.uTime.value += 0.04;
+    this.program.uniforms.uSpeed.value = Math.abs(scroll.current - scroll.last);
+
+    const planeOffset = this.plane.scale.x / 2;
+    const viewportOffset = this.viewport.width / 2;
+    this.isBefore = this.plane.position.x + planeOffset < -viewportOffset;
+    this.isAfter = this.plane.position.x - planeOffset > viewportOffset;
+    if (direction === 'right' && this.isBefore) {
+      this.extra -= this.widthTotal;
+      this.isBefore = this.isAfter = false;
+    }
+    if (direction === 'left' && this.isAfter) {
+      this.extra += this.widthTotal;
+      this.isBefore = this.isAfter = false;
+    }
+  }
   onResize({ screen, viewport } = {}) {
     if (screen) this.screen = screen;
     if (viewport) {
@@ -275,13 +335,24 @@ class Media {
       }
     }
     this.scale = this.screen.height / 1500;
-    this.plane.scale.y = (this.viewport.height * (900 * this.scale)) / this.screen.height;
-    this.plane.scale.x = (this.viewport.width * (700 * this.scale)) / this.screen.width;
+    const responsiveCardScale = this.screen.width <= 1024 ? 0.7 : 1;
+    this.plane.scale.y = ((this.viewport.height * (900 * this.scale)) / this.screen.height) * responsiveCardScale;
+    this.plane.scale.x = ((this.viewport.width * (700 * this.scale)) / this.screen.width) * responsiveCardScale;
     this.plane.program.uniforms.uPlaneSizes.value = [this.plane.scale.x, this.plane.scale.y];
+    this.baseScaleX = this.plane.scale.x;
+    this.baseScaleY = this.plane.scale.y;
     this.padding = 2;
     this.width = this.plane.scale.x + this.padding;
     this.widthTotal = this.width * this.length;
     this.x = this.width * this.index;
+  }
+  destroy() {
+    if (this.imageElement) this.imageElement.onload = null;
+    this.title?.destroy();
+    this.plane?.setParent(null);
+    this.geometry = null;
+    this.program?.remove?.();
+    if (this.texture?.texture) this.gl.deleteTexture(this.texture.texture);
   }
 }
 
@@ -363,26 +434,47 @@ class App {
         bend,
         textColor,
         borderRadius,
-        font
+        font,
+        isCoverFlow: this.isCoverFlow
       });
     });
   }
   onTouchDown(e) {
     this.isDown = true;
+    this.autoScrollElapsed = 0;
     this.scroll.position = this.scroll.current;
     this.start = e.touches ? e.touches[0].clientX : e.clientX;
+    if (this.isCoverFlow) {
+      this.dragLastX = this.start;
+      this.dragLastTime = performance.now();
+      this.dragVelocity = 0;
+    }
   }
   onTouchMove(e) {
     if (!this.isDown) return;
     const x = e.touches ? e.touches[0].clientX : e.clientX;
+    if (this.isCoverFlow) {
+      const now = performance.now();
+      const elapsed = Math.max(now - this.dragLastTime, 1);
+      const instantaneousVelocity = (x - this.dragLastX) / elapsed;
+      this.dragVelocity = this.dragVelocity * 0.7 + instantaneousVelocity * 0.3;
+      this.dragLastX = x;
+      this.dragLastTime = now;
+    }
     const distance = (this.start - x) * (this.scrollSpeed * 0.025);
     this.scroll.target = this.scroll.position + distance;
   }
   onTouchUp() {
     this.isDown = false;
+    if (this.isCoverFlow && this.medias?.[0]) {
+      const momentum = -(this.dragVelocity || 0) * this.scrollSpeed * 3.5;
+      this.scroll.target += momentum;
+      this.autoScrollElapsed = 0;
+    }
     this.onCheck();
   }
   onWheel(e) {
+    if (this.isCoverFlow) return;
     const delta = e.deltaY || e.wheelDelta || e.detail;
     this.scroll.target += (delta > 0 ? this.scrollSpeed : -this.scrollSpeed) * 0.2;
     this.onCheckDebounce();
@@ -399,6 +491,7 @@ class App {
       width: this.container.clientWidth,
       height: this.container.clientHeight
     };
+    if (this.isCoverFlow === undefined) this.isCoverFlow = this.screen.width <= 1024;
     this.renderer.setSize(this.screen.width, this.screen.height);
     this.camera.perspective({
       aspect: this.screen.width / this.screen.height
@@ -411,14 +504,33 @@ class App {
       this.medias.forEach(media => media.onResize({ screen: this.screen, viewport: this.viewport }));
     }
   }
-  update() {
-    this.scroll.current = lerp(this.scroll.current, this.scroll.target, this.scroll.ease);
-    const direction = this.scroll.current > this.scroll.last ? 'right' : 'left';
-    if (this.medias) {
-      this.medias.forEach(media => media.update(this.scroll, direction));
+  update(timestamp = performance.now()) {
+    const deltaTime = Math.min(timestamp - (this.lastUpdateTime || timestamp), 50);
+    this.lastUpdateTime = timestamp;
+
+    if (this.isCoverFlow && !this.isDown && this.medias?.[0]) {
+      this.autoScrollElapsed = (this.autoScrollElapsed || 0) + deltaTime;
+
+      if (this.autoScrollElapsed >= 2500) {
+        this.scroll.target -= this.medias[0].width;
+        this.autoScrollElapsed = 0;
+      }
+    }
+
+    if (this.isCoverFlow) {
+      this.scroll.current = lerp(this.scroll.current, this.scroll.target, this.scroll.ease);
+      const direction = this.scroll.current > this.scroll.last ? 'right' : 'left';
+      this.medias?.forEach(media => media.updateCoverFlow(this.scroll, direction));
+      this.scroll.last = this.scroll.current;
+    } else {
+      this.scroll.current = lerp(this.scroll.current, this.scroll.target, this.scroll.ease);
+      const direction = this.scroll.current > this.scroll.last ? 'right' : 'left';
+      if (this.medias) {
+        this.medias.forEach(media => media.update(this.scroll, direction));
+      }
+      this.scroll.last = this.scroll.current;
     }
     this.renderer.render({ scene: this.scene, camera: this.camera });
-    this.scroll.last = this.scroll.current;
     this.raf = window.requestAnimationFrame(this.update.bind(this));
   }
   addEventListeners() {
@@ -448,6 +560,8 @@ class App {
     window.removeEventListener('touchstart', this.boundOnTouchDown);
     window.removeEventListener('touchmove', this.boundOnTouchMove);
     window.removeEventListener('touchend', this.boundOnTouchUp);
+    this.medias?.forEach(media => media.destroy());
+    this.planeGeometry?.remove?.();
     if (this.renderer && this.renderer.gl && this.renderer.gl.canvas.parentNode) {
       this.renderer.gl.canvas.parentNode.removeChild(this.renderer.gl.canvas);
     }
