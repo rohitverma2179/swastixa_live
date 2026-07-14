@@ -140,22 +140,22 @@ export default function ContactSection() {
           {/* CONTACT INFO (UNCHANGED) */}
           <div className="w-full md:w-[40%] text-white flex text-end flex-col gap-2">
             <div>
-              <h2 className="text-lg md:text-2xl font-bold">Swastixa Services LLP</h2>
+              <h2 className="text-[20px]  md:text-2xl font-bold">Swastixa Services LLP</h2>
               {/* <p className="opacity-90 text-[18px]"><span className="font-bold text-[22px]">Head Office : </span   > Plot No. 2-A,</p> */}
-              <p className="opacity-90 text-[18px]"><span className="font-bold text-[22px]">Head Office </span   ></p>
-              <p className="opacity-80 text-[18px] ">Plot No. 2-A,</p>
-              <p className="opacity-80 text-[18px] "></p>
-              <p className="opacity-80 text-[18px] "> Third Floor, Jai Vihar,</p>
-              {/* <p className="opacity-90 text-[18px] ">Near Sant Haridas School,</p> */}
-              <p className="opacity-80 text-[18px] "> New Delhi - 110043</p>
+              <p className="opacity-90 "><span className=" text-[20px] font-bold">Head Office </span   ></p>
+              <p className="opacity-80 text-[15px] md:text-[17px]  ">Plot No. 2-A,</p>
+              <p className="opacity-80 text-[15px] md:text-[17px] "></p>
+              <p className="opacity-80 text-[15px] md:text-[17px] "> Third Floor, Jai Vihar,</p>
+              <p className="opacity-80 text-[15px] md:text-[17px] "> New Delhi - 110043</p>
             </div>
             <br />
             <div>
-              <h2 className="text-lg md:text-2xl font-bold">Registered Office</h2>
-              <p className="opacity-80 text-[18px]">Plot No. J04A, Street 12,</p>
-              <p className="opacity-80 text-[18px]">  Shiv Ram Park,</p>
-              <p className="opacity-80 text-[18px]"></p>
-              <p className="opacity-80 text-[18px]">New Delhi - 110041</p>
+              {/* <h2 className="font-bold text-[20px]"></h2> */}
+               <p className="opacity-90 "><span className=" text-[20px] font-bold">Registered Office </span   ></p>
+              <p className="opacity-80 text-[15px] md:text-[17px]">Plot No. J04A, Street 12,</p>
+              <p className="opacity-80 text-[15px] md:text-[17px]">  Shiv Ram Park,</p>
+              <p className="opacity-80 text-[15px] md:text-[17px]"></p>
+              <p className="opacity-80 text-[15px] md:text-[17px]">New Delhi - 110041</p>
             </div>
             <div className="mt-4">
 
