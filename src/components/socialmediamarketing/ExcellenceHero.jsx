@@ -89,6 +89,7 @@ const ExcellenceHero = () => {
                   shadow-[0_20px_80px_rgba(255,255,255,0.04)]
                 "
               >
+                
                 <img
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
                   alt="Team Meeting"
