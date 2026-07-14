@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const portfolioData = [
   
@@ -8,12 +9,14 @@ const portfolioData = [
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/bestmate-hero-design.png",
 
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
+    link: "https://eazzy.bexex.in/"
   },
    {
   id: 15,
     image:
       "https://pub-6aea620a48a5427f992db658caf5fb4a.r2.dev/swastixaservice/service-web-page-images/three-dlf-work.jpeg",
     tags: ["Branding", "UI/UX", "Web Design", "Web Development"],
+    link: "https://eazzy.bexex.in/"
   },
   {
     id: 4,
@@ -133,6 +136,7 @@ const PortfolioCarousel = () => {
               "
             >
               {/* Image */}
+              <Link to={item.link} target="_blank" rel="noopener noreferrer">
               <img
                 src={item.image}
                 alt=""
@@ -146,6 +150,7 @@ const PortfolioCarousel = () => {
                   group-hover:scale-102
                 "
               />
+              </Link>
 
               {/* Bottom Gradient */}
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-[8px] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
