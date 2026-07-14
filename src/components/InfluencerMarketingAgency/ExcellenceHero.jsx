@@ -10,21 +10,23 @@ const ExcellenceHero = () => {
 
           {/* LEFT CONTENT */}
           <div className="max-w-[520px]">
+            <h2 className="text-[#8B8B8B]">Influencer Marketing</h2>
 
             <h1
               className="
                 text-white
                 uppercase
-                font-light
+                font-medium
                 tracking-[4px]
-                text-[34px]
-                md:text-[42px]
-                lg:text-[52px]
+                text-[20px]
+                md:text-[24px]
+                lg:text-[32px]
                 leading-[1.15]
               "
             >
-              Engineered For Excellence
+              Connect Your Brand with the Right Voices
             </h1>
+            
 
             <p
               className="
@@ -32,12 +34,21 @@ const ExcellenceHero = () => {
                 text-[#8B8B8B]
                 text-[15px]
                 leading-[1.9]
-                max-w-[500px]
+                max-w-[600px]
               "
             >
-              DEV_CORE is a technical partner for ambitious brands. We fuse
-              architectural precision with creative vision to deliver digital
-              products that outperform the competition.
+              Influencer marketing helps brands build trust by reaching audiences through people they already follow, relate to, and believe in. At Swastixa, we create influencer marketing campaigns that connect your brand with the right creators, relevant communities, and meaningful conversations.
+            </p>
+            <p
+              className="
+                mt-3
+                text-[#8B8B8B]
+                text-[15px]
+                leading-[1.9]
+                max-w-[600px]
+              "
+            >
+              We focus on choosing influencers who align with your brand values, audience profile, campaign objective, and communication style. Whether your goal is awareness, engagement, product discovery, event promotion, or lead generation, we plan campaigns that feel authentic, relevant, and platform-ready.
             </p>
 
             <button
@@ -62,37 +73,7 @@ const ExcellenceHero = () => {
             </button>
 
             {/* TRUSTED BY */}
-            <div className="flex gap-5 mt-14 items-start">
-              <div className="w-[2px] h-[54px] bg-white opacity-80"></div>
-
-              <div>
-                <p
-                  className="
-                    text-white
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  Trusted By Innovators At
-                </p>
-
-                <p
-                  className="
-                    text-[#D5D5D5]
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  TechGiant / Nexus / Global_Retail
-                </p>
-              </div>
-            </div>
+           
           </div>
 
           {/* RIGHT VISUAL */}

@@ -13,27 +13,27 @@ import {
 const features = [
   {
     icon: Palette,
-    title: "Artisanal Design",
+    title: "End-to-End Production",
     description:
-      "Bespoke visual identities that reflect your brand's unique technical DNA and market position.",
+      "We manage scripting, planning, shooting, editing, and post-production under one streamlined creative process.",
   },
   {
     icon: Search,
-    title: "SEO Dominance",
+    title: "Powerful Storytelling",
     description:
-      "Clean semantic code and structural optimization ensuring you occupy the top tier of search results.",
+      "Every video is crafted to communicate your message with clarity, emotion, and memorable visual storytelling.",
   },
   {
     icon: Zap,
-    title: "Blazing Speed",
+    title: "Platform-Ready Content",
     description:
-      "Near-instant load times using modern frameworks that prioritize Core Web Vitals and user retention.",
+      "Whether it's reels, corporate films, testimonials, or campaigns, every video is optimised for its intended platform.",
   },
   {
     icon: TrendingUp,
-    title: "Growth Focused",
+    title: "Premium Execution",
     description:
-      "Modular architectures designed to scale seamlessly as your user base and business requirements expand.",
+      "Professional visuals, sound design, motion graphics, and polished editing ensure exceptional production quality throughout",
   },
 ];
 
@@ -48,8 +48,7 @@ export default function WhyChooseUs() {
           </span>
 
           <p className="max-w-[650px] mx-auto mt-4 text-[#8F8F8F] text-[16px] leading-relaxed">
-            Our methodology is rooted in speed, security, and scalability.
-            We don't just build websites; we build digital assets.
+            From concept to final delivery, we produce videos that capture attention, communicate clearly, and leave a lasting impression.
           </p>
         </div>
 

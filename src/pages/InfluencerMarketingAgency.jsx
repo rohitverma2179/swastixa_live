@@ -4,8 +4,8 @@ import LogoCarousel from '../components/home/Logo'
 import ServiceCards from '../components/services/servicecards'
 import WhyChooseUs from '../components/InfluencerMarketingAgency/WhyChooseUs'
 import HowWeWork from '../components/InfluencerMarketingAgency/HowWeWork'
-import CaseStudies from '../components/InfluencerMarketingAgency/caseStudies'
-import FAQSection from '../components/InfluencerMarketingAgency/FAQSection'
+// import CaseStudies from '../components/InfluencerMarketingAgency/caseStudies'
+import FAQSection from '../components/services/FAQSection'
 import CTASection from '../components/common/CTASection'
 
 const InfluencerMarketingAgency = () => {
@@ -14,7 +14,7 @@ const InfluencerMarketingAgency = () => {
             <ExcellenceHero />
             <WhyChooseUs />
             <HowWeWork />
-            <CaseStudies />
+            {/* <CaseStudies /> */}
             <LogoCarousel />
             <ServiceCards />
             <FAQSection />

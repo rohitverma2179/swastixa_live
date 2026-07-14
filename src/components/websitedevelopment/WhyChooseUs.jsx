@@ -13,27 +13,27 @@ import {
 const features = [
   {
     icon: Palette,
-    title: "Artisanal Design",
+    title: "Business-Focused Design",
     description:
-      "Bespoke visual direction and refined design systems that reflect your brand’s unique identity.",
+      "Every website is planned around your business goals, audience journey, and conversion strategy.",
   },
   {
     icon: Search,
-    title: "SEO Dominance",
+    title: "Responsive Experience",
     description:
-      "Clean semantic code and search-friendly structures that improve visibility and strengthen your organic presence.",
+      "Our websites deliver smooth, intuitive experiences across desktops, tablets, and mobile devices.",
   },
   {
     icon: Zap,
-    title: "Blazing Speed",
+    title: "SEO-Ready Foundation",
     description:
-      "Fast-loading, responsive websites built to deliver a smooth experience across every device.",
+      "Optimised structures and strategic content placement help improve search visibility and digital discoverability.",
   },
   {
     icon: TrendingUp,
-    title: "Growth Focused",
+    title: "Performance Built",
     description:
-      "Modular architecture designed to scale as your business grows and your digital needs evolve.",
+      "From speed and functionality to user experience, every website is developed for long-term business success.",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
           </span>
 
           <p className="max-w-[650px] mx-auto mt-4 text-[#8F8F8F] text-[16px] leading-relaxed">
-           Our methodology is rooted in speed, security, and scalability. We don't just build websites; we build digital assets.
+           We build responsive, user-focused websites that combine exceptional design with seamless functionality and business performance.
           </p>
         </div>
 

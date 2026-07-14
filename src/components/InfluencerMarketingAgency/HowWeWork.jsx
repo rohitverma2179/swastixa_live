@@ -3,27 +3,27 @@ import React from "react";
 const processSteps = [
   {
     number: "01",
-    title: "Discovery",
+    title: "Campaign Planning",
     description:
-      "In-depth technical audit and stakeholder workshops to define the project's strategic objectives and constraints.",
+      "We define campaign goals, target audience, platforms, and communication objectives.",
   },
   {
     number: "02",
-    title: "UI/UX",
+    title: "Creator Selection",
     description:
-      "Iterative design sprints focusing on intuitive interaction patterns and pixel-perfect high-fidelity prototyping.",
+      "Relevant influencers are shortlisted based on audience alignment, engagement, and brand compatibility.",
   },
   {
     number: "03",
-    title: "Development",
+    title: "Campaign Execution",
     description:
-      "Robust engineering using React, Next.js, and headless architectures to build a secure, future-proof platform.",
+      "Content briefs, approvals, creator coordination, and campaign management ensure seamless execution.",
   },
   {
     number: "04",
-    title: "Launch",
+    title: "Performance Review",
     description:
-      "Continuous integration, rigorous QA, and performance tuning before the final global deployment and monitoring.",
+      "Campaign metrics are analysed to measure reach, engagement, and overall effectiveness.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function HowWeWork() {
           </span>
 
           <h2 className="mt-4 text-[28px] md:text-[34px] font-light text-[#BDBDBD]">
-            A Precise Path to Success
+            A Structured Creator Partnership Process
           </h2>
         </div>
 

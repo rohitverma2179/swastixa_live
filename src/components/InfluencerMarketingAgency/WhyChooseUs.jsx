@@ -13,27 +13,27 @@ import {
 const features = [
   {
     icon: Palette,
-    title: "Artisanal Design",
+    title: "Right Creator Match",
     description:
-      "Bespoke visual identities that reflect your brand's unique technical DNA and market position.",
+      "Influencers are shortlisted based on audience relevance, brand alignment, and campaign objectives.",
   },
   {
     icon: Search,
-    title: "SEO Dominance",
+    title: "Authentic Collaborations",
     description:
-      "Clean semantic code and structural optimization ensuring you occupy the top tier of search results.",
+      "Campaigns are designed to feel natural, trustworthy, and genuinely engaging for target audiences.",
   },
   {
     icon: Zap,
-    title: "Blazing Speed",
+    title: "Seamless Coordination",
     description:
-      "Near-instant load times using modern frameworks that prioritize Core Web Vitals and user retention.",
+      "From content briefs to creator management and approvals, we handle every stage of campaign execution.",
   },
   {
     icon: TrendingUp,
-    title: "Growth Focused",
+    title: "Measurable Impact",
     description:
-      "Modular architectures designed to scale seamlessly as your user base and business requirements expand.",
+      "Campaign performance is tracked through detailed reporting, helping evaluate reach, engagement, and overall effectiveness.",
   },
 ];
 
@@ -48,8 +48,7 @@ export default function WhyChooseUs() {
           </span>
 
           <p className="max-w-[650px] mx-auto mt-4 text-[#8F8F8F] text-[16px] leading-relaxed">
-            Our methodology is rooted in speed, security, and scalability.
-            We don't just build websites; we build digital assets.
+            We connect brands with carefully selected creators who build authentic conversations and meaningful audience engagement.
           </p>
         </div>
 

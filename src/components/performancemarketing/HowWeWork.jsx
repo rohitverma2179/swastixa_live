@@ -3,27 +3,27 @@ import React from "react";
 const processSteps = [
   {
     number: "01",
-    title: "Discovery",
+    title: "Goal Definition",
     description:
-      "In-depth technical audit and stakeholder workshops to define the project's strategic objectives and constraints.",
+      "We identify campaign objectives, audience segments, budgets, and key performance metrics before launching.",
   },
   {
     number: "02",
-    title: "UI/UX",
+    title: "Campaign Setup",
     description:
-      "Iterative design sprints focusing on intuitive interaction patterns and pixel-perfect high-fidelity prototyping.",
+      "Targeting, ad creatives, messaging, and campaign structures are developed for maximum efficiency.",
   },
   {
     number: "03",
-    title: "Development",
+    title: "Campaign Launch",
     description:
-      "Robust engineering using React, Next.js, and headless architectures to build a secure, future-proof platform.",
+      "Ads are deployed across relevant platforms with continuous monitoring to ensure optimal performance.",
   },
   {
     number: "04",
-    title: "Launch",
+    title: "Optimisation",
     description:
-      "Continuous integration, rigorous QA, and performance tuning before the final global deployment and monitoring.",
+      "Regular testing, analysis, and refinements improve conversions while maximising return on investment.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function HowWeWork() {
           </span>
 
           <h2 className="mt-4 text-[28px] md:text-[34px] font-light text-[#BDBDBD]">
-            A Precise Path to Success
+            A Data-Driven Campaign Framework
           </h2>
         </div>
 

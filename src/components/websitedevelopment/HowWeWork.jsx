@@ -5,25 +5,25 @@ const processSteps = [
     number: "01",
     title: "Discovery",
     description:
-      "We begin with a deep understanding of your brand, audience, business goals, and digital requirements.",
+      "We understand your business, users, content requirements, and website objectives before planning begins.",
   },
   {
     number: "02",
     title: "UI/UX",
     description:
-      "We craft intuitive user journeys and interface designs that make every interaction simple and effective.",
+      "User journeys, wireframes, layouts, and design concepts are created to deliver an intuitive digital experience.",
   },
   {
     number: "03",
     title: "Development",
     description:
-      "We build responsive, secure, and scalable platforms with clean code and reliable functionality.",
+      "Responsive, SEO-ready, and high-performing websites are built using modern development practices.",
   },
   {
     number: "04",
-    title: "Launch",
+    title: "Testing & Launch",
     description:
-      "We test, refine, and deploy your website with the right tracking, optimisation, and support in place.",
+      "Every website undergoes quality checks, optimisation, and deployment to ensure a smooth user experience.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function HowWeWork() {
           </span>
 
           <h2 className="mt-4 text-[28px] md:text-[34px] font-light text-[#BDBDBD]">
-            A Precise Path to Success
+            A Seamless Website Development Process
           </h2>
         </div>
 

@@ -3,11 +3,11 @@ import React from 'react'
 import ExcellenceHero from '../components/videoproductionhouse/ExcellenceHero'
 import LogoCarousel from '../components/home/Logo'
 import ServiceCards from '../components/services/servicecards'
-import PortfolioCarousel from '../components/websitedevelopment/portfolioData'
-import WhyChooseUs from '../components/websitedevelopment/WhyChooseUs'
-import HowWeWork from '../components/websitedevelopment/HowWeWork'
-import CaseStudies from '../components/websitedevelopment/caseStudies'
-import FAQSection from '../components/websitedevelopment/FAQSection'
+// import PortfolioCarousel from '../components/videoproductionhouse/portfolioData'
+import WhyChooseUs from '../components/videoproductionhouse/WhyChooseUs'
+import HowWeWork from '../components/videoproductionhouse/HowWeWork'
+// import CaseStudies from '../components/videoproductionhouse/caseStudies'
+import FAQSection from '../components/services/FAQSection'
 import CTASection from '../components/common/CTASection'
 
 const VideoProductionHouse = () => {
@@ -16,7 +16,7 @@ const VideoProductionHouse = () => {
             <ExcellenceHero />
             <WhyChooseUs />
             <HowWeWork />
-            <CaseStudies />
+            {/* <CaseStudies /> */}
             <LogoCarousel />
             <ServiceCards />
             <FAQSection />

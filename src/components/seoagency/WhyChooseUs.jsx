@@ -13,27 +13,27 @@ import {
 const features = [
   {
     icon: Palette,
-    title: "Artisanal Design",
+    title: "Strategies Built for Rankings",
     description:
-      "Bespoke visual identities that reflect your brand's unique technical DNA and market position.",
+      "We don't rely on shortcuts. Every SEO strategy is backed by research, search intent, and proven techniques that help your business climb the rankings.",
   },
   {
     icon: Search,
-    title: "SEO Dominance",
+    title: "Results That Matter",
     description:
-      "Clean semantic code and structural optimization ensuring you occupy the top tier of search results.",
+      "From increased organic traffic to qualified leads and conversions, we focus on metrics that contribute to your business growth.",
   },
   {
     icon: Zap,
-    title: "Blazing Speed",
+    title: "SEO Tailored to Your Business",
     description:
-      "Near-instant load times using modern frameworks that prioritize Core Web Vitals and user retention.",
+      "No two businesses are the same. We create customized SEO roadmaps aligned with your industry, audience, and goals.",
   },
   {
     icon: TrendingUp,
-    title: "Growth Focused",
+    title: "Transparent Reporting",
     description:
-      "Modular architectures designed to scale seamlessly as your user base and business requirements expand.",
+      "Know exactly how your website is performing with detailed reports, keyword tracking, and actionable insights.",
   },
 ];
 

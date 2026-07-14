@@ -10,21 +10,23 @@ const ExcellenceHero = () => {
 
           {/* LEFT CONTENT */}
           <div className="max-w-[520px]">
+            <h2 className="text-[#8B8B8B]">Social Media Marketing</h2>
 
             <h1
               className="
                 text-white
                 uppercase
-                font-light
+                font-medium
                 tracking-[4px]
-                text-[34px]
-                md:text-[42px]
-                lg:text-[52px]
+                text-[20px]
+                md:text-[24px]
+                lg:text-[32px]
                 leading-[1.15]
               "
             >
-              Engineered For Excellence
+              Build a Stronger Brand Presence Across Platforms
             </h1>
+            
 
             <p
               className="
@@ -32,12 +34,21 @@ const ExcellenceHero = () => {
                 text-[#8B8B8B]
                 text-[15px]
                 leading-[1.9]
-                max-w-[500px]
+                max-w-[600px]
               "
             >
-              DEV_CORE is a technical partner for ambitious brands. We fuse
-              architectural precision with creative vision to deliver digital
-              products that outperform the competition.
+              Social media is where your audience discovers, interacts with, and remembers your brand. As a Social Media Marketing Agency, Swastixa helps businesses build a strong and consistent presence across platforms through strategic content, creative storytelling, and engagement-led communication.
+            </p>
+            <p
+              className="
+                mt-3
+                text-[#8B8B8B]
+                text-[15px]
+                leading-[1.9]
+                max-w-[600px]
+              "
+            >
+              We work as a Social Media Agency that understands how different platforms require different styles of communication. From Instagram and Facebook to LinkedIn and YouTube, we create platform-specific content that builds engagement, improves brand recall, and supports business growth.
             </p>
 
             <button
@@ -62,37 +73,7 @@ const ExcellenceHero = () => {
             </button>
 
             {/* TRUSTED BY */}
-            <div className="flex gap-5 mt-14 items-start">
-              <div className="w-[2px] h-[54px] bg-white opacity-80"></div>
-
-              <div>
-                <p
-                  className="
-                    text-white
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  Trusted By Innovators At
-                </p>
-
-                <p
-                  className="
-                    text-[#D5D5D5]
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  TechGiant / Nexus / Global_Retail
-                </p>
-              </div>
-            </div>
+           
           </div>
 
           {/* RIGHT VISUAL */}

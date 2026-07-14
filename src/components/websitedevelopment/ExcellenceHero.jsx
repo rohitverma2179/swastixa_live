@@ -10,21 +10,23 @@ const ExcellenceHero = () => {
 
           {/* LEFT CONTENT */}
           <div className="max-w-[520px]">
+            <h2 className="text-[#8B8B8B]">Website Development</h2>
 
             <h1
               className="
                 text-white
                 uppercase
-                font-light
+                font-medium
                 tracking-[4px]
-                text-[34px]
-                md:text-[42px]
-                lg:text-[52px]
+                text-[20px]
+                md:text-[24px]
+                lg:text-[32px]
                 leading-[1.15]
               "
             >
-              Engineered for Excellence
+              Create Websites That Look Good and Perform Better
             </h1>
+            
 
             <p
               className="
@@ -32,10 +34,21 @@ const ExcellenceHero = () => {
                 text-[#8B8B8B]
                 text-[15px]
                 leading-[1.9]
-                max-w-[500px]
+                max-w-[600px]
               "
             >
-             We design and develop websites that combine structure, speed, creativity, and performance. As a website designing company in India, we build digital products that help brands stand out and grow.
+              Your website is often the first serious interaction people have with your brand. It should not only look professional but also be easy to use, responsive, fast, and built to support your business goals. As a website designing company in India, Swastixa creates modern websites rooted in seamless user experiences and strong digital performance.
+            </p>
+            <p
+              className="
+                mt-3
+                text-[#8B8B8B]
+                text-[15px]
+                leading-[1.9]
+                max-w-[600px]
+              "
+            >
+              We focus on both design and functionality. Whether you need a corporate website, service website, landing page, portfolio website, or product-focused website, we create digital experiences that are clean, responsive, SEO-ready, and conversion-friendly.
             </p>
 
             <button
@@ -60,37 +73,7 @@ const ExcellenceHero = () => {
             </button>
 
             {/* TRUSTED BY */}
-            <div className="flex gap-5 mt-14 items-start">
-              <div className="w-[2px] h-[54px] bg-white opacity-80"></div>
-
-              <div>
-                <p
-                  className="
-                    text-white
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  Trusted By Innovators At
-                </p>
-
-                <p
-                  className="
-                    text-[#D5D5D5]
-                    uppercase
-                    tracking-[2px]
-                    text-[13px]
-                    leading-7
-                    font-light
-                  "
-                >
-                  TechGiant / Nexus / Global_Retail
-                </p>
-              </div>
-            </div>
+           
           </div>
 
           {/* RIGHT VISUAL */}

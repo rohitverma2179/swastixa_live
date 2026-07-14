@@ -3,27 +3,27 @@ import React from "react";
 const processSteps = [
   {
     number: "01",
-    title: "Discovery",
+    title: "Brand Discovery",
     description:
-      "In-depth technical audit and stakeholder workshops to define the project's strategic objectives and constraints.",
+      "We understand your brand voice, audience, industry, and communication goals to build a content strategy with a clear direction.",
   },
   {
     number: "02",
-    title: "UI/UX",
+    title: "Content Planning",
     description:
-      "Iterative design sprints focusing on intuitive interaction patterns and pixel-perfect high-fidelity prototyping.",
+      "We define messaging, tone, formats, keywords, and platform-specific content that aligns with your business objectives.",
   },
   {
     number: "03",
-    title: "Development",
+    title: "Content Creation",
     description:
-      "Robust engineering using React, Next.js, and headless architectures to build a secure, future-proof platform.",
+      "Our team crafts compelling content across websites, blogs, social media, campaigns, and marketing collateral.",
   },
   {
     number: "04",
-    title: "Launch",
+    title: "Optimise & Scale",
     description:
-      "Continuous integration, rigorous QA, and performance tuning before the final global deployment and monitoring.",
+      "We refine content based on performance and audience insights to strengthen engagement and support long-term growth",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function HowWeWork() {
           </span>
 
           <h2 className="mt-4 text-[28px] md:text-[34px] font-light text-[#BDBDBD]">
-            A Precise Path to Success
+            A Strategic Content Journey
           </h2>
         </div>
 

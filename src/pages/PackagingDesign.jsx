@@ -4,8 +4,8 @@ import LogoCarousel from '../components/home/Logo'
 import ServiceCards from '../components/services/servicecards'
 import WhyChooseUs from '../components/PackagingDesign/WhyChooseUs'
 import HowWeWork from '../components/PackagingDesign/HowWeWork'
-import CaseStudies from '../components/PackagingDesign/caseStudies'
-import FAQSection from '../components/PackagingDesign/FAQSection'
+// import CaseStudies from '../components/PackagingDesign/caseStudies'
+import FAQSection from '../components/services/FAQSection'
 import CTASection from '../components/common/CTASection'
 
 const PackagingDesign = () => {
@@ -14,7 +14,7 @@ const PackagingDesign = () => {
             <ExcellenceHero />
             <WhyChooseUs />
             <HowWeWork />
-            <CaseStudies />
+            {/* <CaseStudies /> */}
             <LogoCarousel />
             <ServiceCards />
             <FAQSection />
